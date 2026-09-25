@@ -1,0 +1,40 @@
+name: Horse Racing
+
+on:
+  workflow_dispatch: {}
+  schedule:
+    - cron: '0 8 * * *'  # daily 08:00 UTC, well before typical UK/IRE
+                          # first-race times -- same "don't rely on this
+                          # firing, trigger manually if stale" caveat as
+                          # every other schedule in this repo
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run Horse Racing
+        env:
+          RAPIDAPI_KEY: ${{ secrets.RAPIDAPI_KEY }}
+        run: python3 horse_racing.py
+
+      - name: Commit and push updated predictions
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/horse-racing
+          git diff --staged --quiet || git commit -m "Update horse racing predictions"
+          git push
