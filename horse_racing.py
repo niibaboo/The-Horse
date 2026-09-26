@@ -141,6 +141,138 @@ def devig_race_odds(horses):
     return consensus
 
 
+# ---------------------------------------------------------------------
+# Each-way place terms -- standard UK bookmaker defaults by field size
+# and race type. NOTE: individual bookmakers sometimes run promotional
+# "extra places" offers (e.g. 4 places instead of 3 for a big handicap)
+# -- those aren't knowable from this API and are NOT reflected here.
+# Treat this as the standard baseline terms, not a guarantee of what
+# every specific bookmaker is currently offering.
+# ---------------------------------------------------------------------
+
+def is_jumps_race(title):
+    """No explicit flat/jumps field exists in this API's response --
+    inferred from the race title instead, which is standard racing
+    terminology (Hurdle/Chase/Hunt/N.H. always indicate National Hunt).
+    Imperfect but reasonable given what's actually available."""
+    t = (title or "").upper()
+    return any(kw in t for kw in ["HURDLE", "CHASE", "N.H.", "NATIONAL HUNT", "I.N.H."])
+
+
+def place_terms(field_size, jumps):
+    """Returns (place_count, place_fraction) -- standard UK each-way
+    terms. Handicap vs non-handicap isn't reliably determinable from
+    this API either (class/title text is inconsistent), so this uses
+    the more common non-handicap-style terms as the default."""
+    if field_size < 5:
+        return 0, None  # win-only, no each-way place part at all
+    if field_size <= 7:
+        return 2, 0.25
+    if field_size <= 15:
+        return 3, 0.25 if not jumps else 0.20
+    return 4, 0.25
+
+
+def harville_place_probabilities(win_probs, place_count):
+    """Harville (1973) formula -- estimates the probability each horse
+    finishes in the top `place_count` positions, extended from win
+    probabilities alone. Works by modeling the race as a sequence of
+    "who wins from the remaining field" draws: P(2nd) sums over who
+    could have won instead, weighted by their win prob and this
+    horse's renormalized share of what's left; P(3rd) extends the same
+    idea one level deeper, and so on.
+
+    KNOWN LIMITATION (well documented in racing literature, not unique
+    to this implementation): Harville's formula has a mild bias for
+    long-shots (tends to overestimate outsiders' place chances) and
+    favorites (mild underestimate) in large fields -- it's a genuine,
+    established method, not a guess, but still an approximation, not
+    a perfect model.
+    """
+    ids = list(win_probs.keys())
+    p1 = dict(win_probs)
+    place_prob = {hid: p1.get(hid, 0.0) for hid in ids}  # start with P(1st)
+
+    if place_count <= 1:
+        return place_prob
+
+    # P(2nd): sum over each possible winner j != i of
+    #   P(j wins) * P(i wins the remaining field, excluding j)
+    p2 = {hid: 0.0 for hid in ids}
+    for j in ids:
+        remaining = 1.0 - p1.get(j, 0.0)
+        if remaining <= 1e-9:
+            continue
+        for i in ids:
+            if i == j:
+                continue
+            p2[i] += p1.get(j, 0.0) * (p1.get(i, 0.0) / remaining)
+    for hid in ids:
+        place_prob[hid] += p2[hid]
+
+    if place_count <= 2:
+        return place_prob
+
+    # P(3rd): sum over each possible 1st (j) and 2nd (k), j != k != i,
+    # of P(j wins) * P(k wins remaining after j) * P(i wins remaining after j,k)
+    p3 = {hid: 0.0 for hid in ids}
+    for j in ids:
+        pj = p1.get(j, 0.0)
+        rem_j = 1.0 - pj
+        if rem_j <= 1e-9:
+            continue
+        for k in ids:
+            if k == j:
+                continue
+            pk_given_j = p1.get(k, 0.0) / rem_j
+            rem_jk = rem_j - p1.get(k, 0.0)
+            if rem_jk <= 1e-9:
+                continue
+            for i in ids:
+                if i == j or i == k:
+                    continue
+                pi_given_jk = p1.get(i, 0.0) / rem_jk
+                p3[i] += pj * pk_given_j * pi_given_jk
+    for hid in ids:
+        place_prob[hid] += p3[hid]
+
+    if place_count <= 3:
+        return place_prob
+
+    # P(4th) -- same idea, one level deeper. Only computed for the
+    # rare 16+ runner races that pay 4 places -- O(n^4), still fast
+    # even for a 20-runner field.
+    p4 = {hid: 0.0 for hid in ids}
+    for j in ids:
+        pj = p1.get(j, 0.0)
+        rem_j = 1.0 - pj
+        if rem_j <= 1e-9:
+            continue
+        for k in ids:
+            if k == j:
+                continue
+            pk = p1.get(k, 0.0) / rem_j
+            rem_jk = rem_j - p1.get(k, 0.0)
+            if rem_jk <= 1e-9:
+                continue
+            for l in ids:
+                if l == j or l == k:
+                    continue
+                pl = p1.get(l, 0.0) / rem_jk
+                rem_jkl = rem_jk - p1.get(l, 0.0)
+                if rem_jkl <= 1e-9:
+                    continue
+                for i in ids:
+                    if i in (j, k, l):
+                        continue
+                    pi = p1.get(i, 0.0) / rem_jkl
+                    p4[i] += pj * pk * pl * pi
+    for hid in ids:
+        place_prob[hid] += p4[hid]
+
+    return place_prob
+
+
 def build_predictions(target_date=None):
     target_date = target_date or date.today()
     print(f"Fetching racecards for {target_date.isoformat()}...")
@@ -161,18 +293,31 @@ def build_predictions(target_date=None):
 
         market_probs = devig_race_odds(horses)
 
+        with_market_prob = {hid: p for hid, p in market_probs.items() if p is not None}
+        jumps = is_jumps_race(rc.get("title"))
+        place_count, place_fraction = place_terms(len(horses), jumps)
+        place_probs = (harville_place_probabilities(with_market_prob, place_count)
+                       if place_count > 0 and with_market_prob else {})
+
         runners = []
         for h in horses:
             form_scores = parse_form(h.get("form", ""))
             form_val = recency_weighted_form(form_scores)
             odds_vals = [float(o["odd"]) for o in (h.get("odds") or []) if o.get("odd")]
+            best_odds = max(odds_vals) if odds_vals else None
+            hid = h.get("id_horse")
+            place_prob = place_probs.get(hid)
+            place_odds = (1 + (best_odds - 1) * place_fraction) if (best_odds and place_fraction) else None
             runners.append({
-                "name": h.get("horse"), "id_horse": h.get("id_horse"),
+                "name": h.get("horse"), "id_horse": hid,
                 "jockey": h.get("jockey"), "trainer": h.get("trainer"),
                 "number": h.get("number"), "weight": h.get("weight"),
                 "form_raw": h.get("form", ""), "form_score": form_val,
-                "market_prob": market_probs.get(h.get("id_horse")),
-                "best_odds": max(odds_vals) if odds_vals else None,
+                "market_prob": market_probs.get(hid),
+                "best_odds": best_odds,
+                "place_prob": round(place_prob, 4) if place_prob is not None else None,
+                "place_odds": round(place_odds, 2) if place_odds is not None else None,
+                "place_count": place_count, "place_fraction": place_fraction,
             })
 
         # Rank within THIS race by form and by market, to power the value flag
@@ -189,6 +334,7 @@ def build_predictions(target_date=None):
             "id_race": rc["id_race"], "course": rc.get("course"), "date": rc.get("date"),
             "title": rc.get("title"), "distance": rc.get("distance"), "going": rc.get("going"),
             "prize": rc.get("prize"), "runners": runners,
+            "jumps": jumps, "place_count": place_count, "place_fraction": place_fraction,
         })
     return predictions
 
@@ -212,6 +358,35 @@ def build_legs(predictions):
             "history": None, "hit_rate": None,
         })
     return legs
+
+
+def build_ew_entries(predictions):
+    """Each-way picks -- horses with a strong Harville-derived PLACE
+    probability, shown alongside real place odds (best win odds scaled
+    by the race's standard each-way fraction). This is where E/W value
+    is more likely to actually exist: a horse doesn't need to be the
+    outright favorite to have a strong place chance, and medium-priced
+    horses in bigger fields are exactly where the place portion of an
+    each-way bet does real work. Sorted by place probability, not win
+    probability -- deliberately a different ranking than Market
+    Favorites above."""
+    entries = []
+    for p in predictions:
+        if not p.get("place_count"):
+            continue  # win-only race (fewer than 5 runners), no E/W terms exist
+        for r in p["runners"]:
+            if r.get("place_prob") is None or r.get("place_odds") is None:
+                continue
+            entries.append({
+                "name": r["name"], "course": p["course"], "date": p["date"], "title": p["title"],
+                "jockey": r.get("jockey"), "win_prob": r.get("market_prob"),
+                "place_prob": r["place_prob"], "place_odds": r["place_odds"],
+                "place_count": p["place_count"],
+                "place_fraction_str": f"1/{int(1/p['place_fraction'])}" if p.get("place_fraction") else "",
+                "field_size": len(p["runners"]), "jumps": p.get("jumps"),
+            })
+    entries.sort(key=lambda e: -e["place_prob"])
+    return entries
 
 
 def build_form_entries(predictions):
@@ -323,6 +498,25 @@ VALUE_ROW = """<div style="display:flex;justify-content:space-between;font-size:
   <div style="text-align:right"><span style="color:#ff9a2e;font-weight:bold">form #{form_rank} · market #{market_rank}</span><br><span style="color:#998">best odds {best_odds}</span></div>
 </div>"""
 
+EW_PANEL_TEMPLATE = """<div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
+  <div style="font-size:14px;font-weight:bold;margin-bottom:6px">🎯 Each-Way Picks</div>
+  <div style="font-size:11px;color:#998;margin-bottom:10px">
+    Ranked by PLACE probability (via Harville's formula, 1973 -- an established method that extends
+    win probabilities into place chances, not an invented one), not win probability -- this is
+    deliberately a different list from Market Favorites above. Place terms shown are the STANDARD UK
+    default for that field size; individual bookmakers sometimes run promotional extra-places offers
+    this can't see. Harville's formula is a genuine approximation with a known mild bias for long-shots
+    in big fields -- treat as a strong lead, not a certainty, especially with no backtested track
+    record yet for this project.
+  </div>
+  {rows}
+</div>"""
+
+EW_ROW = """<div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>{name}</b><br><span style="color:#998">{course} {time} · {title}</span><br><span style="color:#998">{jockey} · {field_size} runners{jumps_tag}</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place {place_prob_str}</span><br><span style="color:#998">win {win_prob_str} · place odds {place_odds} ({place_fraction_str}, top {place_count})</span></div>
+</div>"""
+
 HTML_TEMPLATE = """<!DOCTYPE html><html><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>UK/Ireland Horse Racing</title></head>
 <body style="background:#0f0a08;color:#e8dcd0;font-family:Arial;padding:12px;max-width:600px;margin:auto">
@@ -332,39 +526,44 @@ HTML_TEMPLATE = """<!DOCTYPE html><html><head><meta charset="utf-8">
 
 <div style="background:#14261a;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #2a4a34;font-size:12px;line-height:1.6">
   <div style="font-size:14px;font-weight:bold;margin-bottom:8px">📖 Reading the numbers</div>
-  <div style="margin-bottom:8px"><b style="color:#ffeb3b">Percentage (%)</b> — real market-consensus win probability, after removing all bookmakers' profit margin. Not a guess — the underlying math forces these to sum to 100% across a race.</div>
+  <div style="margin-bottom:8px"><b style="color:#ffeb3b">Win % / Place %</b> — real market-consensus win probability (margin removed, sums to 100% per race), and a Harville-derived estimate of finishing in the paid places. Two different questions: win % asks "will it come 1st", place % asks "will it hit the frame at all".</div>
   <div style="margin-bottom:8px"><b style="color:#7dd3a8">Form (e.g. "4113")</b> — the horse's own finishing positions, read left→right, <u>oldest to newest</u>. So "4113" means: 4th, then 1st, then 1st, then 3rd <i>most recently</i>. "0" means finished 10th or worse; a letter (F/U/P/R) means the horse didn't complete that race.</div>
   <div style="margin-bottom:8px"><b>Rank (e.g. "1/6")</b> — this horse's recency-weighted form ranks #1 out of 6 runners in its own race. Recent runs count more than older ones.</div>
-  <div><b style="color:#ff9a2e">Best odds</b> — the highest decimal odds seen across bookmakers at last fetch. Stake × odds = total payout. Odds move right up to post time — treat this as a snapshot, not a locked-in price.</div>
+  <div style="margin-bottom:8px"><b style="color:#ff9a2e">Best odds / Place odds</b> — best odds is the highest decimal WIN price seen across bookmakers at last fetch. Place odds is that price scaled down to the standard each-way place fraction (1/4 or 1/5) for this field size. Stake × odds = total payout either way. Odds move right up to post time.</div>
+  <div><b>Place terms (e.g. "1/4, top 3")</b> — standard UK each-way terms for this field size: place odds fraction, and how many finishing positions actually get paid. Races under 5 runners are win-only, no each-way part exists.</div>
   <div style="margin-top:10px;padding-top:10px;border-top:1px solid #2a4a34;color:#8ba">
-    <b>Where to focus:</b> Market %'s are the closest thing here to an actual calibrated prediction. Form
-    and the Form/Market Gap below are raw, unvalidated screens with no track record yet — treat them as
-    context, not a basis for picks, until a results tracker exists for this project. The strongest signal
-    right now is a horse appearing in <b>both</b> the Market Favorites and Recent Form panels at once.
+    <b>Where to focus:</b> Market Win %'s are the closest thing here to an actual calibrated prediction
+    for the WIN market. For each-way specifically, the Each-Way Picks panel (ranked by place chance, not
+    win chance) is the right one to check -- short-priced favorites are usually the WEAKEST each-way
+    value, since their place chance adds little on top of an already-high win chance. Form and the
+    Form/Market Gap are raw, unvalidated screens with no track record yet. The strongest signal right
+    now is a horse appearing in <b>both</b> Market Favorites and Recent Form at once.
   </div>
 </div>
 
 {builder}
+{ew_panel}
 {form_panel}
 {value_panel}
 {cards}
 <div style="font-size:11px;color:#998;text-align:center;margin-top:20px;line-height:1.6">
   Official Rating, owner, sire, and dam weren't available for any race checked so far -- possibly a
   free-tier limit, possibly normal for early-season juvenile races. Market Consensus is real,
-  accurately de-vigged market data. Recent Form and the Form/Market Gap are raw screens with no
-  backtested track record yet -- treat them as leads, not predictions.
+  accurately de-vigged market data. Place probabilities use Harville's formula (1973), an established
+  method with a known mild long-shot bias in large fields. Recent Form and the Form/Market Gap are raw
+  screens with no backtested track record yet -- treat them as leads, not predictions.
 </div>
 </body></html>"""
 
 RACE_CARD_TEMPLATE = """<div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
-  <div style="font-size:11px;color:#998;margin-bottom:4px">{course} {time} · {going} · {distance}</div>
+  <div style="font-size:11px;color:#998;margin-bottom:4px">{course} {time} · {going} · {distance}{place_terms_str}</div>
   <div style="font-size:15px;font-weight:bold;margin-bottom:10px">{title}</div>
   {runner_rows}
 </div>"""
 
 RUNNER_ROW = """<div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
   <div>{number}. <b>{name}</b><br><span style="color:#998">{jockey} · {trainer}</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">{market_prob_str}</span><br><span style="color:#998">form {form_raw} · odds {best_odds}</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win {market_prob_str}</span> <span style="color:#7dd3a8;font-weight:bold">place {place_prob_str}</span><br><span style="color:#998">form {form_raw} · odds {best_odds}/{place_odds}</span></div>
 </div>"""
 
 
@@ -375,17 +574,33 @@ def make_html(predictions):
             number=r.get("number") or "-", name=r["name"], jockey=r.get("jockey") or "?",
             trainer=r.get("trainer") or "?",
             market_prob_str=f"{r['market_prob']*100:.0f}%" if r.get("market_prob") is not None else "-",
+            place_prob_str=f"{r['place_prob']*100:.0f}%" if r.get("place_prob") is not None else "-",
             form_raw=r.get("form_raw") or "-", best_odds=r.get("best_odds") or "-",
+            place_odds=r.get("place_odds") or "-",
         ) for r in sorted(p["runners"], key=lambda r: r.get("number") or 99))
+        place_terms_str = (f" · E/W {int(1/p['place_fraction'])}, top {p['place_count']}"
+                            if p.get("place_count") else " · win only (< 5 runners)")
         cards += RACE_CARD_TEMPLATE.format(
             course=p["course"], time=p["date"][11:16], going=p.get("going") or "",
             distance=p.get("distance") or "", title=p["title"], runner_rows=runner_rows,
+            place_terms_str=place_terms_str,
         )
     if not cards:
         cards = '<p style="text-align:center;color:#998">No usable races today.</p>'
 
     legs = build_legs(predictions)
     builder = BUILDER_TEMPLATE.format(legs_json=json.dumps(legs)) if legs else ""
+
+    ew_entries = build_ew_entries(predictions)[:15]  # top 15 by place probability, keeps the page manageable
+    ew_rows = "".join(EW_ROW.format(
+        name=e["name"], course=e["course"], time=e["date"][11:16], title=e["title"],
+        jockey=e.get("jockey") or "?", field_size=e["field_size"],
+        jumps_tag=" · jumps" if e.get("jumps") else "",
+        place_prob_str=f"{e['place_prob']*100:.0f}%",
+        win_prob_str=f"{e['win_prob']*100:.0f}%" if e.get("win_prob") is not None else "-",
+        place_odds=e["place_odds"], place_fraction_str=e["place_fraction_str"], place_count=e["place_count"],
+    ) for e in ew_entries)
+    ew_panel = EW_PANEL_TEMPLATE.format(rows=ew_rows) if ew_entries else ""
 
     form_entries = build_form_entries(predictions)
     form_rows = "".join(FORM_ROW.format(
@@ -403,7 +618,7 @@ def make_html(predictions):
 
     return HTML_TEMPLATE.format(
         generated=datetime.now().strftime('%d %b %H:%M'),
-        builder=builder, form_panel=form_panel, value_panel=value_panel, cards=cards,
+        builder=builder, ew_panel=ew_panel, form_panel=form_panel, value_panel=value_panel, cards=cards,
     )
 
 
@@ -411,13 +626,15 @@ def write_csv(predictions, path):
     with open(path, "w", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(["Date", "Course", "Race", "Horse", "Number", "Jockey", "Trainer",
-                          "Form", "FormScore", "FormRank", "MarketProb", "MarketRank", "BestOdds"])
+                          "Form", "FormScore", "FormRank", "MarketProb", "MarketRank", "BestOdds",
+                          "PlaceProb", "PlaceOdds", "PlaceCount", "PlaceFraction"])
         for p in predictions:
             for r in p["runners"]:
                 writer.writerow([
                     p["date"], p["course"], p["title"], r["name"], r.get("number"),
                     r.get("jockey"), r.get("trainer"), r.get("form_raw"), r.get("form_score"),
                     r.get("form_rank"), r.get("market_prob"), r.get("market_rank"), r.get("best_odds"),
+                    r.get("place_prob"), r.get("place_odds"), r.get("place_count"), r.get("place_fraction"),
                 ])
 
 
