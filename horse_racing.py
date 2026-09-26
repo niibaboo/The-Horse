@@ -18,6 +18,14 @@ no backtested calibration, that would be overconfident. Instead:
   3. Value Flag -- horses whose recent-form rank sits notably ahead of
      their market-rank -- a discrepancy-spotter, explicitly NOT validated
      against real outcomes yet. Treat as a lead worth checking, not a bet.
+  4. Projected Order -- each race's top 1-4 by market probability alone
+     (the legitimate one), PLUS a separate, clearly-labeled EXPERIMENTAL
+     "Form-Adjusted" order that nudges the ranking using recent form (see
+     FORM_ADJUST_WEIGHT above). The two are kept side by side rather than
+     merged into one number, on purpose -- until a results tracker exists
+     for this project, there's no way to prove the form weight actually
+     helps, so the market-only order stays the "real" one and the
+     form-adjusted one stays visibly an experiment to watch.
 
 Setup:
     pip3 install requests --break-system-packages
@@ -39,6 +47,15 @@ BASE = "https://horse-racing.p.rapidapi.com"
 REQUEST_DELAY = 0.6
 RECENT_FORM_RUNS = 6  # how many of a horse's most recent runs feed the form score
 MIN_RUNNERS = 3
+
+# How much weight Recent Form gets in the EXPERIMENTAL "Form-Adjusted" order,
+# vs. the (validated, real) market probability. Kept deliberately low and
+# explicit -- this number is a guess, not a fitted/backtested weight, because
+# there's no results tracker for this project yet to calibrate it against.
+# Raise this only once real hit-rate data says a higher form weight actually
+# helps -- until then, 0.3 means the market still dominates the ranking and
+# form can only re-order closely-matched horses, not flip a big favorite.
+FORM_ADJUST_WEIGHT = 0.3
 
 
 def _headers():
@@ -273,6 +290,53 @@ def harville_place_probabilities(win_probs, place_count):
     return place_prob
 
 
+def _min_max_normalize(values_by_id):
+    """values_by_id: {id: float}. Returns {id: 0..1} scaled within just
+    this set (i.e. within one race) -- min-max rather than a fixed scale,
+    since raw market_prob and raw form_score live on completely different
+    numeric ranges and only their RELATIVE spread within a race matters
+    here. A race where every horse is bunched tightly still spreads out
+    to use the full 0-1 range -- that's intentional (it reflects "who's
+    ahead of whom in this field", not an absolute score), not a bug.
+    Returns all 0.5 if every value is identical (avoids a divide-by-zero
+    and avoids the normalization itself creating fake separation)."""
+    if not values_by_id:
+        return {}
+    vals = list(values_by_id.values())
+    lo, hi = min(vals), max(vals)
+    if hi - lo < 1e-9:
+        return {hid: 0.5 for hid in values_by_id}
+    return {hid: (v - lo) / (hi - lo) for hid, v in values_by_id.items()}
+
+
+def build_form_adjusted_order(runners, weight=FORM_ADJUST_WEIGHT):
+    """EXPERIMENTAL top-4 order that blends de-vigged market probability
+    with recency-weighted form, both min-max normalized within this race
+    first so they're on the same 0-1 scale before blending. Market keeps
+    (1 - weight) of the say by default, form gets `weight` -- see
+    FORM_ADJUST_WEIGHT's comment for why that number is a starting guess,
+    not a calibrated one. Only runners with BOTH a market_prob and a
+    form_score are eligible (can't blend a number that isn't there)."""
+    eligible = [r for r in runners if r.get("market_prob") is not None and r.get("form_score") is not None]
+    if not eligible:
+        return []
+    market_norm = _min_max_normalize({r["id_horse"]: r["market_prob"] for r in eligible})
+    form_norm = _min_max_normalize({r["id_horse"]: r["form_score"] for r in eligible})
+    blended = []
+    for r in eligible:
+        hid = r["id_horse"]
+        score = (1 - weight) * market_norm[hid] + weight * form_norm[hid]
+        blended.append((score, r))
+    blended.sort(key=lambda x: -x[0])
+    return [
+        {"rank": i + 1, "name": r["name"], "number": r.get("number"),
+         "id_horse": r.get("id_horse"),
+         "market_prob": r.get("market_prob"), "form_score": r.get("form_score"),
+         "blended_score": round(score, 4)}
+        for i, (score, r) in enumerate(blended[:4])
+    ]
+
+
 def build_predictions(target_date=None):
     target_date = target_date or date.today()
     print(f"Fetching racecards for {target_date.isoformat()}...")
@@ -351,9 +415,14 @@ def build_predictions(target_date=None):
         # ---------------------------------------------------------------
         projected_order = [
             {"rank": i + 1, "name": r["name"], "number": r.get("number"),
-             "market_prob": r["market_prob"]}
+             "id_horse": r.get("id_horse"), "market_prob": r["market_prob"]}
             for i, r in enumerate(by_market[:4])
         ]
+
+        # EXPERIMENTAL alternate order -- see build_form_adjusted_order's
+        # docstring and FORM_ADJUST_WEIGHT above for why this is kept
+        # separate from projected_order rather than replacing it.
+        form_adjusted_order = build_form_adjusted_order(runners)
 
         predictions.append({
             "id_race": rc["id_race"], "course": rc.get("course"), "date": rc.get("date"),
@@ -361,6 +430,7 @@ def build_predictions(target_date=None):
             "prize": rc.get("prize"), "runners": runners,
             "jumps": jumps, "place_count": place_count, "place_fraction": place_fraction,
             "projected_order": projected_order,
+            "form_adjusted_order": form_adjusted_order,
         })
     return predictions
 
@@ -557,14 +627,16 @@ HTML_TEMPLATE = """<!DOCTYPE html><html><head><meta charset="utf-8">
   <div style="margin-bottom:8px"><b>Rank (e.g. "1/6")</b> — this horse's recency-weighted form ranks #1 out of 6 runners in its own race. Recent runs count more than older ones.</div>
   <div style="margin-bottom:8px"><b style="color:#ff9a2e">Best odds / Place odds</b> — best odds is the highest decimal WIN price seen across bookmakers at last fetch. Place odds is that price scaled down to the standard each-way place fraction (1/4 or 1/5) for this field size. Stake × odds = total payout either way. Odds move right up to post time.</div>
   <div><b>Place terms (e.g. "1/4, top 3")</b> — standard UK each-way terms for this field size: place odds fraction, and how many finishing positions actually get paid. Races under 5 runners are win-only, no each-way part exists.</div>
-  <div style="margin-bottom:8px"><b style="color:#7dd3a8">🏁 Projected order</b> — each race card's top-4 pre-race ranking, most likely winner through 4th, by de-vigged market win probability. This is the same win % already shown per horse, just laid out as an ordered list — not a separate prediction, and not a guess at who "should" finish where based on a horse's own past best.</div>
+  <div style="margin-bottom:8px"><b style="color:#7dd3a8">🏁 Projected order</b> — each race card's top-4 pre-race ranking, most likely winner through 4th, by de-vigged market win probability alone. This is the same win % already shown per horse, just laid out as an ordered list — not a separate prediction, and not a guess at who "should" finish where based on a horse's own past best.</div>
+  <div style="margin-bottom:8px"><b style="color:#ff9a2e">🧪 Form-adjusted order</b> — a second, EXPERIMENTAL top-4 that blends market probability with recent form (market keeps the majority say by default). This can re-order the market-only list above — that's the point, it exists to surface exactly the case where a horse's recent form disagrees with its price. There's no results tracker for Horse Racing yet, so this blend weight is a starting guess, not a calibrated one — treat any difference from the pure market order as a lead to watch, not a sharper prediction, until real outcomes back it up.</div>
   <div style="margin-top:10px;padding-top:10px;border-top:1px solid #2a4a34;color:#8ba">
     <b>Where to focus:</b> Market Win %'s are the closest thing here to an actual calibrated prediction
     for the WIN market. For each-way specifically, the Each-Way Picks panel (ranked by place chance, not
     win chance) is the right one to check -- short-priced favorites are usually the WEAKEST each-way
-    value, since their place chance adds little on top of an already-high win chance. Form and the
-    Form/Market Gap are raw, unvalidated screens with no track record yet. The strongest signal right
-    now is a horse appearing in <b>both</b> Market Favorites and Recent Form at once.
+    value, since their place chance adds little on top of an already-high win chance. Form, the
+    Form/Market Gap, and the Form-adjusted order are raw/experimental screens with no track record yet.
+    The strongest signal right now is a horse appearing in <b>both</b> Market Favorites and Recent Form
+    at once.
   </div>
 </div>
 
@@ -586,11 +658,17 @@ RACE_CARD_TEMPLATE = """<div style="background:#1a1310;border-radius:12px;paddin
   <div style="font-size:11px;color:#998;margin-bottom:4px">{course} {time} · {going} · {distance}{place_terms_str}</div>
   <div style="font-size:15px;font-weight:bold;margin-bottom:10px">{title}</div>
   {projected_order_html}
+  {form_adjusted_html}
   {runner_rows}
 </div>"""
 
 PROJECTED_ORDER_TEMPLATE = """<div style="background:#0f1a12;border:1px solid #2a4a34;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
   <span style="color:#7dd3a8;font-weight:bold">🏁 Projected order </span><span style="color:#998">(by win %, before the race)</span><br>
+  {picks}
+</div>"""
+
+FORM_ADJUSTED_TEMPLATE = """<div style="background:#1f180f;border:1px dashed #4a3a20;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#ff9a2e;font-weight:bold">🧪 Form-adjusted order </span><span style="color:#998">(experimental — {market_pct}% market / {form_pct}% form, unvalidated)</span><br>
   {picks}
 </div>"""
 
@@ -623,9 +701,23 @@ def make_html(predictions):
         else:
             projected_order_html = ""
 
+        fa = p.get("form_adjusted_order") or []
+        if fa:
+            fa_picks_str = " &nbsp;·&nbsp; ".join(
+                f"<b>{pk['rank']}.</b> {pk['name']}" for pk in fa
+            )
+            form_adjusted_html = FORM_ADJUSTED_TEMPLATE.format(
+                picks=fa_picks_str,
+                market_pct=round((1 - FORM_ADJUST_WEIGHT) * 100),
+                form_pct=round(FORM_ADJUST_WEIGHT * 100),
+            )
+        else:
+            form_adjusted_html = ""
+
         cards += RACE_CARD_TEMPLATE.format(
             course=p["course"], time=p["date"][11:16], going=p.get("going") or "",
             distance=p.get("distance") or "", title=p["title"], runner_rows=runner_rows,
+            form_adjusted_html=form_adjusted_html,
             place_terms_str=place_terms_str, projected_order_html=projected_order_html,
         )
     if not cards:
@@ -695,3 +787,12 @@ if __name__ == "__main__":
     with open("docs/horse-racing/horse_racing.json", "w") as f:
         json.dump(predictions, f, indent=2, default=str)
     print(f"\nDone — {len(predictions)} races processed.")
+
+    # Results tracker: logs today's picks, checks yesterday-and-earlier
+    # pending picks against real results, rebuilds the dashboard. Wrapped
+    # so a tracker failure never breaks the main predictions run.
+    try:
+        import results_tracker
+        results_tracker.run_results_tracker(predictions)
+    except Exception as e:
+        print(f"[!] results tracker failed (main run unaffected): {e}")
