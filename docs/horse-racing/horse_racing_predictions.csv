@@ -1,136 +1,148 @@
-Date,Course,Race,Horse,Number,Jockey,Trainer,Form,FormScore,FormRank,MarketProb,MarketRank,BestOdds
-2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Benown(IRE),2,J. M. Sheridan,"Joseph Patrick OBrien, Ireland",2,0.5,1,0.4432,1,1.615
-2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Controlla(IRE),9,D. W. OConnor,"Robson De Aguiar, Ireland",2056,0.2156,3,0.1597,2,4.5
-2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Heralds March(IRE),4,C. T. Keane,"G. M. Lyons, Ireland",7,0.1429,4,0.1313,3,5.5
-2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Jungle Wise(IRE),5,Ben Martin Coen,"Daniel James Murphy, Ireland",2,0.5,2,0.0724,4,10.0
-2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Sonny Hayes(IRE),7,William James Lee,"Robson De Aguiar, Ireland",,,,0.0542,5,13.0
-2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Starlit(IRE),14,Keithen Kennedy,"Mrs J. Harrington, Ireland",60,0.129,6,0.0406,6,19.0
-2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Shake It Out,6,R. P. Whelan,"Kieran Patrick Cotter, Ireland",,,,0.0138,7,51.0
-2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Katty(IRE),11,Seamie Heffernan,"Adrian Sexton, Ireland",88,0.125,8,0.0138,8,51.0
-2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Royal Sovereign(IRE),13,Wesley Joyce,"Michael Mulvany, Ireland",,,,0.0138,9,51.0
-2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Ar Son Na Cuise(IRE),1,Declan Mcdonogh,"Joseph Patrick OBrien, Ireland",006,0.1282,7,0.013,10,67.0
-2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Champion Basma(IRE),3,C. D. Hayes,"E. J. ONeill, Ireland",7,0.1429,5,0.013,11,67.0
-2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Fen Phasee(IRE),10,R. P. Cleary,"Sean Davis, Ireland",,,,0.0112,12,101.0
-2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Brageiro(IRE),8,L. T. McAteer,"Ross OSullivan, Ireland",00,0.1,9,0.01,13,126.0
-2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Moon Gypsy(IRE),12,R. M. Mulligan,James G Burns,,,,0.01,14,126.0
-2026-09-26 14:00:00,Curragh,KWIFF MORE BANG FOR YOUR BET RATED,Killashee Warrior,1,C. D. Hayes,"Eddie &amp; Patrick Harty, Ireland",441-4783,0.3042,9,0.2006,1,3.75
-2026-09-26 14:00:00,Curragh,KWIFF MORE BANG FOR YOUR BET RATED,Lewis Carroll(IRE),4,W. M. Lordan,"Aidan OBrien, Ireland",9-1,0.6135,1,0.1737,2,4.333
-2026-09-26 14:00:00,Curragh,KWIFF MORE BANG FOR YOUR BET RATED,Oro Blanco(IRE),8,Keithen Kennedy,"Mrs J. Harrington, Ireland",531184,0.4551,3,0.1737,3,4.333
-2026-09-26 14:00:00,Curragh,KWIFF MORE BANG FOR YOUR BET RATED,Invincible Will(IRE),2,G. F. Carroll,"Gavin Patrick Cromwell, Ireland",10-281825,0.3761,5,0.1504,4,5.0
-2026-09-26 14:00:00,Curragh,KWIFF MORE BANG FOR YOUR BET RATED,Chapel Lane(IRE),6,William James Lee,"W. Mccreery, Ireland",373-67321,0.5225,2,0.1003,5,7.5
-2026-09-26 14:00:00,Curragh,KWIFF MORE BANG FOR YOUR BET RATED,Mumhan(IRE),5,Declan Mcdonogh,"J. S. Bolger, Ireland",15-04,0.3197,6,0.0836,6,9.0
-2026-09-26 14:00:00,Curragh,KWIFF MORE BANG FOR YOUR BET RATED,Kindergarten(IRE),3,S. McCullagh,"Mrs J. Harrington, Ireland",1-466,0.3189,7,0.0579,7,13.0
-2026-09-26 14:00:00,Curragh,KWIFF MORE BANG FOR YOUR BET RATED,Unauthorized(IRE),9,Reese Holohan,"Aidan Melia, Ireland",7851-718,0.4476,4,0.0358,8,21.0
-2026-09-26 14:00:00,Curragh,KWIFF MORE BANG FOR YOUR BET RATED,Lohoobb,7,N. G. Mccullagh,"M. C. Grassick, Ireland",25248180,0.3106,8,0.024,9,34.0
-2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Namiid(IRE),13,Ben Martin Coen,"John Patrick Murtagh, Ireland",24-314232,0.4675,5,0.1336,1,5.0
-2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Keke,3,C. T. Keane,"Edward Lynam, Ireland",13514440,0.2789,10,0.0992,2,6.5
-2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Red Evolution(IRE),11,Reese Holohan,"M. D. OCallaghan, Ireland",721-40712,0.5112,3,0.0921,3,7.0
-2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Moltophino(IRE),12,Declan Mcdonogh,"John Andrew Kinsella, Ireland",50-979921,0.4602,6,0.086,4,7.5
-2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Dark Ace(IRE),10,Adam Caffrey,"Adrian Mcguinness, Ireland",11330016,0.363,8,0.0774,5,8.5
-2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Rosie Frith(IRE),6,J. Kearney,"Patrick Magee, Ireland",1-8014410,0.4389,7,0.0616,6,11.0
-2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Gazelle Dor(IRE),5,W. M. Lordan,"M. C. Grassick, Ireland",10-702240,0.2588,13,0.0537,8,12.0
-2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Stag Night(IRE),8,William James Lee,"W. Mccreery, Ireland",715-32150,0.362,9,0.0553,7,12.0
-2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Amerilis,15,Nicola Burns,"Gillian Scott, Ireland",6-4926212,0.5373,2,0.0496,9,13.0
-2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),The Highway Rat(IRE),4,J. M. Sheridan,"Andrew Oliver, Ireland",46-626090,0.1573,20,0.0339,10,19.0
-2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Bounty(IRE),9,J. J. G. Ryan,"Edward Lynam, Ireland",213/8094-,0.2438,17,0.0339,11,19.0
-2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Kendall Roy,1,C. D. Hayes,"Miss Kate McGivern, Ireland",1-0019368,0.2556,14,0.0307,12,21.0
-2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Erosandpsyche(IRE),2,G. F. Carroll,"Daniel James Murphy, Ireland",33825825,0.2789,11,0.0307,13,21.0
-2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Cardiff By The Sea(IRE),14,J. Pietropaolo,"J. A. Stack, Ireland",247-10755,0.254,15,0.0307,14,21.0
-2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Cuban Grey,16,R. M. Mulligan,"P. J. McKenna, Ireland",51794350,0.1869,18,0.028,15,23.0
-2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Buddy Batt(IRE),19,R. P. Cleary,"Tracey Collins, Ireland",11-315604,0.2784,12,0.028,16,23.0
-2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Harrys Hill,20,S. A. Wallace,"Martin Hassett, Ireland",67060621,0.4698,4,0.0241,17,29.0
-2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Frescobaldi(IRE),7,T. Casey,"Daniel James Murphy, Ireland",52153-506,0.2483,16,0.019,18,34.0
-2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Heddon Street(IRE),17,Wesley Joyce,"Leonard Paul Flynn, Ireland",1-22,0.6253,1,0.0168,19,41.0
-2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Sommelier,18,N. M. Crosse,"Kieran Patrick Cotter, Ireland",87150000,0.1807,19,0.0157,20,41.0
-2026-09-26 15:10:00,Curragh,CHURCHILL TYRES BERESFORD STAKES (Group 2),Noble Exhibit(IRE),3,W. M. Lordan,"Aidan OBrien, Ireland",31,0.7101,1,0.4378,1,2.0
-2026-09-26 15:10:00,Curragh,CHURCHILL TYRES BERESFORD STAKES (Group 2),City Of Dubai(IRE),1,William James Lee,"P. Twomey, Ireland",125,0.4982,3,0.1998,2,4.333
-2026-09-26 15:10:00,Curragh,CHURCHILL TYRES BERESFORD STAKES (Group 2),Shakespeare,4,C. T. Keane,"Aidan OBrien, Ireland",3217,0.4828,4,0.1779,3,5.0
-2026-09-26 15:10:00,Curragh,CHURCHILL TYRES BERESFORD STAKES (Group 2),Venetian Power(IRE),6,Declan Mcdonogh,"Joseph Patrick OBrien, Ireland",415,0.4732,5,0.0771,4,13.0
-2026-09-26 15:10:00,Curragh,CHURCHILL TYRES BERESFORD STAKES (Group 2),Drumbeat(IRE),2,R. P. Whelan,"Aidan OBrien, Ireland",631,0.5739,2,0.0671,5,15.0
-2026-09-26 15:10:00,Curragh,CHURCHILL TYRES BERESFORD STAKES (Group 2),Tommy Quick(USA),5,J. M. Sheridan,"Joseph Patrick OBrien, Ireland",7,0.1429,6,0.0403,6,23.0
-2026-09-26 15:45:00,Curragh,IZUZU IRELAND HANDICAP,Excellent Believe,1,C. T. Keane,"Stephen Thorne, Ireland",122-33007,0.1985,8,0.125,2,6.0
-2026-09-26 15:45:00,Curragh,IZUZU IRELAND HANDICAP,Dmaniac,5,William James Lee,"Martin Hassett, Ireland",2931-1520,0.436,2,0.1277,1,6.0
-2026-09-26 15:45:00,Curragh,IZUZU IRELAND HANDICAP,Headmaster,6,Reese Holohan,"Edward Lynam, Ireland",81-712000,0.2481,6,0.125,3,6.0
-2026-09-26 15:45:00,Curragh,IZUZU IRELAND HANDICAP,Unique Journey(IRE),2,Ben Martin Coen,"Daniel James Murphy, Ireland",711-24027,0.3332,4,0.1154,4,6.5
-2026-09-26 15:45:00,Curragh,IZUZU IRELAND HANDICAP,City House(IRE),4,Adam Caffrey,"Adrian Mcguinness, Ireland",05484072,0.2602,5,0.091,5,8.5
-2026-09-26 15:45:00,Curragh,IZUZU IRELAND HANDICAP,Rahmi(IRE),3,R. M. Mulligan,"John Patrick Murtagh, Ireland",6-9806260,0.1946,10,0.0833,7,9.0
-2026-09-26 15:45:00,Curragh,IZUZU IRELAND HANDICAP,Eddie G(IRE),9,Declan Mcdonogh,"Adrian Mcguinness, Ireland",93911853,0.4064,3,0.0858,6,9.0
-2026-09-26 15:45:00,Curragh,IZUZU IRELAND HANDICAP,Love Billy Boy(IRE),7,G. F. Carroll,"G. OLeary, Ireland",611290-95,0.2444,7,0.0682,9,11.0
-2026-09-26 15:45:00,Curragh,IZUZU IRELAND HANDICAP,Uncle Goalie(IRE),10,R. P. Cleary,"Rory Devine, Ireland",431,0.5948,1,0.0756,8,11.0
-2026-09-26 15:45:00,Curragh,IZUZU IRELAND HANDICAP,Punica Granatum(IRE),11,Keithen Kennedy,"Mrs J. Harrington, Ireland",420-20U36,0.1952,9,0.0625,10,12.0
-2026-09-26 15:45:00,Curragh,IZUZU IRELAND HANDICAP,Temperance(IRE),8,C. D. Hayes,"Miss Kate McGivern, Ireland",558-60778,0.133,11,0.0406,11,19.0
-2026-09-26 16:20:00,Curragh,GOFFS MILLION,Trean(IRE),12,William James Lee,"P. Twomey, Ireland",30134,0.3981,11,0.1647,1,4.0
-2026-09-26 16:20:00,Curragh,GOFFS MILLION,Green Dreamer(IRE),5,Declan Mcdonogh,"Joseph Patrick OBrien, Ireland",5135,0.4045,10,0.1453,2,5.0
-2026-09-26 16:20:00,Curragh,GOFFS MILLION,King Of Cloughan(IRE),7,J. M. Sheridan,"Joseph Patrick OBrien, Ireland",42128,0.4474,9,0.1122,3,6.0
-2026-09-26 16:20:00,Curragh,GOFFS MILLION,Carry The Flag(IRE),2,W. M. Lordan,"Aidan OBrien, Ireland",12917420,0.3137,14,0.0911,5,8.0
-2026-09-26 16:20:00,Curragh,GOFFS MILLION,Bayside View(IRE),15,Ben Martin Coen,Michael Bell,2126,0.4867,7,0.0945,4,8.0
-2026-09-26 16:20:00,Curragh,GOFFS MILLION,Ballinea Star(IRE),14,D. W. OConnor,"Robson De Aguiar, Ireland",54114,0.5668,5,0.0712,6,9.5
-2026-09-26 16:20:00,Curragh,GOFFS MILLION,Dorigo(IRE),4,Kevin Stott,Kevin Ryan,27243,0.3353,12,0.0388,7,17.0
-2026-09-26 16:20:00,Curragh,GOFFS MILLION,Critical Reason(IRE),3,C. T. Keane,"G. M. Lyons, Ireland",,,,0.0314,9,21.0
-2026-09-26 16:20:00,Curragh,GOFFS MILLION,Nobelos(IRE),10,Rob Hornby,Charles Hills,41,0.6739,1,0.034,8,23.0
-2026-09-26 16:20:00,Curragh,GOFFS MILLION,Hi Corbett Court(IRE),6,Siobhan Rutledge,"P. Twomey, Ireland",3051,0.4846,8,0.0276,10,26.0
-2026-09-26 16:20:00,Curragh,GOFFS MILLION,Be In Love(IRE),16,R. P. Whelan,"Aidan OBrien, Ireland",5,0.2,18,0.0246,11,29.0
-2026-09-26 16:20:00,Curragh,GOFFS MILLION,My Lucky Journey(IRE),8,Seamie Heffernan,"J. A. Stack, Ireland",45,0.2217,17,0.0202,15,34.0
-2026-09-26 16:20:00,Curragh,GOFFS MILLION,Thomas Chippendale(IRE),11,Jack Cleary,"Aidan OBrien, Ireland",36,0.2391,16,0.0245,12,34.0
-2026-09-26 16:20:00,Curragh,GOFFS MILLION,Waasil,13,Sam James,K. R. Burke,4113,0.642,2,0.0245,13,34.0
-2026-09-26 16:20:00,Curragh,GOFFS MILLION,Love Is(IRE),19,Finley Marsh,Richard Hughes,12064,0.3206,13,0.0218,14,34.0
-2026-09-26 16:20:00,Curragh,GOFFS MILLION,Blessed Voyager(IRE),1,G. F. Carroll,Ralph Beckett,122,0.6253,3,0.0201,16,41.0
-2026-09-26 16:20:00,Curragh,GOFFS MILLION,Roeillaun(IRE),20,Adam Caffrey,"Noel Meade, Ireland",67231,0.5292,6,0.0185,17,41.0
-2026-09-26 16:20:00,Curragh,GOFFS MILLION,Eyeconic(IRE),18,G. M. Ryan,"J. A. Stack, Ireland",04,0.1848,19,0.0129,18,51.0
-2026-09-26 16:20:00,Curragh,GOFFS MILLION,Cashel Queen(IRE),17,C. D. Hayes,"Donnacha Aidan OBrien, Ireland",3241,0.5823,4,0.0128,19,67.0
-2026-09-26 16:20:00,Curragh,GOFFS MILLION,Nation Blaze(IRE),9,Andrew Joseph Slattery,"A. Slattery, Ireland",982,0.2804,15,0.0094,20,81.0
-2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Almazann(IRE),5,C. D. Hayes,"D. K. Weld, Ireland",2224,0.4112,1,0.1495,1,4.333
-2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Come What May(IRE),6,W. M. Lordan,"Aidan OBrien, Ireland",,,,0.1438,2,4.5
-2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,State Of Wyoming(IRE),14,William James Lee,"P. Twomey, Ireland",0,0.1,11,0.1295,3,5.0
-2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Kenough(FR),9,J. M. Sheridan,"Joseph Patrick OBrien, Ireland",5,0.2,6,0.1016,4,6.5
-2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Lets Smash It(IRE),10,D. W. OConnor,"Robson De Aguiar, Ireland",2-3349,0.2613,3,0.0878,5,7.5
-2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Leopold The First(IRE),3,R. C. Colgan,"Andrew Lee, Ireland",20722-226,0.375,2,0.0773,6,8.5
-2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Copper Dog(IRE),8,Ben Martin Coen,"John Patrick Murtagh, Ireland",,,,0.0588,7,11.0
-2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Big Jake(IRE),1,C. T. Keane,"Andrew Oliver, Ireland",4,0.25,4,0.0551,8,12.0
-2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Royal Ballet Blue(IRE),13,J. Pietropaolo,"Jack Foley, Ireland",6,0.1667,7,0.0381,9,17.0
-2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Vico Road(IRE),16,G. F. Carroll,"John Joseph Murphy, Ireland",54,0.2283,5,0.0341,10,19.0
-2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Plug In Hybrid(IRE),11,Adam Caffrey,"Noel Meade, Ireland",66,0.1667,8,0.0288,11,23.0
-2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Positive Thinking(IRE),12,Seamie Heffernan,"Miss Natalia Lupini, Ireland",,,,0.0223,12,29.0
-2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Conrad(IRE),7,L. T. McAteer,"J. J. Feane, Ireland",,,,0.0166,13,41.0
-2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Toristar(IRE),15,R. P. Whelan,"Christopher David Timmons, Ireland",,,,0.0158,14,51.0
-2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Desert Swing(IRE),2,Reese Holohan,"Andrew Kinirons, Ireland",95,0.1614,9,0.0112,15,67.0
-2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Griselinia(IRE),17,R. P. Cleary,"Kevin Thomas Coleman, Ireland",8,0.125,10,0.0103,16,101.0
-2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,What Do You Say(IRE),18,J. J. G. Ryan,"Andrew Oliver, Ireland",0,0.1,12,0.0103,17,101.0
-2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Silverhillsox(IRE),4,Jack Cleary,"Kieran P. Egan, Ireland",0-0,0.1,13,0.0092,18,126.0
-2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Together Now(USA),21,R. P. Whelan,"Aidan OBrien, Ireland",2-,0.5,1,0.1612,1,3.75
-2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Goddess Of War(SAF),8,N. M. Crosse,"Mrs J. Harrington, Ireland",43,0.2971,5,0.0896,2,7.0
-2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Sunatia(FR),20,C. D. Hayes,"D. K. Weld, Ireland",022,0.3997,2,0.0896,3,7.0
-2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Camelot Queen(IRE),5,W. M. Lordan,"Aidan OBrien, Ireland",6-3634,0.2574,6,0.0794,4,8.0
-2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Sangreal(IRE),15,J. M. Sheridan,"Joseph Patrick OBrien, Ireland",233,0.3751,3,0.0793,5,8.0
-2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Lookingforarainbow(USA),9,G. M. Ryan,"Donnacha Aidan OBrien, Ireland",347-5,0.2164,10,0.0604,8,10.0
-2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Ridersinthesky(GER),13,S. McCullagh,"Mrs J. Harrington, Ireland",3336-0,0.2191,9,0.0637,6,10.0
-2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Saxony Charms(IRE),16,G. F. Carroll,"Andrew Oliver, Ireland",3554,0.2393,8,0.0637,7,10.0
-2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Emberelle(IRE),7,C. T. Keane,"John Joseph Murphy, Ireland",8,0.125,14,0.0576,9,11.0
-2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Christmas Carol(IRE),6,Jack Cleary,"Aidan OBrien, Ireland",,,,0.0465,10,13.0
-2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Serendipia(IRE),17,William James Lee,"W. Mccreery, Ireland",684335,0.2492,7,0.0465,11,13.0
-2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Palina(GER),11,Seamie Heffernan,"Kevin Thomas Coleman, Ireland",3,0.3333,4,0.0367,12,17.0
-2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Riyazanka(IRE),14,Ben Martin Coen,"John Patrick Murtagh, Ireland",7,0.1429,11,0.031,13,21.0
-2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Seventh Sea(GER),18,Adam Caffrey,"D. K. Weld, Ireland",,,,0.0206,14,34.0
-2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Socratea(IRE),19,Declan Mcdonogh,"W. Mccreery, Ireland",70,0.1186,16,0.0119,15,51.0
-2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Brigids Charm(IRE),4,Reese Holohan,"Mark Fahey, Ireland",7,0.1429,12,0.0107,16,81.0
-2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Molls Gap(IRE),10,J. A. Powell,"John Patrick Murtagh, Ireland",0,0.1,19,0.0107,17,81.0
-2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Isthatrightkatie(IRE),1,Wesley Joyce,"Miss Katy Brown, Ireland",8-,0.125,15,0.0103,18,101.0
-2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Queen Of Chenab(IRE),2,G. Abbas,"Patrick J. Flynn, Ireland",06,0.1377,13,0.0103,19,101.0
-2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Ballysax Boo,3,J. J. G. Ryan,"Miss Katy Brown, Ireland",9,0.1111,17,0.0103,20,101.0
-2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Pattyandselma(IRE),12,R. P. Cleary,"Adrian Mcguinness, Ireland",09,0.1063,18,0.0103,21,101.0
-2026-09-26 13:35:00,Haydock Park,WILLIAM HILL EPIC BOOSTS HANDICAP (2),Eternal Force,5,Cieren Fallon,William Haggas,2111-7267,0.3642,6,0.1702,1,5.0
-2026-09-26 13:35:00,Haydock Park,WILLIAM HILL EPIC BOOSTS HANDICAP (2),Centigrade(IRE),3,Hector Crouch,Ralph Beckett,21/168,0.4659,3,0.1514,2,6.0
-2026-09-26 13:35:00,Haydock Park,WILLIAM HILL EPIC BOOSTS HANDICAP (2),Commanders Intent(FR),7,Callum Rodriguez,George Scott,131222-53,0.4235,4,0.1177,4,7.5
-2026-09-26 13:35:00,Haydock Park,WILLIAM HILL EPIC BOOSTS HANDICAP (2),Cerulean Bay(IRE),1,Daniel Tudhope,David OMeara,42584290,0.2016,8,0.1099,5,8.0
-2026-09-26 13:35:00,Haydock Park,WILLIAM HILL EPIC BOOSTS HANDICAP (2),Godwinson,4,David Probert,Jack Channon,11500-000,0.1078,10,0.118,3,8.0
-2026-09-26 13:35:00,Haydock Park,WILLIAM HILL EPIC BOOSTS HANDICAP (2),Looka(USA),9,Sean Levey,Marco Botti,615-51,0.564,1,0.1064,6,8.5
-2026-09-26 13:35:00,Haydock Park,WILLIAM HILL EPIC BOOSTS HANDICAP (2),Arctic Thunder(IRE),6,Ashley Lewis,Ed Walker,4-0768116,0.4894,2,0.0695,7,13.0
-2026-09-26 13:35:00,Haydock Park,WILLIAM HILL EPIC BOOSTS HANDICAP (2),Mister Winston,2,P. J. Mcdonald,Andrew Balding,0-1610078,0.2138,7,0.0632,8,15.0
-2026-09-26 13:35:00,Haydock Park,WILLIAM HILL EPIC BOOSTS HANDICAP (2),Desperate Dan(IRE),10,George Wood,Peter Chapple-hyam,6/06141-96,0.3937,5,0.0541,9,19.0
-2026-09-26 13:35:00,Haydock Park,WILLIAM HILL EPIC BOOSTS HANDICAP (2),Checkandchallenge,8,Callum Shepherd,William Knight,39-060300,0.147,9,0.0396,10,23.0
-2026-09-26 14:27:00,Newmarket,TATTERSALLS SCEPTRE SESSIONS CHEVELEY PARK STAKES (Group 1) (1),Sun Goddess(IRE),6,Ryan Moore,"Aidan OBrien, Ireland",2121111,0.949,1,0.3873,1,2.38
-2026-09-26 14:27:00,Newmarket,TATTERSALLS SCEPTRE SESSIONS CHEVELEY PARK STAKES (Group 1) (1),Senorita Bonita(IRE),4,Oisin Murphy,Simon &amp; Ed Crisford,1211,0.8949,2,0.3185,2,2.875
-2026-09-26 14:27:00,Newmarket,TATTERSALLS SCEPTRE SESSIONS CHEVELEY PARK STAKES (Group 1) (1),Libertango(IRE),2,Billy Loughnane,George Boughey,1121,0.8634,4,0.1594,3,6.0
-2026-09-26 14:27:00,Newmarket,TATTERSALLS SCEPTRE SESSIONS CHEVELEY PARK STAKES (Group 1) (1),Alwaysanangel(IRE),1,William Buick,"Joseph Patrick OBrien, Ireland",131,0.7828,5,0.0834,4,11.0
-2026-09-26 14:27:00,Newmarket,TATTERSALLS SCEPTRE SESSIONS CHEVELEY PARK STAKES (Group 1) (1),Moonrise(IRE),3,Tom Marquand,Andrew Balding,1211,0.8949,3,0.0426,5,21.0
-2026-09-26 14:27:00,Newmarket,TATTERSALLS SCEPTRE SESSIONS CHEVELEY PARK STAKES (Group 1) (1),Snowing(IRE),5,Rossa Ryan,"Aidan OBrien, Ireland",52623,0.3519,6,0.0089,6,101.0
+Date,Course,Race,Horse,Number,Jockey,Trainer,Form,FormScore,FormRank,MarketProb,MarketRank,BestOdds,PlaceProb,PlaceOdds,PlaceCount,PlaceFraction
+2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Benown(IRE),2,J. M. Sheridan,"Joseph Patrick OBrien, Ireland",2,0.5,1,0.4432,1,1.615,0.8718,1.15,3,0.25
+2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Controlla(IRE),9,D. W. OConnor,"Robson De Aguiar, Ireland",2056,0.2156,3,0.1597,2,4.5,0.5492,1.88,3,0.25
+2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Heralds March(IRE),4,C. T. Keane,"G. M. Lyons, Ireland",7,0.1429,4,0.1313,3,5.5,0.477,2.12,3,0.25
+2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Jungle Wise(IRE),5,Ben Martin Coen,"Daniel James Murphy, Ireland",2,0.5,2,0.0724,4,10.0,0.2887,3.25,3,0.25
+2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Sonny Hayes(IRE),7,William James Lee,"Robson De Aguiar, Ireland",,,,0.0542,5,13.0,0.2214,4.0,3,0.25
+2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Starlit(IRE),14,Keithen Kennedy,"Mrs J. Harrington, Ireland",60,0.129,6,0.0406,6,19.0,0.1687,5.5,3,0.25
+2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Shake It Out,6,R. P. Whelan,"Kieran Patrick Cotter, Ireland",,,,0.0138,7,51.0,0.0591,13.5,3,0.25
+2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Katty(IRE),11,Seamie Heffernan,"Adrian Sexton, Ireland",88,0.125,8,0.0138,8,51.0,0.0591,13.5,3,0.25
+2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Royal Sovereign(IRE),13,Wesley Joyce,"Michael Mulvany, Ireland",,,,0.0138,9,51.0,0.0591,13.5,3,0.25
+2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Ar Son Na Cuise(IRE),1,Declan Mcdonogh,"Joseph Patrick OBrien, Ireland",006,0.1282,7,0.013,10,67.0,0.0558,17.5,3,0.25
+2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Champion Basma(IRE),3,C. D. Hayes,"E. J. ONeill, Ireland",7,0.1429,5,0.013,11,67.0,0.0558,17.5,3,0.25
+2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Fen Phasee(IRE),10,R. P. Cleary,"Sean Davis, Ireland",,,,0.0112,12,101.0,0.0481,26.0,3,0.25
+2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Brageiro(IRE),8,L. T. McAteer,"Ross OSullivan, Ireland",00,0.1,9,0.01,13,126.0,0.043,32.25,3,0.25
+2026-09-26 13:30:00,Curragh,MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN,Moon Gypsy(IRE),12,R. M. Mulligan,James G Burns,,,,0.01,14,126.0,0.043,32.25,3,0.25
+2026-09-26 14:00:00,Curragh,KWIFF MORE BANG FOR YOUR BET RATED,Killashee Warrior,1,C. D. Hayes,"Eddie &amp; Patrick Harty, Ireland",441-4783,0.3042,9,0.2006,1,3.75,0.5532,1.69,3,0.25
+2026-09-26 14:00:00,Curragh,KWIFF MORE BANG FOR YOUR BET RATED,Lewis Carroll(IRE),4,W. M. Lordan,"Aidan OBrien, Ireland",9-1,0.6135,1,0.1737,2,4.333,0.5001,1.83,3,0.25
+2026-09-26 14:00:00,Curragh,KWIFF MORE BANG FOR YOUR BET RATED,Oro Blanco(IRE),8,Keithen Kennedy,"Mrs J. Harrington, Ireland",531184,0.4551,3,0.1737,3,4.333,0.5001,1.83,3,0.25
+2026-09-26 14:00:00,Curragh,KWIFF MORE BANG FOR YOUR BET RATED,Invincible Will(IRE),2,G. F. Carroll,"Gavin Patrick Cromwell, Ireland",10-281825,0.3761,5,0.1504,4,5.0,0.4488,2.0,3,0.25
+2026-09-26 14:00:00,Curragh,KWIFF MORE BANG FOR YOUR BET RATED,Chapel Lane(IRE),6,William James Lee,"W. Mccreery, Ireland",373-67321,0.5225,2,0.1003,5,7.5,0.3211,2.62,3,0.25
+2026-09-26 14:00:00,Curragh,KWIFF MORE BANG FOR YOUR BET RATED,Mumhan(IRE),5,Declan Mcdonogh,"J. S. Bolger, Ireland",15-04,0.3197,6,0.0836,6,9.0,0.2734,3.0,3,0.25
+2026-09-26 14:00:00,Curragh,KWIFF MORE BANG FOR YOUR BET RATED,Kindergarten(IRE),3,S. McCullagh,"Mrs J. Harrington, Ireland",1-466,0.3189,7,0.0579,7,13.0,0.1953,4.0,3,0.25
+2026-09-26 14:00:00,Curragh,KWIFF MORE BANG FOR YOUR BET RATED,Unauthorized(IRE),9,Reese Holohan,"Aidan Melia, Ireland",7851-718,0.4476,4,0.0358,8,21.0,0.1238,6.0,3,0.25
+2026-09-26 14:00:00,Curragh,KWIFF MORE BANG FOR YOUR BET RATED,Lohoobb,7,N. G. Mccullagh,"M. C. Grassick, Ireland",25248180,0.3106,8,0.024,9,34.0,0.0841,9.25,3,0.25
+2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Namiid(IRE),13,Ben Martin Coen,"John Patrick Murtagh, Ireland",24-314232,0.4675,5,0.1336,1,5.0,0.4723,2.0,4,0.25
+2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Keke,3,C. T. Keane,"Edward Lynam, Ireland",13514440,0.2789,10,0.0992,2,6.5,0.3755,2.38,4,0.25
+2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Red Evolution(IRE),11,Reese Holohan,"M. D. OCallaghan, Ireland",721-40712,0.5112,3,0.0921,3,7.0,0.3534,2.5,4,0.25
+2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Moltophino(IRE),12,Declan Mcdonogh,"John Andrew Kinsella, Ireland",50-979921,0.4602,6,0.086,4,7.5,0.3339,2.62,4,0.25
+2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Dark Ace(IRE),10,Adam Caffrey,"Adrian Mcguinness, Ireland",11330016,0.363,8,0.0774,5,8.5,0.3054,2.88,4,0.25
+2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Rosie Frith(IRE),6,J. Kearney,"Patrick Magee, Ireland",1-8014410,0.4389,7,0.0616,6,11.0,0.2502,3.5,4,0.25
+2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Gazelle Dor(IRE),5,W. M. Lordan,"M. C. Grassick, Ireland",10-702240,0.2588,13,0.0537,8,12.0,0.2212,3.75,4,0.25
+2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Stag Night(IRE),8,William James Lee,"W. Mccreery, Ireland",715-32150,0.362,9,0.0553,7,12.0,0.2272,3.75,4,0.25
+2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Amerilis,15,Nicola Burns,"Gillian Scott, Ireland",6-4926212,0.5373,2,0.0496,9,13.0,0.2058,4.0,4,0.25
+2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),The Highway Rat(IRE),4,J. M. Sheridan,"Andrew Oliver, Ireland",46-626090,0.1573,20,0.0339,10,19.0,0.1445,5.5,4,0.25
+2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Bounty(IRE),9,J. J. G. Ryan,"Edward Lynam, Ireland",213/8094-,0.2438,17,0.0339,11,19.0,0.1445,5.5,4,0.25
+2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Kendall Roy,1,C. D. Hayes,"Miss Kate McGivern, Ireland",1-0019368,0.2556,14,0.0307,12,21.0,0.1316,6.0,4,0.25
+2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Erosandpsyche(IRE),2,G. F. Carroll,"Daniel James Murphy, Ireland",33825825,0.2789,11,0.0307,13,21.0,0.1316,6.0,4,0.25
+2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Cardiff By The Sea(IRE),14,J. Pietropaolo,"J. A. Stack, Ireland",247-10755,0.254,15,0.0307,14,21.0,0.1316,6.0,4,0.25
+2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Cuban Grey,16,R. M. Mulligan,"P. J. McKenna, Ireland",51794350,0.1869,18,0.028,15,23.0,0.1206,6.5,4,0.25
+2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Buddy Batt(IRE),19,R. P. Cleary,"Tracey Collins, Ireland",11-315604,0.2784,12,0.028,16,23.0,0.1206,6.5,4,0.25
+2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Harrys Hill,20,S. A. Wallace,"Martin Hassett, Ireland",67060621,0.4698,4,0.0241,17,29.0,0.1045,8.0,4,0.25
+2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Frescobaldi(IRE),7,T. Casey,"Daniel James Murphy, Ireland",52153-506,0.2483,16,0.019,18,34.0,0.083,9.25,4,0.25
+2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Heddon Street(IRE),17,Wesley Joyce,"Leonard Paul Flynn, Ireland",1-22,0.6253,1,0.0168,19,41.0,0.0737,11.0,4,0.25
+2026-09-26 14:35:00,Curragh,KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap),Sommelier,18,N. M. Crosse,"Kieran Patrick Cotter, Ireland",87150000,0.1807,19,0.0157,20,41.0,0.069,11.0,4,0.25
+2026-09-26 15:10:00,Curragh,CHURCHILL TYRES BERESFORD STAKES (Group 2),Noble Exhibit(IRE),3,W. M. Lordan,"Aidan OBrien, Ireland",31,0.7101,1,0.4378,1,2.0,0.7283,1.25,2,0.25
+2026-09-26 15:10:00,Curragh,CHURCHILL TYRES BERESFORD STAKES (Group 2),City Of Dubai(IRE),1,William James Lee,"P. Twomey, Ireland",125,0.4982,3,0.1998,2,4.333,0.4381,1.83,2,0.25
+2026-09-26 15:10:00,Curragh,CHURCHILL TYRES BERESFORD STAKES (Group 2),Shakespeare,4,C. T. Keane,"Aidan OBrien, Ireland",3217,0.4828,4,0.1779,3,5.0,0.396,2.0,2,0.25
+2026-09-26 15:10:00,Curragh,CHURCHILL TYRES BERESFORD STAKES (Group 2),Venetian Power(IRE),6,Declan Mcdonogh,"Joseph Patrick OBrien, Ireland",415,0.4732,5,0.0771,4,13.0,0.1819,4.0,2,0.25
+2026-09-26 15:10:00,Curragh,CHURCHILL TYRES BERESFORD STAKES (Group 2),Drumbeat(IRE),2,R. P. Whelan,"Aidan OBrien, Ireland",631,0.5739,2,0.0671,5,15.0,0.1591,4.5,2,0.25
+2026-09-26 15:10:00,Curragh,CHURCHILL TYRES BERESFORD STAKES (Group 2),Tommy Quick(USA),5,J. M. Sheridan,"Joseph Patrick OBrien, Ireland",7,0.1429,6,0.0403,6,23.0,0.0967,6.5,2,0.25
+2026-09-26 15:45:00,Curragh,IZUZU IRELAND HANDICAP,Excellent Believe,1,C. T. Keane,"Stephen Thorne, Ireland",122-33007,0.1985,8,0.125,2,6.0,0.3627,2.25,3,0.25
+2026-09-26 15:45:00,Curragh,IZUZU IRELAND HANDICAP,Dmaniac,5,William James Lee,"Martin Hassett, Ireland",2931-1520,0.436,2,0.1277,1,6.0,0.3692,2.25,3,0.25
+2026-09-26 15:45:00,Curragh,IZUZU IRELAND HANDICAP,Headmaster,6,Reese Holohan,"Edward Lynam, Ireland",81-712000,0.2481,6,0.125,3,6.0,0.3627,2.25,3,0.25
+2026-09-26 15:45:00,Curragh,IZUZU IRELAND HANDICAP,Unique Journey(IRE),2,Ben Martin Coen,"Daniel James Murphy, Ireland",711-24027,0.3332,4,0.1154,4,6.5,0.3392,2.38,3,0.25
+2026-09-26 15:45:00,Curragh,IZUZU IRELAND HANDICAP,City House(IRE),4,Adam Caffrey,"Adrian Mcguinness, Ireland",05484072,0.2602,5,0.091,5,8.5,0.2761,2.88,3,0.25
+2026-09-26 15:45:00,Curragh,IZUZU IRELAND HANDICAP,Rahmi(IRE),3,R. M. Mulligan,"John Patrick Murtagh, Ireland",6-9806260,0.1946,10,0.0833,7,9.0,0.2552,3.0,3,0.25
+2026-09-26 15:45:00,Curragh,IZUZU IRELAND HANDICAP,Eddie G(IRE),9,Declan Mcdonogh,"Adrian Mcguinness, Ireland",93911853,0.4064,3,0.0858,6,9.0,0.262,3.0,3,0.25
+2026-09-26 15:45:00,Curragh,IZUZU IRELAND HANDICAP,Love Billy Boy(IRE),7,G. F. Carroll,"G. OLeary, Ireland",611290-95,0.2444,7,0.0682,9,11.0,0.2128,3.5,3,0.25
+2026-09-26 15:45:00,Curragh,IZUZU IRELAND HANDICAP,Uncle Goalie(IRE),10,R. P. Cleary,"Rory Devine, Ireland",431,0.5948,1,0.0756,8,11.0,0.2338,3.5,3,0.25
+2026-09-26 15:45:00,Curragh,IZUZU IRELAND HANDICAP,Punica Granatum(IRE),11,Keithen Kennedy,"Mrs J. Harrington, Ireland",420-20U36,0.1952,9,0.0625,10,12.0,0.1963,3.75,3,0.25
+2026-09-26 15:45:00,Curragh,IZUZU IRELAND HANDICAP,Temperance(IRE),8,C. D. Hayes,"Miss Kate McGivern, Ireland",558-60778,0.133,11,0.0406,11,19.0,0.1307,5.5,3,0.25
+2026-09-26 16:20:00,Curragh,GOFFS MILLION,Trean(IRE),12,William James Lee,"P. Twomey, Ireland",30134,0.3981,11,0.1654,1,4.0,0.5672,1.75,4,0.25
+2026-09-26 16:20:00,Curragh,GOFFS MILLION,Green Dreamer(IRE),5,Declan Mcdonogh,"Joseph Patrick OBrien, Ireland",5135,0.4045,10,0.1458,2,5.0,0.5215,2.0,4,0.25
+2026-09-26 16:20:00,Curragh,GOFFS MILLION,King Of Cloughan(IRE),7,J. M. Sheridan,"Joseph Patrick OBrien, Ireland",42128,0.4474,9,0.1126,3,6.0,0.4318,2.25,4,0.25
+2026-09-26 16:20:00,Curragh,GOFFS MILLION,Carry The Flag(IRE),2,W. M. Lordan,"Aidan OBrien, Ireland",12917420,0.3137,14,0.0915,5,8.0,0.3661,2.75,4,0.25
+2026-09-26 16:20:00,Curragh,GOFFS MILLION,Bayside View(IRE),15,Ben Martin Coen,Michael Bell,2126,0.4867,7,0.0948,4,8.0,0.3769,2.75,4,0.25
+2026-09-26 16:20:00,Curragh,GOFFS MILLION,Ballinea Star(IRE),14,D. W. OConnor,"Robson De Aguiar, Ireland",54114,0.5668,5,0.0715,6,9.5,0.2974,3.12,4,0.25
+2026-09-26 16:20:00,Curragh,GOFFS MILLION,Dorigo(IRE),4,Kevin Stott,Kevin Ryan,27243,0.3353,12,0.0389,7,17.0,0.1718,5.0,4,0.25
+2026-09-26 16:20:00,Curragh,GOFFS MILLION,Critical Reason(IRE),3,C. T. Keane,"G. M. Lyons, Ireland",,,,0.0315,9,21.0,0.1409,6.0,4,0.25
+2026-09-26 16:20:00,Curragh,GOFFS MILLION,Nobelos(IRE),10,Rob Hornby,Charles Hills,41,0.6739,1,0.0341,8,23.0,0.1518,6.5,4,0.25
+2026-09-26 16:20:00,Curragh,GOFFS MILLION,Hi Corbett Court(IRE),6,Siobhan Rutledge,"P. Twomey, Ireland",3051,0.4846,8,0.0277,10,26.0,0.1247,7.25,4,0.25
+2026-09-26 16:20:00,Curragh,GOFFS MILLION,Be In Love(IRE),16,R. P. Whelan,"Aidan OBrien, Ireland",5,0.2,18,0.0247,11,29.0,0.1118,8.0,4,0.25
+2026-09-26 16:20:00,Curragh,GOFFS MILLION,My Lucky Journey(IRE),8,Seamie Heffernan,"J. A. Stack, Ireland",45,0.2217,17,0.0202,15,34.0,0.0921,9.25,4,0.25
+2026-09-26 16:20:00,Curragh,GOFFS MILLION,Thomas Chippendale(IRE),11,Jack Cleary,"Aidan OBrien, Ireland",36,0.2391,16,0.0246,12,34.0,0.1113,9.25,4,0.25
+2026-09-26 16:20:00,Curragh,GOFFS MILLION,Love Is(IRE),19,Finley Marsh,Richard Hughes,12064,0.3206,13,0.0219,13,34.0,0.0996,9.25,4,0.25
+2026-09-26 16:20:00,Curragh,GOFFS MILLION,Blessed Voyager(IRE),1,G. F. Carroll,Ralph Beckett,122,0.6253,3,0.0193,16,41.0,0.0881,11.0,4,0.25
+2026-09-26 16:20:00,Curragh,GOFFS MILLION,Waasil,13,Sam James,K. R. Burke,4113,0.642,2,0.0216,14,41.0,0.0982,11.0,4,0.25
+2026-09-26 16:20:00,Curragh,GOFFS MILLION,Roeillaun(IRE),20,Adam Caffrey,"Noel Meade, Ireland",67231,0.5292,6,0.0185,17,41.0,0.0846,11.0,4,0.25
+2026-09-26 16:20:00,Curragh,GOFFS MILLION,Eyeconic(IRE),18,G. M. Ryan,"J. A. Stack, Ireland",04,0.1848,19,0.013,18,51.0,0.06,13.5,4,0.25
+2026-09-26 16:20:00,Curragh,GOFFS MILLION,Cashel Queen(IRE),17,C. D. Hayes,"Donnacha Aidan OBrien, Ireland",3241,0.5823,4,0.0129,19,67.0,0.0595,17.5,4,0.25
+2026-09-26 16:20:00,Curragh,GOFFS MILLION,Nation Blaze(IRE),9,Andrew Joseph Slattery,"A. Slattery, Ireland",982,0.2804,15,0.0094,20,81.0,0.0436,21.0,4,0.25
+2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Almazann(IRE),5,C. D. Hayes,"D. K. Weld, Ireland",2224,0.4112,1,0.1495,1,4.333,0.534,1.83,4,0.25
+2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Come What May(IRE),6,W. M. Lordan,"Aidan OBrien, Ireland",,,,0.1438,2,4.5,0.52,1.88,4,0.25
+2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,State Of Wyoming(IRE),14,William James Lee,"P. Twomey, Ireland",0,0.1,11,0.1295,3,5.0,0.4827,2.0,4,0.25
+2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Kenough(FR),9,J. M. Sheridan,"Joseph Patrick OBrien, Ireland",5,0.2,6,0.1016,4,6.5,0.4012,2.38,4,0.25
+2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Lets Smash It(IRE),10,D. W. OConnor,"Robson De Aguiar, Ireland",2-3349,0.2613,3,0.0878,5,7.5,0.3564,2.62,4,0.25
+2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Leopold The First(IRE),3,R. C. Colgan,"Andrew Lee, Ireland",20722-226,0.375,2,0.0773,6,8.5,0.3203,2.88,4,0.25
+2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Copper Dog(IRE),8,Ben Martin Coen,"John Patrick Murtagh, Ireland",,,,0.0588,7,11.0,0.2523,3.5,4,0.25
+2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Big Jake(IRE),1,C. T. Keane,"Andrew Oliver, Ireland",4,0.25,4,0.0551,8,12.0,0.238,3.75,4,0.25
+2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Royal Ballet Blue(IRE),13,J. Pietropaolo,"Jack Foley, Ireland",6,0.1667,7,0.0381,9,17.0,0.1697,5.0,4,0.25
+2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Vico Road(IRE),16,G. F. Carroll,"John Joseph Murphy, Ireland",54,0.2283,5,0.0341,10,19.0,0.1529,5.5,4,0.25
+2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Plug In Hybrid(IRE),11,Adam Caffrey,"Noel Meade, Ireland",66,0.1667,8,0.0288,11,23.0,0.1303,6.5,4,0.25
+2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Positive Thinking(IRE),12,Seamie Heffernan,"Miss Natalia Lupini, Ireland",,,,0.0223,12,29.0,0.102,8.0,4,0.25
+2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Conrad(IRE),7,L. T. McAteer,"J. J. Feane, Ireland",,,,0.0166,13,41.0,0.0767,11.0,4,0.25
+2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Toristar(IRE),15,R. P. Whelan,"Christopher David Timmons, Ireland",,,,0.0158,14,51.0,0.0731,13.5,4,0.25
+2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Desert Swing(IRE),2,Reese Holohan,"Andrew Kinirons, Ireland",95,0.1614,9,0.0112,15,67.0,0.0522,17.5,4,0.25
+2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Griselinia(IRE),17,R. P. Cleary,"Kevin Thomas Coleman, Ireland",8,0.125,10,0.0103,16,101.0,0.0481,26.0,4,0.25
+2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,What Do You Say(IRE),18,J. J. G. Ryan,"Andrew Oliver, Ireland",0,0.1,12,0.0103,17,101.0,0.0481,26.0,4,0.25
+2026-09-26 16:55:00,Curragh,GRA CHOCOLATES MAIDEN,Silverhillsox(IRE),4,Jack Cleary,"Kieran P. Egan, Ireland",0-0,0.1,13,0.0092,18,126.0,0.043,32.25,4,0.25
+2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Together Now(USA),21,R. P. Whelan,"Aidan OBrien, Ireland",2-,0.5,1,0.1612,1,3.75,0.5453,1.69,4,0.25
+2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Goddess Of War(SAF),8,N. M. Crosse,"Mrs J. Harrington, Ireland",43,0.2971,5,0.0896,2,7.0,0.3503,2.5,4,0.25
+2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Sunatia(FR),20,C. D. Hayes,"D. K. Weld, Ireland",022,0.3997,2,0.0896,3,7.0,0.3503,2.5,4,0.25
+2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Camelot Queen(IRE),5,W. M. Lordan,"Aidan OBrien, Ireland",6-3634,0.2574,6,0.0794,4,8.0,0.3166,2.75,4,0.25
+2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Sangreal(IRE),15,J. M. Sheridan,"Joseph Patrick OBrien, Ireland",233,0.3751,3,0.0793,5,8.0,0.3162,2.75,4,0.25
+2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Lookingforarainbow(USA),9,G. M. Ryan,"Donnacha Aidan OBrien, Ireland",347-5,0.2164,10,0.0604,8,10.0,0.2495,3.25,4,0.25
+2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Ridersinthesky(GER),13,S. McCullagh,"Mrs J. Harrington, Ireland",3336-0,0.2191,9,0.0637,6,10.0,0.2615,3.25,4,0.25
+2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Saxony Charms(IRE),16,G. F. Carroll,"Andrew Oliver, Ireland",3554,0.2393,8,0.0637,7,10.0,0.2615,3.25,4,0.25
+2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Emberelle(IRE),7,C. T. Keane,"John Joseph Murphy, Ireland",8,0.125,14,0.0576,9,11.0,0.2391,3.5,4,0.25
+2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Christmas Carol(IRE),6,Jack Cleary,"Aidan OBrien, Ireland",,,,0.0465,10,13.0,0.1969,4.0,4,0.25
+2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Serendipia(IRE),17,William James Lee,"W. Mccreery, Ireland",684335,0.2492,7,0.0465,11,13.0,0.1969,4.0,4,0.25
+2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Palina(GER),11,Seamie Heffernan,"Kevin Thomas Coleman, Ireland",3,0.3333,4,0.0367,12,17.0,0.1581,5.0,4,0.25
+2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Riyazanka(IRE),14,Ben Martin Coen,"John Patrick Murtagh, Ireland",7,0.1429,11,0.031,13,21.0,0.1348,6.0,4,0.25
+2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Seventh Sea(GER),18,Adam Caffrey,"D. K. Weld, Ireland",,,,0.0206,14,34.0,0.0912,9.25,4,0.25
+2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Socratea(IRE),19,Declan Mcdonogh,"W. Mccreery, Ireland",70,0.1186,16,0.0119,15,51.0,0.0534,13.5,4,0.25
+2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Brigids Charm(IRE),4,Reese Holohan,"Mark Fahey, Ireland",7,0.1429,12,0.0107,16,81.0,0.0481,21.0,4,0.25
+2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Molls Gap(IRE),10,J. A. Powell,"John Patrick Murtagh, Ireland",0,0.1,19,0.0107,17,81.0,0.0481,21.0,4,0.25
+2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Isthatrightkatie(IRE),1,Wesley Joyce,"Miss Katy Brown, Ireland",8-,0.125,15,0.0103,18,101.0,0.0464,26.0,4,0.25
+2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Queen Of Chenab(IRE),2,G. Abbas,"Patrick J. Flynn, Ireland",06,0.1377,13,0.0103,19,101.0,0.0464,26.0,4,0.25
+2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Ballysax Boo,3,J. J. G. Ryan,"Miss Katy Brown, Ireland",9,0.1111,17,0.0103,20,101.0,0.0464,26.0,4,0.25
+2026-09-26 17:25:00,Curragh,EQUIWINNER PATCHES FILLIES MAIDEN,Pattyandselma(IRE),12,R. P. Cleary,"Adrian Mcguinness, Ireland",09,0.1063,18,0.0103,21,101.0,0.0464,26.0,4,0.25
+2026-09-26 13:35:00,Haydock Park,WILLIAM HILL EPIC BOOSTS HANDICAP (2),Eternal Force,5,Cieren Fallon,William Haggas,2111-7267,0.3642,6,0.1702,1,5.0,0.4732,2.0,3,0.25
+2026-09-26 13:35:00,Haydock Park,WILLIAM HILL EPIC BOOSTS HANDICAP (2),Centigrade(IRE),3,Hector Crouch,Ralph Beckett,21/168,0.4659,3,0.1514,2,6.0,0.4328,2.25,3,0.25
+2026-09-26 13:35:00,Haydock Park,WILLIAM HILL EPIC BOOSTS HANDICAP (2),Commanders Intent(FR),7,Callum Rodriguez,George Scott,131222-53,0.4235,4,0.1177,4,7.5,0.3528,2.62,3,0.25
+2026-09-26 13:35:00,Haydock Park,WILLIAM HILL EPIC BOOSTS HANDICAP (2),Cerulean Bay(IRE),1,Daniel Tudhope,David OMeara,42584290,0.2016,8,0.1099,5,8.0,0.3329,2.75,3,0.25
+2026-09-26 13:35:00,Haydock Park,WILLIAM HILL EPIC BOOSTS HANDICAP (2),Godwinson,4,David Probert,Jack Channon,11500-000,0.1078,10,0.118,3,8.0,0.3536,2.75,3,0.25
+2026-09-26 13:35:00,Haydock Park,WILLIAM HILL EPIC BOOSTS HANDICAP (2),Looka(USA),9,Sean Levey,Marco Botti,615-51,0.564,1,0.1064,6,8.5,0.3238,2.88,3,0.25
+2026-09-26 13:35:00,Haydock Park,WILLIAM HILL EPIC BOOSTS HANDICAP (2),Arctic Thunder(IRE),6,Ashley Lewis,Ed Walker,4-0768116,0.4894,2,0.0695,7,13.0,0.2216,4.0,3,0.25
+2026-09-26 13:35:00,Haydock Park,WILLIAM HILL EPIC BOOSTS HANDICAP (2),Mister Winston,2,P. J. Mcdonald,Andrew Balding,0-1610078,0.2138,7,0.0632,8,15.0,0.203,4.5,3,0.25
+2026-09-26 13:35:00,Haydock Park,WILLIAM HILL EPIC BOOSTS HANDICAP (2),Desperate Dan(IRE),10,George Wood,Peter Chapple-hyam,6/06141-96,0.3937,5,0.0541,9,19.0,0.1756,5.5,3,0.25
+2026-09-26 13:35:00,Haydock Park,WILLIAM HILL EPIC BOOSTS HANDICAP (2),Checkandchallenge,8,Callum Shepherd,William Knight,39-060300,0.147,9,0.0396,10,23.0,0.1307,6.5,3,0.25
+2026-09-26 16:40:00,Ripon,MICHAEL RABY MEMORIAL HANDICAP (6) (D.II),Kings Merchant,1,Conor Whiteley,Philip Kirby,47821451,0.5722,2,0.1939,1,4.0,0.5273,1.75,3,0.25
+2026-09-26 16:40:00,Ripon,MICHAEL RABY MEMORIAL HANDICAP (6) (D.II),Valentine Catcher,3,David Allan,Tim Easterby,64397233,0.3142,3,0.1827,2,4.333,0.5057,1.83,3,0.25
+2026-09-26 16:40:00,Ripon,MICHAEL RABY MEMORIAL HANDICAP (6) (D.II),Hurstwood,7,Mark Winn,Peter Niven,46604711,0.596,1,0.141,3,5.5,0.4156,2.12,3,0.25
+2026-09-26 16:40:00,Ripon,MICHAEL RABY MEMORIAL HANDICAP (6) (D.II),Liverpool Star(IRE),2,Paul Mulrennan,Michael &amp; David Easterby,43145490,0.2274,6,0.1001,4,8.0,0.3121,2.75,3,0.25
+2026-09-26 16:40:00,Ripon,MICHAEL RABY MEMORIAL HANDICAP (6) (D.II),Angel Summer(IRE),10,Jason Hart,Patrick Owens,36496523,0.2964,4,0.0986,5,8.0,0.308,2.75,3,0.25
+2026-09-26 16:40:00,Ripon,MICHAEL RABY MEMORIAL HANDICAP (6) (D.II),Taygar(IRE),6,Connor Beasley,Michael Dods,22242699,0.2168,7,0.0705,6,11.0,0.2281,3.5,3,0.25
+2026-09-26 16:40:00,Ripon,MICHAEL RABY MEMORIAL HANDICAP (6) (D.II),Dream Deal,4,Duran Fentiman,Tim Easterby,12274077,0.1777,9,0.0646,7,12.0,0.2105,3.75,3,0.25
+2026-09-26 16:40:00,Ripon,MICHAEL RABY MEMORIAL HANDICAP (6) (D.II),Solar Cooper,5,Oisin James Orr,Mark Walford,66-801696,0.2546,5,0.0537,8,15.0,0.1773,4.5,3,0.25
+2026-09-26 16:40:00,Ripon,MICHAEL RABY MEMORIAL HANDICAP (6) (D.II),Cheerleader,9,Luke Morris,Tina Jackson,728-94330,0.2154,8,0.0517,9,15.0,0.171,4.5,3,0.25
+2026-09-26 16:40:00,Ripon,MICHAEL RABY MEMORIAL HANDICAP (6) (D.II),Uncertainty(IRE),8,David Nolan,Simon Whitaker,4-8797605,0.1508,10,0.0432,10,19.0,0.1443,5.5,3,0.25
+2026-09-26 18:30:00,Southwell,TIPSY TAPAS AT WINTER LADIES EVENING HANDICAP (5),Madjid,5,Daniel Muscutt,Harry Charlton,42957112,0.5897,1,0.2965,1,2.75,0.7264,1.44,3,0.25
+2026-09-26 18:30:00,Southwell,TIPSY TAPAS AT WINTER LADIES EVENING HANDICAP (5),Patrol(IRE),1,Jack Callan,Dylan Cunha,22436323,0.342,4,0.1839,2,4.333,0.5519,1.83,3,0.25
+2026-09-26 18:30:00,Southwell,TIPSY TAPAS AT WINTER LADIES EVENING HANDICAP (5),Roker Roar(IRE),6,Callum Hutchinson,Andrew Balding,74-3322,0.3957,3,0.177,3,4.5,0.5375,1.88,3,0.25
+2026-09-26 18:30:00,Southwell,TIPSY TAPAS AT WINTER LADIES EVENING HANDICAP (5),Flightofthephoenix(IRE),2,Harry Vigors,Charles Hills,53-772116,0.5366,2,0.1327,4,6.0,0.4323,2.25,3,0.25
+2026-09-26 18:30:00,Southwell,TIPSY TAPAS AT WINTER LADIES EVENING HANDICAP (5),Bondi(IRE),4,Zak Wheatley,Declan Carroll,5416186-7,0.3283,5,0.0742,5,11.0,0.2618,3.5,3,0.25
+2026-09-26 18:30:00,Southwell,TIPSY TAPAS AT WINTER LADIES EVENING HANDICAP (5),Molo Del Palazzo(USA),7,Rhys Clutterbuck,Ralph Beckett,5-632647,0.2395,7,0.0694,6,12.0,0.2463,3.75,3,0.25
+2026-09-26 18:30:00,Southwell,TIPSY TAPAS AT WINTER LADIES EVENING HANDICAP (5),Dream Harder(IRE),3,Charles Bishop,Mark Loughnane,666-68147,0.3164,6,0.0469,7,17.0,0.1709,5.0,3,0.25
+2026-09-26 18:30:00,Southwell,TIPSY TAPAS AT WINTER LADIES EVENING HANDICAP (5),League Of Justice(USA),8,Billy Garritty,Gemma Tutty,6437,0.2212,8,0.0194,8,41.0,0.0729,11.0,3,0.25
