@@ -330,11 +330,37 @@ def build_predictions(target_date=None):
         for i, r in enumerate(by_market):
             r["market_rank"] = i + 1
 
+        # ---------------------------------------------------------------
+        # Projected Finishing Order (top 1-4) -- a pre-race ranking of the
+        # most-likely finishing order, not a post-race result and not a
+        # horse's own historical best.
+        #
+        # WHY THIS IS JUST market_prob, SORTED: the "proper" way to build a
+        # single most-likely running order is sequential elimination -- pick
+        # the most-likely winner, remove it, pick the most-likely 2nd from
+        # what's left (renormalizing the remaining horses' probabilities by
+        # dividing by 1 - p(winner)), remove it, and so on for 3rd/4th. That
+        # renormalization divides every REMAINING horse's probability by the
+        # same constant, which cannot change their relative order. So the
+        # single most-likely running order is mathematically identical to
+        # just sorting every horse by its own win probability once -- this
+        # is exactly what by_market already is. No new/separate calculation
+        # needed, and no new probability invented -- projected_order reuses
+        # the same de-vigged market_prob already computed above, just
+        # exposed as an explicit ranked list capped at the top 4.
+        # ---------------------------------------------------------------
+        projected_order = [
+            {"rank": i + 1, "name": r["name"], "number": r.get("number"),
+             "market_prob": r["market_prob"]}
+            for i, r in enumerate(by_market[:4])
+        ]
+
         predictions.append({
             "id_race": rc["id_race"], "course": rc.get("course"), "date": rc.get("date"),
             "title": rc.get("title"), "distance": rc.get("distance"), "going": rc.get("going"),
             "prize": rc.get("prize"), "runners": runners,
             "jumps": jumps, "place_count": place_count, "place_fraction": place_fraction,
+            "projected_order": projected_order,
         })
     return predictions
 
@@ -531,6 +557,7 @@ HTML_TEMPLATE = """<!DOCTYPE html><html><head><meta charset="utf-8">
   <div style="margin-bottom:8px"><b>Rank (e.g. "1/6")</b> — this horse's recency-weighted form ranks #1 out of 6 runners in its own race. Recent runs count more than older ones.</div>
   <div style="margin-bottom:8px"><b style="color:#ff9a2e">Best odds / Place odds</b> — best odds is the highest decimal WIN price seen across bookmakers at last fetch. Place odds is that price scaled down to the standard each-way place fraction (1/4 or 1/5) for this field size. Stake × odds = total payout either way. Odds move right up to post time.</div>
   <div><b>Place terms (e.g. "1/4, top 3")</b> — standard UK each-way terms for this field size: place odds fraction, and how many finishing positions actually get paid. Races under 5 runners are win-only, no each-way part exists.</div>
+  <div style="margin-bottom:8px"><b style="color:#7dd3a8">🏁 Projected order</b> — each race card's top-4 pre-race ranking, most likely winner through 4th, by de-vigged market win probability. This is the same win % already shown per horse, just laid out as an ordered list — not a separate prediction, and not a guess at who "should" finish where based on a horse's own past best.</div>
   <div style="margin-top:10px;padding-top:10px;border-top:1px solid #2a4a34;color:#8ba">
     <b>Where to focus:</b> Market Win %'s are the closest thing here to an actual calibrated prediction
     for the WIN market. For each-way specifically, the Each-Way Picks panel (ranked by place chance, not
@@ -558,7 +585,13 @@ HTML_TEMPLATE = """<!DOCTYPE html><html><head><meta charset="utf-8">
 RACE_CARD_TEMPLATE = """<div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
   <div style="font-size:11px;color:#998;margin-bottom:4px">{course} {time} · {going} · {distance}{place_terms_str}</div>
   <div style="font-size:15px;font-weight:bold;margin-bottom:10px">{title}</div>
+  {projected_order_html}
   {runner_rows}
+</div>"""
+
+PROJECTED_ORDER_TEMPLATE = """<div style="background:#0f1a12;border:1px solid #2a4a34;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#7dd3a8;font-weight:bold">🏁 Projected order </span><span style="color:#998">(by win %, before the race)</span><br>
+  {picks}
 </div>"""
 
 RUNNER_ROW = """<div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
@@ -580,10 +613,20 @@ def make_html(predictions):
         ) for r in sorted(p["runners"], key=lambda r: r.get("number") or 99))
         place_terms_str = (f" · E/W {int(1/p['place_fraction'])}, top {p['place_count']}"
                             if p.get("place_count") else " · win only (< 5 runners)")
+
+        proj = p.get("projected_order") or []
+        if proj:
+            picks_str = " &nbsp;·&nbsp; ".join(
+                f"<b>{pk['rank']}.</b> {pk['name']} ({pk['market_prob']*100:.0f}%)" for pk in proj
+            )
+            projected_order_html = PROJECTED_ORDER_TEMPLATE.format(picks=picks_str)
+        else:
+            projected_order_html = ""
+
         cards += RACE_CARD_TEMPLATE.format(
             course=p["course"], time=p["date"][11:16], going=p.get("going") or "",
             distance=p.get("distance") or "", title=p["title"], runner_rows=runner_rows,
-            place_terms_str=place_terms_str,
+            place_terms_str=place_terms_str, projected_order_html=projected_order_html,
         )
     if not cards:
         cards = '<p style="text-align:center;color:#998">No usable races today.</p>'
