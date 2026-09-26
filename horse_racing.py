@@ -329,6 +329,21 @@ HTML_TEMPLATE = """<!DOCTYPE html><html><head><meta charset="utf-8">
 <h2 style="text-align:center;color:#7dd3a8">🐎 UK/Ireland Racing</h2>
 <p style="text-align:center;color:#998;font-size:11px">De-vigged market consensus + recency-weighted form · {generated}</p>
 <p style="text-align:center;margin-bottom:16px"><a href="horse_racing_predictions.csv" download style="background:#2a201a;border:1px solid #443;color:white;padding:8px 14px;border-radius:8px;text-decoration:none;font-size:13px">⬇ Download CSV</a></p>
+
+<div style="background:#14261a;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #2a4a34;font-size:12px;line-height:1.6">
+  <div style="font-size:14px;font-weight:bold;margin-bottom:8px">📖 Reading the numbers</div>
+  <div style="margin-bottom:8px"><b style="color:#ffeb3b">Percentage (%)</b> — real market-consensus win probability, after removing all bookmakers' profit margin. Not a guess — the underlying math forces these to sum to 100% across a race.</div>
+  <div style="margin-bottom:8px"><b style="color:#7dd3a8">Form (e.g. "4113")</b> — the horse's own finishing positions, read left→right, <u>oldest to newest</u>. So "4113" means: 4th, then 1st, then 1st, then 3rd <i>most recently</i>. "0" means finished 10th or worse; a letter (F/U/P/R) means the horse didn't complete that race.</div>
+  <div style="margin-bottom:8px"><b>Rank (e.g. "1/6")</b> — this horse's recency-weighted form ranks #1 out of 6 runners in its own race. Recent runs count more than older ones.</div>
+  <div><b style="color:#ff9a2e">Best odds</b> — the highest decimal odds seen across bookmakers at last fetch. Stake × odds = total payout. Odds move right up to post time — treat this as a snapshot, not a locked-in price.</div>
+  <div style="margin-top:10px;padding-top:10px;border-top:1px solid #2a4a34;color:#8ba">
+    <b>Where to focus:</b> Market %'s are the closest thing here to an actual calibrated prediction. Form
+    and the Form/Market Gap below are raw, unvalidated screens with no track record yet — treat them as
+    context, not a basis for picks, until a results tracker exists for this project. The strongest signal
+    right now is a horse appearing in <b>both</b> the Market Favorites and Recent Form panels at once.
+  </div>
+</div>
+
 {builder}
 {form_panel}
 {value_panel}
