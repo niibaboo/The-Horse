@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>UK/Ireland Horse Racing</title></head>
 <body style="background:#0f0a08;color:#e8dcd0;font-family:Arial;padding:12px;max-width:600px;margin:auto">
 <h2 style="text-align:center;color:#7dd3a8">🐎 UK/Ireland Racing</h2>
-<p style="text-align:center;color:#998;font-size:11px">De-vigged market consensus + recency-weighted form · 26 Sep 14:30</p>
+<p style="text-align:center;color:#998;font-size:11px">De-vigged market consensus + recency-weighted form · 26 Sep 15:01</p>
 <p style="text-align:center;margin-bottom:16px"><a href="horse_racing_predictions.csv" download style="background:#2a201a;border:1px solid #443;color:white;padding:8px 14px;border-radius:8px;text-decoration:none;font-size:13px">⬇ Download CSV</a></p>
 
 <div style="background:#14261a;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #2a4a34;font-size:12px;line-height:1.6">
@@ -24,162 +24,10 @@
 </div>
 
 
-<div style="background:#14261a;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #2a4a34">
-  <div style="font-size:14px;font-weight:bold;margin-bottom:10px">🎯 Market Favorites Builder</div>
-  <div style="font-size:11px;color:#8ba;margin-bottom:10px">
-    Each leg is the genuine de-vigged (margin-removed) market-consensus favorite for that race --
-    this is real, accurately-relayed market data, not an independent prediction. Odds move right up
-    to post time, so treat "best odds" as a snapshot, not guaranteed.
-  </div>
-  <div style="display:flex;gap:8px;align-items:center;margin-bottom:10px;flex-wrap:wrap">
-    <label style="font-size:12px;color:#8ba">Min probability:</label>
-    <input id="minProb" type="number" step="1" min="0" max="100" value="30"
-      style="width:60px;background:#0a1710;border:1px solid #2a4a34;color:white;border-radius:6px;padding:6px 8px;font-size:13px">
-    <button onclick="buildFavorites()"
-      style="background:#2a7d4a;border:none;color:white;padding:7px 14px;border-radius:6px;font-size:13px;cursor:pointer">
-      Build
-    </button>
-  </div>
-  <div id="builderResult" style="font-size:12px;color:#8ba"></div>
-</div>
-<script>
-const LEGS = [{"match": "Curragh 15:45", "subject": "Excellent Believe", "market": "Excellent Believe to Win", "prob": 22, "category": "Market Favorite", "detail": "IZUZU IRELAND HANDICAP \u00b7 jockey C. T. Keane \u00b7 best odds 3.75", "history": null, "hit_rate": null}];
-function buildFavorites() {
-  const minProb = parseInt(document.getElementById('minProb').value) || 0;
-  const chosen = LEGS.filter(l => l.prob >= minProb).sort((a,b) => b.prob - a.prob);
-  const el = document.getElementById('builderResult');
-  if (!chosen.length) { el.innerHTML = 'No favorites clear that probability threshold today.'; return; }
-  const rows = chosen.map(l =>
-    `<div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #2a4a34">
-       <span>${l.match}<br><span style="color:#7ed3a8">${l.market}</span>
-       ${l.detail ? `<br><span style="color:#668;font-size:10px">${l.detail}</span>` : ''}</span>
-       <span style="color:#ffeb3b;font-weight:bold">${l.prob}%</span>
-     </div>`
-  ).join('');
-  el.innerHTML = `<div style="color:white;font-size:13px;margin-bottom:6px">${chosen.length} favorite(s)</div>${rows}`;
-}
-buildFavorites();
-</script>
 
-<div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
-  <div style="font-size:14px;font-weight:bold;margin-bottom:6px">🎯 Each-Way Picks</div>
-  <div style="font-size:11px;color:#998;margin-bottom:10px">
-    Ranked by PLACE probability (via Harville's formula, 1973 -- an established method that extends
-    win probabilities into place chances, not an invented one), not win probability -- this is
-    deliberately a different list from Market Favorites above. Place terms shown are the STANDARD UK
-    default for that field size; individual bookmakers sometimes run promotional extra-places offers
-    this can't see. Harville's formula is a genuine approximation with a known mild bias for long-shots
-    in big fields -- treat as a strong lead, not a certainty, especially with no backtested track
-    record yet for this project.
-  </div>
-  <div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Excellent Believe</b><br><span style="color:#998">Curragh 15:45 · IZUZU IRELAND HANDICAP</span><br><span style="color:#998">C. T. Keane · 11 runners</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 56%</span><br><span style="color:#998">win 22% · place odds 1.69 (1/4, top 3)</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Unique Journey(IRE)</b><br><span style="color:#998">Curragh 15:45 · IZUZU IRELAND HANDICAP</span><br><span style="color:#998">Ben Martin Coen · 11 runners</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 39%</span><br><span style="color:#998">win 13% · place odds 2.25 (1/4, top 3)</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Headmaster</b><br><span style="color:#998">Curragh 15:45 · IZUZU IRELAND HANDICAP</span><br><span style="color:#998">Reese Holohan · 11 runners</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 34%</span><br><span style="color:#998">win 11% · place odds 2.5 (1/4, top 3)</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Rahmi(IRE)</b><br><span style="color:#998">Curragh 15:45 · IZUZU IRELAND HANDICAP</span><br><span style="color:#998">R. M. Mulligan · 11 runners</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 32%</span><br><span style="color:#998">win 11% · place odds 2.62 (1/4, top 3)</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Dmaniac</b><br><span style="color:#998">Curragh 15:45 · IZUZU IRELAND HANDICAP</span><br><span style="color:#998">William James Lee · 11 runners</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 27%</span><br><span style="color:#998">win 8% · place odds 3.12 (1/4, top 3)</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Uncle Goalie(IRE)</b><br><span style="color:#998">Curragh 15:45 · IZUZU IRELAND HANDICAP</span><br><span style="color:#998">R. P. Cleary · 11 runners</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 27%</span><br><span style="color:#998">win 8% · place odds 3.12 (1/4, top 3)</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>City House(IRE)</b><br><span style="color:#998">Curragh 15:45 · IZUZU IRELAND HANDICAP</span><br><span style="color:#998">Adam Caffrey · 11 runners</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 25%</span><br><span style="color:#998">win 8% · place odds 3.25 (1/4, top 3)</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Punica Granatum(IRE)</b><br><span style="color:#998">Curragh 15:45 · IZUZU IRELAND HANDICAP</span><br><span style="color:#998">Keithen Kennedy · 11 runners</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 21%</span><br><span style="color:#998">win 7% · place odds 3.75 (1/4, top 3)</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Eddie G(IRE)</b><br><span style="color:#998">Curragh 15:45 · IZUZU IRELAND HANDICAP</span><br><span style="color:#998">Declan Mcdonogh · 11 runners</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 15%</span><br><span style="color:#998">win 5% · place odds 5.5 (1/4, top 3)</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Love Billy Boy(IRE)</b><br><span style="color:#998">Curragh 15:45 · IZUZU IRELAND HANDICAP</span><br><span style="color:#998">G. F. Carroll · 11 runners</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 12%</span><br><span style="color:#998">win 4% · place odds 6.0 (1/4, top 3)</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Temperance(IRE)</b><br><span style="color:#998">Curragh 15:45 · IZUZU IRELAND HANDICAP</span><br><span style="color:#998">C. D. Hayes · 11 runners</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 12%</span><br><span style="color:#998">win 4% · place odds 7.25 (1/4, top 3)</span></div>
-</div>
-</div>
-<div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
-  <div style="font-size:14px;font-weight:bold;margin-bottom:6px">📊 Recent Form Leaders</div>
-  <div style="font-size:11px;color:#998;margin-bottom:10px">
-    Raw recency-weighted form screen -- ranks 1st or 2nd in their own field by recent finishing
-    positions. NOT a probability and NOT market-adjusted -- a horse can show up here and still be a
-    long shot if the market disagrees. Cross-check against the Market Favorites panel above.
-  </div>
-  <div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Uncle Goalie(IRE)</b><br><span style="color:#998">Curragh 15:45 · IZUZU IRELAND HANDICAP</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 431</span><br><span style="color:#998">rank 1/11</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Dmaniac</b><br><span style="color:#998">Curragh 15:45 · IZUZU IRELAND HANDICAP</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 2931-1520</span><br><span style="color:#998">rank 2/11</span></div>
-</div>
-</div>
-<div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
-  <div style="font-size:14px;font-weight:bold;margin-bottom:6px">🔎 Form/Market Gap</div>
-  <div style="font-size:11px;color:#998;margin-bottom:10px">
-    Horses whose recent-FORM rank sits notably ahead of where the MARKET currently prices them.
-    This is a discrepancy-spotter, not a validated edge -- there's no backtested track record yet
-    for whether this gap actually predicts anything. Treat as a lead worth a closer look, not a bet
-    on its own.
-  </div>
-  <div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Uncle Goalie(IRE)</b><br><span style="color:#998">Curragh 15:45 · IZUZU IRELAND HANDICAP</span></div>
-  <div style="text-align:right"><span style="color:#ff9a2e;font-weight:bold">form #1 · market #6</span><br><span style="color:#998">best odds 9.5</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Dmaniac</b><br><span style="color:#998">Curragh 15:45 · IZUZU IRELAND HANDICAP</span></div>
-  <div style="text-align:right"><span style="color:#ff9a2e;font-weight:bold">form #2 · market #5</span><br><span style="color:#998">best odds 9.5</span></div>
-</div>
-</div>
-<div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
-  <div style="font-size:11px;color:#998;margin-bottom:4px">Curragh 15:45 · Straight yielding; round good to yielding · 7f · E/W 4, top 3</div>
-  <div style="font-size:15px;font-weight:bold;margin-bottom:10px">IZUZU IRELAND HANDICAP</div>
-  <div style="background:#0f1a12;border:1px solid #2a4a34;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
-  <span style="color:#7dd3a8;font-weight:bold">🏁 Projected order </span><span style="color:#998">(by win %, before the race)</span><br>
-  <b>1.</b> Excellent Believe (22%) &nbsp;·&nbsp; <b>2.</b> Unique Journey(IRE) (13%) &nbsp;·&nbsp; <b>3.</b> Headmaster (11%) &nbsp;·&nbsp; <b>4.</b> Rahmi(IRE) (11%)
-</div>
-  <div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>1. <b>Excellent Believe</b><br><span style="color:#998">C. T. Keane · Stephen Thorne, Ireland</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 22%</span> <span style="color:#7dd3a8;font-weight:bold">place 56%</span><br><span style="color:#998">form 122-33007 · odds 3.75/1.69</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>10. <b>Uncle Goalie(IRE)</b><br><span style="color:#998">R. P. Cleary · Rory Devine, Ireland</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 8%</span> <span style="color:#7dd3a8;font-weight:bold">place 27%</span><br><span style="color:#998">form 431 · odds 9.5/3.12</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>11. <b>Punica Granatum(IRE)</b><br><span style="color:#998">Keithen Kennedy · Mrs J. Harrington, Ireland</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 7%</span> <span style="color:#7dd3a8;font-weight:bold">place 21%</span><br><span style="color:#998">form 420-20U36 · odds 12.0/3.75</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>2. <b>Unique Journey(IRE)</b><br><span style="color:#998">Ben Martin Coen · Daniel James Murphy, Ireland</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 13%</span> <span style="color:#7dd3a8;font-weight:bold">place 39%</span><br><span style="color:#998">form 711-24027 · odds 6.0/2.25</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>3. <b>Rahmi(IRE)</b><br><span style="color:#998">R. M. Mulligan · John Patrick Murtagh, Ireland</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 11%</span> <span style="color:#7dd3a8;font-weight:bold">place 32%</span><br><span style="color:#998">form 6-9806260 · odds 7.5/2.62</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>4. <b>City House(IRE)</b><br><span style="color:#998">Adam Caffrey · Adrian Mcguinness, Ireland</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 8%</span> <span style="color:#7dd3a8;font-weight:bold">place 25%</span><br><span style="color:#998">form 05484072 · odds 10.0/3.25</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>5. <b>Dmaniac</b><br><span style="color:#998">William James Lee · Martin Hassett, Ireland</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 8%</span> <span style="color:#7dd3a8;font-weight:bold">place 27%</span><br><span style="color:#998">form 2931-1520 · odds 9.5/3.12</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>6. <b>Headmaster</b><br><span style="color:#998">Reese Holohan · Edward Lynam, Ireland</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 11%</span> <span style="color:#7dd3a8;font-weight:bold">place 34%</span><br><span style="color:#998">form 81-712000 · odds 7.0/2.5</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>7. <b>Love Billy Boy(IRE)</b><br><span style="color:#998">G. F. Carroll · G. OLeary, Ireland</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 4%</span> <span style="color:#7dd3a8;font-weight:bold">place 12%</span><br><span style="color:#998">form 611290-95 · odds 21.0/6.0</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>8. <b>Temperance(IRE)</b><br><span style="color:#998">C. D. Hayes · Miss Kate McGivern, Ireland</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 4%</span> <span style="color:#7dd3a8;font-weight:bold">place 12%</span><br><span style="color:#998">form 558-60778 · odds 26.0/7.25</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>9. <b>Eddie G(IRE)</b><br><span style="color:#998">Declan Mcdonogh · Adrian Mcguinness, Ireland</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 5%</span> <span style="color:#7dd3a8;font-weight:bold">place 15%</span><br><span style="color:#998">form 93911853 · odds 19.0/5.5</span></div>
-</div>
-</div>
+
+
+<p style="text-align:center;color:#998">No usable races today.</p>
 <div style="font-size:11px;color:#998;text-align:center;margin-top:20px;line-height:1.6">
   Official Rating, owner, sire, and dam weren't available for any race checked so far -- possibly a
   free-tier limit, possibly normal for early-season juvenile races. Market Consensus is real,
