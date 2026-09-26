@@ -647,7 +647,7 @@
         "weight": "9-5",
         "form_raw": "31",
         "form_score": 0.7101,
-        "market_prob": 0.4426,
+        "market_prob": 0.4378,
         "best_odds": 2.0,
         "form_rank": 1,
         "market_rank": 1
@@ -661,7 +661,7 @@
         "weight": "9-5",
         "form_raw": "125",
         "form_score": 0.4982,
-        "market_prob": 0.1997,
+        "market_prob": 0.1998,
         "best_odds": 4.333,
         "form_rank": 3,
         "market_rank": 2
@@ -675,7 +675,7 @@
         "weight": "9-5",
         "form_raw": "3217",
         "form_score": 0.4828,
-        "market_prob": 0.1778,
+        "market_prob": 0.1779,
         "best_odds": 5.0,
         "form_rank": 4,
         "market_rank": 3
@@ -689,7 +689,7 @@
         "weight": "9-5",
         "form_raw": "415",
         "form_score": 0.4732,
-        "market_prob": 0.077,
+        "market_prob": 0.0771,
         "best_odds": 13.0,
         "form_rank": 5,
         "market_rank": 4
@@ -703,7 +703,7 @@
         "weight": "9-5",
         "form_raw": "631",
         "form_score": 0.5739,
-        "market_prob": 0.0657,
+        "market_prob": 0.0671,
         "best_odds": 15.0,
         "form_rank": 2,
         "market_rank": 5
@@ -717,8 +717,8 @@
         "weight": "9-5",
         "form_raw": "7",
         "form_score": 0.1429,
-        "market_prob": 0.0372,
-        "best_odds": 26.0,
+        "market_prob": 0.0403,
+        "best_odds": 23.0,
         "form_rank": 6,
         "market_rank": 6
       }
@@ -1888,6 +1888,101 @@
         "best_odds": 23.0,
         "form_rank": 9,
         "market_rank": 10
+      }
+    ]
+  },
+  {
+    "id_race": "275066",
+    "course": "Newmarket",
+    "date": "2026-09-26 14:27:00",
+    "title": "TATTERSALLS SCEPTRE SESSIONS CHEVELEY PARK STAKES (Group 1) (1)",
+    "distance": "6f",
+    "going": "Good (Good To Firm in places)",
+    "prize": "\u00a3155952",
+    "runners": [
+      {
+        "name": "Sun Goddess(IRE)",
+        "id_horse": "298872",
+        "jockey": "Ryan Moore",
+        "trainer": "Aidan OBrien, Ireland",
+        "number": "6",
+        "weight": "9-2",
+        "form_raw": "2121111",
+        "form_score": 0.949,
+        "market_prob": 0.3873,
+        "best_odds": 2.38,
+        "form_rank": 1,
+        "market_rank": 1
+      },
+      {
+        "name": "Senorita Bonita(IRE)",
+        "id_horse": "299741",
+        "jockey": "Oisin Murphy",
+        "trainer": "Simon &amp; Ed Crisford",
+        "number": "4",
+        "weight": "9-2",
+        "form_raw": "1211",
+        "form_score": 0.8949,
+        "market_prob": 0.3185,
+        "best_odds": 2.875,
+        "form_rank": 2,
+        "market_rank": 2
+      },
+      {
+        "name": "Libertango(IRE)",
+        "id_horse": "299354",
+        "jockey": "Billy Loughnane",
+        "trainer": "George Boughey",
+        "number": "2",
+        "weight": "9-2",
+        "form_raw": "1121",
+        "form_score": 0.8634,
+        "market_prob": 0.1594,
+        "best_odds": 6.0,
+        "form_rank": 4,
+        "market_rank": 3
+      },
+      {
+        "name": "Alwaysanangel(IRE)",
+        "id_horse": "300535",
+        "jockey": "William Buick",
+        "trainer": "Joseph Patrick OBrien, Ireland",
+        "number": "1",
+        "weight": "9-2",
+        "form_raw": "131",
+        "form_score": 0.7828,
+        "market_prob": 0.0834,
+        "best_odds": 11.0,
+        "form_rank": 5,
+        "market_rank": 4
+      },
+      {
+        "name": "Moonrise(IRE)",
+        "id_horse": "299548",
+        "jockey": "Tom Marquand",
+        "trainer": "Andrew Balding",
+        "number": "3",
+        "weight": "9-2",
+        "form_raw": "1211",
+        "form_score": 0.8949,
+        "market_prob": 0.0426,
+        "best_odds": 21.0,
+        "form_rank": 3,
+        "market_rank": 5
+      },
+      {
+        "name": "Snowing(IRE)",
+        "id_horse": "299465",
+        "jockey": "Rossa Ryan",
+        "trainer": "Aidan OBrien, Ireland",
+        "number": "5",
+        "weight": "9-2",
+        "form_raw": "52623",
+        "form_score": 0.3519,
+        "market_prob": 0.0089,
+        "best_odds": 101.0,
+        "form_rank": 6,
+        "market_rank": 6
       }
     ]
   }

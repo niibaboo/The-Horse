@@ -2,8 +2,23 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>UK/Ireland Horse Racing</title></head>
 <body style="background:#0f0a08;color:#e8dcd0;font-family:Arial;padding:12px;max-width:600px;margin:auto">
 <h2 style="text-align:center;color:#7dd3a8">🐎 UK/Ireland Racing</h2>
-<p style="text-align:center;color:#998;font-size:11px">De-vigged market consensus + recency-weighted form · 26 Sep 00:11</p>
+<p style="text-align:center;color:#998;font-size:11px">De-vigged market consensus + recency-weighted form · 26 Sep 00:43</p>
 <p style="text-align:center;margin-bottom:16px"><a href="horse_racing_predictions.csv" download style="background:#2a201a;border:1px solid #443;color:white;padding:8px 14px;border-radius:8px;text-decoration:none;font-size:13px">⬇ Download CSV</a></p>
+
+<div style="background:#14261a;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #2a4a34;font-size:12px;line-height:1.6">
+  <div style="font-size:14px;font-weight:bold;margin-bottom:8px">📖 Reading the numbers</div>
+  <div style="margin-bottom:8px"><b style="color:#ffeb3b">Percentage (%)</b> — real market-consensus win probability, after removing all bookmakers' profit margin. Not a guess — the underlying math forces these to sum to 100% across a race.</div>
+  <div style="margin-bottom:8px"><b style="color:#7dd3a8">Form (e.g. "4113")</b> — the horse's own finishing positions, read left→right, <u>oldest to newest</u>. So "4113" means: 4th, then 1st, then 1st, then 3rd <i>most recently</i>. "0" means finished 10th or worse; a letter (F/U/P/R) means the horse didn't complete that race.</div>
+  <div style="margin-bottom:8px"><b>Rank (e.g. "1/6")</b> — this horse's recency-weighted form ranks #1 out of 6 runners in its own race. Recent runs count more than older ones.</div>
+  <div><b style="color:#ff9a2e">Best odds</b> — the highest decimal odds seen across bookmakers at last fetch. Stake × odds = total payout. Odds move right up to post time — treat this as a snapshot, not a locked-in price.</div>
+  <div style="margin-top:10px;padding-top:10px;border-top:1px solid #2a4a34;color:#8ba">
+    <b>Where to focus:</b> Market %'s are the closest thing here to an actual calibrated prediction. Form
+    and the Form/Market Gap below are raw, unvalidated screens with no track record yet — treat them as
+    context, not a basis for picks, until a results tracker exists for this project. The strongest signal
+    right now is a horse appearing in <b>both</b> the Market Favorites and Recent Form panels at once.
+  </div>
+</div>
+
 
 <div style="background:#14261a;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #2a4a34">
   <div style="font-size:14px;font-weight:bold;margin-bottom:10px">🎯 Market Favorites Builder</div>
@@ -24,7 +39,7 @@
   <div id="builderResult" style="font-size:12px;color:#8ba"></div>
 </div>
 <script>
-const LEGS = [{"match": "Curragh 13:30", "subject": "Benown(IRE)", "market": "Benown(IRE) to Win", "prob": 44, "category": "Market Favorite", "detail": "MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN \u00b7 jockey J. M. Sheridan \u00b7 best odds 1.615", "history": null, "hit_rate": null}, {"match": "Curragh 14:00", "subject": "Killashee Warrior", "market": "Killashee Warrior to Win", "prob": 20, "category": "Market Favorite", "detail": "KWIFF MORE BANG FOR YOUR BET RATED \u00b7 jockey C. D. Hayes \u00b7 best odds 3.75", "history": null, "hit_rate": null}, {"match": "Curragh 14:35", "subject": "Namiid(IRE)", "market": "Namiid(IRE) to Win", "prob": 13, "category": "Market Favorite", "detail": "KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap) \u00b7 jockey Ben Martin Coen \u00b7 best odds 5.0", "history": null, "hit_rate": null}, {"match": "Curragh 15:10", "subject": "Noble Exhibit(IRE)", "market": "Noble Exhibit(IRE) to Win", "prob": 44, "category": "Market Favorite", "detail": "CHURCHILL TYRES BERESFORD STAKES (Group 2) \u00b7 jockey W. M. Lordan \u00b7 best odds 2.0", "history": null, "hit_rate": null}, {"match": "Curragh 15:45", "subject": "Dmaniac", "market": "Dmaniac to Win", "prob": 13, "category": "Market Favorite", "detail": "IZUZU IRELAND HANDICAP \u00b7 jockey William James Lee \u00b7 best odds 6.0", "history": null, "hit_rate": null}, {"match": "Curragh 16:20", "subject": "Trean(IRE)", "market": "Trean(IRE) to Win", "prob": 16, "category": "Market Favorite", "detail": "GOFFS MILLION \u00b7 jockey William James Lee \u00b7 best odds 4.0", "history": null, "hit_rate": null}, {"match": "Curragh 16:55", "subject": "Almazann(IRE)", "market": "Almazann(IRE) to Win", "prob": 15, "category": "Market Favorite", "detail": "GRA CHOCOLATES MAIDEN \u00b7 jockey C. D. Hayes \u00b7 best odds 4.333", "history": null, "hit_rate": null}, {"match": "Curragh 17:25", "subject": "Together Now(USA)", "market": "Together Now(USA) to Win", "prob": 16, "category": "Market Favorite", "detail": "EQUIWINNER PATCHES FILLIES MAIDEN \u00b7 jockey R. P. Whelan \u00b7 best odds 3.75", "history": null, "hit_rate": null}, {"match": "Haydock Park 13:35", "subject": "Eternal Force", "market": "Eternal Force to Win", "prob": 17, "category": "Market Favorite", "detail": "WILLIAM HILL EPIC BOOSTS HANDICAP (2) \u00b7 jockey Cieren Fallon \u00b7 best odds 5.0", "history": null, "hit_rate": null}];
+const LEGS = [{"match": "Curragh 13:30", "subject": "Benown(IRE)", "market": "Benown(IRE) to Win", "prob": 44, "category": "Market Favorite", "detail": "MARKET SQUARE MONASTEREVIN IRISH EUROPEAN BREEDERS FUND MAIDEN \u00b7 jockey J. M. Sheridan \u00b7 best odds 1.615", "history": null, "hit_rate": null}, {"match": "Curragh 14:00", "subject": "Killashee Warrior", "market": "Killashee Warrior to Win", "prob": 20, "category": "Market Favorite", "detail": "KWIFF MORE BANG FOR YOUR BET RATED \u00b7 jockey C. D. Hayes \u00b7 best odds 3.75", "history": null, "hit_rate": null}, {"match": "Curragh 14:35", "subject": "Namiid(IRE)", "market": "Namiid(IRE) to Win", "prob": 13, "category": "Market Favorite", "detail": "KWIFF SUPERCHARGED JOE McGRATH HANDICAP (Premier Handicap) \u00b7 jockey Ben Martin Coen \u00b7 best odds 5.0", "history": null, "hit_rate": null}, {"match": "Curragh 15:10", "subject": "Noble Exhibit(IRE)", "market": "Noble Exhibit(IRE) to Win", "prob": 44, "category": "Market Favorite", "detail": "CHURCHILL TYRES BERESFORD STAKES (Group 2) \u00b7 jockey W. M. Lordan \u00b7 best odds 2.0", "history": null, "hit_rate": null}, {"match": "Curragh 15:45", "subject": "Dmaniac", "market": "Dmaniac to Win", "prob": 13, "category": "Market Favorite", "detail": "IZUZU IRELAND HANDICAP \u00b7 jockey William James Lee \u00b7 best odds 6.0", "history": null, "hit_rate": null}, {"match": "Curragh 16:20", "subject": "Trean(IRE)", "market": "Trean(IRE) to Win", "prob": 16, "category": "Market Favorite", "detail": "GOFFS MILLION \u00b7 jockey William James Lee \u00b7 best odds 4.0", "history": null, "hit_rate": null}, {"match": "Curragh 16:55", "subject": "Almazann(IRE)", "market": "Almazann(IRE) to Win", "prob": 15, "category": "Market Favorite", "detail": "GRA CHOCOLATES MAIDEN \u00b7 jockey C. D. Hayes \u00b7 best odds 4.333", "history": null, "hit_rate": null}, {"match": "Curragh 17:25", "subject": "Together Now(USA)", "market": "Together Now(USA) to Win", "prob": 16, "category": "Market Favorite", "detail": "EQUIWINNER PATCHES FILLIES MAIDEN \u00b7 jockey R. P. Whelan \u00b7 best odds 3.75", "history": null, "hit_rate": null}, {"match": "Haydock Park 13:35", "subject": "Eternal Force", "market": "Eternal Force to Win", "prob": 17, "category": "Market Favorite", "detail": "WILLIAM HILL EPIC BOOSTS HANDICAP (2) \u00b7 jockey Cieren Fallon \u00b7 best odds 5.0", "history": null, "hit_rate": null}, {"match": "Newmarket 14:27", "subject": "Sun Goddess(IRE)", "market": "Sun Goddess(IRE) to Win", "prob": 39, "category": "Market Favorite", "detail": "TATTERSALLS SCEPTRE SESSIONS CHEVELEY PARK STAKES (Group 1) (1) \u00b7 jockey Ryan Moore \u00b7 best odds 2.38", "history": null, "hit_rate": null}];
 function buildFavorites() {
   const minProb = parseInt(document.getElementById('minProb').value) || 0;
   const chosen = LEGS.filter(l => l.prob >= minProb).sort((a,b) => b.prob - a.prob);
@@ -50,6 +65,12 @@ buildFavorites();
     long shot if the market disagrees. Cross-check against the Market Favorites panel above.
   </div>
   <div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Sun Goddess(IRE)</b><br><span style="color:#998">Newmarket 14:27 · TATTERSALLS SCEPTRE SESSIONS CHEVELEY PARK STAKES (Group 1) (1)</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 2121111</span><br><span style="color:#998">rank 1/6</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Senorita Bonita(IRE)</b><br><span style="color:#998">Newmarket 14:27 · TATTERSALLS SCEPTRE SESSIONS CHEVELEY PARK STAKES (Group 1) (1)</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 1211</span><br><span style="color:#998">rank 2/6</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
   <div><b>Noble Exhibit(IRE)</b><br><span style="color:#998">Curragh 15:10 · CHURCHILL TYRES BERESFORD STAKES (Group 2)</span></div>
   <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 31</span><br><span style="color:#998">rank 1/6</span></div>
 </div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
@@ -300,7 +321,7 @@ buildFavorites();
   <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">18%</span><br><span style="color:#998">form 3217 · odds 5.0</span></div>
 </div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
   <div>5. <b>Tommy Quick(USA)</b><br><span style="color:#998">J. M. Sheridan · Joseph Patrick OBrien, Ireland</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">4%</span><br><span style="color:#998">form 7 · odds 26.0</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">4%</span><br><span style="color:#998">form 7 · odds 23.0</span></div>
 </div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
   <div>6. <b>Venetian Power(IRE)</b><br><span style="color:#998">Declan Mcdonogh · Joseph Patrick OBrien, Ireland</span></div>
   <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">8%</span><br><span style="color:#998">form 415 · odds 13.0</span></div>
@@ -564,6 +585,28 @@ buildFavorites();
 </div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
   <div>9. <b>Looka(USA)</b><br><span style="color:#998">Sean Levey · Marco Botti</span></div>
   <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">11%</span><br><span style="color:#998">form 615-51 · odds 8.5</span></div>
+</div>
+</div><div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
+  <div style="font-size:11px;color:#998;margin-bottom:4px">Newmarket 14:27 · Good (Good To Firm in places) · 6f</div>
+  <div style="font-size:15px;font-weight:bold;margin-bottom:10px">TATTERSALLS SCEPTRE SESSIONS CHEVELEY PARK STAKES (Group 1) (1)</div>
+  <div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>1. <b>Alwaysanangel(IRE)</b><br><span style="color:#998">William Buick · Joseph Patrick OBrien, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">8%</span><br><span style="color:#998">form 131 · odds 11.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>2. <b>Libertango(IRE)</b><br><span style="color:#998">Billy Loughnane · George Boughey</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">16%</span><br><span style="color:#998">form 1121 · odds 6.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>3. <b>Moonrise(IRE)</b><br><span style="color:#998">Tom Marquand · Andrew Balding</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">4%</span><br><span style="color:#998">form 1211 · odds 21.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>4. <b>Senorita Bonita(IRE)</b><br><span style="color:#998">Oisin Murphy · Simon &amp; Ed Crisford</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">32%</span><br><span style="color:#998">form 1211 · odds 2.875</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>5. <b>Snowing(IRE)</b><br><span style="color:#998">Rossa Ryan · Aidan OBrien, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">1%</span><br><span style="color:#998">form 52623 · odds 101.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>6. <b>Sun Goddess(IRE)</b><br><span style="color:#998">Ryan Moore · Aidan OBrien, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">39%</span><br><span style="color:#998">form 2121111 · odds 2.38</span></div>
 </div>
 </div>
 <div style="font-size:11px;color:#998;text-align:center;margin-top:20px;line-height:1.6">
