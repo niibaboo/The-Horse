@@ -65,17 +65,41 @@ def _headers():
     return {"x-rapidapi-host": "horse-racing.p.rapidapi.com", "x-rapidapi-key": key or ""}
 
 
-def _get(path, params=None):
+def _get(path, params=None, _retries_left=2):
+    """FIX (2026-09-27): this used to just log a 429 and give up
+    immediately with no retry or backoff at all -- fine for an occasional
+    blip, but it meant that once the API started rate-limiting a run
+    (e.g. the results tracker firing a run of get_race_detail() calls
+    right after the main build already used up the burst budget), EVERY
+    subsequent call in that run 429'd too, since nothing ever paused long
+    enough for the limit window to reset. Now mirrors the retry pattern
+    already proven in match_iq.py/cards_corners_iq.py: read the API's own
+    Retry-After header when it sends one (RapidAPI usually does) and
+    actually wait that long before retrying, falling back to a fixed
+    guess only if the header's missing. Capped at 2 retries per call so a
+    genuinely exhausted daily/monthly quota (a huge Retry-After, or one
+    that never clears) fails a request in a bounded time instead of
+    hanging the whole run."""
     try:
         r = requests.get(f"{BASE}{path}", headers=_headers(), params=params or {}, timeout=20)
-        time.sleep(REQUEST_DELAY)
-        if r.status_code != 200:
-            print(f"  [!] {r.status_code} on {path}")
-            return None
-        return r.json()
     except Exception as e:
         print(f"  [!] request failed: {path} ({e})")
         return None
+
+    if r.status_code == 429:
+        if _retries_left <= 0:
+            print(f"  [!] 429 on {path} — out of retries, giving up on this one")
+            return None
+        retry_after = int(r.headers.get("Retry-After", 20))
+        print(f"  [!] 429 on {path} — waiting {retry_after}s and retrying ({_retries_left} left)...")
+        time.sleep(retry_after)
+        return _get(path, params, _retries_left=_retries_left - 1)
+
+    time.sleep(REQUEST_DELAY)
+    if r.status_code != 200:
+        print(f"  [!] {r.status_code} on {path}")
+        return None
+    return r.json()
 
 
 def get_racecards(target_date):
