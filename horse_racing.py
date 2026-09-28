@@ -643,6 +643,7 @@ HTML_TEMPLATE = """<!DOCTYPE html><html><head><meta charset="utf-8">
 <h2 style="text-align:center;color:#7dd3a8">🐎 UK/Ireland Racing</h2>
 <p style="text-align:center;color:#998;font-size:11px">De-vigged market consensus + recency-weighted form · {generated}</p>
 <p style="text-align:center;margin-bottom:16px"><a href="horse_racing_predictions.csv" download style="background:#2a201a;border:1px solid #443;color:white;padding:8px 14px;border-radius:8px;text-decoration:none;font-size:13px">⬇ Download CSV</a></p>
+<p style="text-align:center;margin-bottom:16px"><a href="results/index.html" style="color:#ff9a2e;text-decoration:none;font-size:12px">📊 Results Tracker</a></p>
 
 <div style="background:#14261a;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #2a4a34;font-size:12px;line-height:1.6">
   <div style="font-size:14px;font-weight:bold;margin-bottom:8px">📖 Reading the numbers</div>
@@ -652,7 +653,7 @@ HTML_TEMPLATE = """<!DOCTYPE html><html><head><meta charset="utf-8">
   <div style="margin-bottom:8px"><b style="color:#ff9a2e">Best odds / Place odds</b> — best odds is the highest decimal WIN price seen across bookmakers at last fetch. Place odds is that price scaled down to the standard each-way place fraction (1/4 or 1/5) for this field size. Stake × odds = total payout either way. Odds move right up to post time.</div>
   <div><b>Place terms (e.g. "1/4, top 3")</b> — standard UK each-way terms for this field size: place odds fraction, and how many finishing positions actually get paid. Races under 5 runners are win-only, no each-way part exists.</div>
   <div style="margin-bottom:8px"><b style="color:#7dd3a8">🏁 Projected order</b> — each race card's top-4 pre-race ranking, most likely winner through 4th, by de-vigged market win probability alone. This is the same win % already shown per horse, just laid out as an ordered list — not a separate prediction, and not a guess at who "should" finish where based on a horse's own past best.</div>
-  <div style="margin-bottom:8px"><b style="color:#ff9a2e">🧪 Form-adjusted order</b> — a second, EXPERIMENTAL top-4 that blends market probability with recent form (market keeps the majority say by default). This can re-order the market-only list above — that's the point, it exists to surface exactly the case where a horse's recent form disagrees with its price. There's no results tracker for Horse Racing yet, so this blend weight is a starting guess, not a calibrated one — treat any difference from the pure market order as a lead to watch, not a sharper prediction, until real outcomes back it up.</div>
+  <div style="margin-bottom:8px"><b style="color:#ff9a2e">🧪 Form-adjusted order</b> — a second, EXPERIMENTAL top-4 that blends market probability with recent form (market keeps the majority say by default). This can re-order the market-only list above — that's the point, it exists to surface exactly the case where a horse's recent form disagrees with its price. The <a href="results/index.html" style="color:#ff9a2e">Results Tracker</a> now tracks Market Favorite, Projected Order, and Form-Adjusted Order as separate categories specifically to answer whether this blend helps — check there before treating this weight as anything more than a starting guess.</div>
   <div style="margin-top:10px;padding-top:10px;border-top:1px solid #2a4a34;color:#8ba">
     <b>Where to focus:</b> Market Win %'s are the closest thing here to an actual calibrated prediction
     for the WIN market. For each-way specifically, the Each-Way Picks panel (ranked by place chance, not
@@ -660,7 +661,8 @@ HTML_TEMPLATE = """<!DOCTYPE html><html><head><meta charset="utf-8">
     value, since their place chance adds little on top of an already-high win chance. Form, the
     Form/Market Gap, and the Form-adjusted order are raw/experimental screens with no track record yet.
     The strongest signal right now is a horse appearing in <b>both</b> Market Favorites and Recent Form
-    at once.
+    at once. Check the <a href="results/index.html" style="color:#ff9a2e">Results Tracker</a> for real,
+    auto-verified hit rates by category rather than relying on this description alone.
   </div>
 </div>
 
