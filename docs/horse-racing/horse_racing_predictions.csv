@@ -1,319 +1,250 @@
 Date,Course,Race,Horse,Number,Jockey,Trainer,Form,FormScore,FormRank,MarketProb,MarketRank,BestOdds,PlaceProb,PlaceOdds,PlaceCount,PlaceFraction
-2026-10-27 14:16:00,Bangor-on-dee,JODIE STANDING S POINT-TO-POINT RECRUITS NOVICES HURDLE (3),Rattlin Home(IRE),6,Harry Skelton,Dan Skelton,2-,0.5,1,0.5939,1,1.364,0.956,1.07,3,0.2
-2026-10-27 14:16:00,Bangor-on-dee,JODIE STANDING S POINT-TO-POINT RECRUITS NOVICES HURDLE (3),Sittin Ona Fortune(IRE),8,Sean Houlihan,Philip Hobbs &amp; Johnson White,,,,0.1157,2,7.0,0.5338,2.2,3,0.2
-2026-10-27 14:16:00,Bangor-on-dee,JODIE STANDING S POINT-TO-POINT RECRUITS NOVICES HURDLE (3),Back To Sea(IRE),1,Jack Andrews,Tom Ellis,,,,0.0849,3,9.5,0.4213,2.7,3,0.2
-2026-10-27 14:16:00,Bangor-on-dee,JODIE STANDING S POINT-TO-POINT RECRUITS NOVICES HURDLE (3),Godfrey Bouillon(IRE),3,Theo Gillard,Donald Mccain,5/2-,0.3696,3,0.0637,5,13.0,0.3294,3.4,3,0.2
-2026-10-27 14:16:00,Bangor-on-dee,JODIE STANDING S POINT-TO-POINT RECRUITS NOVICES HURDLE (3),Legend Dairy(FR),5,Ben Jones,Ben Pauling,2-3,0.4058,2,0.065,4,13.0,0.3353,3.4,3,0.2
-2026-10-27 14:16:00,Bangor-on-dee,JODIE STANDING S POINT-TO-POINT RECRUITS NOVICES HURDLE (3),Simonsberg(IRE),7,Adam Wedge,Christian Williams,3,0.3333,4,0.0316,6,26.0,0.1722,6.0,3,0.2
-2026-10-27 14:16:00,Bangor-on-dee,JODIE STANDING S POINT-TO-POINT RECRUITS NOVICES HURDLE (3),Hes A Terror(IRE),10,Tristan Durrell,Dan Skelton,,,,0.0214,7,41.0,0.1183,9.0,3,0.2
-2026-10-27 14:16:00,Bangor-on-dee,JODIE STANDING S POINT-TO-POINT RECRUITS NOVICES HURDLE (3),Emral Bridge,9,Jack Tudor,Oliver Greenall &amp; Josh Guerriero,5-,0.2,5,0.0103,8,81.0,0.0578,17.0,3,0.2
-2026-10-27 14:16:00,Bangor-on-dee,JODIE STANDING S POINT-TO-POINT RECRUITS NOVICES HURDLE (3),Get Busy Jumping,2,Toby Wynne,Oliver Greenall &amp; Josh Guerriero,,,,0.0053,9,151.0,0.0299,31.0,3,0.2
-2026-10-27 14:16:00,Bangor-on-dee,JODIE STANDING S POINT-TO-POINT RECRUITS NOVICES HURDLE (3),Jimmy Jazz,4,Charlie Todd,Dan Skelton,0,0.1,7,0.0043,10,201.0,0.0243,41.0,3,0.2
-2026-10-27 14:16:00,Bangor-on-dee,JODIE STANDING S POINT-TO-POINT RECRUITS NOVICES HURDLE (3),On Subs(FR),11,Ellis Collier,Christian Williams,8-5,0.1674,6,0.004,11,201.0,0.0226,41.0,3,0.2
-2026-10-27 14:46:00,Bangor-on-dee,KELLYHILL FINANCIAL PLANNING MARES HANDICAP HURDLE (Qualifier) (4),Queen Maeve(IRE),10,Harry Skelton,Dan Skelton,5341-,0.5258,2,0.2417,1,3.5,0.627,1.5,3,0.2
-2026-10-27 14:46:00,Bangor-on-dee,KELLYHILL FINANCIAL PLANNING MARES HANDICAP HURDLE (Qualifier) (4),Crystal Spring(IRE),8,Charlie Hammond,Stuart Edmunds,635/23126-,0.4435,4,0.2254,2,4.0,0.6013,1.6,3,0.2
-2026-10-27 14:46:00,Bangor-on-dee,KELLYHILL FINANCIAL PLANNING MARES HANDICAP HURDLE (Qualifier) (4),Iamyouare(IRE),7,Theo Gillard,Donald Mccain,351-3F221,0.6015,1,0.1125,3,7.5,0.3586,2.3,3,0.2
-2026-10-27 14:46:00,Bangor-on-dee,KELLYHILL FINANCIAL PLANNING MARES HANDICAP HURDLE (Qualifier) (4),Hornica(IRE),6,Beau Morgan,Ben Pauling,4/76231-,0.5081,3,0.1018,4,8.5,0.3292,2.5,3,0.2
-2026-10-27 14:46:00,Bangor-on-dee,KELLYHILL FINANCIAL PLANNING MARES HANDICAP HURDLE (Qualifier) (4),Hot Goddess(IRE),9,Freddie Keighley,Martin Keighley,534/352-,0.3305,9,0.0858,5,10.0,0.2833,2.8,3,0.2
-2026-10-27 14:46:00,Bangor-on-dee,KELLYHILL FINANCIAL PLANNING MARES HANDICAP HURDLE (Qualifier) (4),Bettys Daisy,1,Ben Jones,Ben Pauling,10/812P-,0.3893,6,0.0679,6,13.0,0.2292,3.4,3,0.2
-2026-10-27 14:46:00,Bangor-on-dee,KELLYHILL FINANCIAL PLANNING MARES HANDICAP HURDLE (Qualifier) (4),Masked Dance(FR),3,Toby Wynne,Mel Rowley,2251226-5,0.3655,8,0.0479,8,17.0,0.1656,4.2,3,0.2
-2026-10-27 14:46:00,Bangor-on-dee,KELLYHILL FINANCIAL PLANNING MARES HANDICAP HURDLE (Qualifier) (4),Edith Pelham,5,J. Hogan,Fergal OBrien,163618-,0.4285,5,0.0528,7,17.0,0.1815,4.2,3,0.2
-2026-10-27 14:46:00,Bangor-on-dee,KELLYHILL FINANCIAL PLANNING MARES HANDICAP HURDLE (Qualifier) (4),I Spy A Diva,4,Ciaran Gethings,Kim Bailey &amp; Mat Nicholls,9/6843-,0.2256,10,0.0454,9,19.0,0.1574,4.6,3,0.2
-2026-10-27 14:46:00,Bangor-on-dee,KELLYHILL FINANCIAL PLANNING MARES HANDICAP HURDLE (Qualifier) (4),Laysoft(IRE),11,Peter Kavanagh,Joel Parkinson &amp; Sue Smith,513235-,0.3807,7,0.0188,10,51.0,0.0671,11.0,3,0.2
-2026-10-27 15:16:00,Bangor-on-dee,MOUNT VINES NOVICES HANDICAP CHASE (4),Laughing John,3,James Bowen,Nicky Henderson,32U/11-0,0.5023,5,0.1711,1,4.5,0.4676,1.7,3,0.2
-2026-10-27 15:16:00,Bangor-on-dee,MOUNT VINES NOVICES HANDICAP CHASE (4),Kel Du Large(FR),6,Jonathan Burke,Jamie Snowden,35712U-,0.3496,10,0.1378,2,5.5,0.3953,1.9,3,0.2
-2026-10-27 15:16:00,Bangor-on-dee,MOUNT VINES NOVICES HANDICAP CHASE (4),Douglas Hyde(IRE),14,Sean Bowen,Rebecca Curtis,222/33228-,0.3518,9,0.1376,3,5.5,0.3948,1.9,3,0.2
-2026-10-27 15:16:00,Bangor-on-dee,MOUNT VINES NOVICES HANDICAP CHASE (4),Just Golden(IRE),1,Harry Skelton,Dan Skelton,21/23210-,0.5126,4,0.0924,5,8.0,0.2817,2.4,3,0.2
-2026-10-27 15:16:00,Bangor-on-dee,MOUNT VINES NOVICES HANDICAP CHASE (4),Strong Run,5,Liam Harrison,Fergal OBrien,316/31261-,0.594,2,0.0974,4,8.0,0.295,2.4,3,0.2
-2026-10-27 15:16:00,Bangor-on-dee,MOUNT VINES NOVICES HANDICAP CHASE (4),Joeybottles(IRE),13,Jack Tudor,Oliver Greenall &amp; Josh Guerriero,3/74515-,0.3904,8,0.0774,6,9.5,0.2404,2.7,3,0.2
-2026-10-27 15:16:00,Bangor-on-dee,MOUNT VINES NOVICES HANDICAP CHASE (4),They Want Me(IRE),7,Theo Gillard,Donald Mccain,4/21351-,0.5963,1,0.0576,8,13.0,0.1832,3.4,3,0.2
-2026-10-27 15:16:00,Bangor-on-dee,MOUNT VINES NOVICES HANDICAP CHASE (4),Escortkheops(FR),12,K. Brogan,Laura Horsfall,72334212-,0.5488,3,0.0603,7,13.0,0.1911,3.4,3,0.2
-2026-10-27 15:16:00,Bangor-on-dee,MOUNT VINES NOVICES HANDICAP CHASE (4),Col Du Pre(FR),10,Charlie Deutsch,Venetia Williams,414/U732-,0.3486,11,0.0455,9,17.0,0.1467,4.2,3,0.2
-2026-10-27 15:16:00,Bangor-on-dee,MOUNT VINES NOVICES HANDICAP CHASE (4),Jhentong Enki(FR),11,Ben Jones,Ben Pauling,5/F80110-,0.4512,6,0.0403,10,19.0,0.1307,4.6,3,0.2
-2026-10-27 15:16:00,Bangor-on-dee,MOUNT VINES NOVICES HANDICAP CHASE (4),Sign Again(IRE),4,Sam Twiston-davies,Charlie Longsdon,4114/063U-,0.2205,14,0.0264,11,29.0,0.0869,6.6,3,0.2
-2026-10-27 15:16:00,Bangor-on-dee,MOUNT VINES NOVICES HANDICAP CHASE (4),Glen Road(IRE),9,Peter Kavanagh,Joel Parkinson &amp; Sue Smith,3114642P-,0.281,13,0.0243,12,29.0,0.0802,6.6,3,0.2
-2026-10-27 15:16:00,Bangor-on-dee,MOUNT VINES NOVICES HANDICAP CHASE (4),Top Guy(IRE),8,Tristan Durrell,Dan Skelton,2120216-3,0.4222,7,0.0172,13,41.0,0.0572,9.0,3,0.2
-2026-10-27 15:16:00,Bangor-on-dee,MOUNT VINES NOVICES HANDICAP CHASE (4),Mahland(IRE),2,Toby Wynne,Mel Rowley,781P/,0.3225,12,0.0146,14,51.0,0.0487,11.0,3,0.2
-2026-10-27 15:46:00,Bangor-on-dee,BANGOR-ON-DEE HANDICAP CHASE (5),Inedit Damour(FR),1,Harry Brown,Donald Mccain,U/301540-2,0.3472,2,0.2142,1,4.0,0.564,1.6,3,0.2
-2026-10-27 15:46:00,Bangor-on-dee,BANGOR-ON-DEE HANDICAP CHASE (5),Laristote(FR),6,Theo Gillard,Donald Mccain,3743-,0.2705,3,0.1545,2,5.5,0.4465,1.9,3,0.2
-2026-10-27 15:46:00,Bangor-on-dee,BANGOR-ON-DEE HANDICAP CHASE (5),Falco Des Pins(FR),4,Charlie Deutsch,Venetia Williams,888/63112-,0.6126,1,0.1106,3,7.5,0.3402,2.3,3,0.2
-2026-10-27 15:46:00,Bangor-on-dee,BANGOR-ON-DEE HANDICAP CHASE (5),Ker Doudairies(FR),9,Adam Wedge,Christian Williams,55P05P9-5,0.1198,9,0.1036,4,8.0,0.3216,2.4,3,0.2
-2026-10-27 15:46:00,Bangor-on-dee,BANGOR-ON-DEE HANDICAP CHASE (5),Masterfield(FR),8,Toby Wynne,Oliver Greenall &amp; Josh Guerriero,453F-3,0.224,6,0.0921,6,9.0,0.2902,2.6,3,0.2
-2026-10-27 15:46:00,Bangor-on-dee,BANGOR-ON-DEE HANDICAP CHASE (5),Grain Trade,7,Benjamin Macey,Billy Aprahamian,1FP244U-3,0.2242,5,0.0936,5,9.5,0.2944,2.7,3,0.2
-2026-10-27 15:46:00,Bangor-on-dee,BANGOR-ON-DEE HANDICAP CHASE (5),Air Apparent(IRE),5,Paul OBrien,Seamus Mullins,74530-,0.2017,7,0.0829,7,10.0,0.2643,2.8,3,0.2
-2026-10-27 15:46:00,Bangor-on-dee,BANGOR-ON-DEE HANDICAP CHASE (5),Riviera Walk(IRE),3,Jonjo ONeill Jr.,Jonjo &amp; A.J. ONeill,00/24F1P-U,0.2369,4,0.0722,9,12.0,0.2332,3.2,3,0.2
-2026-10-27 15:46:00,Bangor-on-dee,BANGOR-ON-DEE HANDICAP CHASE (5),Locquirec(FR),2,Jack Tudor,Oliver Greenall &amp; Josh Guerriero,2/4366F6-,0.1529,8,0.0762,8,13.0,0.2449,3.4,3,0.2
-2026-10-27 16:16:00,Bangor-on-dee,OVERTON HANDICAP CHASE (4),Twistthenightaway(IRE),1,Harry Skelton,Dan Skelton,3/55611P-,0.4543,1,0.1503,1,5.5,0.4162,1.9,3,0.2
-2026-10-27 16:16:00,Bangor-on-dee,OVERTON HANDICAP CHASE (4),Liege Ardent(FR),4,James Bowen,Richard Hobson,3U616-0F2,0.2998,8,0.1222,2,6.5,0.3518,2.1,3,0.2
-2026-10-27 16:16:00,Bangor-on-dee,OVERTON HANDICAP CHASE (4),Soldier For Glory(IRE),5,Sean Bowen,Rebecca Curtis,33-,0.3333,5,0.0896,3,9.0,0.2692,2.6,3,0.2
-2026-10-27 16:16:00,Bangor-on-dee,OVERTON HANDICAP CHASE (4),Bataillon,7,Jack Stenhouse,Philip Hobbs &amp; Johnson White,2/641243-,0.4101,2,0.0855,4,9.0,0.2582,2.6,3,0.2
-2026-10-27 16:16:00,Bangor-on-dee,OVERTON HANDICAP CHASE (4),Cahiers Den(IRE),9,Theo Gillard,Donald Mccain,223/6432-6,0.2941,9,0.0843,5,9.0,0.2549,2.6,3,0.2
-2026-10-27 16:16:00,Bangor-on-dee,OVERTON HANDICAP CHASE (4),Gasmani(IRE),3,Jonathan Burke,David Dennis,443/912-84,0.3568,4,0.081,6,10.0,0.2459,2.8,3,0.2
-2026-10-27 16:16:00,Bangor-on-dee,OVERTON HANDICAP CHASE (4),Daly Boy(FR),6,Jack Tudor,Oliver Greenall &amp; Josh Guerriero,3/25P55-,0.2066,11,0.0801,7,10.0,0.2435,2.8,3,0.2
-2026-10-27 16:16:00,Bangor-on-dee,OVERTON HANDICAP CHASE (4),Babatunde(IRE),10,Sean Houlihan,Richard Mitford-Slade,464352/,0.3174,7,0.068,8,11.0,0.2097,3.0,3,0.2
-2026-10-27 16:16:00,Bangor-on-dee,OVERTON HANDICAP CHASE (4),Pappariche,11,Adam Wedge,Christian Williams,88-45,0.1858,12,0.068,9,11.0,0.2097,3.0,3,0.2
-2026-10-27 16:16:00,Bangor-on-dee,OVERTON HANDICAP CHASE (4),The Big Breac(IRE),8,Peter Kavanagh,Joel Parkinson &amp; Sue Smith,2116/1345-,0.3995,3,0.0575,10,13.0,0.1795,3.4,3,0.2
-2026-10-27 16:16:00,Bangor-on-dee,OVERTON HANDICAP CHASE (4),My Bobbys Lass,12,Toby Wynne,Mel Rowley,413/416-64,0.3229,6,0.0529,11,15.0,0.1661,3.8,3,0.2
-2026-10-27 16:16:00,Bangor-on-dee,OVERTON HANDICAP CHASE (4),On The Platform(IRE),13,Lee Edwards,Belinda Clarke,1P/556,0.2492,10,0.0325,12,23.0,0.1044,5.4,3,0.2
-2026-10-27 16:16:00,Bangor-on-dee,OVERTON HANDICAP CHASE (4),Finn Lough(IRE),2,Charlie Todd,Oliver Greenall &amp; Josh Guerriero,2/2U7572F-,0.1776,13,0.028,13,29.0,0.0904,6.6,3,0.2
-2026-10-27 14:10:00,Catterick Bridge,CELEBRATING HELEN MACKINNON S LX YEARS HANDICAP (6) (D.II),Eldeyaar(IRE),7,Cam Hardie,Antony Brittain,13385239,0.2585,3,0.2113,1,4.333,0.5668,1.83,3,0.25
-2026-10-27 14:10:00,Catterick Bridge,CELEBRATING HELEN MACKINNON S LX YEARS HANDICAP (6) (D.II),Knicks(IRE),1,Joanna Mason,Michael &amp; David Easterby,36427304,0.2421,4,0.1939,2,4.5,0.535,1.88,3,0.25
-2026-10-27 14:10:00,Catterick Bridge,CELEBRATING HELEN MACKINNON S LX YEARS HANDICAP (6) (D.II),My Mate Mackley,4,Taryn Langley,Adam Kirby,21324411,0.6682,1,0.1413,3,6.0,0.4228,2.25,3,0.25
-2026-10-27 14:10:00,Catterick Bridge,CELEBRATING HELEN MACKINNON S LX YEARS HANDICAP (6) (D.II),Suzette,6,Andrew Mullen,Tony Coyle &amp; Kaine Wood,66537-086,0.1623,7,0.1098,4,8.0,0.3434,2.75,3,0.25
-2026-10-27 14:10:00,Catterick Bridge,CELEBRATING HELEN MACKINNON S LX YEARS HANDICAP (6) (D.II),Profiteer(IRE),5,David Allan,Tim Easterby,54050-009,0.1134,10,0.0828,6,11.0,0.2682,3.5,3,0.25
-2026-10-27 14:10:00,Catterick Bridge,CELEBRATING HELEN MACKINNON S LX YEARS HANDICAP (6) (D.II),Ski Angel,8,Clifford Lee,R. Mike Smith,23870225,0.2939,2,0.0833,5,11.0,0.2697,3.5,3,0.25
-2026-10-27 14:10:00,Catterick Bridge,CELEBRATING HELEN MACKINNON S LX YEARS HANDICAP (6) (D.II),Mayflower Rock,10,Jack Callan,Dylan Cunha,40736446,0.2148,6,0.0754,7,12.0,0.2465,3.75,3,0.25
-2026-10-27 14:10:00,Catterick Bridge,CELEBRATING HELEN MACKINNON S LX YEARS HANDICAP (6) (D.II),Winter Crown,3,Billy Garritty,Liam Bailey,71409-867,0.1449,8,0.0548,8,17.0,0.1836,5.0,3,0.25
-2026-10-27 14:10:00,Catterick Bridge,CELEBRATING HELEN MACKINNON S LX YEARS HANDICAP (6) (D.II),Sweet Desire,2,P. J. Mcdonald,Steph Hollinshead,04860,0.1424,9,0.0318,9,29.0,0.1093,8.0,3,0.25
-2026-10-27 14:10:00,Catterick Bridge,CELEBRATING HELEN MACKINNON S LX YEARS HANDICAP (6) (D.II),Container Express,9,Aiden Brookes,Philip Kirby,514-55345,0.2381,5,0.0156,10,67.0,0.0546,17.5,3,0.25
-2026-10-27 14:40:00,Catterick Bridge,REMEMBERING KEVIN LUMB AKA BURNLEY KEVIN HANDICAP (4),Aberama Gold,6,Mark Winn,David OMeara,03522024,0.3348,5,0.2324,1,3.75,0.6164,1.69,3,0.25
-2026-10-27 14:40:00,Catterick Bridge,REMEMBERING KEVIN LUMB AKA BURNLEY KEVIN HANDICAP (4),Miraculous(IRE),2,David Allan,Tim Easterby,81240106,0.3211,6,0.187,2,4.5,0.5352,1.88,3,0.25
-2026-10-27 14:40:00,Catterick Bridge,REMEMBERING KEVIN LUMB AKA BURNLEY KEVIN HANDICAP (4),Marching Mac(IRE),1,Grace McEntee,Phil Mcentee,04314581,0.5147,1,0.153,3,5.5,0.462,2.12,3,0.25
-2026-10-27 14:40:00,Catterick Bridge,REMEMBERING KEVIN LUMB AKA BURNLEY KEVIN HANDICAP (4),Homestrait(IRE),5,Billy Garritty,Brian Ellison,46123843,0.348,3,0.1416,4,6.5,0.435,2.38,3,0.25
-2026-10-27 14:40:00,Catterick Bridge,REMEMBERING KEVIN LUMB AKA BURNLEY KEVIN HANDICAP (4),Manila Scouse,4,Duran Fentiman,Tim Easterby,10006002,0.2253,8,0.1053,5,8.5,0.3404,2.88,3,0.25
-2026-10-27 14:40:00,Catterick Bridge,REMEMBERING KEVIN LUMB AKA BURNLEY KEVIN HANDICAP (4),Belsito(GER),3,Tom Eaves,Kevin Ryan,04132157,0.4372,2,0.0891,6,11.0,0.2942,3.5,3,0.25
-2026-10-27 14:40:00,Catterick Bridge,REMEMBERING KEVIN LUMB AKA BURNLEY KEVIN HANDICAP (4),Azure Zain(FR),7,Cam Hardie,Richard &amp; Peter Fahey,35-016637,0.2768,7,0.0625,7,15.0,0.2132,4.5,3,0.25
-2026-10-27 14:40:00,Catterick Bridge,REMEMBERING KEVIN LUMB AKA BURNLEY KEVIN HANDICAP (4),Quercus(IRE),8,Shane Gray,Ann Duffield,210-56510,0.3378,4,0.029,8,29.0,0.1028,8.0,3,0.25
-2026-10-27 15:10:00,Catterick Bridge,EVERY RACE LIVE ON RACING TV HANDICAP (5),Havana Rum(IRE),3,Ethan Tindall,Richard &amp; Peter Fahey,53382844,0.2554,6,0.1428,2,5.5,0.3999,2.12,3,0.25
-2026-10-27 15:10:00,Catterick Bridge,EVERY RACE LIVE ON RACING TV HANDICAP (5),Vince Le Prince,10,David Allan,Tim Easterby,20334412,0.5057,1,0.1429,1,5.5,0.4001,2.12,3,0.25
-2026-10-27 15:10:00,Catterick Bridge,EVERY RACE LIVE ON RACING TV HANDICAP (5),Wobwobwob(IRE),7,Barry Mchugh,Adrian Keatley,09509853,0.2039,11,0.1104,3,7.0,0.3232,2.5,3,0.25
-2026-10-27 15:10:00,Catterick Bridge,EVERY RACE LIVE ON RACING TV HANDICAP (5),The Resdev Scholar(IRE),4,Joanna Mason,Michael &amp; David Easterby,43302478,0.214,10,0.0929,4,8.0,0.2781,2.75,3,0.25
-2026-10-27 15:10:00,Catterick Bridge,EVERY RACE LIVE ON RACING TV HANDICAP (5),Mister Sox,1,S. B. Kirrane,Tim Easterby,00553613,0.4299,2,0.0915,5,8.5,0.2744,2.88,3,0.25
-2026-10-27 15:10:00,Catterick Bridge,EVERY RACE LIVE ON RACING TV HANDICAP (5),Gentle George,2,Clifford Lee,R. Mike Smith,16-009907,0.1159,15,0.0562,8,13.0,0.1759,4.0,3,0.25
-2026-10-27 15:10:00,Catterick Bridge,EVERY RACE LIVE ON RACING TV HANDICAP (5),Evocative Spark(IRE),11,Oliver Stammers,John David Riches,17147956,0.2352,9,0.0611,6,13.0,0.1901,4.0,3,0.25
-2026-10-27 15:10:00,Catterick Bridge,EVERY RACE LIVE ON RACING TV HANDICAP (5),Highfield Viking,12,Jason Hart,John &amp; Sean Quinn,50908310,0.3459,3,0.0597,7,13.0,0.1861,4.0,3,0.25
-2026-10-27 15:10:00,Catterick Bridge,EVERY RACE LIVE ON RACING TV HANDICAP (5),Decem Starr(IRE),5,Ryan Sexton,Julie Camacho,025-44082,0.265,5,0.0543,9,15.0,0.1703,4.5,3,0.25
-2026-10-27 15:10:00,Catterick Bridge,EVERY RACE LIVE ON RACING TV HANDICAP (5),The Gay Blade,9,Andrew Mullen,Iain Jardine,11150874,0.2383,7,0.0507,10,15.0,0.1597,4.5,3,0.25
-2026-10-27 15:10:00,Catterick Bridge,EVERY RACE LIVE ON RACING TV HANDICAP (5),Swift Salian(IRE),6,Callum Rodriguez,David &amp; Nicola Barron,22208450,0.1829,12,0.0477,11,17.0,0.1507,5.0,3,0.25
-2026-10-27 15:10:00,Catterick Bridge,EVERY RACE LIVE ON RACING TV HANDICAP (5),Black Storm(IRE),8,Jake Dickson,Katie Scott,25331598,0.2883,4,0.0348,12,21.0,0.1116,6.0,3,0.25
-2026-10-27 15:10:00,Catterick Bridge,EVERY RACE LIVE ON RACING TV HANDICAP (5),Surprised,14,Paul Mulrennan,Bryan &amp; Beth Smart,5-0638700,0.1397,14,0.0252,13,29.0,0.0816,8.0,3,0.25
-2026-10-27 15:10:00,Catterick Bridge,EVERY RACE LIVE ON RACING TV HANDICAP (5),Another Investment(IRE),13,Faye McManoman,Nigel Tinkler,22265099,0.1571,13,0.0187,14,41.0,0.061,11.0,3,0.25
-2026-10-27 15:10:00,Catterick Bridge,EVERY RACE LIVE ON RACING TV HANDICAP (5),Penny Ghent,15,Rhys Elliott,Simon Whitaker,01138300,0.2378,8,0.0109,15,67.0,0.0358,17.5,3,0.25
-2026-10-27 15:40:00,Catterick Bridge,BET AT racingtv.com HANDICAP (6),Lilykoy,12,Jack Callan,Dylan Cunha,56834312,0.5037,1,0.2339,1,3.5,0.6011,1.62,3,0.25
-2026-10-27 15:40:00,Catterick Bridge,BET AT racingtv.com HANDICAP (6),Corsican Caper(IRE),6,Sean Dylan Bowen,Kevin &amp; Lauren Frost,4669-4351,0.4508,2,0.1897,2,4.33,0.5241,1.83,3,0.25
-2026-10-27 15:40:00,Catterick Bridge,BET AT racingtv.com HANDICAP (6),Habari(IRE),4,Shane Gray,Daragh Bourke,58/4007-87,0.1372,11,0.1131,3,7.5,0.3504,2.62,3,0.25
-2026-10-27 15:40:00,Catterick Bridge,BET AT racingtv.com HANDICAP (6),Ebony Maw,7,Jason Hart,Ewan Whillans,74313364,0.3397,4,0.0899,4,9.0,0.2872,3.0,3,0.25
-2026-10-27 15:40:00,Catterick Bridge,BET AT racingtv.com HANDICAP (6),Rock On Pedro(IRE),1,H. J. Horgan,Olly Murphy,,,,0.0756,5,11.0,0.2459,3.5,3,0.25
-2026-10-27 15:40:00,Catterick Bridge,BET AT racingtv.com HANDICAP (6),Bollin Neil,3,Jake Dickson,Tim Easterby,2115-2759,0.2667,5,0.0756,6,11.0,0.2459,3.5,3,0.25
-2026-10-27 15:40:00,Catterick Bridge,BET AT racingtv.com HANDICAP (6),Fairydale(IRE),8,David Allan,Tim Easterby,84273518,0.3927,3,0.0756,7,11.0,0.2459,3.5,3,0.25
-2026-10-27 15:40:00,Catterick Bridge,BET AT racingtv.com HANDICAP (6),Two Plus Two(IRE),2,Dylan Hogan,Ed De Giles,14242975,0.2403,6,0.0443,8,19.0,0.1495,5.5,3,0.25
-2026-10-27 15:40:00,Catterick Bridge,BET AT racingtv.com HANDICAP (6),Flag Of Eva,5,Kevin Stott,Michael Appleby,663597,0.1751,7,0.0443,9,19.0,0.1495,5.5,3,0.25
-2026-10-27 15:40:00,Catterick Bridge,BET AT racingtv.com HANDICAP (6),Golden Samba,9,Joanna Mason,Tina Jackson,84376470,0.1669,8,0.0317,10,26.0,0.1085,7.25,3,0.25
-2026-10-27 15:40:00,Catterick Bridge,BET AT racingtv.com HANDICAP (6),Lion City(IRE),10,Clifford Lee,Clare Ellam,5-0067,0.1408,10,0.0152,11,51.0,0.0529,13.5,3,0.25
-2026-10-27 15:40:00,Catterick Bridge,BET AT racingtv.com HANDICAP (6),Masterpiece,11,Rhys Elliott,Patrick Morris,3060,0.1559,9,0.011,12,81.0,0.0385,21.0,3,0.25
-2026-10-27 12:50:00,Galway,IRISH STALLION FARMS EBF FILLIES MAIDEN,Duquesne Bay(IRE),1,J. Kearney,"Gavin Patrick Cromwell, Ireland",8,0.125,7,,,,,,3,0.25
-2026-10-27 12:50:00,Galway,IRISH STALLION FARMS EBF FILLIES MAIDEN,Handsoffshesmine(IRE),2,C. D. Hayes,"A. Slattery, Ireland",68,0.1431,6,,,,,,3,0.25
-2026-10-27 12:50:00,Galway,IRISH STALLION FARMS EBF FILLIES MAIDEN,Itstheonlyoneigot,3,Andrew Joseph Slattery,"A. Slattery, Ireland",3,0.3333,1,,,,,,3,0.25
-2026-10-27 12:50:00,Galway,IRISH STALLION FARMS EBF FILLIES MAIDEN,Lan De Ghaire(IRE),4,L. T. McAteer,"J. S. Bolger, Ireland",339,0.2392,4,,,,,,3,0.25
-2026-10-27 12:50:00,Galway,IRISH STALLION FARMS EBF FILLIES MAIDEN,Looking For Love(IRE),5,Seamie Heffernan,"John Patrick Murtagh, Ireland",,,,,,,,,3,0.25
-2026-10-27 12:50:00,Galway,IRISH STALLION FARMS EBF FILLIES MAIDEN,Petticoat Bay(USA),6,Jack Cleary,"Aidan OBrien, Ireland",3,0.3333,2,,,,,,3,0.25
-2026-10-27 12:50:00,Galway,IRISH STALLION FARMS EBF FILLIES MAIDEN,San Juan De Lope(IRE),7,D. W. OConnor,"P. Twomey, Ireland",,,,,,,,,3,0.25
-2026-10-27 12:50:00,Galway,IRISH STALLION FARMS EBF FILLIES MAIDEN,Unreal Friend(IRE),8,G. F. Carroll,"Joseph G. Murphy, Ireland",38,0.2156,5,,,,,,3,0.25
-2026-10-27 12:50:00,Galway,IRISH STALLION FARMS EBF FILLIES MAIDEN,Wunderschon(GER),9,N. M. Crosse,"Mrs J. Harrington, Ireland",7344,0.2502,3,,,,,,3,0.25
-2026-10-27 13:20:00,Galway,RACING IN THE CITY OF TRIBES HANDICAP,Highbury See See(IRE),1,S. Coen,"A. Slattery, Ireland",03092261,0.4999,1,,,,,,3,0.25
-2026-10-27 13:20:00,Galway,RACING IN THE CITY OF TRIBES HANDICAP,Never Loose(IRE),2,G. M. Ryan,"J. A. Stack, Ireland",1-47,0.3926,3,,,,,,3,0.25
-2026-10-27 13:20:00,Galway,RACING IN THE CITY OF TRIBES HANDICAP,Amplitude(IRE),3,G. F. Carroll,"Joseph G. Murphy, Ireland",04933457,0.2163,9,,,,,,3,0.25
-2026-10-27 13:20:00,Galway,RACING IN THE CITY OF TRIBES HANDICAP,Excuzio Joe(IRE),4,R. C. Colgan,"Matthew J. Smith, Ireland",02/2,0.3997,2,,,,,,3,0.25
-2026-10-27 13:20:00,Galway,RACING IN THE CITY OF TRIBES HANDICAP,Flash Of Fire,5,R. M. Mulligan,"John Patrick Murtagh, Ireland",142-7485,0.2187,8,,,,,,3,0.25
-2026-10-27 13:20:00,Galway,RACING IN THE CITY OF TRIBES HANDICAP,Flying Fortress,6,R. Whearty,"Gavin Patrick Cromwell, Ireland",10-508240,0.2136,10,,,,,,3,0.25
-2026-10-27 13:20:00,Galway,RACING IN THE CITY OF TRIBES HANDICAP,Cherry Hill Girl(IRE),7,Andrew Joseph Slattery,"A. Slattery, Ireland",13-774370,0.1774,12,,,,,,3,0.25
-2026-10-27 13:20:00,Galway,RACING IN THE CITY OF TRIBES HANDICAP,Lady Arwen,8,Jack Cleary,"Conor ODwyer, Ireland",60112830,0.3718,5,,,,,,3,0.25
-2026-10-27 13:20:00,Galway,RACING IN THE CITY OF TRIBES HANDICAP,Stable Lane(IRE),9,Seamie Heffernan,"Rodger Sweeney, Ireland",66-2,0.3079,6,,,,,,3,0.25
-2026-10-27 13:20:00,Galway,RACING IN THE CITY OF TRIBES HANDICAP,Earls(IRE),10,J. Kearney,"Gavin Patrick Cromwell, Ireland",22237090,0.1633,13,,,,,,3,0.25
-2026-10-27 13:20:00,Galway,RACING IN THE CITY OF TRIBES HANDICAP,San Aer(IRE),11,D. W. OConnor,"Ross OSullivan, Ireland",90005255,0.2336,7,,,,,,3,0.25
-2026-10-27 13:20:00,Galway,RACING IN THE CITY OF TRIBES HANDICAP,Titanium(FR),12,Sadhbh Tormey,"Ciaran Murphy, Ireland",1-0650050,0.1378,15,,,,,,3,0.25
-2026-10-27 13:20:00,Galway,RACING IN THE CITY OF TRIBES HANDICAP,Jps Express(IRE),13,Wesley Joyce,"Michael Mulvany, Ireland",31563003,0.2135,11,,,,,,3,0.25
-2026-10-27 13:20:00,Galway,RACING IN THE CITY OF TRIBES HANDICAP,Aquilla Star(IRE),14,Nicola Burns,"John Mcconnell, Ireland",72-720715,0.3821,4,,,,,,3,0.25
-2026-10-27 13:20:00,Galway,RACING IN THE CITY OF TRIBES HANDICAP,Sylkie,15,R. P. Cleary,"Daniel John Howard, Ireland",09734-007,0.1595,14,,,,,,3,0.25
-2026-10-27 13:55:00,Galway,ELECTRIC GALWAY MAIDEN,Dawnmore(IRE),1,L. T. McAteer,"J. S. Bolger, Ireland",52324,0.3567,2,,,,,,3,0.25
-2026-10-27 13:55:00,Galway,ELECTRIC GALWAY MAIDEN,Evan D Invincible(IRE),2,G. M. Ryan,"Mark Mcniff, Ireland",0,0.1,8,,,,,,3,0.25
-2026-10-27 13:55:00,Galway,ELECTRIC GALWAY MAIDEN,Imposing(IRE),3,Jack Cleary,"Aidan OBrien, Ireland",92,0.3309,3,,,,,,3,0.25
-2026-10-27 13:55:00,Galway,ELECTRIC GALWAY MAIDEN,Lash La Rue(IRE),4,Siobhan Rutledge,"Noel Meade, Ireland",09,0.1063,6,,,,,,3,0.25
-2026-10-27 13:55:00,Galway,ELECTRIC GALWAY MAIDEN,Nonsense,5,Rowan Scott,"John S. ODonoghue, Ireland",2,0.5,1,,,,,,3,0.25
-2026-10-27 13:55:00,Galway,ELECTRIC GALWAY MAIDEN,Oklahoma(USA),6,Declan Mcdonogh,"Aidan OBrien, Ireland",2376,0.2491,4,,,,,,3,0.25
-2026-10-27 13:55:00,Galway,ELECTRIC GALWAY MAIDEN,System Reset,7,J. M. Sheridan,"W. P. Mullins, Ireland",0,0.1,9,,,,,,3,0.25
-2026-10-27 13:55:00,Galway,ELECTRIC GALWAY MAIDEN,Angel Invincible(IRE),8,L. F. Roche,"Daniel McLoughlin, Ireland",09,0.1063,7,,,,,,3,0.25
-2026-10-27 13:55:00,Galway,ELECTRIC GALWAY MAIDEN,Maxims Of Equity(IRE),9,Seamie Heffernan,"M. D. OCallaghan, Ireland",08,0.1141,5,,,,,,3,0.25
-2026-10-27 13:55:00,Galway,ELECTRIC GALWAY MAIDEN,Rockfleet(IRE),10,N. M. Crosse,"Mrs J. Harrington, Ireland",0,0.1,10,,,,,,3,0.25
-2026-10-27 14:25:00,Galway,www.swordsecurity.com NURSERY HANDICAP,Melchizedek(IRE),1,S. Coen,"M. P. Fogarty, Ireland",005,0.1424,4,,,,,,2,0.25
-2026-10-27 14:25:00,Galway,www.swordsecurity.com NURSERY HANDICAP,Wecouldavehaditall(IRE),2,N. M. Crosse,"Daniel McLoughlin, Ireland",90736,0.187,1,,,,,,2,0.25
-2026-10-27 14:25:00,Galway,www.swordsecurity.com NURSERY HANDICAP,Gabby Hayes(IRE),3,C. D. Hayes,"Noel Meade, Ireland",96630,0.18,2,,,,,,2,0.25
-2026-10-27 14:25:00,Galway,www.swordsecurity.com NURSERY HANDICAP,Miss Cornelia(IRE),4,G. F. Carroll,"Joseph G. Murphy, Ireland",670,0.1307,5,,,,,,2,0.25
-2026-10-27 14:25:00,Galway,www.swordsecurity.com NURSERY HANDICAP,Knockraha Pa(IRE),5,R. C. Colgan,"Matthew J. Smith, Ireland",000,0.1,7,,,,,,2,0.25
-2026-10-27 14:25:00,Galway,www.swordsecurity.com NURSERY HANDICAP,Darlene(IRE),6,D. W. OConnor,"Robson De Aguiar, Ireland",066,0.15,3,,,,,,2,0.25
-2026-10-27 14:25:00,Galway,www.swordsecurity.com NURSERY HANDICAP,Silk Twist(IRE),7,J. S. Dalton,"Thomas Mullins, Ireland",07098,0.1168,6,,,,,,2,0.25
-2026-10-27 14:55:00,Galway,CORRIB FOOD PRODUCTS MAIDEN,Spacebound,1,P. McGettigan,"Daniel McLoughlin, Ireland",22454,0.3014,2,,,,,,3,0.25
-2026-10-27 14:55:00,Galway,CORRIB FOOD PRODUCTS MAIDEN,Danpaddyandy(IRE),2,G. M. Ryan,"Kieran Patrick Cotter, Ireland",,,,,,,,,3,0.25
-2026-10-27 14:55:00,Galway,CORRIB FOOD PRODUCTS MAIDEN,Howya Pal(IRE),3,C. D. Hayes,"John Andrew Kinsella, Ireland",07,0.1242,6,,,,,,3,0.25
-2026-10-27 14:55:00,Galway,CORRIB FOOD PRODUCTS MAIDEN,Mr Mercury(IRE),4,L. F. Roche,"James A. Nash, Ireland",0088,0.1157,7,,,,,,3,0.25
-2026-10-27 14:55:00,Galway,CORRIB FOOD PRODUCTS MAIDEN,Red Cuillin(IRE),5,R. C. Colgan,"Gillian Scott, Ireland",0,0.1,8,,,,,,3,0.25
-2026-10-27 14:55:00,Galway,CORRIB FOOD PRODUCTS MAIDEN,Saliba(IRE),6,N. M. Crosse,"Mrs J. Harrington, Ireland",365262,0.3386,1,,,,,,3,0.25
-2026-10-27 14:55:00,Galway,CORRIB FOOD PRODUCTS MAIDEN,Shorten The Winter(IRE),7,Seamie Heffernan,"M. D. OCallaghan, Ireland",0,0.1,9,,,,,,3,0.25
-2026-10-27 14:55:00,Galway,CORRIB FOOD PRODUCTS MAIDEN,Spectical(IRE),8,P. A. Harnett,"Ciaran Murphy, Ireland",54-509,0.1548,5,,,,,,3,0.25
-2026-10-27 14:55:00,Galway,CORRIB FOOD PRODUCTS MAIDEN,Tide Of Fortune(IRE),9,G. F. Carroll,"Richard Brabazon, Ireland",820,0.2366,3,,,,,,3,0.25
-2026-10-27 14:55:00,Galway,CORRIB FOOD PRODUCTS MAIDEN,Petticoat Pilot(IRE),10,K. J. Leonard,"David Edward Finn, Ireland",0/,0.1,10,,,,,,3,0.25
-2026-10-27 14:55:00,Galway,CORRIB FOOD PRODUCTS MAIDEN,Abiding Memory(IRE),11,Declan Mcdonogh,"G. OLeary, Ireland",5,0.2,4,,,,,,3,0.25
-2026-10-27 14:55:00,Galway,CORRIB FOOD PRODUCTS MAIDEN,Maybe Art(IRE),12,R. M. Mulligan,"Cian Hughes, Ireland",00,0.1,11,,,,,,3,0.25
-2026-10-27 14:55:00,Galway,CORRIB FOOD PRODUCTS MAIDEN,Subtle Shade(IRE),13,J. M. Sheridan,"Joseph Patrick OBrien, Ireland",,,,,,,,,3,0.25
-2026-10-27 15:25:00,Galway,BARNA RECYCLING HANDICAP,La Tulipe Noire(IRE),1,Seamie Heffernan,"Aengus King, Ireland",95870764,0.1723,12,,,,,,4,0.25
-2026-10-27 15:25:00,Galway,BARNA RECYCLING HANDICAP,Buttermere Ridge(IRE),2,P. A. Harnett,"Oliver Mckiernan, Ireland",00-740034,0.2146,9,,,,,,4,0.25
-2026-10-27 15:25:00,Galway,BARNA RECYCLING HANDICAP,Tariff(IRE),3,S. Coen,"Conor David Maxwell, Ireland",08936121,0.64,1,,,,,,4,0.25
-2026-10-27 15:25:00,Galway,BARNA RECYCLING HANDICAP,God Knows(IRE),4,P. McGettigan,"P. Sweeney, Ireland",09070052,0.2432,5,,,,,,4,0.25
-2026-10-27 15:25:00,Galway,BARNA RECYCLING HANDICAP,Real Petite(GER),5,J. S. Dalton,"Thomas Mullins, Ireland",01608641,0.4156,2,,,,,,4,0.25
-2026-10-27 15:25:00,Galway,BARNA RECYCLING HANDICAP,Tempted Angel(IRE),6,Reese Holohan,"Mark Fahey, Ireland",50680,0.1296,15,,,,,,4,0.25
-2026-10-27 15:25:00,Galway,BARNA RECYCLING HANDICAP,Racing Royalty,7,Nicola Burns,"Gillian Scott, Ireland",5399-7570,0.1345,14,,,,,,4,0.25
-2026-10-27 15:25:00,Galway,BARNA RECYCLING HANDICAP,Think About It(IRE),8,L. T. McAteer,Thomas P McGettigan,49-805709,0.1258,16,,,,,,4,0.25
-2026-10-27 15:25:00,Galway,BARNA RECYCLING HANDICAP,Capolinea(IRE),9,J. J. G. Ryan,"Patrick Magee, Ireland",5006,0.1398,13,,,,,,4,0.25
-2026-10-27 15:25:00,Galway,BARNA RECYCLING HANDICAP,Movin And Groovin(IRE),10,N. M. Crosse,"David Marnane, Ireland",6375-1373,0.3505,3,,,,,,4,0.25
-2026-10-27 15:25:00,Galway,BARNA RECYCLING HANDICAP,Saith Seren,11,R. C. Colgan,"Andrew Lee, Ireland",94-555365,0.2155,8,,,,,,4,0.25
-2026-10-27 15:25:00,Galway,BARNA RECYCLING HANDICAP,Miss Americana,12,Declan Mcdonogh,"Charles OBrien, Ireland",29927355,0.239,6,,,,,,4,0.25
-2026-10-27 15:25:00,Galway,BARNA RECYCLING HANDICAP,Survivors Code(IRE),13,R. Whearty,"Conor David Maxwell, Ireland",17799052,0.2448,4,,,,,,4,0.25
-2026-10-27 15:25:00,Galway,BARNA RECYCLING HANDICAP,Tijuana,14,T. Casey,"David Edward Finn, Ireland",00,0.1,18,,,,,,4,0.25
-2026-10-27 15:25:00,Galway,BARNA RECYCLING HANDICAP,Arizona Star(IRE),15,Wesley Joyce,"Michael Mulvany, Ireland",06385027,0.2361,7,,,,,,4,0.25
-2026-10-27 15:25:00,Galway,BARNA RECYCLING HANDICAP,Spinola Bear(IRE),16,Reserve,"Kieran Patrick Cotter, Ireland",07089,0.1157,17,,,,,,4,0.25
-2026-10-27 15:25:00,Galway,BARNA RECYCLING HANDICAP,Fan Club,17,Reserve,"Denis Hogan, Ireland",4/57-640,0.1727,11,,,,,,4,0.25
-2026-10-27 15:25:00,Galway,BARNA RECYCLING HANDICAP,Tai Tam Bay(IRE),18,Reserve,"Eddie &amp; Patrick Harty, Ireland",43-425907,0.1802,10,,,,,,4,0.25
-2026-10-27 15:55:00,Galway,GALWAY HANDICAP,Glenroyal(IRE),1,J. M. Sheridan,"Joseph Patrick OBrien, Ireland",1011-0800,0.2666,7,,,,,,3,0.25
-2026-10-27 15:55:00,Galway,GALWAY HANDICAP,Mister Adam,2,Danny OLeary,"G. OLeary, Ireland",4/4316-8,0.3352,5,,,,,,3,0.25
-2026-10-27 15:55:00,Galway,GALWAY HANDICAP,Unauthorized(IRE),3,P. McGettigan,"Aidan Melia, Ireland",71827000,0.1484,11,,,,,,3,0.25
-2026-10-27 15:55:00,Galway,GALWAY HANDICAP,Ben Hur(IRE),4,G. F. Carroll,"Noel Meade, Ireland",47/7-31,0.4717,3,,,,,,3,0.25
-2026-10-27 15:55:00,Galway,GALWAY HANDICAP,Ballybawn Belter(IRE),5,Seamie Heffernan,"Miss Elizabeth Doyle, Ireland",261,0.6032,2,,,,,,3,0.25
-2026-10-27 15:55:00,Galway,GALWAY HANDICAP,Royal Saxo(FR),6,R. C. Colgan,"A. J. Martin, Ireland",212-99576,0.1802,10,,,,,,3,0.25
-2026-10-27 15:55:00,Galway,GALWAY HANDICAP,Ryefield Dasher(IRE),7,Nicola Burns,"T. Gibney, Ireland",45-605311,0.6221,1,,,,,,3,0.25
-2026-10-27 15:55:00,Galway,GALWAY HANDICAP,Slurricane(IRE),8,L. F. Roche,"Ross OSullivan, Ireland",43/71-4068,0.2372,8,,,,,,3,0.25
-2026-10-27 15:55:00,Galway,GALWAY HANDICAP,Granville Street(IRE),9,Reese Holohan,"Ciaran Murphy, Ireland",6-2548032,0.2951,6,,,,,,3,0.25
-2026-10-27 15:55:00,Galway,GALWAY HANDICAP,Speckled Meadow(IRE),10,R. M. Mulligan,"Don Browne, Ireland",86569620,0.2171,9,,,,,,3,0.25
-2026-10-27 15:55:00,Galway,GALWAY HANDICAP,Shays Dream(IRE),11,C. D. Hayes,"Joseph Patrick OBrien, Ireland",00890213,0.4414,4,,,,,,3,0.25
-2026-10-27 16:25:00,Galway,GALWAY RACES HANDICAP,Dark Summit,1,J. M. Sheridan,"Paul W. Flynn, Ireland",00083032,0.3021,6,,,,,,4,0.25
-2026-10-27 16:25:00,Galway,GALWAY RACES HANDICAP,Metamorpheus(IRE),2,A. Browne-Souza,"Andrew McNamara, Ireland",67835-143,0.3955,4,,,,,,4,0.25
-2026-10-27 16:25:00,Galway,GALWAY RACES HANDICAP,The Rock Factor(IRE),3,Reese Holohan,"Emmet Mullins, Ireland",9899,0.114,20,,,,,,4,0.25
-2026-10-27 16:25:00,Galway,GALWAY RACES HANDICAP,Starting Monday(IRE),4,Nicola Burns,"Gillian Scott, Ireland",804-01523,0.4057,2,,,,,,4,0.25
-2026-10-27 16:25:00,Galway,GALWAY RACES HANDICAP,Ellaat,5,Gearoid Patrick Brouder,"Ian OConnor, Ireland",0/80-07,0.1171,19,,,,,,4,0.25
-2026-10-27 16:25:00,Galway,GALWAY RACES HANDICAP,Inver Bay(IRE),6,R. C. Colgan,"Aidan Anthony Howard, Ireland",080-1,0.4248,1,,,,,,4,0.25
-2026-10-27 16:25:00,Galway,GALWAY RACES HANDICAP,Pure Granite(IRE),7,J. S. Dalton,John M. Harney,0/6006-491,0.3991,3,,,,,,4,0.25
-2026-10-27 16:25:00,Galway,GALWAY RACES HANDICAP,Calamint(IRE),8,Jack Cleary,"Adrian Murray, Ireland",0476-2830,0.2197,8,,,,,,4,0.25
-2026-10-27 16:25:00,Galway,GALWAY RACES HANDICAP,Sands Castle(IRE),9,Seamie Heffernan,"Adrian Sexton, Ireland",0-4502008,0.1681,11,,,,,,4,0.25
-2026-10-27 16:25:00,Galway,GALWAY RACES HANDICAP,Surrey Force(FR),10,C. D. Hayes,"T. Gibney, Ireland",53233/088-,0.1989,10,,,,,,4,0.25
-2026-10-27 16:25:00,Galway,GALWAY RACES HANDICAP,Sweetie Too(IRE),11,L. T. McAteer,"Brendan Duke, Ireland",084507,0.1521,12,,,,,,4,0.25
-2026-10-27 16:25:00,Galway,GALWAY RACES HANDICAP,Limestone Red(IRE),12,G. M. Ryan,"Tracey Collins, Ireland",14882357,0.2326,7,,,,,,4,0.25
-2026-10-27 16:25:00,Galway,GALWAY RACES HANDICAP,Omissions(IRE),13,L. F. Roche,"Eoin Griffin, Ireland",9-090,0.1048,21,,,,,,4,0.25
-2026-10-27 16:25:00,Galway,GALWAY RACES HANDICAP,Premier Princess(IRE),14,Jared Huggan,"Denis Hogan, Ireland",506807,0.1335,15,,,,,,4,0.25
-2026-10-27 16:25:00,Galway,GALWAY RACES HANDICAP,Tintinabulla(IRE),15,Siobhan Rutledge,"Ms Sheila Lavery, Ireland",087043,0.2097,9,,,,,,4,0.25
-2026-10-27 16:25:00,Galway,GALWAY RACES HANDICAP,Chant Dor(IRE),16,P. McGettigan,"Daniel McLoughlin, Ireland",000-705,0.1365,13,,,,,,4,0.25
-2026-10-27 16:25:00,Galway,GALWAY RACES HANDICAP,Duleek Street(IRE),17,T. Casey,"John Mcconnell, Ireland",9/77-0,0.1225,17,,,,,,4,0.25
-2026-10-27 16:25:00,Galway,GALWAY RACES HANDICAP,The Monday Club,18,R. P. Cleary,"Brendan Duke, Ireland",55090,0.1281,16,,,,,,4,0.25
-2026-10-27 16:25:00,Galway,GALWAY RACES HANDICAP,Duke Of Leggagh(IRE),19,Reserve,"Michael Mulvany, Ireland",157-90005,0.1336,14,,,,,,4,0.25
-2026-10-27 16:25:00,Galway,GALWAY RACES HANDICAP,You Make Me Smile(IRE),20,Reserve,"P. A. Fahy, Ireland",821-73285,0.3094,5,,,,,,4,0.25
-2026-10-27 16:25:00,Galway,GALWAY RACES HANDICAP,Mapa(CAN),21,Reserve,"Ms Sheila Lavery, Ireland",03000608,0.1188,18,,,,,,4,0.25
-2026-10-27 14:31:00,Newcastle,SUNDAY LUNCH AT THE BORDER MINSTREL NOVICES LIMITED HANDICAP CHASE (3),Silver Hill(IRE),3,Gavin Sheehan,Jamie Snowden,14/51221-,0.6616,1,0.3986,1,2.38,,,0,
-2026-10-27 14:31:00,Newcastle,SUNDAY LUNCH AT THE BORDER MINSTREL NOVICES LIMITED HANDICAP CHASE (3),Kent De Thaix(FR),2,Jonathan England,Sam England,051P516-,0.4245,2,0.3177,2,3.0,,,0,
-2026-10-27 14:31:00,Newcastle,SUNDAY LUNCH AT THE BORDER MINSTREL NOVICES LIMITED HANDICAP CHASE (3),Rocheval(FR),5,Patrick Wadge,Lucinda Russell &amp; Michael Scudamore,2F/6P644P-,0.1342,4,0.1676,3,5.5,,,0,
-2026-10-27 14:31:00,Newcastle,SUNDAY LUNCH AT THE BORDER MINSTREL NOVICES LIMITED HANDICAP CHASE (3),Sleedagh(IRE),4,Derek Fox,Lucinda Russell &amp; Michael Scudamore,2/222339-5,0.2748,3,0.116,4,8.0,,,0,
-2026-10-27 15:01:00,Newcastle,DOGS WELCOME AT THE BORDER MINSTREL PUB HANDICAP HURDLE (Qualifier) (4),Jentobello,3,Brian Hughes,Iain Jardine,13223-421,0.5804,1,0.3059,1,2.875,0.5754,1.47,2,0.25
-2026-10-27 15:01:00,Newcastle,DOGS WELCOME AT THE BORDER MINSTREL PUB HANDICAP HURDLE (Qualifier) (4),North Of Richmond(IRE),1,Kielan Woods,Alex Hales,12/134P-,0.3752,3,0.2525,3,3.5,0.501,1.62,2,0.25
-2026-10-27 15:01:00,Newcastle,DOGS WELCOME AT THE BORDER MINSTREL PUB HANDICAP HURDLE (Qualifier) (4),Roarin Success,5,Danny McMenamin,Donald Mccain,24-511323,0.5165,2,0.2559,2,3.5,0.5061,1.62,2,0.25
-2026-10-27 15:01:00,Newcastle,DOGS WELCOME AT THE BORDER MINSTREL PUB HANDICAP HURDLE (Qualifier) (4),Max Of Stars(FR),2,Jamie Hamilton,Ollie Pears,13U-442P4,0.2175,4,0.0894,4,10.0,0.1988,3.25,2,0.25
-2026-10-27 15:01:00,Newcastle,DOGS WELCOME AT THE BORDER MINSTREL PUB HANDICAP HURDLE (Qualifier) (4),Hunters Spring,6,Patrick Wadge,Lucinda Russell &amp; Michael Scudamore,32/443U-P3,0.1863,5,0.053,5,17.0,0.1201,5.0,2,0.25
-2026-10-27 15:01:00,Newcastle,DOGS WELCOME AT THE BORDER MINSTREL PUB HANDICAP HURDLE (Qualifier) (4),Pyramid Place(IRE),4,Harry Reed,Tristan Davidson,8/6058P-6P,0.0821,6,0.0433,6,21.0,0.0986,6.0,2,0.25
-2026-10-27 15:31:00,Newcastle,attheraces.com/marketmovers HANDICAP CHASE (Qualifier) (4),Rule Me In(IRE),7,Kielan Woods,Christian Williams,435447-42,0.3004,4,0.3903,1,2.25,0.6711,1.31,2,0.25
-2026-10-27 15:31:00,Newcastle,attheraces.com/marketmovers HANDICAP CHASE (Qualifier) (4),Loulou Madrik(FR),2,Danny McMenamin,Mark Walford,8423452-7,0.2943,5,0.2195,2,4.0,0.4562,1.75,2,0.25
-2026-10-27 15:31:00,Newcastle,attheraces.com/marketmovers HANDICAP CHASE (Qualifier) (4),Empty Nest(IRE),5,Jamie Hamilton,Mark Walford,6/7522653-,0.3034,3,0.1396,3,6.5,0.3067,2.38,2,0.25
-2026-10-27 15:31:00,Newcastle,attheraces.com/marketmovers HANDICAP CHASE (Qualifier) (4),Balking(FR),3,Conor OFarrell,Dianne Sayer,0592/84-,0.2298,6,0.1022,4,9.0,0.2295,3.0,2,0.25
-2026-10-27 15:31:00,Newcastle,attheraces.com/marketmovers HANDICAP CHASE (Qualifier) (4),Aill Dubh(IRE),8,Joshua Thompson,Micky Hammond &amp; Becky Smith,P31-44153,0.451,1,0.1011,5,9.0,0.2272,3.0,2,0.25
-2026-10-27 15:31:00,Newcastle,attheraces.com/marketmovers HANDICAP CHASE (Qualifier) (4),Uptown Harry(IRE),6,Charlie Maggs,Jane Walton,4621234P-,0.3207,2,0.0473,6,19.0,0.1093,5.5,2,0.25
-2026-10-27 16:01:00,Newcastle,BREEDERS CUP ON SKY SPORTS RACING OPEN MAIDEN NATIONAL HUNT FLAT (5),Cayenne,7,Danny McMenamin,Nicky Richards,,,,0.3441,1,2.5,0.8032,1.3,3,0.2
-2026-10-27 16:01:00,Newcastle,BREEDERS CUP ON SKY SPORTS RACING OPEN MAIDEN NATIONAL HUNT FLAT (5),Always Proud,5,Jack Quinlan,Don Cantillon,7-,0.1429,6,0.249,2,3.5,0.7004,1.5,3,0.2
-2026-10-27 16:01:00,Newcastle,BREEDERS CUP ON SKY SPORTS RACING OPEN MAIDEN NATIONAL HUNT FLAT (5),Mon Missel(FR),8,Gavin Sheehan,Jamie Snowden,3,0.3333,2,0.1588,3,5.5,0.5334,1.9,3,0.2
-2026-10-27 16:01:00,Newcastle,BREEDERS CUP ON SKY SPORTS RACING OPEN MAIDEN NATIONAL HUNT FLAT (5),Rip It Up,9,Brian Hughes,John Dawson,4-,0.25,5,0.078,4,11.0,0.295,3.0,3,0.2
-2026-10-27 16:01:00,Newcastle,BREEDERS CUP ON SKY SPORTS RACING OPEN MAIDEN NATIONAL HUNT FLAT (5),Absence Of Ego(IRE),1,Derek Fox,Lucinda Russell &amp; Michael Scudamore,,,,0.0656,5,13.0,0.252,3.4,3,0.2
-2026-10-27 16:01:00,Newcastle,BREEDERS CUP ON SKY SPORTS RACING OPEN MAIDEN NATIONAL HUNT FLAT (5),Regal Thunder(IRE),4,Miss Natasha Cookson,Philip Kirby,3-,0.3333,3,0.0444,6,19.0,0.1748,4.6,3,0.2
-2026-10-27 16:01:00,Newcastle,BREEDERS CUP ON SKY SPORTS RACING OPEN MAIDEN NATIONAL HUNT FLAT (5),Batchelors Lad(IRE),6,Joe Williamson,Philip Kirby,2-,0.5,1,0.0334,7,26.0,0.1332,6.0,3,0.2
-2026-10-27 16:01:00,Newcastle,BREEDERS CUP ON SKY SPORTS RACING OPEN MAIDEN NATIONAL HUNT FLAT (5),Koa Beau(IRE),2,Craig Nichol,Ewan Whillans,3,0.3333,4,0.0193,8,51.0,0.0781,11.0,3,0.2
-2026-10-27 16:01:00,Newcastle,BREEDERS CUP ON SKY SPORTS RACING OPEN MAIDEN NATIONAL HUNT FLAT (5),Mystic Marie,3,Conor Rabbitt,John Norton,,,,0.0075,9,126.0,0.0307,26.0,3,0.2
-2026-10-27 16:30:00,Wolverhampton,"ALL WEATHER CHAMPIONSHIP IS BACK ""HANDS AND HEELS"" APPRENTICE HANDICAP (6)",Eighty Eight(IRE),7,Oliver Hoodless,James Owen,07008-339,0.199,5,0.2879,1,2.88,0.691,1.47,3,0.25
-2026-10-27 16:30:00,Wolverhampton,"ALL WEATHER CHAMPIONSHIP IS BACK ""HANDS AND HEELS"" APPRENTICE HANDICAP (6)",Sant Alessio(IRE),2,Chloe Lyons,Joe Tickle,021-07484,0.2513,4,0.1556,2,5.5,0.4671,2.12,3,0.25
-2026-10-27 16:30:00,Wolverhampton,"ALL WEATHER CHAMPIONSHIP IS BACK ""HANDS AND HEELS"" APPRENTICE HANDICAP (6)",Bajan Bandit,5,Hope Regan,Patrick Morris,52320132,0.4827,1,0.1472,3,6.0,0.4477,2.25,3,0.25
-2026-10-27 16:30:00,Wolverhampton,"ALL WEATHER CHAMPIONSHIP IS BACK ""HANDS AND HEELS"" APPRENTICE HANDICAP (6)",Harry The Rogue(IRE),1,Jude Maher,Stephen Hanlon,24900099,0.1066,10,0.0757,5,12.0,0.2543,3.75,3,0.25
-2026-10-27 16:30:00,Wolverhampton,"ALL WEATHER CHAMPIONSHIP IS BACK ""HANDS AND HEELS"" APPRENTICE HANDICAP (6)",Symphony Of Joy(IRE),3,Ben Pollard,Kevin &amp; Lauren Frost,34-706343,0.2539,3,0.0776,4,11.0,0.2601,3.5,3,0.25
-2026-10-27 16:30:00,Wolverhampton,"ALL WEATHER CHAMPIONSHIP IS BACK ""HANDS AND HEELS"" APPRENTICE HANDICAP (6)",Boy Named Sioux(IRE),6,Cara Tuke,Richard &amp; Peter Fahey,6-5790879,0.1216,9,0.0709,6,12.0,0.2396,3.75,3,0.25
-2026-10-27 16:30:00,Wolverhampton,"ALL WEATHER CHAMPIONSHIP IS BACK ""HANDS AND HEELS"" APPRENTICE HANDICAP (6)",Bennyworth(IRE),9,Isobelle Chalmers,Jim Boyle,27684848,0.1728,7,0.0648,7,15.0,0.2206,4.5,3,0.25
-2026-10-27 16:30:00,Wolverhampton,"ALL WEATHER CHAMPIONSHIP IS BACK ""HANDS AND HEELS"" APPRENTICE HANDICAP (6)",Dappled Light,4,Molly Keegan-Price,Adrian Wintle,71122479,0.303,2,0.0486,9,17.0,0.1687,5.0,3,0.25
-2026-10-27 16:30:00,Wolverhampton,"ALL WEATHER CHAMPIONSHIP IS BACK ""HANDS AND HEELS"" APPRENTICE HANDICAP (6)",Venturing(IRE),8,Joe Bradnam,Tony Carroll,79-44874,0.1936,6,0.0512,8,17.0,0.1772,5.0,3,0.25
-2026-10-27 16:30:00,Wolverhampton,"ALL WEATHER CHAMPIONSHIP IS BACK ""HANDS AND HEELS"" APPRENTICE HANDICAP (6)",Thomas Tallis,10,Finlay Bassett,John Mackie,870-7390,0.1517,8,0.0204,10,41.0,0.073,11.0,3,0.25
-2026-10-27 17:00:00,Wolverhampton,AWC FINALS DAY AT NEWCASTLE 26th MARCH EBF MAIDEN FILLIES STAKES (3),Show Me Glory(IRE),5,Oisin Murphy,Andrew Balding,32,0.4275,1,0.4308,1,2.1,0.7329,1.27,2,0.25
-2026-10-27 17:00:00,Wolverhampton,AWC FINALS DAY AT NEWCASTLE 26th MARCH EBF MAIDEN FILLIES STAKES (3),Ambience,1,David Egan,Kevin Philippart de Foy,62,0.3551,2,0.2751,2,3.5,0.5718,1.62,2,0.25
-2026-10-27 17:00:00,Wolverhampton,AWC FINALS DAY AT NEWCASTLE 26th MARCH EBF MAIDEN FILLIES STAKES (3),Unfurled(IRE),7,Harry Davies,Simon Crisford,,,,0.1073,3,8.5,0.2509,2.88,2,0.25
-2026-10-27 17:00:00,Wolverhampton,AWC FINALS DAY AT NEWCASTLE 26th MARCH EBF MAIDEN FILLIES STAKES (3),Constella(IRE),3,Billy Loughnane,Tom Ward,4,0.25,4,0.0968,4,9.5,0.2276,3.12,2,0.25
-2026-10-27 17:00:00,Wolverhampton,AWC FINALS DAY AT NEWCASTLE 26th MARCH EBF MAIDEN FILLIES STAKES (3),Cartography(IRE),2,Gina Mangan,Dr Richard Newland,3,0.3333,3,0.0561,5,17.0,0.1346,5.0,2,0.25
-2026-10-27 17:00:00,Wolverhampton,AWC FINALS DAY AT NEWCASTLE 26th MARCH EBF MAIDEN FILLIES STAKES (3),State Of America(IRE),6,Rossa Ryan,Ollie Sangster,8,0.125,5,0.0338,6,26.0,0.0819,7.25,2,0.25
-2026-10-27 17:30:00,Wolverhampton,AWC SEASON 14 HAS BEGUN RESTRICTED NOVICE STAKES (4),Boy Basilica(FR),1,Billy Loughnane,Richard Hughes,6,0.1667,2,0.3167,1,2.62,0.739,1.41,3,0.25
-2026-10-27 17:30:00,Wolverhampton,AWC SEASON 14 HAS BEGUN RESTRICTED NOVICE STAKES (4),Zeuster,4,Oisin Murphy,Hughie Morrison,,,,0.1991,2,4.33,0.5738,1.83,3,0.25
-2026-10-27 17:30:00,Wolverhampton,AWC SEASON 14 HAS BEGUN RESTRICTED NOVICE STAKES (4),What A Go Ive Had,11,Jason Watson,Michael Appleby,6,0.1667,3,0.1197,3,7.0,0.3929,2.5,3,0.25
-2026-10-27 17:30:00,Wolverhampton,AWC SEASON 14 HAS BEGUN RESTRICTED NOVICE STAKES (4),St Jude Of Galilee,3,David Probert,Hughie Morrison,,,,0.087,4,9.5,0.2987,3.12,3,0.25
-2026-10-27 17:30:00,Wolverhampton,AWC SEASON 14 HAS BEGUN RESTRICTED NOVICE STAKES (4),Arkenforce,6,Alistair Rawlinson,Michael Appleby,8,0.125,4,0.0716,5,12.0,0.2507,3.75,3,0.25
-2026-10-27 17:30:00,Wolverhampton,AWC SEASON 14 HAS BEGUN RESTRICTED NOVICE STAKES (4),Joseph Banks(IRE),2,Rossa Ryan,Ed Dunlop,,,,0.0635,6,13.0,0.2246,4.0,3,0.25
-2026-10-27 17:30:00,Wolverhampton,AWC SEASON 14 HAS BEGUN RESTRICTED NOVICE STAKES (4),Taran Bolta,8,Rob Hornby,Jonathan Portman,8,0.125,5,0.0536,7,17.0,0.1919,5.0,3,0.25
-2026-10-27 17:30:00,Wolverhampton,AWC SEASON 14 HAS BEGUN RESTRICTED NOVICE STAKES (4),Renascent(IRE),13,Finley Marsh,Richard Hughes,56,0.1812,1,0.0389,8,21.0,0.1416,6.0,3,0.25
-2026-10-27 17:30:00,Wolverhampton,AWC SEASON 14 HAS BEGUN RESTRICTED NOVICE STAKES (4),Ardansoft,5,Robert Havlin,Ed Dunlop,00,0.1,8,0.0172,9,51.0,0.0641,13.5,3,0.25
-2026-10-27 17:30:00,Wolverhampton,AWC SEASON 14 HAS BEGUN RESTRICTED NOVICE STAKES (4),White Rose Warrior,12,William Pyle,Craig Lidster,,,,0.0141,10,67.0,0.0527,17.5,3,0.25
-2026-10-27 17:30:00,Wolverhampton,AWC SEASON 14 HAS BEGUN RESTRICTED NOVICE STAKES (4),Nil Satis Supreme(IRE),7,Jonny Peate,Mark Loughnane,80,0.1109,7,0.0107,11,81.0,0.0402,21.0,3,0.25
-2026-10-27 17:30:00,Wolverhampton,AWC SEASON 14 HAS BEGUN RESTRICTED NOVICE STAKES (4),True Impact(IRE),10,Harry Davies,Jonathan Portman,89,0.1171,6,0.0079,12,101.0,0.0297,26.0,3,0.25
-2026-10-27 18:00:00,Wolverhampton,SAISONS D OR 100th RACE HANDICAP (6) (D.I),Ridger(IRE),7,Oisin Murphy,Ollie Sangster,69972311,0.6619,1,0.5065,1,1.62,0.9302,1.16,3,0.25
-2026-10-27 18:00:00,Wolverhampton,SAISONS D OR 100th RACE HANDICAP (6) (D.I),Mini Mac(IRE),10,Marco Ghiani,James Owen,06084204,0.235,5,0.2248,2,3.75,0.7473,1.69,3,0.25
-2026-10-27 18:00:00,Wolverhampton,SAISONS D OR 100th RACE HANDICAP (6) (D.I),On Key,3,Kieran ONeill,Scott Dixon,31323742,0.3474,2,0.0807,3,11.0,0.3809,3.5,3,0.25
-2026-10-27 18:00:00,Wolverhampton,SAISONS D OR 100th RACE HANDICAP (6) (D.I),Cooramook(IRE),1,Billy Loughnane,Mark Loughnane,49436220,0.3028,3,0.0471,4,19.0,0.2328,5.5,3,0.25
-2026-10-27 18:00:00,Wolverhampton,SAISONS D OR 100th RACE HANDICAP (6) (D.I),Saisons Dor(IRE),5,Jack Garritty,Jedd OKeeffe,41576762,0.2598,4,0.043,5,21.0,0.2136,6.0,3,0.25
-2026-10-27 18:00:00,Wolverhampton,SAISONS D OR 100th RACE HANDICAP (6) (D.I),Sailor Batt(IRE),8,William Pyle,David &amp; Nicola Barron,6-2533774,0.2232,7,0.038,6,23.0,0.1899,6.5,3,0.25
-2026-10-27 18:00:00,Wolverhampton,SAISONS D OR 100th RACE HANDICAP (6) (D.I),Maury(IRE),12,Georgia Dobie,Craig Benton,48979725,0.2328,6,0.0256,7,34.0,0.1298,9.25,3,0.25
-2026-10-27 18:00:00,Wolverhampton,SAISONS D OR 100th RACE HANDICAP (6) (D.I),Macs Dilemma(IRE),11,William Carson,John OShea,37/04707-5,0.1597,9,0.021,8,41.0,0.1071,11.0,3,0.25
-2026-10-27 18:00:00,Wolverhampton,SAISONS D OR 100th RACE HANDICAP (6) (D.I),Venetian Romance(IRE),6,Luke Morris,Michael Attwater,5-9462695,0.2146,8,0.0133,9,67.0,0.0684,17.5,3,0.25
-2026-10-27 18:30:00,Wolverhampton,SAISONS D OR 100th RACE HANDICAP (6) (D.II),Midnights Dream(IRE),2,Billy Loughnane,Joseph Parr,32353511,0.6401,1,0.236,1,3.5,0.6137,1.62,3,0.25
-2026-10-27 18:30:00,Wolverhampton,SAISONS D OR 100th RACE HANDICAP (6) (D.II),Zoulu Warrior(IRE),5,George Wood,Heather Main,1-4707500,0.1263,10,0.2297,2,3.75,0.6038,1.69,3,0.25
-2026-10-27 18:30:00,Wolverhampton,SAISONS D OR 100th RACE HANDICAP (6) (D.II),The Caribbean(IRE),1,Robert Havlin,Thomas Faulkner,291-30784,0.251,6,0.0949,3,8.5,0.3072,2.88,3,0.25
-2026-10-27 18:30:00,Wolverhampton,SAISONS D OR 100th RACE HANDICAP (6) (D.II),Searchingtheblues,3,Rose Dawes,Mark Usher,78302496,0.219,7,0.0938,4,9.0,0.3041,3.0,3,0.25
-2026-10-27 18:30:00,Wolverhampton,SAISONS D OR 100th RACE HANDICAP (6) (D.II),Aspire To Glory(IRE),10,Marco Ghiani,Dylan Cunha,06659169,0.2901,5,0.0765,5,11.0,0.2535,3.5,3,0.25
-2026-10-27 18:30:00,Wolverhampton,SAISONS D OR 100th RACE HANDICAP (6) (D.II),Twitch(NZ),8,Georgia Dobie,Craig Benton,52564216,0.4243,2,0.0738,6,12.0,0.2454,3.75,3,0.25
-2026-10-27 18:30:00,Wolverhampton,SAISONS D OR 100th RACE HANDICAP (6) (D.II),Imelda(IRE),4,Rossa Ryan,David Loughnane,2334004,0.2056,8,0.0609,7,13.0,0.2057,4.0,3,0.25
-2026-10-27 18:30:00,Wolverhampton,SAISONS D OR 100th RACE HANDICAP (6) (D.II),Lady Delila(IRE),12,Alexandra Egan,Patrick Morris,32958481,0.4078,3,0.0481,8,17.0,0.1649,5.0,3,0.25
-2026-10-27 18:30:00,Wolverhampton,SAISONS D OR 100th RACE HANDICAP (6) (D.II),Boy Star,7,Harry Russell,Richard &amp; Peter Fahey,800-,0.1063,11,0.0358,9,23.0,0.1244,6.5,3,0.25
-2026-10-27 18:30:00,Wolverhampton,SAISONS D OR 100th RACE HANDICAP (6) (D.II),Ten Club(IRE),11,Finley Marsh,Adrian Wintle,00-75F884,0.1539,9,0.0308,10,29.0,0.1076,8.0,3,0.25
-2026-10-27 18:30:00,Wolverhampton,SAISONS D OR 100th RACE HANDICAP (6) (D.II),Forever Noah,6,Alex Jary,Joey Ramsden,37922826,0.3079,4,0.0197,11,51.0,0.0697,13.5,3,0.25
-2026-10-27 19:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (6),Barry The Worm,7,Alistair Rawlinson,Edward Smyth-Osbourne,60785614,0.3758,1,0.189,1,4.333,0.5141,1.83,3,0.25
-2026-10-27 19:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (6),Hvar,12,Oisin Murphy,John &amp; Sean Quinn,00709086,0.1298,11,0.1677,2,5.0,0.4714,2.0,3,0.25
-2026-10-27 19:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (6),Territorial Star,5,Billy Loughnane,Rebecca Menzies,9-6507473,0.2169,4,0.1642,3,5.0,0.464,2.0,3,0.25
-2026-10-27 19:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (6),Dabbling(IRE),11,T. Kiely-Marshall,Ollie Pears,75436036,0.216,5,0.1032,4,8.0,0.3179,2.75,3,0.25
-2026-10-27 19:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (6),Bessie Wallis(IRE),2,Seamus Cronin,Michael Attwater,55448782,0.2598,2,0.0692,6,12.0,0.2225,3.75,3,0.25
-2026-10-27 19:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (6),Love Alive,4,David Egan,John Butler,63035970,0.1485,10,0.0741,5,13.0,0.2368,4.0,3,0.25
-2026-10-27 19:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (6),Masai Angel(FR),10,Harry Russell,Richard &amp; Peter Fahey,5-4300057,0.1532,8,0.0478,7,17.0,0.1576,5.0,3,0.25
-2026-10-27 19:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (6),Bleep Test,6,Oisin McSweeney,Tim Easterby,4-0807098,0.1174,12,0.0434,8,19.0,0.1438,5.5,3,0.25
-2026-10-27 19:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (6),Navertity(IRE),3,Conor Whiteley,Stephen Hanlon,478,0.1621,7,0.0391,9,21.0,0.1302,6.0,3,0.25
-2026-10-27 19:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (6),Its A Mugs Game,13,Callum Hutchinson,Joe Tickle,0-46877,0.1505,9,0.039,10,21.0,0.1298,6.0,3,0.25
-2026-10-27 19:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (6),El Ghuwah(IRE),8,Alex Jary,Joey Ramsden,5340,0.2062,6,0.0362,11,23.0,0.1209,6.5,3,0.25
-2026-10-27 19:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (6),Bold Return(IRE),1,Dougie Costello,Steph Hollinshead,8462-40,0.2286,3,0.0272,12,29.0,0.0917,8.0,3,0.25
-2026-10-27 19:30:00,Wolverhampton,MIDNITE BUILT DIFFERENT HANDICAP (5),Fahidi(IRE),9,Oisin Murphy,Andrew Balding,63-405,0.2005,8,0.2399,1,3.5,0.6082,1.62,3,0.25
-2026-10-27 19:30:00,Wolverhampton,MIDNITE BUILT DIFFERENT HANDICAP (5),Everyoneknowsadave(IRE),1,George Wood,Jessica Macey,32142866,0.2775,3,0.1483,2,5.5,0.4349,2.12,3,0.25
-2026-10-27 19:30:00,Wolverhampton,MIDNITE BUILT DIFFERENT HANDICAP (5),Charlies Choice,2,Callum Shepherd,David Simcock,13270448,0.2024,7,0.1301,3,7.0,0.3917,2.5,3,0.25
-2026-10-27 19:30:00,Wolverhampton,MIDNITE BUILT DIFFERENT HANDICAP (5),Kudos Too,4,Lewis Edmunds,William Muir &amp; Chris Grassick,5357,0.2077,6,0.0917,4,9.5,0.2909,3.12,3,0.25
-2026-10-27 19:30:00,Wolverhampton,MIDNITE BUILT DIFFERENT HANDICAP (5),Tabasko,5,Kieran Shoemark,Ed Walker,44-522156,0.3984,2,0.0897,5,9.5,0.2852,3.12,3,0.25
-2026-10-27 19:30:00,Wolverhampton,MIDNITE BUILT DIFFERENT HANDICAP (5),Dream Harder(IRE),3,Billy Loughnane,Mark Loughnane,6-6814766,0.2553,4,0.0673,6,13.0,0.22,4.0,3,0.25
-2026-10-27 19:30:00,Wolverhampton,MIDNITE BUILT DIFFERENT HANDICAP (5),Made All,6,Oisin James Orr,Sam England,8-1053365,0.2253,5,0.0627,7,13.0,0.2061,4.0,3,0.25
-2026-10-27 19:30:00,Wolverhampton,MIDNITE BUILT DIFFERENT HANDICAP (5),Pulsar Star,8,Rob Hornby,Thomas Faulkner,4-2296685,0.1875,9,0.0627,8,13.0,0.2061,4.0,3,0.25
-2026-10-27 19:30:00,Wolverhampton,MIDNITE BUILT DIFFERENT HANDICAP (5),Prodigal Son,7,Hector Crouch,Heather Main,8-1374921,0.496,1,0.0627,9,13.0,0.2061,4.0,3,0.25
-2026-10-27 19:30:00,Wolverhampton,MIDNITE BUILT DIFFERENT HANDICAP (5),Barachiel(IRE),10,Luke Morris,Robert Stephens,566,0.175,10,0.0449,10,19.0,0.1507,5.5,3,0.25
-2026-10-27 20:00:00,Wolverhampton,MIDNITE IT S ACTUALLY PRETTY GOOD HANDICAP (4),Ted Le Saux,4,Oisin Murphy,Andrew Balding,2-1365,0.365,5,0.2653,1,3.25,0.6776,1.56,3,0.25
-2026-10-27 20:00:00,Wolverhampton,MIDNITE IT S ACTUALLY PRETTY GOOD HANDICAP (4),Roi De Coeur(IRE),2,Marco Ghiani,Marco Botti,76512521,0.6213,1,0.2021,2,4.333,0.5769,1.83,3,0.25
-2026-10-27 20:00:00,Wolverhampton,MIDNITE IT S ACTUALLY PRETTY GOOD HANDICAP (4),Newfangled(IRE),7,Billy Loughnane,Jonathan Portman,13646437,0.2199,8,0.1582,3,5.5,0.4856,2.12,3,0.25
-2026-10-27 20:00:00,Wolverhampton,MIDNITE IT S ACTUALLY PRETTY GOOD HANDICAP (4),Kaaranah(IRE),5,David Egan,John Butler,11651132,0.5583,2,0.1119,4,8.0,0.3677,2.75,3,0.25
-2026-10-27 20:00:00,Wolverhampton,MIDNITE IT S ACTUALLY PRETTY GOOD HANDICAP (4),Ciao Capo(IRE),9,Oisin James Orr,Richard &amp; Peter Fahey,1-4116138,0.4856,3,0.1081,5,8.0,0.3571,2.75,3,0.25
-2026-10-27 20:00:00,Wolverhampton,MIDNITE IT S ACTUALLY PRETTY GOOD HANDICAP (4),Mythical Bird(IRE),1,Rob Hornby,Hughie Morrison,30031554,0.3263,6,0.0944,6,9.0,0.3176,3.0,3,0.25
-2026-10-27 20:00:00,Wolverhampton,MIDNITE IT S ACTUALLY PRETTY GOOD HANDICAP (4),Hozam(IRE),6,Jack Mitchell,Kevin &amp; Lauren Frost,3224,0.3843,4,0.0399,7,21.0,0.1434,6.0,3,0.25
-2026-10-27 20:00:00,Wolverhampton,MIDNITE IT S ACTUALLY PRETTY GOOD HANDICAP (4),Shady Bay(IRE),3,David Probert,Tom Ward,6-1334270,0.2404,7,0.02,8,51.0,0.0734,13.5,3,0.25
-2026-10-27 20:30:00,Wolverhampton,MAKE THE MOVE TO MIDNITE HANDICAP (6),Macanudo(IRE),1,Billy Loughnane,Ian Williams,47-037113,0.5539,1,0.3812,1,2.25,0.8229,1.31,3,0.25
-2026-10-27 20:30:00,Wolverhampton,MAKE THE MOVE TO MIDNITE HANDICAP (6),Cabeza De Llave,9,David Probert,Michael Attwater,25385544,0.2286,3,0.1907,2,5.0,0.5928,2.0,3,0.25
-2026-10-27 20:30:00,Wolverhampton,MAKE THE MOVE TO MIDNITE HANDICAP (6),Our Planet(IRE),4,Darragh Keenan,Michael Keady,470-66607,0.1396,8,0.1351,3,6.5,0.4647,2.38,3,0.25
-2026-10-27 20:30:00,Wolverhampton,MAKE THE MOVE TO MIDNITE HANDICAP (6),The Bear Of Saints(FR),7,William Carson,John OShea,4205/0373,0.2279,4,0.0819,4,11.0,0.3047,3.5,3,0.25
-2026-10-27 20:30:00,Wolverhampton,MAKE THE MOVE TO MIDNITE HANDICAP (6),La Belle Forest(IRE),2,Luke Morris,Archie Watson,3-1766470,0.1544,7,0.0663,5,13.0,0.2517,4.0,3,0.25
-2026-10-27 20:30:00,Wolverhampton,MAKE THE MOVE TO MIDNITE HANDICAP (6),Kiss Dont Tell,5,Kyle McHugh,Nick Littmoden,052-808,0.1748,6,0.0642,6,13.0,0.2444,4.0,3,0.25
-2026-10-27 20:30:00,Wolverhampton,MAKE THE MOVE TO MIDNITE HANDICAP (6),Gustav Graves,3,George Wood,Derek Shaw,65642368,0.2359,2,0.0397,7,21.0,0.1557,6.0,3,0.25
-2026-10-27 20:30:00,Wolverhampton,MAKE THE MOVE TO MIDNITE HANDICAP (6),In Denial,6,Hope Regan,Mark Loughnane,75-746305,0.1968,5,0.0321,8,26.0,0.1269,7.25,3,0.25
-2026-10-27 20:30:00,Wolverhampton,MAKE THE MOVE TO MIDNITE HANDICAP (6),Lochaber,10,Kieran ONeill,Scott Dixon,684-55000,0.1352,9,0.0087,9,101.0,0.0353,26.0,3,0.25
+2026-10-28 15:00:00,Dundalk,irishinjuredjockeys.com FILLIES MAIDEN,Nevermindtherain(IRE),9,Jack Cleary,"Aidan OBrien, Ireland",5533820,0.2564,2,0.3153,1,2.5,0.7613,1.38,3,0.25
+2026-10-28 15:00:00,Dundalk,irishinjuredjockeys.com FILLIES MAIDEN,Golden Alibi(USA),5,Seamie Heffernan,"M. D. OCallaghan, Ireland",7,0.1429,4,0.2775,2,2.88,0.7199,1.47,3,0.25
+2026-10-28 15:00:00,Dundalk,irishinjuredjockeys.com FILLIES MAIDEN,Sonic Sabiha(IRE),13,R. C. Colgan,"David Marnane, Ireland",7852,0.2815,1,0.1135,3,7.0,0.398,2.5,3,0.25
+2026-10-28 15:00:00,Dundalk,irishinjuredjockeys.com FILLIES MAIDEN,Slightly(IRE),12,G. M. Ryan,"Aidan OBrien, Ireland",,,,0.0727,4,11.0,0.2692,3.5,3,0.25
+2026-10-28 15:00:00,Dundalk,irishinjuredjockeys.com FILLIES MAIDEN,Kokoshanelle(IRE),6,D. W. OConnor,"Ms Sheila Lavery, Ireland",96,0.1425,6,0.0517,5,15.0,0.1963,4.5,3,0.25
+2026-10-28 15:00:00,Dundalk,irishinjuredjockeys.com FILLIES MAIDEN,Little Miss Muffet(IRE),7,P. A. Harnett,"Donnacha Aidan OBrien, Ireland",5,0.2,3,0.0517,6,15.0,0.1963,4.5,3,0.25
+2026-10-28 15:00:00,Dundalk,irishinjuredjockeys.com FILLIES MAIDEN,National Debate(IRE),8,J. M. Sheridan,"Henry De Bromhead, Ireland",,,,0.0382,7,21.0,0.1473,6.0,3,0.25
+2026-10-28 15:00:00,Dundalk,irishinjuredjockeys.com FILLIES MAIDEN,Coloursofthewind(IRE),4,G. F. Carroll,"Joseph G. Murphy, Ireland",,,,0.0277,8,29.0,0.108,8.0,3,0.25
+2026-10-28 15:00:00,Dundalk,irishinjuredjockeys.com FILLIES MAIDEN,Shadowbelle(IRE),11,C. D. Hayes,"Andrew Oliver, Ireland",7,0.1429,5,0.0277,9,29.0,0.108,8.0,3,0.25
+2026-10-28 15:00:00,Dundalk,irishinjuredjockeys.com FILLIES MAIDEN,Canta Castela(IRE),3,J. Kearney,"Ciaran Murphy, Ireland",,,,0.0062,10,126.0,0.0247,32.25,3,0.25
+2026-10-28 15:00:00,Dundalk,irishinjuredjockeys.com FILLIES MAIDEN,Bajan Bambi(IRE),1,N. M. Crosse,"Mrs J. Harrington, Ireland",0,0.1,8,0.0055,11,151.0,0.022,38.5,3,0.25
+2026-10-28 15:00:00,Dundalk,irishinjuredjockeys.com FILLIES MAIDEN,Bettercalltheboss(IRE),2,R. P. Cleary,"Miss Jennifer Anne Lynch, Ireland",808,0.1169,7,0.0051,12,151.0,0.0204,38.5,3,0.25
+2026-10-28 15:00:00,Dundalk,irishinjuredjockeys.com FILLIES MAIDEN,Unlawfilly(IRE),14,J. J. G. Ryan,"Christopher David Timmons, Ireland",0,0.1,9,0.0043,13,201.0,0.0172,51.0,3,0.25
+2026-10-28 15:00:00,Dundalk,irishinjuredjockeys.com FILLIES MAIDEN,Savannah Sun(IRE),10,L. F. Roche,"Martin Hassett, Ireland",0000,0.1,10,0.003,14,301.0,0.012,76.0,3,0.25
+2026-10-28 15:30:00,Dundalk,IRISH STALLION FARMS EBF MAIDEN,Mudyrk(IRE),8,D. W. OConnor,"Robson De Aguiar, Ireland",62,0.3551,2,0.3581,1,2.25,0.8021,1.31,3,0.25
+2026-10-28 15:30:00,Dundalk,IRISH STALLION FARMS EBF MAIDEN,Tantardini(USA),11,Jack Cleary,"Aidan OBrien, Ireland",4,0.25,4,0.1984,2,4.0,0.6018,1.75,3,0.25
+2026-10-28 15:30:00,Dundalk,IRISH STALLION FARMS EBF MAIDEN,Golden Idol(IRE),6,G. F. Carroll,"Henry De Bromhead, Ireland",3,0.3333,3,0.1443,3,5.5,0.4825,2.12,3,0.25
+2026-10-28 15:30:00,Dundalk,IRISH STALLION FARMS EBF MAIDEN,Eucalyptus(USA),5,J. M. Sheridan,"Joseph Patrick OBrien, Ireland",,,,0.0882,5,9.0,0.3205,3.0,3,0.25
+2026-10-28 15:30:00,Dundalk,IRISH STALLION FARMS EBF MAIDEN,Bridgetown Boy(FR),1,Seamie Heffernan,"W. P. Browne, Ireland",,,,0.0941,4,9.5,0.3392,3.12,3,0.25
+2026-10-28 15:30:00,Dundalk,IRISH STALLION FARMS EBF MAIDEN,Jacobs Journey(IRE),7,R. C. Colgan,"David Marnane, Ireland",2,0.5,1,0.0535,6,17.0,0.2031,5.0,3,0.25
+2026-10-28 15:30:00,Dundalk,IRISH STALLION FARMS EBF MAIDEN,Chicago Caray,2,L. T. McAteer,"John Patrick Murtagh, Ireland",8,0.125,6,0.0194,7,41.0,0.0765,11.0,3,0.25
+2026-10-28 15:30:00,Dundalk,IRISH STALLION FARMS EBF MAIDEN,Quinn Blue(IRE),9,Reese Holohan,"M. D. OCallaghan, Ireland",7,0.1429,5,0.0194,8,41.0,0.0765,11.0,3,0.25
+2026-10-28 15:30:00,Dundalk,IRISH STALLION FARMS EBF MAIDEN,Raygani(IRE),10,C. D. Hayes,"John Patrick Murtagh, Ireland",00,0.1,7,0.0092,9,101.0,0.0367,26.0,3,0.25
+2026-10-28 15:30:00,Dundalk,IRISH STALLION FARMS EBF MAIDEN,Courtier(IRE),3,G. M. Ryan,"Stuart Crawford, Ireland",0,0.1,8,0.0081,10,126.0,0.0323,32.25,3,0.25
+2026-10-28 15:30:00,Dundalk,IRISH STALLION FARMS EBF MAIDEN,Dramatic Approach(IRE),4,N. M. Crosse,"Mrs J. Harrington, Ireland",0,0.1,9,0.0074,11,126.0,0.0296,32.25,3,0.25
+2026-10-28 16:00:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.I),Jazzit,5,J. J. G. Ryan,"T. G. Mccourt, Ireland",58832041,0.4743,1,0.2034,1,3.75,0.5342,1.69,3,0.25
+2026-10-28 16:00:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.I),Battleforsupremacy(IRE),6,P. McGettigan,"Daniel McLoughlin, Ireland",016-73004,0.1842,7,0.1656,2,4.5,0.461,1.88,3,0.25
+2026-10-28 16:00:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.I),The Bear Trap(IRE),3,S. Coen,"Adrian Mcguinness, Ireland",071/50-409,0.2098,5,0.0994,4,7.5,0.3037,2.62,3,0.25
+2026-10-28 16:00:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.I),Pocket Jacks(IRE),9,G. F. Carroll,"Andrew Oliver, Ireland",97-6326,0.2632,2,0.1041,3,7.5,0.3161,2.62,3,0.25
+2026-10-28 16:00:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.I),Hot To Foxtrot(IRE),10,G. M. Ryan,"J. J. Feane, Ireland",54363076,0.185,6,0.0758,5,10.0,0.2386,3.25,3,0.25
+2026-10-28 16:00:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.I),Liamo(IRE),12,P. A. Harnett,"Brendan Maurice Walsh, Ireland",354-66205,0.2254,4,0.0658,6,12.0,0.2096,3.75,3,0.25
+2026-10-28 16:00:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.I),Ocean Echo(IRE),1,Reese Holohan,"Mark Fahey, Ireland",62468600,0.1333,10,0.0589,7,13.0,0.1892,4.0,3,0.25
+2026-10-28 16:00:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.I),Pallatine Hills(IRE),2,Siobhan Rutledge,"Eddie &amp; Patrick Harty, Ireland",550-60500,0.124,12,0.0589,8,13.0,0.1892,4.0,3,0.25
+2026-10-28 16:00:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.I),Emilys Boy(IRE),14,Wesley Joyce,"Thomas Dowling, Ireland",0-900099,0.1066,14,0.0355,9,21.0,0.1171,6.0,3,0.25
+2026-10-28 16:00:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.I),Macadams Rock(IRE),7,J. M. Sheridan,"Miss Hilary Mcloughlin, Ireland",8/92100-06,0.2425,3,0.0334,10,23.0,0.1104,6.5,3,0.25
+2026-10-28 16:00:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.I),Fan Club,4,C. D. Hayes,"Denis Hogan, Ireland",4/57-640,0.1727,8,0.0299,11,26.0,0.0992,7.25,3,0.25
+2026-10-28 16:00:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.I),Cash On Black(IRE),8,R. P. Cleary,"Miss Jennifer Anne Lynch, Ireland",6-0006,0.1284,11,0.0257,12,29.0,0.0857,8.0,3,0.25
+2026-10-28 16:00:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.I),Ukiyo(IRE),11,R. C. Colgan,"Andrew Kinirons, Ireland",02038460,0.1679,9,0.0242,13,34.0,0.0808,9.25,3,0.25
+2026-10-28 16:00:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.I),Auguste Gusteau(IRE),13,A. C. Persse,"Mark Cahill, Ireland",77970,0.1234,13,0.0194,14,41.0,0.0651,11.0,3,0.25
+2026-10-28 16:30:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.II),Una Matata(IRE),5,S. Coen,"Adrian Mcguinness, Ireland",50675073,0.2004,3,0.227,1,3.25,0.5762,1.56,3,0.25
+2026-10-28 16:30:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.II),Leannespour(IRE),14,C. D. Hayes,"Edward Lynam, Ireland",00-04857,0.159,6,0.1135,2,6.5,0.3418,2.38,3,0.25
+2026-10-28 16:30:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.II),Roman Harry(IRE),4,P. A. Harnett,"S. M. Duffy, Ireland",47309829,0.2169,2,0.1081,4,7.0,0.3279,2.5,3,0.25
+2026-10-28 16:30:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.II),Strikepoint(IRE),12,R. P. Cleary,"J. J. Feane, Ireland",70900,0.1068,13,0.1097,3,8.0,0.332,2.75,3,0.25
+2026-10-28 16:30:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.II),Final Boss(IRE),2,R. C. Colgan,"Matthew J. Smith, Ireland",935-06070,0.1263,11,0.0868,5,8.5,0.2707,2.88,3,0.25
+2026-10-28 16:30:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.II),Whistling Jamesie,6,Seamie Heffernan,"Miss Natalia Lupini, Ireland",0001-8005,0.2241,1,0.0805,6,9.5,0.253,3.12,3,0.25
+2026-10-28 16:30:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.II),Glen Breeze(IRE),11,Reese Holohan,"Patrick Magee, Ireland",31659057,0.1518,8,0.0654,7,12.0,0.2094,3.75,3,0.25
+2026-10-28 16:30:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.II),Shamanka(IRE),8,Jack Cleary,"Harry Cleary, Ireland",530-04056,0.1617,4,0.0492,9,15.0,0.1605,4.5,3,0.25
+2026-10-28 16:30:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.II),Expound,1,J. M. Sheridan,"Denis Hogan, Ireland",54047480,0.1524,7,0.0434,10,17.0,0.1425,5.0,3,0.25
+2026-10-28 16:30:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.II),Jazzy Dancer(IRE),9,R. M. Mulligan,"W. J. Martin, Ireland",0-1207908,0.1462,9,0.0496,8,17.0,0.1618,5.0,3,0.25
+2026-10-28 16:30:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.II),All Hail(IRE),3,D. W. OConnor,"John Mcconnell, Ireland",2-8409804,0.1612,5,0.033,11,23.0,0.1096,6.5,3,0.25
+2026-10-28 16:30:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.II),Pattyandselma(IRE),7,P. McGettigan,"Adrian Mcguinness, Ireland",0999,0.1093,12,0.0192,12,41.0,0.0647,11.0,3,0.25
+2026-10-28 16:30:00,Dundalk,CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP (D.II),Churchill Gale(IRE),13,Nicola Burns,"Dermot Anthony Mcloughlin, Ireland",079468-00,0.1293,10,0.0145,13,51.0,0.0491,13.5,3,0.25
+2026-10-28 17:00:00,Dundalk,IRISH STALLION FARMS EBF AUCTION MAIDEN,Crayons In The Sky,3,J. Kearney,"Stephen Thorne, Ireland",2424,0.3587,1,0.5041,1,1.57,0.919,1.14,3,0.25
+2026-10-28 17:00:00,Dundalk,IRISH STALLION FARMS EBF AUCTION MAIDEN,Normanton(IRE),1,R. C. Colgan,"David Marnane, Ireland",4,0.25,2,0.1919,2,4.0,0.6678,1.75,3,0.25
+2026-10-28 17:00:00,Dundalk,IRISH STALLION FARMS EBF AUCTION MAIDEN,Belle Parvenue(IRE),10,C. D. Hayes,"Eddie &amp; Patrick Harty, Ireland",55,0.2,3,0.0854,3,9.5,0.3767,3.12,3,0.25
+2026-10-28 17:00:00,Dundalk,IRISH STALLION FARMS EBF AUCTION MAIDEN,Rayastar(IRE),2,Seamie Heffernan,"P. J. F. Murphy, Ireland",,,,0.0512,4,15.0,0.2374,4.5,3,0.25
+2026-10-28 17:00:00,Dundalk,IRISH STALLION FARMS EBF AUCTION MAIDEN,Cafe Oh Lait(IRE),11,K. J. Leonard,"Kevin Thomas Coleman, Ireland",,,,0.042,5,19.0,0.1971,5.5,3,0.25
+2026-10-28 17:00:00,Dundalk,IRISH STALLION FARMS EBF AUCTION MAIDEN,Let Me Free(IRE),8,R. Whearty,"Gavin Patrick Cromwell, Ireland",0,0.1,6,0.0366,6,21.0,0.1729,6.0,3,0.25
+2026-10-28 17:00:00,Dundalk,IRISH STALLION FARMS EBF AUCTION MAIDEN,Dragon Scales(IRE),6,N. M. Crosse,"Daniel McLoughlin, Ireland",60,0.129,4,0.0249,7,34.0,0.1193,9.25,3,0.25
+2026-10-28 17:00:00,Dundalk,IRISH STALLION FARMS EBF AUCTION MAIDEN,Westminster Waltz(IRE),4,G. F. Carroll,"Andrew Oliver, Ireland",9,0.1111,5,0.0187,8,41.0,0.0903,11.0,3,0.25
+2026-10-28 17:00:00,Dundalk,IRISH STALLION FARMS EBF AUCTION MAIDEN,Guana Dynasty(IRE),12,Wesley Joyce,"Adrian Mcguinness, Ireland",,,,0.0151,9,51.0,0.0732,13.5,3,0.25
+2026-10-28 17:00:00,Dundalk,IRISH STALLION FARMS EBF AUCTION MAIDEN,Legacy Of Stardom(IRE),5,G. M. Ryan,"Mrs Denise Foster, Ireland",,,,0.0115,10,67.0,0.056,17.5,3,0.25
+2026-10-28 17:00:00,Dundalk,IRISH STALLION FARMS EBF AUCTION MAIDEN,Lolapipa(IRE),13,A. C. Persse,"Mark Cahill, Ireland",0,0.1,7,0.0076,11,101.0,0.0372,26.0,3,0.25
+2026-10-28 17:00:00,Dundalk,IRISH STALLION FARMS EBF AUCTION MAIDEN,Mirissa Beach(IRE),14,Reese Holohan,"Christopher David Timmons, Ireland",0,0.1,8,0.0061,12,126.0,0.0299,32.25,3,0.25
+2026-10-28 17:00:00,Dundalk,IRISH STALLION FARMS EBF AUCTION MAIDEN,Violet Dove(IRE),7,R. P. Cleary,"Kevin Thomas Coleman, Ireland",00,0.1,9,0.0051,13,151.0,0.025,38.5,3,0.25
+2026-10-28 17:30:00,Dundalk,HAPPY HALLOWEEN HANDICAP,Enchanted Lady,3,G. F. Carroll,"Andrew Oliver, Ireland",04579701,0.383,3,0.1842,1,4.33,0.5076,1.83,3,0.25
+2026-10-28 17:30:00,Dundalk,HAPPY HALLOWEEN HANDICAP,Gallo Dell Cielo(IRE),2,R. Donaghue-Leahy,"Patrick J. Flynn, Ireland",771-15127,0.5326,1,0.1702,2,4.5,0.4793,1.88,3,0.25
+2026-10-28 17:30:00,Dundalk,HAPPY HALLOWEEN HANDICAP,Coolnagrattan(IRE),4,Nicola Burns,"W. R. Crawford, Ireland",30873,0.2146,7,0.1681,3,4.5,0.4749,1.88,3,0.25
+2026-10-28 17:30:00,Dundalk,HAPPY HALLOWEEN HANDICAP,Copper Craft(IRE),13,R. Whearty,"Andrew Oliver, Ireland",4-3207201,0.4679,2,0.1375,4,5.5,0.4065,2.12,3,0.25
+2026-10-28 17:30:00,Dundalk,HAPPY HALLOWEEN HANDICAP,Wandering Rocks,1,J. A. Orr,"William Durkan, Ireland",4753855,0.2003,8,0.063,5,12.0,0.2053,3.75,3,0.25
+2026-10-28 17:30:00,Dundalk,HAPPY HALLOWEEN HANDICAP,Dancing Steve(IRE),11,Camillus Byrne,"Adrian Mcguinness, Ireland",00083106,0.3079,4,0.0617,6,13.0,0.2014,4.0,3,0.25
+2026-10-28 17:30:00,Dundalk,HAPPY HALLOWEEN HANDICAP,Celtic Druid(IRE),6,Sadhbh Tormey,"T. G. Mccourt, Ireland",47327880,0.1746,10,0.053,7,15.0,0.1747,4.5,3,0.25
+2026-10-28 17:30:00,Dundalk,HAPPY HALLOWEEN HANDICAP,Rich Belief,10,J. M. Sheridan,"Karl Thornton, Ireland",0728-6063,0.2256,5,0.036,8,21.0,0.121,6.0,3,0.25
+2026-10-28 17:30:00,Dundalk,HAPPY HALLOWEEN HANDICAP,Alexa Next(IRE),7,P. A. Harnett,"Martin Hassett, Ireland",874646-77,0.172,11,0.0329,9,23.0,0.1109,6.5,3,0.25
+2026-10-28 17:30:00,Dundalk,HAPPY HALLOWEEN HANDICAP,Battling Siki(IRE),8,Reese Holohan,"Peter Fahey, Ireland",7459330,0.2159,6,0.0304,10,26.0,0.1028,7.25,3,0.25
+2026-10-28 17:30:00,Dundalk,HAPPY HALLOWEEN HANDICAP,Cozone,9,R. C. Colgan,"Matthew J. Smith, Ireland",6/800,0.116,13,0.0222,11,34.0,0.0757,9.25,3,0.25
+2026-10-28 17:30:00,Dundalk,HAPPY HALLOWEEN HANDICAP,Essential Comedy(IRE),12,R. P. Cleary,"Ms Claire OConnell, Ireland",65305,0.1969,9,0.0222,12,34.0,0.0757,9.25,3,0.25
+2026-10-28 17:30:00,Dundalk,HAPPY HALLOWEEN HANDICAP,Pepper Noir(IRE),5,Siobhan Rutledge,"John Mcconnell, Ireland",906-48600,0.1353,12,0.0184,13,41.0,0.063,11.0,3,0.25
+2026-10-28 14:36:00,Huntingdon,HOST YOUR CONFERENCE AT HUNTINGDON RACECOURSE HANDICAP HURDLE (4),Seraphic(IRE),6,Kielan Woods,David Killahena &amp; Graeme McPherson,4602/44-31,0.5007,2,0.2483,1,3.75,0.6509,1.55,3,0.2
+2026-10-28 14:36:00,Huntingdon,HOST YOUR CONFERENCE AT HUNTINGDON RACECOURSE HANDICAP HURDLE (4),Gallivanted(FR),2,Paul OBrien,Harry Derham,4133-7,0.3598,4,0.24,2,4.0,0.6385,1.6,3,0.2
+2026-10-28 14:36:00,Huntingdon,HOST YOUR CONFERENCE AT HUNTINGDON RACECOURSE HANDICAP HURDLE (4),Caelan(IRE),3,James Bowen,Sarah Humphrey,52632-4U3,0.2534,5,0.1286,3,7.0,0.4112,2.2,3,0.2
+2026-10-28 14:36:00,Huntingdon,HOST YOUR CONFERENCE AT HUNTINGDON RACECOURSE HANDICAP HURDLE (4),Al Mootamarid(IRE),7,Robert Dunne,Ryan Hatch,135-33754,0.236,7,0.1036,4,8.5,0.343,2.5,3,0.2
+2026-10-28 14:36:00,Huntingdon,HOST YOUR CONFERENCE AT HUNTINGDON RACECOURSE HANDICAP HURDLE (4),Final Surprise(IRE),1,Ciaran Gethings,Alastair Ralph,755-13,0.4302,3,0.0978,5,9.0,0.3263,2.6,3,0.2
+2026-10-28 14:36:00,Huntingdon,HOST YOUR CONFERENCE AT HUNTINGDON RACECOURSE HANDICAP HURDLE (4),Zafaan(IRE),4,Harry Cobden,Charlie Clover,5/2325-P21,0.5066,1,0.0843,6,12.0,0.2863,3.2,3,0.2
+2026-10-28 14:36:00,Huntingdon,HOST YOUR CONFERENCE AT HUNTINGDON RACECOURSE HANDICAP HURDLE (4),Blackwater Lilly,8,Jack Quinlan,Neil King,32-444635,0.2398,6,0.0619,7,17.0,0.2161,4.2,3,0.2
+2026-10-28 14:36:00,Huntingdon,HOST YOUR CONFERENCE AT HUNTINGDON RACECOURSE HANDICAP HURDLE (4),Takeit Easy,5,Jack Andrews,Pam Sly,20/74P24-6,0.2273,8,0.0355,8,26.0,0.1277,6.0,3,0.2
+2026-10-28 15:06:00,Huntingdon,HOSPITALITY AT HUNTINGDON RACECOURSE NOVICES HANDICAP HURDLE (5),Tazman Dan(IRE),4,Charlie Hammond,Stuart Edmunds,657-44,0.2136,7,0.2243,1,3.75,0.606,1.55,3,0.2
+2026-10-28 15:06:00,Huntingdon,HOSPITALITY AT HUNTINGDON RACECOURSE NOVICES HANDICAP HURDLE (5),Zaraquelle(FR),6,Jonathan Burke,James Owen,42-2,0.4373,1,0.2131,2,4.0,0.5869,1.6,3,0.2
+2026-10-28 15:06:00,Huntingdon,HOSPITALITY AT HUNTINGDON RACECOURSE NOVICES HANDICAP HURDLE (5),Knighton,3,Jack Tudor,Oliver Greenall &amp; Josh Guerriero,8442-23,0.3635,2,0.1933,3,4.5,0.5505,1.7,3,0.2
+2026-10-28 15:06:00,Huntingdon,HOSPITALITY AT HUNTINGDON RACECOURSE NOVICES HANDICAP HURDLE (5),Thepassingcyclone,2,Harry Cobden,Dominic Ffrench Davis,56-U53,0.1999,8,0.0955,4,8.5,0.3147,2.5,3,0.2
+2026-10-28 15:06:00,Huntingdon,HOSPITALITY AT HUNTINGDON RACECOURSE NOVICES HANDICAP HURDLE (5),Calibos,5,Gavin Sheehan,Jo Davis,4-33,0.3124,5,0.0723,5,12.0,0.2453,3.2,3,0.2
+2026-10-28 15:06:00,Huntingdon,HOSPITALITY AT HUNTINGDON RACECOURSE NOVICES HANDICAP HURDLE (5),Dunstall Star,1,Mr Harry ODwyer,Tom George,61-F254,0.3186,4,0.0651,7,13.0,0.2228,3.4,3,0.2
+2026-10-28 15:06:00,Huntingdon,HOSPITALITY AT HUNTINGDON RACECOURSE NOVICES HANDICAP HURDLE (5),No Mean Feat(IRE),9,Harry Reed,Simon Hodgson,3/4P46-416,0.363,3,0.0652,6,13.0,0.2232,3.4,3,0.2
+2026-10-28 15:06:00,Huntingdon,HOSPITALITY AT HUNTINGDON RACECOURSE NOVICES HANDICAP HURDLE (5),Northern Rose(IRE),7,Joe Anderson,Gary Hanmer,9221734F,0.2734,6,0.0513,8,17.0,0.1785,4.2,3,0.2
+2026-10-28 15:06:00,Huntingdon,HOSPITALITY AT HUNTINGDON RACECOURSE NOVICES HANDICAP HURDLE (5),Papa Oscar,8,Dylan Johnston,Clare Hobson,P6-56,0.1488,9,0.0198,9,41.0,0.0713,9.0,3,0.2
+2026-10-28 15:36:00,Huntingdon,CHRISTMAS PARTIES 2026 AT HUNTINGDON RACECOURSE HANDICAP CHASE (4),Its Top(FR),4,Gavin Sheehan,Oliver Signy,177/21P5-,0.3224,6,0.2339,1,3.5,0.6187,1.5,3,0.2
+2026-10-28 15:36:00,Huntingdon,CHRISTMAS PARTIES 2026 AT HUNTINGDON RACECOURSE HANDICAP CHASE (4),Clap Of Thunder(IRE),1,Sam Twiston-davies,Nigel &amp; Willy Twiston-Davies,41533/43-,0.3533,5,0.1967,2,4.333,0.554,1.67,3,0.2
+2026-10-28 15:36:00,Huntingdon,CHRISTMAS PARTIES 2026 AT HUNTINGDON RACECOURSE HANDICAP CHASE (4),Scavengers Reign(IRE),8,Jonathan Burke,James Owen,33/2U3130-,0.3593,4,0.1563,3,5.5,0.4696,1.9,3,0.2
+2026-10-28 15:36:00,Huntingdon,CHRISTMAS PARTIES 2026 AT HUNTINGDON RACECOURSE HANDICAP CHASE (4),Nazare(FR),6,Harry Cobden,James Owen,411F96-31,0.4875,2,0.1133,5,7.5,0.3624,2.3,3,0.2
+2026-10-28 15:36:00,Huntingdon,CHRISTMAS PARTIES 2026 AT HUNTINGDON RACECOURSE HANDICAP CHASE (4),Fighting Falcon(IRE),9,Charlie Hammond,Stuart Edmunds,08/95P-1P6,0.2498,8,0.115,4,7.5,0.3669,2.3,3,0.2
+2026-10-28 15:36:00,Huntingdon,CHRISTMAS PARTIES 2026 AT HUNTINGDON RACECOURSE HANDICAP CHASE (4),Legal Weapon(GER),5,Ben Jones,Ben Pauling,90/232440-,0.2676,7,0.0885,6,9.5,0.2925,2.7,3,0.2
+2026-10-28 15:36:00,Huntingdon,CHRISTMAS PARTIES 2026 AT HUNTINGDON RACECOURSE HANDICAP CHASE (4),Cuban Court(IRE),3,Jack Quinlan,Neil King,1/4616114-,0.606,1,0.0482,7,17.0,0.1672,4.2,3,0.2
+2026-10-28 15:36:00,Huntingdon,CHRISTMAS PARTIES 2026 AT HUNTINGDON RACECOURSE HANDICAP CHASE (4),Krak(FR),2,Tristan Durrell,Dan Skelton,0P-243225,0.3651,3,0.0402,8,23.0,0.1407,5.4,3,0.2
+2026-10-28 15:36:00,Huntingdon,CHRISTMAS PARTIES 2026 AT HUNTINGDON RACECOURSE HANDICAP CHASE (4),Sopran Thor(FR),7,Murray Dodd,Louise Allan,P/,0.0,9,0.0081,9,101.0,0.0293,21.0,3,0.2
+2026-10-28 16:06:00,Huntingdon,ADVERTISE AT HUNTINGDON RACECOURSE OPEN NATIONAL HUNT FLAT (5),Kauto Line(FR),4,Paul OBrien,Harry Derham,,,,0.2192,1,4.0,0.6134,1.6,3,0.2
+2026-10-28 16:06:00,Huntingdon,ADVERTISE AT HUNTINGDON RACECOURSE OPEN NATIONAL HUNT FLAT (5),Mossy Moon(IRE),5,Tom Cannon,Alan King,4,0.25,3,0.215,2,4.0,0.6061,1.6,3,0.2
+2026-10-28 16:06:00,Huntingdon,ADVERTISE AT HUNTINGDON RACECOURSE OPEN NATIONAL HUNT FLAT (5),Persian Art(IRE),6,Gavin Sheehan,Henrietta C Knight,2,0.5,2,0.1836,4,4.5,0.5461,1.7,3,0.2
+2026-10-28 16:06:00,Huntingdon,ADVERTISE AT HUNTINGDON RACECOURSE OPEN NATIONAL HUNT FLAT (5),Arms Of An Angel(IRE),8,Kielan Woods,David Killahena &amp; Graeme McPherson,5-,0.2,6,0.1909,3,4.5,0.5609,1.7,3,0.2
+2026-10-28 16:06:00,Huntingdon,ADVERTISE AT HUNTINGDON RACECOURSE OPEN NATIONAL HUNT FLAT (5),Seedling,7,David Noonan,Ben Clarke,1-,1.0,1,0.0911,5,9.5,0.3105,2.7,3,0.2
+2026-10-28 16:06:00,Huntingdon,ADVERTISE AT HUNTINGDON RACECOURSE OPEN NATIONAL HUNT FLAT (5),Tommy Tipa,2,Jack Tudor,Sara Bradstock,5,0.2,7,0.0589,6,15.0,0.2088,3.8,3,0.2
+2026-10-28 16:06:00,Huntingdon,ADVERTISE AT HUNTINGDON RACECOURSE OPEN NATIONAL HUNT FLAT (5),Aunt Gallie(IRE),9,Nick Slatter,David Killahena &amp; Graeme McPherson,8-,0.125,8,0.016,7,51.0,0.0595,11.0,3,0.2
+2026-10-28 16:06:00,Huntingdon,ADVERTISE AT HUNTINGDON RACECOURSE OPEN NATIONAL HUNT FLAT (5),All Good To Go,1,Toby McCain-Mitchell,Alex Hales,4-,0.25,4,0.0135,8,81.0,0.0503,17.0,3,0.2
+2026-10-28 16:06:00,Huntingdon,ADVERTISE AT HUNTINGDON RACECOURSE OPEN NATIONAL HUNT FLAT (5),Indiza(IRE),3,Charlie Hammond,Stuart Edmunds,8-3,0.2428,5,0.0117,9,81.0,0.0437,17.0,3,0.2
+2026-10-28 16:15:00,Kempton Park,BET £20 GET £20 WITH UNIBET APPRENTICE HANDICAP (6),Insuspense,2,Alexandra Egan,Ross Burdon,22275315,0.4198,1,0.2671,1,3.13,0.6681,1.53,3,0.25
+2026-10-28 16:15:00,Kempton Park,BET £20 GET £20 WITH UNIBET APPRENTICE HANDICAP (6),Marianne Mozart(IRE),1,Kyle McHugh,Ismail Mohammed &amp; Jose Santos,5-55095,0.1629,10,0.1781,2,4.5,0.5188,1.88,3,0.25
+2026-10-28 16:15:00,Kempton Park,BET £20 GET £20 WITH UNIBET APPRENTICE HANDICAP (6),Lazzar(IRE),3,Donagh Murphy,Charlie Wallis,94246454,0.2474,7,0.1718,3,5.0,0.5056,2.0,3,0.25
+2026-10-28 16:15:00,Kempton Park,BET £20 GET £20 WITH UNIBET APPRENTICE HANDICAP (6),Marra Donna(IRE),6,Alice Bond,Martin Dunne,33245939,0.2173,9,0.0934,4,9.0,0.3082,3.0,3,0.25
+2026-10-28 16:15:00,Kempton Park,BET £20 GET £20 WITH UNIBET APPRENTICE HANDICAP (6),King Cherry(IRE),5,Taryn Langley,Stuart Williams,76409103,0.3362,2,0.0836,5,10.0,0.2794,3.25,3,0.25
+2026-10-28 16:15:00,Kempton Park,BET £20 GET £20 WITH UNIBET APPRENTICE HANDICAP (6),Henry Tudor,11,Olivia Tubb,Mark Hoad,99873433,0.2832,3,0.0756,6,11.0,0.2552,3.5,3,0.25
+2026-10-28 16:15:00,Kempton Park,BET £20 GET £20 WITH UNIBET APPRENTICE HANDICAP (6),Shining Guest(IRE),8,Harry Vigors,George Margarson,67-6526,0.2446,8,0.0431,7,21.0,0.1512,6.0,3,0.25
+2026-10-28 16:15:00,Kempton Park,BET £20 GET £20 WITH UNIBET APPRENTICE HANDICAP (6),Shaws Phoenix(IRE),9,Molly Gunn,Tony Carroll,93558-907,0.1357,11,0.0253,8,34.0,0.0905,9.25,3,0.25
+2026-10-28 16:15:00,Kempton Park,BET £20 GET £20 WITH UNIBET APPRENTICE HANDICAP (6),Balon Dor,4,James Glennon,Simon Dow,64841590,0.2562,5,0.0223,9,41.0,0.08,11.0,3,0.25
+2026-10-28 16:15:00,Kempton Park,BET £20 GET £20 WITH UNIBET APPRENTICE HANDICAP (6),Lion Ring(IRE),10,Owen Lewis,Andrew Martin,51654033,0.2555,6,0.0213,10,41.0,0.0765,11.0,3,0.25
+2026-10-28 16:15:00,Kempton Park,BET £20 GET £20 WITH UNIBET APPRENTICE HANDICAP (6),Shielas Well(IRE),7,Toby Moore,Ian Williams,380-48433,0.2646,4,0.0184,11,51.0,0.0663,13.5,3,0.25
+2026-10-28 16:45:00,Kempton Park,UNIBET S NEW VAR GOAL GUARANTEE HANDICAP (Qualifier) (6) (D.I),Girls Allowed(IRE),1,Dylan Hogan,Julia &amp; Shelley Birkett,66-462901,0.4354,1,0.3855,1,2.2,0.8208,1.3,3,0.25
+2026-10-28 16:45:00,Kempton Park,UNIBET S NEW VAR GOAL GUARANTEE HANDICAP (Qualifier) (6) (D.I),Upsomdowns,2,Paddy Bradley,Pat Phelan,346-28040,0.1829,5,0.1719,2,5.0,0.5476,2.0,3,0.25
+2026-10-28 16:45:00,Kempton Park,UNIBET S NEW VAR GOAL GUARANTEE HANDICAP (Qualifier) (6) (D.I),Wild Rosie,9,Marco Ghiani,Chris Dwyer,76078464,0.1921,2,0.1254,3,7.0,0.4332,2.5,3,0.25
+2026-10-28 16:45:00,Kempton Park,UNIBET S NEW VAR GOAL GUARANTEE HANDICAP (Qualifier) (6) (D.I),Seapearl,5,Oisin Murphy,Oliver Cole,6969,0.1353,9,0.0832,4,11.0,0.3058,3.5,3,0.25
+2026-10-28 16:45:00,Kempton Park,UNIBET S NEW VAR GOAL GUARANTEE HANDICAP (Qualifier) (6) (D.I),Blue Hill,3,Kyle McHugh,Ismail Mohammed &amp; Jose Santos,54557,0.1891,4,0.069,6,12.0,0.2584,3.75,3,0.25
+2026-10-28 16:45:00,Kempton Park,UNIBET S NEW VAR GOAL GUARANTEE HANDICAP (Qualifier) (6) (D.I),Gatlinburg(IRE),4,Seamus Cronin,Michael Attwater,0-884059,0.15,8,0.0756,5,12.0,0.2807,3.75,3,0.25
+2026-10-28 16:45:00,Kempton Park,UNIBET S NEW VAR GOAL GUARANTEE HANDICAP (Qualifier) (6) (D.I),Far Far Out(IRE),7,William Carson,Tony Carroll,588004,0.1574,7,0.0294,7,29.0,0.1154,8.0,3,0.25
+2026-10-28 16:45:00,Kempton Park,UNIBET S NEW VAR GOAL GUARANTEE HANDICAP (Qualifier) (6) (D.I),Dora Vita,10,Callum Hutchinson,Richard Phillips,40605387,0.1767,6,0.0254,8,34.0,0.1002,9.25,3,0.25
+2026-10-28 16:45:00,Kempton Park,UNIBET S NEW VAR GOAL GUARANTEE HANDICAP (Qualifier) (6) (D.I),Malakai Kite(IRE),6,Joey Haynes,Ronald Harris,435390,0.1915,3,0.0202,9,41.0,0.0801,11.0,3,0.25
+2026-10-28 16:45:00,Kempton Park,UNIBET S NEW VAR GOAL GUARANTEE HANDICAP (Qualifier) (6) (D.I),Karmacy(IRE),8,Ryan Kavanagh,Andrew Martin,878-87P,0.0944,10,0.0143,10,67.0,0.0571,17.5,3,0.25
+2026-10-28 17:15:00,Kempton Park,UNIBET S NEW VAR GOAL GUARANTEE HANDICAP (Qualifier) (6) (D.II),Crown The Future(IRE),5,Marco Ghiani,Tony Carroll,37045212,0.5154,1,0.6363,1,1.44,0.8938,1.11,2,0.25
+2026-10-28 17:15:00,Kempton Park,UNIBET S NEW VAR GOAL GUARANTEE HANDICAP (Qualifier) (6) (D.II),Roccobear(IRE),2,Jonny Peate,J. R. Jenkins,8-8256354,0.2566,2,0.1399,2,6.5,0.4185,2.38,2,0.25
+2026-10-28 17:15:00,Kempton Park,UNIBET S NEW VAR GOAL GUARANTEE HANDICAP (Qualifier) (6) (D.II),Melodical,4,Ashley Lewis,Ed Walker,435-6553,0.2448,3,0.1004,3,9.0,0.3055,3.0,2,0.25
+2026-10-28 17:15:00,Kempton Park,UNIBET S NEW VAR GOAL GUARANTEE HANDICAP (Qualifier) (6) (D.II),Claytons Kolatonic,8,Ben Ffrench Davis,Dominic Ffrench Davis,47966506,0.1531,5,0.0716,4,13.0,0.2203,4.0,2,0.25
+2026-10-28 17:15:00,Kempton Park,UNIBET S NEW VAR GOAL GUARANTEE HANDICAP (Qualifier) (6) (D.II),Gloriola,9,Gina Mangan,Steph Hollinshead,80-052360,0.2183,4,0.0343,5,26.0,0.107,7.25,2,0.25
+2026-10-28 17:15:00,Kempton Park,UNIBET S NEW VAR GOAL GUARANTEE HANDICAP (Qualifier) (6) (D.II),Baggie Boy,7,Myla Coppins,Tony Carroll,9-6800,0.1155,6,0.0175,6,51.0,0.0549,13.5,2,0.25
+2026-10-28 17:45:00,Kempton Park,TRY UNIBET S NEW IMPROVED ACCA BOOSTS FILLIES RESTRICTED NOVICE STAKES (4),Thespian Queen,9,Charles Bishop,Eve Johnson Houghton,2662,0.3389,1,0.3348,1,2.63,0.8077,1.41,3,0.25
+2026-10-28 17:45:00,Kempton Park,TRY UNIBET S NEW IMPROVED ACCA BOOSTS FILLIES RESTRICTED NOVICE STAKES (4),Lady Margo(IRE),4,Oisin Murphy,John &amp; Thady Gosden,,,,0.3149,2,2.75,0.7903,1.44,3,0.25
+2026-10-28 17:45:00,Kempton Park,TRY UNIBET S NEW IMPROVED ACCA BOOSTS FILLIES RESTRICTED NOVICE STAKES (4),Sand Dance(IRE),7,David Egan,S. P. C. Woods,8,0.125,4,0.102,3,9.0,0.3913,3.0,3,0.25
+2026-10-28 17:45:00,Kempton Park,TRY UNIBET S NEW IMPROVED ACCA BOOSTS FILLIES RESTRICTED NOVICE STAKES (4),Howluckyweare,3,Darragh Keenan,William Haggas,5,0.2,2,0.0644,5,13.0,0.2593,4.0,3,0.25
+2026-10-28 17:45:00,Kempton Park,TRY UNIBET S NEW IMPROVED ACCA BOOSTS FILLIES RESTRICTED NOVICE STAKES (4),Waiting(IRE),10,Marco Ghiani,William Knight,,,,0.0684,4,13.0,0.2741,4.0,3,0.25
+2026-10-28 17:45:00,Kempton Park,TRY UNIBET S NEW IMPROVED ACCA BOOSTS FILLIES RESTRICTED NOVICE STAKES (4),Perfectly Adorable,6,David Probert,Owen Burrows,,,,0.0622,6,15.0,0.2511,4.5,3,0.25
+2026-10-28 17:45:00,Kempton Park,TRY UNIBET S NEW IMPROVED ACCA BOOSTS FILLIES RESTRICTED NOVICE STAKES (4),Fifth Amendment(IRE),2,Callum Hutchinson,Jonathan Portman,6,0.1667,3,0.0194,7,51.0,0.0821,13.5,3,0.25
+2026-10-28 17:45:00,Kempton Park,TRY UNIBET S NEW IMPROVED ACCA BOOSTS FILLIES RESTRICTED NOVICE STAKES (4),Loaded Dice,5,Josephine Gordon,Ross Burdon,,,,0.0184,8,51.0,0.078,13.5,3,0.25
+2026-10-28 17:45:00,Kempton Park,TRY UNIBET S NEW IMPROVED ACCA BOOSTS FILLIES RESTRICTED NOVICE STAKES (4),Acechaser,1,Alexandra Egan,Ross Burdon,,,,0.0154,9,67.0,0.0655,17.5,3,0.25
+2026-10-28 18:15:00,Kempton Park,SET YOUR LIMITS WITH UNIBET FILLIES HANDICAP (5),Maria Da Silva(IRE),3,Oisin Murphy,Andrew Balding,06-11445,0.4047,4,0.2616,2,3.25,0.6896,1.56,3,0.25
+2026-10-28 18:15:00,Kempton Park,SET YOUR LIMITS WITH UNIBET FILLIES HANDICAP (5),Goomah(IRE),4,David Egan,John Butler,76-30833,0.2535,6,0.2685,1,3.5,0.6988,1.62,3,0.25
+2026-10-28 18:15:00,Kempton Park,SET YOUR LIMITS WITH UNIBET FILLIES HANDICAP (5),Medway Queen(IRE),1,David Probert,William Muir &amp; Chris Grassick,2442-235,0.3303,5,0.1636,3,5.5,0.515,2.12,3,0.25
+2026-10-28 18:15:00,Kempton Park,SET YOUR LIMITS WITH UNIBET FILLIES HANDICAP (5),Amarachi(IRE),5,Oliver Carmichael,Joseph Parr,29612333,0.4103,3,0.117,4,7.5,0.3953,2.62,3,0.25
+2026-10-28 18:15:00,Kempton Park,SET YOUR LIMITS WITH UNIBET FILLIES HANDICAP (5),Connie Moon(IRE),8,Daniel Muscutt,Denis Coakley,538-67580,0.1373,9,0.0561,5,17.0,0.205,5.0,3,0.25
+2026-10-28 18:15:00,Kempton Park,SET YOUR LIMITS WITH UNIBET FILLIES HANDICAP (5),Daisy Roots,6,Donagh Murphy,Jim Boyle,2-4474550,0.1756,7,0.0477,6,19.0,0.176,5.5,3,0.25
+2026-10-28 18:15:00,Kempton Park,SET YOUR LIMITS WITH UNIBET FILLIES HANDICAP (5),Rating(IRE),2,Darragh Keenan,Grace Harris,55351832,0.4207,2,0.0393,7,26.0,0.1464,7.25,3,0.25
+2026-10-28 18:15:00,Kempton Park,SET YOUR LIMITS WITH UNIBET FILLIES HANDICAP (5),Zoulette(IRE),9,Stevie Donohoe,Ollie Sangster,6367261,0.4765,1,0.0353,8,29.0,0.1321,8.0,3,0.25
+2026-10-28 18:15:00,Kempton Park,SET YOUR LIMITS WITH UNIBET FILLIES HANDICAP (5),Q T Pie,7,William Carson,Tom Dascombe,149-29588,0.1732,8,0.0109,9,101.0,0.0418,26.0,3,0.25
+2026-10-28 18:45:00,Kempton Park,TRY UNIBET S NEW SMARTVIEW RACECARDS NURSERY HANDICAP (4),Pure Mint(IRE),1,Oisin Murphy,Simon Crisford,162,0.5167,3,0.4509,1,2.0,0.7322,1.25,2,0.25
+2026-10-28 18:45:00,Kempton Park,TRY UNIBET S NEW SMARTVIEW RACECARDS NURSERY HANDICAP (4),Henley On Thames(IRE),5,David Egan,Kevin Philippart de Foy,622114,0.5992,2,0.1935,2,4.5,0.4267,1.88,2,0.25
+2026-10-28 18:45:00,Kempton Park,TRY UNIBET S NEW SMARTVIEW RACECARDS NURSERY HANDICAP (4),Thames Waterman,2,Finley Marsh,Richard Hughes,110,0.6188,1,0.0856,3,11.0,0.2013,3.5,2,0.25
+2026-10-28 18:45:00,Kempton Park,TRY UNIBET S NEW SMARTVIEW RACECARDS NURSERY HANDICAP (4),Arthur Carrot,8,Jack Callan,George Boughey,2632,0.3844,6,0.0851,4,11.0,0.2002,3.5,2,0.25
+2026-10-28 18:45:00,Kempton Park,TRY UNIBET S NEW SMARTVIEW RACECARDS NURSERY HANDICAP (4),Treasurer(IRE),3,David Probert,Charlie Fellowes,40178,0.3031,7,0.0712,5,13.0,0.1686,4.0,2,0.25
+2026-10-28 18:45:00,Kempton Park,TRY UNIBET S NEW SMARTVIEW RACECARDS NURSERY HANDICAP (4),Lord Ragnar(IRE),7,Marco Ghiani,Ed Dunlop,0212427,0.4039,5,0.0625,6,15.0,0.1486,4.5,2,0.25
+2026-10-28 18:45:00,Kempton Park,TRY UNIBET S NEW SMARTVIEW RACECARDS NURSERY HANDICAP (4),Conciliate(IRE),6,Callum Hutchinson,John Butler,73102,0.4328,4,0.0512,7,17.0,0.1224,5.0,2,0.25
+2026-10-28 19:15:00,Kempton Park,BET £20 GET £20 WITH UNIBET MAIDEN FILLIES STAKES (4),Arabian Summer(IRE),1,Christian Howarth,Saeed Bin Suroor,6/2,0.3551,1,0.446,1,1.909,0.944,1.23,3,0.25
+2026-10-28 19:15:00,Kempton Park,BET £20 GET £20 WITH UNIBET MAIDEN FILLIES STAKES (4),Tausret,7,Oisin Murphy,Archie Watson,,,,0.3588,2,2.5,0.916,1.38,3,0.25
+2026-10-28 19:15:00,Kempton Park,BET £20 GET £20 WITH UNIBET MAIDEN FILLIES STAKES (4),Poor Relation(FR),5,Harry Vigors,Ollie Sangster,5-23737,0.2516,2,0.084,3,13.0,0.4788,4.0,3,0.25
+2026-10-28 19:15:00,Kempton Park,BET £20 GET £20 WITH UNIBET MAIDEN FILLIES STAKES (4),Stay In Your Lane,6,Jack Callan,T. J. Kent,,,,0.064,4,15.0,0.373,4.5,3,0.25
+2026-10-28 19:15:00,Kempton Park,BET £20 GET £20 WITH UNIBET MAIDEN FILLIES STAKES (4),Cougar Force,2,Jason Watson,Heather Main,805-36390,0.1831,3,0.0222,5,51.0,0.1348,13.5,3,0.25
+2026-10-28 19:15:00,Kempton Park,BET £20 GET £20 WITH UNIBET MAIDEN FILLIES STAKES (4),Faithful Ardad,3,Finley Marsh,Jim &amp; Suzi Best,00,0.1,5,0.0124,6,81.0,0.0759,21.0,3,0.25
+2026-10-28 19:15:00,Kempton Park,BET £20 GET £20 WITH UNIBET MAIDEN FILLIES STAKES (4),Tilsworth Boe,8,Oliver Carmichael,J. R. Jenkins,,,,0.0085,7,126.0,0.0522,32.25,3,0.25
+2026-10-28 19:15:00,Kempton Park,BET £20 GET £20 WITH UNIBET MAIDEN FILLIES STAKES (4),Kernow Rose,4,Callum Hutchinson,Zoe Hawkins,08,0.1141,4,0.0041,8,251.0,0.0253,63.5,3,0.25
+2026-10-28 19:45:00,Kempton Park,TRY UNIBET S NEW RACING BET BUILDER HANDICAP (4),Winged One(IRE),7,Oisin Murphy,Andrew Balding,91-58268,0.2752,7,0.2021,1,4.0,0.5559,1.75,3,0.25
+2026-10-28 19:45:00,Kempton Park,TRY UNIBET S NEW RACING BET BUILDER HANDICAP (4),Star Time,8,David Probert,Alan King,1/82-58361,0.4619,3,0.1905,2,4.333,0.5339,1.83,3,0.25
+2026-10-28 19:45:00,Kempton Park,TRY UNIBET S NEW RACING BET BUILDER HANDICAP (4),Brighton View,9,Marco Ghiani,William Knight,71021340,0.3338,5,0.1786,3,5.0,0.5102,2.0,3,0.25
+2026-10-28 19:45:00,Kempton Park,TRY UNIBET S NEW RACING BET BUILDER HANDICAP (4),Forever Penywern,2,Edward Greatrex,Warren Greatrex,53211-138,0.5568,2,0.1155,4,7.0,0.3623,2.5,3,0.25
+2026-10-28 19:45:00,Kempton Park,TRY UNIBET S NEW RACING BET BUILDER HANDICAP (4),Almekarem(IRE),3,Rhys Clutterbuck,Sir Mark Prescott Bt,4-1722107,0.3646,4,0.1013,5,8.5,0.3239,2.88,3,0.25
+2026-10-28 19:45:00,Kempton Park,TRY UNIBET S NEW RACING BET BUILDER HANDICAP (4),Blue Hercules(IRE),5,Ashley Lewis,William Muir &amp; Chris Grassick,42025238,0.2824,6,0.0913,6,9.5,0.2957,3.12,3,0.25
+2026-10-28 19:45:00,Kempton Park,TRY UNIBET S NEW RACING BET BUILDER HANDICAP (4),Thinthread,4,Jack Callan,George Baker,5313-5074,0.2608,8,0.0476,7,17.0,0.1625,5.0,3,0.25
+2026-10-28 19:45:00,Kempton Park,TRY UNIBET S NEW RACING BET BUILDER HANDICAP (4),Majestic(IRE),1,George Bass,Jack Channon,80-742030,0.2239,9,0.0287,8,29.0,0.1001,8.0,3,0.25
+2026-10-28 19:45:00,Kempton Park,TRY UNIBET S NEW RACING BET BUILDER HANDICAP (4),Imperial Cult(IRE),10,Paddy Bradley,Pat Phelan,833-11414,0.6003,1,0.0238,9,34.0,0.0834,9.25,3,0.25
+2026-10-28 19:45:00,Kempton Park,TRY UNIBET S NEW RACING BET BUILDER HANDICAP (4),Youthful King,6,Charles Bishop,Luke Dace,98-886440,0.1728,10,0.0207,10,41.0,0.0728,11.0,3,0.25
+2026-10-28 20:15:00,Kempton Park,UNIBET MORE EXTRA PLACE RACES HANDICAP (5),Whitesnake,4,Jason Watson,Roger Teal,4-773311,0.6423,1,0.1885,1,4.0,0.5094,1.75,3,0.25
+2026-10-28 20:15:00,Kempton Park,UNIBET MORE EXTRA PLACE RACES HANDICAP (5),Strong Voice(IRE),11,Daniel Muscutt,James Horton,4-0266224,0.3491,3,0.1525,2,5.0,0.4352,2.0,3,0.25
+2026-10-28 20:15:00,Kempton Park,UNIBET MORE EXTRA PLACE RACES HANDICAP (5),Split Elevens,8,David Egan,John Butler,41241222,0.5408,2,0.1189,4,6.5,0.3558,2.38,3,0.25
+2026-10-28 20:15:00,Kempton Park,UNIBET MORE EXTRA PLACE RACES HANDICAP (5),Rey De La Batalla,14,Marco Ghiani,Simon Dow,5935-5909,0.1469,11,0.1196,3,7.0,0.3576,2.5,3,0.25
+2026-10-28 20:15:00,Kempton Park,UNIBET MORE EXTRA PLACE RACES HANDICAP (5),The Bitter Moose(IRE),10,Joe Leavy,Patrick Chamings,40333860,0.1922,8,0.101,5,8.0,0.3096,2.75,3,0.25
+2026-10-28 20:15:00,Kempton Park,UNIBET MORE EXTRA PLACE RACES HANDICAP (5),Herculeus,7,Oisin Murphy,William Muir &amp; Chris Grassick,00-950608,0.1298,12,0.0848,6,9.0,0.2653,3.0,3,0.25
+2026-10-28 20:15:00,Kempton Park,UNIBET MORE EXTRA PLACE RACES HANDICAP (5),Generous Rascal,13,David Probert,Dylan Cunha,38357502,0.2678,5,0.0813,7,9.5,0.2555,3.12,3,0.25
+2026-10-28 20:15:00,Kempton Park,UNIBET MORE EXTRA PLACE RACES HANDICAP (5),Ziggys Condor(IRE),3,Charles Bishop,Adam Kirby,50U32600,0.1804,9,0.0414,8,19.0,0.1363,5.5,3,0.25
+2026-10-28 20:15:00,Kempton Park,UNIBET MORE EXTRA PLACE RACES HANDICAP (5),Zero Carbon(FR),2,Paddy Bradley,Mark Loughnane,992608-70,0.1521,10,0.038,9,23.0,0.1256,6.5,3,0.25
+2026-10-28 20:15:00,Kempton Park,UNIBET MORE EXTRA PLACE RACES HANDICAP (5),Benavente,1,Rhys Clutterbuck,Gary Brown,4238109U,0.2135,6,0.0237,10,34.0,0.0796,9.25,3,0.25
+2026-10-28 20:15:00,Kempton Park,UNIBET MORE EXTRA PLACE RACES HANDICAP (5),Talking Bear(IRE),5,Callum Hutchinson,Richard Phillips,359,0.1958,7,0.019,11,41.0,0.0641,11.0,3,0.25
+2026-10-28 20:15:00,Kempton Park,UNIBET MORE EXTRA PLACE RACES HANDICAP (5),Hexagonal(IRE),12,Finley Marsh,Jim &amp; Suzi Best,60107197,0.3462,4,0.0181,12,51.0,0.0611,13.5,3,0.25
+2026-10-28 20:15:00,Kempton Park,UNIBET MORE EXTRA PLACE RACES HANDICAP (5),Beauzon,9,Ryan Kavanagh,Ian Williams,00600006,0.1246,13,0.0132,13,81.0,0.0448,21.0,3,0.25
+2026-10-28 14:51:00,Newton Abbot,PASSAGE HOUSE HOTEL SOUTH DEVON GATEWAY HANDICAP HURDLE (Qualifier) (4),Western Cross(IRE),4,Sean Houlihan,Philip Hobbs &amp; Johnson White,293441-,0.4848,4,0.2153,1,4.33,0.5816,1.67,3,0.2
+2026-10-28 14:51:00,Newton Abbot,PASSAGE HOUSE HOTEL SOUTH DEVON GATEWAY HANDICAP HURDLE (Qualifier) (4),Marhaba Prince,5,Ben Godfrey,Anthony Honeyball,17/3221-P,0.4214,6,0.1893,2,4.5,0.5337,1.7,3,0.2
+2026-10-28 14:51:00,Newton Abbot,PASSAGE HOUSE HOTEL SOUTH DEVON GATEWAY HANDICAP HURDLE (Qualifier) (4),Sioux Falls(GER),9,Adam Wedge,Mrs C. Williams,5437-7,0.2002,7,0.158,3,5.5,0.4679,1.9,3,0.2
+2026-10-28 14:51:00,Newton Abbot,PASSAGE HOUSE HOTEL SOUTH DEVON GATEWAY HANDICAP HURDLE (Qualifier) (4),All Well And Good,1,Sean Bowen,Olly Murphy,21202/21-,0.6317,1,0.1201,4,7.5,0.3759,2.3,3,0.2
+2026-10-28 14:51:00,Newton Abbot,PASSAGE HOUSE HOTEL SOUTH DEVON GATEWAY HANDICAP HURDLE (Qualifier) (4),Paddockwood(FR),3,Harry Skelton,Dan Skelton,141509-P,0.1901,8,0.1027,5,8.5,0.3291,2.5,3,0.2
+2026-10-28 14:51:00,Newton Abbot,PASSAGE HOUSE HOTEL SOUTH DEVON GATEWAY HANDICAP HURDLE (Qualifier) (4),Eton Mes(IRE),6,Conor OFarrell,David Pipe,94441135-,0.4826,5,0.088,6,10.0,0.2874,2.8,3,0.2
+2026-10-28 14:51:00,Newton Abbot,PASSAGE HOUSE HOTEL SOUTH DEVON GATEWAY HANDICAP HURDLE (Qualifier) (4),In Limbo(IRE),7,Bryan Carver,Chris Honour,4351/,0.5202,2,0.0775,7,11.0,0.2565,3.0,3,0.2
+2026-10-28 14:51:00,Newton Abbot,PASSAGE HOUSE HOTEL SOUTH DEVON GATEWAY HANDICAP HURDLE (Qualifier) (4),Rock On Cowboy(IRE),8,Tom Broughton,Fergal OBrien,3P31/2-,0.5,3,0.0491,8,19.0,0.168,4.6,3,0.2
+2026-10-28 15:21:00,Newton Abbot,PERSIMMON HOMES HANDICAP CHASE (4),Opening Bid,3,Brendan Powell,Joe Tizzard,35194/21-4,0.5056,1,0.2589,1,3.5,0.5024,1.62,2,0.25
+2026-10-28 15:21:00,Newton Abbot,PERSIMMON HOMES HANDICAP CHASE (4),The Four Sixes(IRE),1,Rex Dingle,Chester Williams,1P6074-P5,0.1435,5,0.2232,3,4.0,0.447,1.75,2,0.25
+2026-10-28 15:21:00,Newton Abbot,PERSIMMON HOMES HANDICAP CHASE (4),Centara(IRE),2,Jay Tidball,Paul Nicholls,121P-6453,0.2853,4,0.2232,4,4.0,0.447,1.75,2,0.25
+2026-10-28 15:21:00,Newton Abbot,PERSIMMON HOMES HANDICAP CHASE (4),Klic Boum(FR),6,Adam Wedge,Mrs C. Williams,333/05325-,0.2904,3,0.2261,2,4.0,0.4517,1.75,2,0.25
+2026-10-28 15:21:00,Newton Abbot,PERSIMMON HOMES HANDICAP CHASE (4),Mo Ghille Mar(IRE),5,Paddy Hanlon,"John Joseph Hanlon, Ireland",6-1774153,0.3729,2,0.0687,5,13.0,0.1523,4.0,2,0.25
+2026-10-28 15:51:00,Newton Abbot,SKY SPORTS RACING NOVICES HANDICAP CHASE (4),Badbury Rings,5,Conor OFarrell,Neil Mulholland,6063211/4,0.5822,2,0.3729,1,2.38,0.6578,1.34,2,0.25
+2026-10-28 15:51:00,Newton Abbot,SKY SPORTS RACING NOVICES HANDICAP CHASE (4),Mask Of Zorro(IRE),3,Brendan Powell,Joe Tizzard,56/411114-,0.7229,1,0.2429,2,3.75,0.495,1.69,2,0.25
+2026-10-28 15:51:00,Newton Abbot,SKY SPORTS RACING NOVICES HANDICAP CHASE (4),Not A Light(IRE),4,Jack Stenhouse,Philip Hobbs &amp; Johnson White,17/642P-,0.27,5,0.1556,3,6.0,0.3384,2.25,2,0.25
+2026-10-28 15:51:00,Newton Abbot,SKY SPORTS RACING NOVICES HANDICAP CHASE (4),Woodythewoodpecker(IRE),6,Adam Wedge,Mrs C. Williams,94/357223-,0.3605,3,0.1323,4,7.0,0.2919,2.5,2,0.25
+2026-10-28 15:51:00,Newton Abbot,SKY SPORTS RACING NOVICES HANDICAP CHASE (4),Kick Up A Storm(IRE),2,Freddie Gingell,Paul Nicholls,5U118/P-,0.3484,4,0.0963,5,9.5,0.2169,3.12,2,0.25
+2026-10-28 16:21:00,Newton Abbot,THANKYOU &amp; FAREWELL DR. TIM TILSLEY OPEN MAIDEN NATIONAL HUNT FLAT (4),Par Avion,3,Bryan Carver,Harry Fry,42-,0.3913,1,0.4218,1,2.1,0.7047,1.27,2,0.25
+2026-10-28 16:21:00,Newton Abbot,THANKYOU &amp; FAREWELL DR. TIM TILSLEY OPEN MAIDEN NATIONAL HUNT FLAT (4),The Gift Shop(FR),4,Harry Skelton,Dan Skelton,,,,0.1939,2,4.5,0.4188,1.88,2,0.25
+2026-10-28 16:21:00,Newton Abbot,THANKYOU &amp; FAREWELL DR. TIM TILSLEY OPEN MAIDEN NATIONAL HUNT FLAT (4),De Inovator(IRE),5,Sean Bowen,Olly Murphy,,,,0.1449,3,6.5,0.3232,2.38,2,0.25
+2026-10-28 16:21:00,Newton Abbot,THANKYOU &amp; FAREWELL DR. TIM TILSLEY OPEN MAIDEN NATIONAL HUNT FLAT (4),Straw Merchant(IRE),6,Brendan Powell,Joe Tizzard,,,,0.104,4,8.5,0.2375,2.88,2,0.25
+2026-10-28 16:21:00,Newton Abbot,THANKYOU &amp; FAREWELL DR. TIM TILSLEY OPEN MAIDEN NATIONAL HUNT FLAT (4),Miss Spec,7,Fern OBrien,Fergal OBrien,,,,0.0656,5,13.0,0.1528,4.0,2,0.25
+2026-10-28 16:21:00,Newton Abbot,THANKYOU &amp; FAREWELL DR. TIM TILSLEY OPEN MAIDEN NATIONAL HUNT FLAT (4),Storm Cracker,9,Rex Dingle,Ben Clarke,92-,0.3309,2,0.0656,6,13.0,0.1528,4.0,2,0.25
+2026-10-28 16:21:00,Newton Abbot,THANKYOU &amp; FAREWELL DR. TIM TILSLEY OPEN MAIDEN NATIONAL HUNT FLAT (4),Hottentotta,8,Jack Stenhouse,Chris Honour,8,0.125,3,0.0042,7,201.0,0.0101,51.0,2,0.25
+2026-10-28 15:16:00,Nottingham,RACING TV HANDICAP (4),Maxident,1,Rowan Scott,Kevin Philippart de Foy,4/421-2212,0.6629,1,0.2134,1,3.75,0.562,1.69,3,0.25
+2026-10-28 15:16:00,Nottingham,RACING TV HANDICAP (4),Gaspacho,7,Cieren Fallon,William Haggas,511-43,0.5188,3,0.1992,2,4.0,0.5368,1.75,3,0.25
+2026-10-28 15:16:00,Nottingham,RACING TV HANDICAP (4),Heroics,10,Rob Hornby,Alan King,42-241512,0.601,2,0.1147,3,7.0,0.3508,2.5,3,0.25
+2026-10-28 15:16:00,Nottingham,RACING TV HANDICAP (4),Klycot(FR),4,Kieran ONeill,Richard Bandey,6172503-7,0.2221,12,0.0961,4,9.0,0.3013,3.0,3,0.25
+2026-10-28 15:16:00,Nottingham,RACING TV HANDICAP (4),Pure Moon,13,Ray Dawson,Tom Clover,2-2704,0.2571,10,0.0661,5,12.0,0.2151,3.75,3,0.25
+2026-10-28 15:16:00,Nottingham,RACING TV HANDICAP (4),Just An Hour(IRE),5,George Wood,Rod Millman,63433413,0.4617,4,0.0584,7,13.0,0.1918,4.0,3,0.25
+2026-10-28 15:16:00,Nottingham,RACING TV HANDICAP (4),Seeking Charles(FR),6,Tyler Heard,Mark Usher,6/030-3217,0.4321,6,0.062,6,13.0,0.2028,4.0,3,0.25
+2026-10-28 15:16:00,Nottingham,RACING TV HANDICAP (4),Ashnak(FR),2,Mark Winn,David OMeara,83427843,0.264,9,0.0506,8,15.0,0.1677,4.5,3,0.25
+2026-10-28 15:16:00,Nottingham,RACING TV HANDICAP (4),Rock N Roll Pinkie,8,Hector Crouch,Ivan Furtado,24559756,0.1687,13,0.0476,9,17.0,0.1583,5.0,3,0.25
+2026-10-28 15:16:00,Nottingham,RACING TV HANDICAP (4),Outback Legend(IRE),9,Kieran Shoemark,Tom Ward,6314,0.4589,5,0.0371,10,21.0,0.1249,6.0,3,0.25
+2026-10-28 15:16:00,Nottingham,RACING TV HANDICAP (4),Dancing Tiger(IRE),3,Lewis Edmunds,Roger Teal,16224018,0.4008,7,0.0185,12,41.0,0.0635,11.0,3,0.25
+2026-10-28 15:16:00,Nottingham,RACING TV HANDICAP (4),Marbuzet,12,David Allan,Tim Easterby,4-5091068,0.2426,11,0.0213,11,41.0,0.0729,11.0,3,0.25
+2026-10-28 15:16:00,Nottingham,RACING TV HANDICAP (4),Torcello(IRE),11,Clifford Lee,Shaun Lycett,37/00-6818,0.3219,8,0.0149,13,51.0,0.0514,13.5,3,0.25
+2026-10-28 15:46:00,Nottingham,AJA CHAMPIONSHIPS FINALE AMATEUR RIDERS HANDICAP (6),Sweet Kiss,3,Miss Amy Collier,Tim Easterby,26225431,0.5254,2,0.175,1,4.333,0.4687,1.83,3,0.25
+2026-10-28 15:46:00,Nottingham,AJA CHAMPIONSHIPS FINALE AMATEUR RIDERS HANDICAP (6),Mighty Quiet,2,Mr Simon Walker,Harry Charlton,5182-6439,0.2329,12,0.1241,2,6.0,0.3574,2.25,3,0.25
+2026-10-28 15:46:00,Nottingham,AJA CHAMPIONSHIPS FINALE AMATEUR RIDERS HANDICAP (6),Rogers Dream,9,Mr David Dunsdon,Gihan Arnolda,48/443133,0.4331,5,0.1065,3,7.5,0.314,2.62,3,0.25
+2026-10-28 15:46:00,Nottingham,AJA CHAMPIONSHIPS FINALE AMATEUR RIDERS HANDICAP (6),Artavian,11,Mr Frederick Tett,Patrick Chamings,92-736731,0.4576,4,0.0798,4,9.5,0.2434,3.12,3,0.25
+2026-10-28 15:46:00,Nottingham,AJA CHAMPIONSHIPS FINALE AMATEUR RIDERS HANDICAP (6),Expressionless,4,Mr Fletcher Yarham,Dylan Cunha,38583580,0.1641,13,0.0711,5,11.0,0.2192,3.5,3,0.25
+2026-10-28 15:46:00,Nottingham,AJA CHAMPIONSHIPS FINALE AMATEUR RIDERS HANDICAP (6),Wellwhatshappenin(IRE),13,Miss Louise Chance,David Flood,23-008421,0.4807,3,0.0662,7,11.0,0.2052,3.5,3,0.25
+2026-10-28 15:46:00,Nottingham,AJA CHAMPIONSHIPS FINALE AMATEUR RIDERS HANDICAP (6),Dandys Angel(IRE),14,Miss Chelsea Brooks,John Wainwright,80366262,0.3342,8,0.0678,6,11.0,0.2098,3.5,3,0.25
+2026-10-28 15:46:00,Nottingham,AJA CHAMPIONSHIPS FINALE AMATEUR RIDERS HANDICAP (6),Furhaan,6,Miss Kayleigh Williams,Jim Goldie,52349323,0.3327,9,0.0607,8,12.0,0.1894,3.75,3,0.25
+2026-10-28 15:46:00,Nottingham,AJA CHAMPIONSHIPS FINALE AMATEUR RIDERS HANDICAP (6),Electrical,12,Mr Henry Callan,Brian Toomey,84-767568,0.1553,14,0.0595,9,13.0,0.1859,4.0,3,0.25
+2026-10-28 15:46:00,Nottingham,AJA CHAMPIONSHIPS FINALE AMATEUR RIDERS HANDICAP (6),Palazzo Persico(IRE),7,Mr William Pearman,Tony Carroll,00151536,0.3889,6,0.0443,10,17.0,0.1409,5.0,3,0.25
+2026-10-28 15:46:00,Nottingham,AJA CHAMPIONSHIPS FINALE AMATEUR RIDERS HANDICAP (6),Star Start(IRE),10,Miss Charli Parker,Ruth Carr,22120645,0.2855,10,0.0443,11,17.0,0.1409,5.0,3,0.25
+2026-10-28 15:46:00,Nottingham,AJA CHAMPIONSHIPS FINALE AMATEUR RIDERS HANDICAP (6),Flamingo Rose,8,Mr Morgan Tidman,Michael Wigham,18-53,0.3609,7,0.0394,12,19.0,0.126,5.5,3,0.25
+2026-10-28 15:46:00,Nottingham,AJA CHAMPIONSHIPS FINALE AMATEUR RIDERS HANDICAP (6),Alazwar(IRE),5,Miss Brodie Hampson,Archie Watson,29002114,0.5532,1,0.0317,13,23.0,0.1022,6.5,3,0.25
+2026-10-28 15:46:00,Nottingham,AJA CHAMPIONSHIPS FINALE AMATEUR RIDERS HANDICAP (6),Pride Of Nepal,1,Miss Serena Brotherton,Archie Watson,11174466,0.255,11,0.0223,14,34.0,0.0726,9.25,3,0.25
+2026-10-28 15:46:00,Nottingham,AJA CHAMPIONSHIPS FINALE AMATEUR RIDERS HANDICAP (6),Queenies Pal,15,Miss Natasha Cookson,Philip Kirby,73-950788,0.1313,15,0.0072,15,101.0,0.0238,26.0,3,0.25
