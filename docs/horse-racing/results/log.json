@@ -65668,8 +65668,9 @@
     "horse": "Lake Lugano(IRE)",
     "detail": "win prob 25%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:19:43"
   },
   {
     "id": "Recent Form::276177::300075",
@@ -65682,8 +65683,9 @@
     "horse": "Premier View(IRE)",
     "detail": "form 811",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:19:43"
   },
   {
     "id": "Form/Market Gap::276177::297774",
@@ -65696,8 +65698,9 @@
     "horse": "Santo Parvenue(IRE)",
     "detail": "form #2 vs market #4",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 4,
+    "verified_at": "2026-11-05T16:19:43"
   },
   {
     "id": "Each-Way::276177::301490",
@@ -65710,9 +65713,10 @@
     "horse": "Lake Lugano(IRE)",
     "detail": "place prob 63% \u00b7 top 3",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 3
+    "status": "hit",
+    "actual_position": 3,
+    "place_count": 3,
+    "verified_at": "2026-11-05T16:19:43"
   },
   {
     "id": "Projected Order::276177::301490",
@@ -65725,8 +65729,9 @@
     "horse": "Lake Lugano(IRE)",
     "detail": "win prob 25%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:19:43"
   },
   {
     "id": "Form-Adjusted Order::276177::300075",
@@ -65739,8 +65744,9 @@
     "horse": "Premier View(IRE)",
     "detail": "blended score 0.8029 \u00b7 win prob 18%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:19:43"
   },
   {
     "id": "Market Favorite::276178::264885",
@@ -65753,8 +65759,9 @@
     "horse": "Washington Heights",
     "detail": "win prob 22%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:20:05"
   },
   {
     "id": "Recent Form::276178::299168",
@@ -65767,8 +65774,9 @@
     "horse": "This Moment(IRE)",
     "detail": "form 24241115",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:20:05"
   },
   {
     "id": "Form/Market Gap::276178::267537",
@@ -65781,8 +65789,9 @@
     "horse": "Kerdos(IRE)",
     "detail": "form #2 vs market #7",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 9,
+    "verified_at": "2026-11-05T16:20:05"
   },
   {
     "id": "Each-Way::276178::264885",
@@ -65795,9 +65804,10 @@
     "horse": "Washington Heights",
     "detail": "place prob 58% \u00b7 top 3",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 3
+    "status": "hit",
+    "actual_position": 1,
+    "place_count": 3,
+    "verified_at": "2026-11-05T16:20:05"
   },
   {
     "id": "Projected Order::276178::264885",
@@ -65810,8 +65820,9 @@
     "horse": "Washington Heights",
     "detail": "win prob 22%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:20:05"
   },
   {
     "id": "Form-Adjusted Order::276178::299168",
@@ -65824,8 +65835,9 @@
     "horse": "This Moment(IRE)",
     "detail": "blended score 0.9373 \u00b7 win prob 20%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:20:05"
   },
   {
     "id": "Market Favorite::276179::302959",
@@ -65838,8 +65850,9 @@
     "horse": "Astroway(FR)",
     "detail": "win prob 20%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:20:06"
   },
   {
     "id": "Recent Form::276179::302921",
@@ -65852,8 +65865,9 @@
     "horse": "American Cowboy(USA)",
     "detail": "form 3",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 6,
+    "verified_at": "2026-11-05T16:20:06"
   },
   {
     "id": "Form/Market Gap::276179::302921",
@@ -65866,8 +65880,9 @@
     "horse": "American Cowboy(USA)",
     "detail": "form #1 vs market #6",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 6,
+    "verified_at": "2026-11-05T16:20:06"
   },
   {
     "id": "Form/Market Gap::276179::301627",
@@ -65880,8 +65895,9 @@
     "horse": "Mount Pinatubo(IRE)",
     "detail": "form #2 vs market #7",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 12,
+    "verified_at": "2026-11-05T16:20:06"
   },
   {
     "id": "Each-Way::276179::302959",
@@ -65894,9 +65910,10 @@
     "horse": "Astroway(FR)",
     "detail": "place prob 54% \u00b7 top 3",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 3
+    "status": "hit",
+    "actual_position": 3,
+    "place_count": 3,
+    "verified_at": "2026-11-05T16:20:06"
   },
   {
     "id": "Projected Order::276179::302959",
@@ -65909,8 +65926,9 @@
     "horse": "Astroway(FR)",
     "detail": "win prob 20%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:20:06"
   },
   {
     "id": "Form-Adjusted Order::276179::302959",
@@ -65923,8 +65941,9 @@
     "horse": "Astroway(FR)",
     "detail": "blended score 0.7395 \u00b7 win prob 20%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:20:06"
   },
   {
     "id": "Market Favorite::276180::299443",
@@ -65937,8 +65956,9 @@
     "horse": "Sakoku(IRE)",
     "detail": "win prob 25%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 6,
+    "verified_at": "2026-11-05T16:20:08"
   },
   {
     "id": "Recent Form::276180::299443",
@@ -65951,8 +65971,9 @@
     "horse": "Sakoku(IRE)",
     "detail": "form 92524",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 6,
+    "verified_at": "2026-11-05T16:20:08"
   },
   {
     "id": "Each-Way::276180::299443",
@@ -65965,9 +65986,10 @@
     "horse": "Sakoku(IRE)",
     "detail": "place prob 64% \u00b7 top 3",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 3
+    "status": "miss",
+    "actual_position": 6,
+    "place_count": 3,
+    "verified_at": "2026-11-05T16:20:08"
   },
   {
     "id": "Projected Order::276180::299443",
@@ -65980,8 +66002,9 @@
     "horse": "Sakoku(IRE)",
     "detail": "win prob 25%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 6,
+    "verified_at": "2026-11-05T16:20:08"
   },
   {
     "id": "Form-Adjusted Order::276180::299443",
@@ -65994,8 +66017,9 @@
     "horse": "Sakoku(IRE)",
     "detail": "blended score 1.0 \u00b7 win prob 25%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 6,
+    "verified_at": "2026-11-05T16:20:08"
   },
   {
     "id": "Market Favorite::276184::298266",
@@ -66008,8 +66032,9 @@
     "horse": "The Flying Rambler(IRE)",
     "detail": "win prob 16%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 4,
+    "verified_at": "2026-11-05T16:20:09"
   },
   {
     "id": "Recent Form::276184::274003",
@@ -66022,8 +66047,9 @@
     "horse": "Andyourbirdcansing(IRE)",
     "detail": "form 0-5651001",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 7,
+    "verified_at": "2026-11-05T16:20:09"
   },
   {
     "id": "Form/Market Gap::276184::274003",
@@ -66036,8 +66062,9 @@
     "horse": "Andyourbirdcansing(IRE)",
     "detail": "form #1 vs market #3",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 7,
+    "verified_at": "2026-11-05T16:20:09"
   },
   {
     "id": "Form/Market Gap::276184::252734",
@@ -66050,8 +66077,9 @@
     "horse": "Finnians Row(IRE)",
     "detail": "form #2 vs market #9",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:20:09"
   },
   {
     "id": "Each-Way::276184::298266",
@@ -66064,9 +66092,10 @@
     "horse": "The Flying Rambler(IRE)",
     "detail": "place prob 43% \u00b7 top 3",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 3
+    "status": "miss",
+    "actual_position": 4,
+    "place_count": 3,
+    "verified_at": "2026-11-05T16:20:09"
   },
   {
     "id": "Projected Order::276184::298266",
@@ -66079,8 +66108,9 @@
     "horse": "The Flying Rambler(IRE)",
     "detail": "win prob 16%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 4,
+    "verified_at": "2026-11-05T16:20:09"
   },
   {
     "id": "Form-Adjusted Order::276184::298266",
@@ -66093,8 +66123,9 @@
     "horse": "The Flying Rambler(IRE)",
     "detail": "blended score 0.7515 \u00b7 win prob 16%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 4,
+    "verified_at": "2026-11-05T16:20:09"
   },
   {
     "id": "Market Favorite::276185::301465",
@@ -66107,8 +66138,9 @@
     "horse": "La Muleta(FR)",
     "detail": "win prob 40%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 5,
+    "verified_at": "2026-11-05T16:20:31"
   },
   {
     "id": "Recent Form::276185::301465",
@@ -66121,8 +66153,9 @@
     "horse": "La Muleta(FR)",
     "detail": "form 32",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 5,
+    "verified_at": "2026-11-05T16:20:31"
   },
   {
     "id": "Each-Way::276185::301465",
@@ -66135,9 +66168,10 @@
     "horse": "La Muleta(FR)",
     "detail": "place prob 87% \u00b7 top 3",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 3
+    "status": "miss",
+    "actual_position": 5,
+    "place_count": 3,
+    "verified_at": "2026-11-05T16:20:31"
   },
   {
     "id": "Projected Order::276185::301465",
@@ -66150,8 +66184,9 @@
     "horse": "La Muleta(FR)",
     "detail": "win prob 40%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 5,
+    "verified_at": "2026-11-05T16:20:31"
   },
   {
     "id": "Form-Adjusted Order::276185::301465",
@@ -66164,8 +66199,9 @@
     "horse": "La Muleta(FR)",
     "detail": "blended score 1.0 \u00b7 win prob 40%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 5,
+    "verified_at": "2026-11-05T16:20:31"
   },
   {
     "id": "Market Favorite::276186::290415",
@@ -66178,8 +66214,9 @@
     "horse": "Goin",
     "detail": "win prob 17%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 6,
+    "verified_at": "2026-11-05T16:20:32"
   },
   {
     "id": "Recent Form::276186::280752",
@@ -66192,8 +66229,9 @@
     "horse": "Larkins Lane(IRE)",
     "detail": "form 8-9118423",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:20:32"
   },
   {
     "id": "Form/Market Gap::276186::280752",
@@ -66206,8 +66244,9 @@
     "horse": "Larkins Lane(IRE)",
     "detail": "form #1 vs market #3",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:20:32"
   },
   {
     "id": "Form/Market Gap::276186::267101",
@@ -66220,8 +66259,9 @@
     "horse": "You Make Me Smile(IRE)",
     "detail": "form #2 vs market #4",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:20:32"
   },
   {
     "id": "Each-Way::276186::290415",
@@ -66234,9 +66274,10 @@
     "horse": "Goin",
     "detail": "place prob 46% \u00b7 top 3",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 3
+    "status": "miss",
+    "actual_position": 6,
+    "place_count": 3,
+    "verified_at": "2026-11-05T16:20:32"
   },
   {
     "id": "Projected Order::276186::290415",
@@ -66249,8 +66290,9 @@
     "horse": "Goin",
     "detail": "win prob 17%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 6,
+    "verified_at": "2026-11-05T16:20:32"
   },
   {
     "id": "Form-Adjusted Order::276186::290415",
@@ -66263,8 +66305,9 @@
     "horse": "Goin",
     "detail": "blended score 0.8427 \u00b7 win prob 17%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 6,
+    "verified_at": "2026-11-05T16:20:32"
   },
   {
     "id": "Market Favorite::276187::279101",
@@ -66277,8 +66320,9 @@
     "horse": "Union Station(IRE)",
     "detail": "win prob 55%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:20:33"
   },
   {
     "id": "Recent Form::276187::291608",
@@ -66291,8 +66335,9 @@
     "horse": "Colossal Impact",
     "detail": "form 3-4",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 4,
+    "verified_at": "2026-11-05T16:20:33"
   },
   {
     "id": "Form/Market Gap::276187::291608",
@@ -66305,8 +66350,9 @@
     "horse": "Colossal Impact",
     "detail": "form #1 vs market #4",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 4,
+    "verified_at": "2026-11-05T16:20:33"
   },
   {
     "id": "Each-Way::276187::279101",
@@ -66319,9 +66365,10 @@
     "horse": "Union Station(IRE)",
     "detail": "place prob 84% \u00b7 top 2",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 2
+    "status": "miss",
+    "actual_position": 3,
+    "place_count": 2,
+    "verified_at": "2026-11-05T16:20:33"
   },
   {
     "id": "Projected Order::276187::279101",
@@ -66334,8 +66381,9 @@
     "horse": "Union Station(IRE)",
     "detail": "win prob 55%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:20:33"
   },
   {
     "id": "Form-Adjusted Order::276187::279101",
@@ -66348,8 +66396,9 @@
     "horse": "Union Station(IRE)",
     "detail": "blended score 0.8497 \u00b7 win prob 55%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:20:33"
   },
   {
     "id": "Market Favorite::276188::279816",
@@ -66362,8 +66411,9 @@
     "horse": "Ilbdare(IRE)",
     "detail": "win prob 19%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": "DNF/unknown",
+    "verified_at": "2026-11-05T16:20:55"
   },
   {
     "id": "Recent Form::276188::294741",
@@ -66376,8 +66426,9 @@
     "horse": "Strong Contender(IRE)",
     "detail": "form 0-0781135",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 6,
+    "verified_at": "2026-11-05T16:20:55"
   },
   {
     "id": "Form/Market Gap::276188::280871",
@@ -66390,8 +66441,9 @@
     "horse": "Mickey Cohen(IRE)",
     "detail": "form #2 vs market #4",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 7,
+    "verified_at": "2026-11-05T16:20:55"
   },
   {
     "id": "Each-Way::276188::279816",
@@ -66404,9 +66456,10 @@
     "horse": "Ilbdare(IRE)",
     "detail": "place prob 52% \u00b7 top 3",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 3
+    "status": "miss",
+    "actual_position": "DNF/unknown",
+    "place_count": 3,
+    "verified_at": "2026-11-05T16:20:55"
   },
   {
     "id": "Projected Order::276188::279816",
@@ -66419,8 +66472,9 @@
     "horse": "Ilbdare(IRE)",
     "detail": "win prob 19%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": "DNF/unknown",
+    "verified_at": "2026-11-05T16:20:55"
   },
   {
     "id": "Form-Adjusted Order::276188::294741",
@@ -66433,8 +66487,9 @@
     "horse": "Strong Contender(IRE)",
     "detail": "blended score 0.9714 \u00b7 win prob 18%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 6,
+    "verified_at": "2026-11-05T16:20:55"
   },
   {
     "id": "Market Favorite::276165::297387",
@@ -66447,8 +66502,9 @@
     "horse": "Battle Standard",
     "detail": "win prob 44%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 6,
+    "verified_at": "2026-11-05T16:20:56"
   },
   {
     "id": "Recent Form::276165::297387",
@@ -66461,8 +66517,9 @@
     "horse": "Battle Standard",
     "detail": "form 0491",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 6,
+    "verified_at": "2026-11-05T16:20:56"
   },
   {
     "id": "Form/Market Gap::276165::283099",
@@ -66475,8 +66532,9 @@
     "horse": "Yehudi(IRE)",
     "detail": "form #2 vs market #6",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:20:56"
   },
   {
     "id": "Each-Way::276165::297387",
@@ -66489,9 +66547,10 @@
     "horse": "Battle Standard",
     "detail": "place prob 86% \u00b7 top 3",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 3
+    "status": "miss",
+    "actual_position": 6,
+    "place_count": 3,
+    "verified_at": "2026-11-05T16:20:56"
   },
   {
     "id": "Projected Order::276165::297387",
@@ -66504,8 +66563,9 @@
     "horse": "Battle Standard",
     "detail": "win prob 44%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 6,
+    "verified_at": "2026-11-05T16:20:56"
   },
   {
     "id": "Form-Adjusted Order::276165::297387",
@@ -66518,8 +66578,9 @@
     "horse": "Battle Standard",
     "detail": "blended score 1.0 \u00b7 win prob 44%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 6,
+    "verified_at": "2026-11-05T16:20:56"
   },
   {
     "id": "Market Favorite::276166::255661",
@@ -66532,8 +66593,9 @@
     "horse": "Ernies Valentine",
     "detail": "win prob 16%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 4,
+    "verified_at": "2026-11-05T16:20:58"
   },
   {
     "id": "Recent Form::276166::286447",
@@ -66546,8 +66608,9 @@
     "horse": "Baloos Blues",
     "detail": "form 24-529142",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": "pu",
+    "verified_at": "2026-11-05T16:20:58"
   },
   {
     "id": "Form/Market Gap::276166::286447",
@@ -66560,8 +66623,9 @@
     "horse": "Baloos Blues",
     "detail": "form #1 vs market #3",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": "pu",
+    "verified_at": "2026-11-05T16:20:58"
   },
   {
     "id": "Form/Market Gap::276166::293022",
@@ -66574,8 +66638,9 @@
     "horse": "Mr Tony(IRE)",
     "detail": "form #2 vs market #5",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 10,
+    "verified_at": "2026-11-05T16:20:58"
   },
   {
     "id": "Each-Way::276166::255661",
@@ -66588,9 +66653,10 @@
     "horse": "Ernies Valentine",
     "detail": "place prob 46% \u00b7 top 3",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 3
+    "status": "miss",
+    "actual_position": 4,
+    "place_count": 3,
+    "verified_at": "2026-11-05T16:20:58"
   },
   {
     "id": "Projected Order::276166::255661",
@@ -66603,8 +66669,9 @@
     "horse": "Ernies Valentine",
     "detail": "win prob 16%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 4,
+    "verified_at": "2026-11-05T16:20:58"
   },
   {
     "id": "Form-Adjusted Order::276166::255661",
@@ -66617,8 +66684,9 @@
     "horse": "Ernies Valentine",
     "detail": "blended score 0.8678 \u00b7 win prob 16%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 4,
+    "verified_at": "2026-11-05T16:20:58"
   },
   {
     "id": "Market Favorite::276167::302431",
@@ -66631,8 +66699,9 @@
     "horse": "Jahami",
     "detail": "win prob 40%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:21:19"
   },
   {
     "id": "Recent Form::276167::302431",
@@ -66645,8 +66714,9 @@
     "horse": "Jahami",
     "detail": "form 32",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:21:19"
   },
   {
     "id": "Each-Way::276167::302431",
@@ -66659,9 +66729,10 @@
     "horse": "Jahami",
     "detail": "place prob 86% \u00b7 top 3",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 3
+    "status": "hit",
+    "actual_position": 1,
+    "place_count": 3,
+    "verified_at": "2026-11-05T16:21:19"
   },
   {
     "id": "Projected Order::276167::302431",
@@ -66674,8 +66745,9 @@
     "horse": "Jahami",
     "detail": "win prob 40%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:21:19"
   },
   {
     "id": "Form-Adjusted Order::276167::302431",
@@ -66688,8 +66760,9 @@
     "horse": "Jahami",
     "detail": "blended score 1.0 \u00b7 win prob 40%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:21:19"
   },
   {
     "id": "Market Favorite::276168::300343",
@@ -66702,8 +66775,9 @@
     "horse": "Stoney Wood(IRE)",
     "detail": "win prob 31%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:21:21"
   },
   {
     "id": "Recent Form::276168::298558",
@@ -66716,8 +66790,9 @@
     "horse": "Last Dandelion",
     "detail": "form 30453201",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 4,
+    "verified_at": "2026-11-05T16:21:21"
   },
   {
     "id": "Form/Market Gap::276168::298558",
@@ -66730,8 +66805,9 @@
     "horse": "Last Dandelion",
     "detail": "form #1 vs market #3",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 4,
+    "verified_at": "2026-11-05T16:21:21"
   },
   {
     "id": "Form/Market Gap::276168::298536",
@@ -66744,8 +66820,9 @@
     "horse": "Holliesthedollie",
     "detail": "form #2 vs market #10",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 9,
+    "verified_at": "2026-11-05T16:21:21"
   },
   {
     "id": "Each-Way::276168::300343",
@@ -66758,9 +66835,10 @@
     "horse": "Stoney Wood(IRE)",
     "detail": "place prob 71% \u00b7 top 3",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 3
+    "status": "hit",
+    "actual_position": 2,
+    "place_count": 3,
+    "verified_at": "2026-11-05T16:21:21"
   },
   {
     "id": "Projected Order::276168::300343",
@@ -66773,8 +66851,9 @@
     "horse": "Stoney Wood(IRE)",
     "detail": "win prob 31%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:21:21"
   },
   {
     "id": "Form-Adjusted Order::276168::300343",
@@ -66787,8 +66866,9 @@
     "horse": "Stoney Wood(IRE)",
     "detail": "blended score 0.8043 \u00b7 win prob 31%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:21:21"
   },
   {
     "id": "Market Favorite::276169::283780",
@@ -66801,8 +66881,9 @@
     "horse": "Methgal(IRE)",
     "detail": "win prob 38%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:21:22"
   },
   {
     "id": "Recent Form::276169::283780",
@@ -66815,8 +66896,9 @@
     "horse": "Methgal(IRE)",
     "detail": "form 72122123",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:21:22"
   },
   {
     "id": "Form/Market Gap::276169::266685",
@@ -66829,8 +66911,9 @@
     "horse": "Landlordtothestars(IRE)",
     "detail": "form #2 vs market #6",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 4,
+    "verified_at": "2026-11-05T16:21:22"
   },
   {
     "id": "Each-Way::276169::283780",
@@ -66843,9 +66926,10 @@
     "horse": "Methgal(IRE)",
     "detail": "place prob 69% \u00b7 top 2",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 2
+    "status": "hit",
+    "actual_position": 2,
+    "place_count": 2,
+    "verified_at": "2026-11-05T16:21:22"
   },
   {
     "id": "Projected Order::276169::283780",
@@ -66858,8 +66942,9 @@
     "horse": "Methgal(IRE)",
     "detail": "win prob 38%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:21:22"
   },
   {
     "id": "Form-Adjusted Order::276169::283780",
@@ -66872,8 +66957,9 @@
     "horse": "Methgal(IRE)",
     "detail": "blended score 1.0 \u00b7 win prob 38%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:21:22"
   },
   {
     "id": "Market Favorite::276170::290056",
@@ -66886,8 +66972,9 @@
     "horse": "R P Mcmurphy",
     "detail": "win prob 19%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:21:23"
   },
   {
     "id": "Recent Form::276170::290056",
@@ -66900,8 +66987,9 @@
     "horse": "R P Mcmurphy",
     "detail": "form 18034128",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:21:23"
   },
   {
     "id": "Form/Market Gap::276170::245909",
@@ -66914,8 +67002,9 @@
     "horse": "Dr Rio(FR)",
     "detail": "form #2 vs market #6",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 5,
+    "verified_at": "2026-11-05T16:21:23"
   },
   {
     "id": "Each-Way::276170::290056",
@@ -66928,9 +67017,10 @@
     "horse": "R P Mcmurphy",
     "detail": "place prob 53% \u00b7 top 3",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 3
+    "status": "hit",
+    "actual_position": 1,
+    "place_count": 3,
+    "verified_at": "2026-11-05T16:21:23"
   },
   {
     "id": "Projected Order::276170::290056",
@@ -66943,8 +67033,9 @@
     "horse": "R P Mcmurphy",
     "detail": "win prob 19%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:21:23"
   },
   {
     "id": "Form-Adjusted Order::276170::290056",
@@ -66957,8 +67048,9 @@
     "horse": "R P Mcmurphy",
     "detail": "blended score 1.0 \u00b7 win prob 19%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:21:23"
   },
   {
     "id": "Market Favorite::276171::295915",
@@ -66971,8 +67063,9 @@
     "horse": "Hauteluce(FR)",
     "detail": "win prob 19%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:21:45"
   },
   {
     "id": "Recent Form::276171::295915",
@@ -66985,8 +67078,9 @@
     "horse": "Hauteluce(FR)",
     "detail": "form 5-13161",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:21:45"
   },
   {
     "id": "Form/Market Gap::276171::282648",
@@ -66999,8 +67093,9 @@
     "horse": "Canvas",
     "detail": "form #2 vs market #4",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:21:45"
   },
   {
     "id": "Each-Way::276171::295915",
@@ -67013,9 +67108,10 @@
     "horse": "Hauteluce(FR)",
     "detail": "place prob 51% \u00b7 top 3",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 3
+    "status": "hit",
+    "actual_position": 3,
+    "place_count": 3,
+    "verified_at": "2026-11-05T16:21:45"
   },
   {
     "id": "Projected Order::276171::295915",
@@ -67028,8 +67124,9 @@
     "horse": "Hauteluce(FR)",
     "detail": "win prob 19%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:21:45"
   },
   {
     "id": "Form-Adjusted Order::276171::295915",
@@ -67042,8 +67139,9 @@
     "horse": "Hauteluce(FR)",
     "detail": "blended score 1.0 \u00b7 win prob 19%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:21:45"
   },
   {
     "id": "Market Favorite::276172::284878",
@@ -67056,8 +67154,9 @@
     "horse": "So Sassy(IRE)",
     "detail": "win prob 27%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:21:46"
   },
   {
     "id": "Recent Form::276172::284878",
@@ -67070,8 +67169,9 @@
     "horse": "So Sassy(IRE)",
     "detail": "form 74551182",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:21:46"
   },
   {
     "id": "Each-Way::276172::284878",
@@ -67084,9 +67184,10 @@
     "horse": "So Sassy(IRE)",
     "detail": "place prob 67% \u00b7 top 3",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 3
+    "status": "hit",
+    "actual_position": 1,
+    "place_count": 3,
+    "verified_at": "2026-11-05T16:21:46"
   },
   {
     "id": "Projected Order::276172::284878",
@@ -67099,8 +67200,9 @@
     "horse": "So Sassy(IRE)",
     "detail": "win prob 27%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:21:46"
   },
   {
     "id": "Form-Adjusted Order::276172::284878",
@@ -67113,8 +67215,9 @@
     "horse": "So Sassy(IRE)",
     "detail": "blended score 1.0 \u00b7 win prob 27%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:21:46"
   },
   {
     "id": "Market Favorite::276173::292646",
@@ -67127,8 +67230,9 @@
     "horse": "Saxophonist(IRE)",
     "detail": "win prob 49%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:21:48"
   },
   {
     "id": "Recent Form::276173::293447",
@@ -67141,8 +67245,9 @@
     "horse": "Caraway",
     "detail": "form 46132251",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:21:48"
   },
   {
     "id": "Each-Way::276173::292646",
@@ -67155,9 +67260,10 @@
     "horse": "Saxophonist(IRE)",
     "detail": "place prob 79% \u00b7 top 2",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 2
+    "status": "hit",
+    "actual_position": 1,
+    "place_count": 2,
+    "verified_at": "2026-11-05T16:21:48"
   },
   {
     "id": "Projected Order::276173::292646",
@@ -67170,8 +67276,9 @@
     "horse": "Saxophonist(IRE)",
     "detail": "win prob 49%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:21:48"
   },
   {
     "id": "Form-Adjusted Order::276173::292646",
@@ -67184,8 +67291,9 @@
     "horse": "Saxophonist(IRE)",
     "detail": "blended score 0.8354 \u00b7 win prob 49%",
     "logged_at": "2026-10-23T13:16:55",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:21:48"
   },
   {
     "id": "Market Favorite::276190::275569",
@@ -67198,8 +67306,9 @@
     "horse": "Road To Wembley",
     "detail": "win prob 40%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:21:49"
   },
   {
     "id": "Recent Form::276190::275569",
@@ -67212,8 +67321,9 @@
     "horse": "Road To Wembley",
     "detail": "form 21-114",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:21:49"
   },
   {
     "id": "Each-Way::276190::275569",
@@ -67226,9 +67336,10 @@
     "horse": "Road To Wembley",
     "detail": "place prob 69% \u00b7 top 2",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 2
+    "status": "hit",
+    "actual_position": 2,
+    "place_count": 2,
+    "verified_at": "2026-11-05T16:21:49"
   },
   {
     "id": "Projected Order::276190::275569",
@@ -67241,8 +67352,9 @@
     "horse": "Road To Wembley",
     "detail": "win prob 40%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:21:49"
   },
   {
     "id": "Form-Adjusted Order::276190::275569",
@@ -67255,8 +67367,9 @@
     "horse": "Road To Wembley",
     "detail": "blended score 1.0 \u00b7 win prob 40%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:21:49"
   },
   {
     "id": "Market Favorite::276191::296561",
@@ -67269,8 +67382,9 @@
     "horse": "Seaniecon(IRE)",
     "detail": "win prob 21%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:22:10"
   },
   {
     "id": "Recent Form::276191::279448",
@@ -67283,8 +67397,9 @@
     "horse": "No More Bolero",
     "detail": "form 13-112311",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 18,
+    "verified_at": "2026-11-05T16:22:10"
   },
   {
     "id": "Form/Market Gap::276191::276162",
@@ -67297,8 +67412,9 @@
     "horse": "Divilabother(IRE)",
     "detail": "form #2 vs market #11",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 16,
+    "verified_at": "2026-11-05T16:22:10"
   },
   {
     "id": "Form/Market Gap::276191::279448",
@@ -67311,8 +67427,9 @@
     "horse": "No More Bolero",
     "detail": "form #1 vs market #14",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 18,
+    "verified_at": "2026-11-05T16:22:10"
   },
   {
     "id": "Each-Way::276191::296561",
@@ -67325,9 +67442,10 @@
     "horse": "Seaniecon(IRE)",
     "detail": "place prob 64% \u00b7 top 4",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 4
+    "status": "hit",
+    "actual_position": 1,
+    "place_count": 4,
+    "verified_at": "2026-11-05T16:22:10"
   },
   {
     "id": "Projected Order::276191::296561",
@@ -67340,8 +67458,9 @@
     "horse": "Seaniecon(IRE)",
     "detail": "win prob 21%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:22:10"
   },
   {
     "id": "Form-Adjusted Order::276191::296561",
@@ -67354,8 +67473,9 @@
     "horse": "Seaniecon(IRE)",
     "detail": "blended score 0.8111 \u00b7 win prob 21%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:22:10"
   },
   {
     "id": "Market Favorite::276192::271794",
@@ -67368,8 +67488,9 @@
     "horse": "Here Comes Georgie",
     "detail": "win prob 22%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:22:12"
   },
   {
     "id": "Recent Form::276192::277069",
@@ -67382,8 +67503,9 @@
     "horse": "Mt Fugi Park(IRE)",
     "detail": "form 4/P6F1-P11",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": "F",
+    "verified_at": "2026-11-05T16:22:12"
   },
   {
     "id": "Form/Market Gap::276192::277069",
@@ -67396,8 +67518,9 @@
     "horse": "Mt Fugi Park(IRE)",
     "detail": "form #1 vs market #7",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": "F",
+    "verified_at": "2026-11-05T16:22:12"
   },
   {
     "id": "Each-Way::276192::271794",
@@ -67410,9 +67533,10 @@
     "horse": "Here Comes Georgie",
     "detail": "place prob 59% \u00b7 top 3",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 3
+    "status": "hit",
+    "actual_position": 1,
+    "place_count": 3,
+    "verified_at": "2026-11-05T16:22:12"
   },
   {
     "id": "Projected Order::276192::271794",
@@ -67425,8 +67549,9 @@
     "horse": "Here Comes Georgie",
     "detail": "win prob 22%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:22:12"
   },
   {
     "id": "Form-Adjusted Order::276192::272172",
@@ -67439,8 +67564,9 @@
     "horse": "Diamond Dealer(IRE)",
     "detail": "blended score 0.8048 \u00b7 win prob 17%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 5,
+    "verified_at": "2026-11-05T16:22:12"
   },
   {
     "id": "Market Favorite::276193::292751",
@@ -67453,8 +67579,9 @@
     "horse": "Indian River(IRE)",
     "detail": "win prob 28%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:22:13"
   },
   {
     "id": "Recent Form::276193::294774",
@@ -67467,8 +67594,9 @@
     "horse": "La Luna Artista(FR)",
     "detail": "form 11513-",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 4,
+    "verified_at": "2026-11-05T16:22:13"
   },
   {
     "id": "Form/Market Gap::276193::294774",
@@ -67481,8 +67609,9 @@
     "horse": "La Luna Artista(FR)",
     "detail": "form #1 vs market #5",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 4,
+    "verified_at": "2026-11-05T16:22:13"
   },
   {
     "id": "Each-Way::276193::292751",
@@ -67495,9 +67624,10 @@
     "horse": "Indian River(IRE)",
     "detail": "place prob 53% \u00b7 top 2",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 2
+    "status": "hit",
+    "actual_position": 2,
+    "place_count": 2,
+    "verified_at": "2026-11-05T16:22:13"
   },
   {
     "id": "Projected Order::276193::292751",
@@ -67510,8 +67640,9 @@
     "horse": "Indian River(IRE)",
     "detail": "win prob 28%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:22:13"
   },
   {
     "id": "Form-Adjusted Order::276193::292751",
@@ -67524,8 +67655,9 @@
     "horse": "Indian River(IRE)",
     "detail": "blended score 0.8407 \u00b7 win prob 28%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:22:13"
   },
   {
     "id": "Market Favorite::276194::288314",
@@ -67538,8 +67670,9 @@
     "horse": "Catchintsavo(IRE)",
     "detail": "win prob 25%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 4,
+    "verified_at": "2026-11-05T16:22:15"
   },
   {
     "id": "Recent Form::276194::296903",
@@ -67552,8 +67685,9 @@
     "horse": "Follow Your Luck(IRE)",
     "detail": "form 11-31",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:22:15"
   },
   {
     "id": "Form/Market Gap::276194::296903",
@@ -67566,8 +67700,9 @@
     "horse": "Follow Your Luck(IRE)",
     "detail": "form #1 vs market #6",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:22:15"
   },
   {
     "id": "Each-Way::276194::288314",
@@ -67580,9 +67715,10 @@
     "horse": "Catchintsavo(IRE)",
     "detail": "place prob 49% \u00b7 top 2",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 2
+    "status": "miss",
+    "actual_position": 4,
+    "place_count": 2,
+    "verified_at": "2026-11-05T16:22:15"
   },
   {
     "id": "Projected Order::276194::288314",
@@ -67595,8 +67731,9 @@
     "horse": "Catchintsavo(IRE)",
     "detail": "win prob 25%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 4,
+    "verified_at": "2026-11-05T16:22:15"
   },
   {
     "id": "Form-Adjusted Order::276194::288314",
@@ -67609,8 +67746,9 @@
     "horse": "Catchintsavo(IRE)",
     "detail": "blended score 0.8928 \u00b7 win prob 25%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 4,
+    "verified_at": "2026-11-05T16:22:15"
   },
   {
     "id": "Market Favorite::276195::303305",
@@ -67623,8 +67761,9 @@
     "horse": "Ballycrystal Boy(IRE)",
     "detail": "win prob 26%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:22:36"
   },
   {
     "id": "Recent Form::276195::297097",
@@ -67637,8 +67776,9 @@
     "horse": "Tythingman",
     "detail": "form 1-",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 10,
+    "verified_at": "2026-11-05T16:22:36"
   },
   {
     "id": "Form/Market Gap::276195::297364",
@@ -67651,8 +67791,9 @@
     "horse": "Port Isaac",
     "detail": "form #2 vs market #5",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 9,
+    "verified_at": "2026-11-05T16:22:36"
   },
   {
     "id": "Each-Way::276195::303305",
@@ -67665,9 +67806,10 @@
     "horse": "Ballycrystal Boy(IRE)",
     "detail": "place prob 63% \u00b7 top 3",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 3
+    "status": "hit",
+    "actual_position": 1,
+    "place_count": 3,
+    "verified_at": "2026-11-05T16:22:36"
   },
   {
     "id": "Projected Order::276195::303305",
@@ -67680,8 +67822,9 @@
     "horse": "Ballycrystal Boy(IRE)",
     "detail": "win prob 26%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:22:36"
   },
   {
     "id": "Form-Adjusted Order::276195::297097",
@@ -67694,8 +67837,9 @@
     "horse": "Tythingman",
     "detail": "blended score 1.0 \u00b7 win prob 15%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 10,
+    "verified_at": "2026-11-05T16:22:36"
   },
   {
     "id": "Market Favorite::276197::301807",
@@ -67708,8 +67852,9 @@
     "horse": "Noble Exhibit(IRE)",
     "detail": "win prob 40%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:22:38"
   },
   {
     "id": "Recent Form::276197::302704",
@@ -67722,8 +67867,9 @@
     "horse": "Gran Dia(IRE)",
     "detail": "form 1",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:22:38"
   },
   {
     "id": "Form/Market Gap::276197::302704",
@@ -67736,8 +67882,9 @@
     "horse": "Gran Dia(IRE)",
     "detail": "form #1 vs market #5",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:22:38"
   },
   {
     "id": "Each-Way::276197::301807",
@@ -67750,9 +67897,10 @@
     "horse": "Noble Exhibit(IRE)",
     "detail": "place prob 67% \u00b7 top 2",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 2
+    "status": "miss",
+    "actual_position": 3,
+    "place_count": 2,
+    "verified_at": "2026-11-05T16:22:38"
   },
   {
     "id": "Projected Order::276197::301807",
@@ -67765,8 +67913,9 @@
     "horse": "Noble Exhibit(IRE)",
     "detail": "win prob 40%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:22:38"
   },
   {
     "id": "Form-Adjusted Order::276197::301807",
@@ -67779,8 +67928,9 @@
     "horse": "Noble Exhibit(IRE)",
     "detail": "blended score 0.8997 \u00b7 win prob 40%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:22:38"
   },
   {
     "id": "Market Favorite::276198::301473",
@@ -67793,8 +67943,9 @@
     "horse": "Bengal Tiger(IRE)",
     "detail": "win prob 51%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:22:39"
   },
   {
     "id": "Recent Form::276198::298800",
@@ -67807,8 +67958,9 @@
     "horse": "Big Hitter(IRE)",
     "detail": "form 2231",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 7,
+    "verified_at": "2026-11-05T16:22:39"
   },
   {
     "id": "Form/Market Gap::276198::298800",
@@ -67821,8 +67973,9 @@
     "horse": "Big Hitter(IRE)",
     "detail": "form #1 vs market #7",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 7,
+    "verified_at": "2026-11-05T16:22:39"
   },
   {
     "id": "Each-Way::276198::301473",
@@ -67835,9 +67988,10 @@
     "horse": "Bengal Tiger(IRE)",
     "detail": "place prob 79% \u00b7 top 2",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 2
+    "status": "hit",
+    "actual_position": 1,
+    "place_count": 2,
+    "verified_at": "2026-11-05T16:22:39"
   },
   {
     "id": "Projected Order::276198::301473",
@@ -67850,8 +68004,9 @@
     "horse": "Bengal Tiger(IRE)",
     "detail": "win prob 51%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:22:39"
   },
   {
     "id": "Form-Adjusted Order::276198::301473",
@@ -67864,8 +68019,9 @@
     "horse": "Bengal Tiger(IRE)",
     "detail": "blended score 0.981 \u00b7 win prob 51%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:22:39"
   },
   {
     "id": "Market Favorite::276199::301242",
@@ -67878,8 +68034,9 @@
     "horse": "National Honour(IRE)",
     "detail": "win prob 59%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:23:00"
   },
   {
     "id": "Recent Form::276199::301242",
@@ -67892,8 +68049,9 @@
     "horse": "National Honour(IRE)",
     "detail": "form 211",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:23:00"
   },
   {
     "id": "Projected Order::276199::301242",
@@ -67906,8 +68064,9 @@
     "horse": "National Honour(IRE)",
     "detail": "win prob 59%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:23:00"
   },
   {
     "id": "Form-Adjusted Order::276199::301242",
@@ -67920,8 +68079,9 @@
     "horse": "National Honour(IRE)",
     "detail": "blended score 1.0 \u00b7 win prob 59%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:23:00"
   },
   {
     "id": "Market Favorite::276200::262388",
@@ -67934,8 +68094,9 @@
     "horse": "Lir Speciale(IRE)",
     "detail": "win prob 21%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 8,
+    "verified_at": "2026-11-05T16:23:02"
   },
   {
     "id": "Recent Form::276200::294851",
@@ -67948,8 +68109,9 @@
     "horse": "Shipbourne",
     "detail": "form 13-1091",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:23:02"
   },
   {
     "id": "Form/Market Gap::276200::294851",
@@ -67962,8 +68124,9 @@
     "horse": "Shipbourne",
     "detail": "form #1 vs market #4",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:23:02"
   },
   {
     "id": "Each-Way::276200::262388",
@@ -67976,9 +68139,10 @@
     "horse": "Lir Speciale(IRE)",
     "detail": "place prob 55% \u00b7 top 3",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 3
+    "status": "miss",
+    "actual_position": 8,
+    "place_count": 3,
+    "verified_at": "2026-11-05T16:23:02"
   },
   {
     "id": "Projected Order::276200::262388",
@@ -67991,8 +68155,9 @@
     "horse": "Lir Speciale(IRE)",
     "detail": "win prob 21%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 8,
+    "verified_at": "2026-11-05T16:23:02"
   },
   {
     "id": "Form-Adjusted Order::276200::293048",
@@ -68005,8 +68170,9 @@
     "horse": "Anyasi",
     "detail": "blended score 0.7697 \u00b7 win prob 15%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:23:02"
   },
   {
     "id": "Market Favorite::276201::280773",
@@ -68019,8 +68185,9 @@
     "horse": "Galyx(IRE)",
     "detail": "win prob 15%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 7,
+    "verified_at": "2026-11-05T16:23:03"
   },
   {
     "id": "Recent Form::276201::280659",
@@ -68033,8 +68200,9 @@
     "horse": "A Major Payne",
     "detail": "form 32213131",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 12,
+    "verified_at": "2026-11-05T16:23:03"
   },
   {
     "id": "Form/Market Gap::276201::301022",
@@ -68047,8 +68215,9 @@
     "horse": "Castlemont(IRE)",
     "detail": "form #2 vs market #4",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:23:03"
   },
   {
     "id": "Form/Market Gap::276201::280659",
@@ -68061,8 +68230,9 @@
     "horse": "A Major Payne",
     "detail": "form #1 vs market #6",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 12,
+    "verified_at": "2026-11-05T16:23:03"
   },
   {
     "id": "Each-Way::276201::280773",
@@ -68075,9 +68245,10 @@
     "horse": "Galyx(IRE)",
     "detail": "place prob 43% \u00b7 top 3",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 3
+    "status": "miss",
+    "actual_position": 7,
+    "place_count": 3,
+    "verified_at": "2026-11-05T16:23:03"
   },
   {
     "id": "Projected Order::276201::280773",
@@ -68090,8 +68261,9 @@
     "horse": "Galyx(IRE)",
     "detail": "win prob 15%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 7,
+    "verified_at": "2026-11-05T16:23:03"
   },
   {
     "id": "Form-Adjusted Order::276201::280773",
@@ -68104,8 +68276,9 @@
     "horse": "Galyx(IRE)",
     "detail": "blended score 0.8337 \u00b7 win prob 15%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 7,
+    "verified_at": "2026-11-05T16:23:03"
   },
   {
     "id": "Market Favorite::276202::249401",
@@ -68118,8 +68291,9 @@
     "horse": "Quest For Fun",
     "detail": "win prob 18%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:23:04"
   },
   {
     "id": "Recent Form::276202::276831",
@@ -68132,8 +68306,9 @@
     "horse": "Beale Street",
     "detail": "form 72101021",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 7,
+    "verified_at": "2026-11-05T16:23:04"
   },
   {
     "id": "Form/Market Gap::276202::250568",
@@ -68146,8 +68321,9 @@
     "horse": "It Just Takes Time(IRE)",
     "detail": "form #2 vs market #7",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 8,
+    "verified_at": "2026-11-05T16:23:04"
   },
   {
     "id": "Form/Market Gap::276202::276831",
@@ -68160,8 +68336,9 @@
     "horse": "Beale Street",
     "detail": "form #1 vs market #9",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 7,
+    "verified_at": "2026-11-05T16:23:04"
   },
   {
     "id": "Each-Way::276202::249401",
@@ -68174,9 +68351,10 @@
     "horse": "Quest For Fun",
     "detail": "place prob 49% \u00b7 top 3",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 3
+    "status": "hit",
+    "actual_position": 1,
+    "place_count": 3,
+    "verified_at": "2026-11-05T16:23:04"
   },
   {
     "id": "Projected Order::276202::249401",
@@ -68189,8 +68367,9 @@
     "horse": "Quest For Fun",
     "detail": "win prob 18%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:23:04"
   },
   {
     "id": "Form-Adjusted Order::276202::249401",
@@ -68203,8 +68382,9 @@
     "horse": "Quest For Fun",
     "detail": "blended score 0.8084 \u00b7 win prob 18%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "hit",
+    "actual_position": 1,
+    "verified_at": "2026-11-05T16:23:04"
   },
   {
     "id": "Market Favorite::276203::283940",
@@ -68217,8 +68397,9 @@
     "horse": "Prosperitas(IRE)",
     "detail": "win prob 24%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 9,
+    "verified_at": "2026-11-05T16:23:26"
   },
   {
     "id": "Recent Form::276203::280957",
@@ -68231,8 +68412,9 @@
     "horse": "Stanage",
     "detail": "form 645-70731",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 5,
+    "verified_at": "2026-11-05T16:23:26"
   },
   {
     "id": "Form/Market Gap::276203::280957",
@@ -68245,8 +68427,9 @@
     "horse": "Stanage",
     "detail": "form #1 vs market #3",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 5,
+    "verified_at": "2026-11-05T16:23:26"
   },
   {
     "id": "Form/Market Gap::276203::265624",
@@ -68259,8 +68442,9 @@
     "horse": "Feel The Need",
     "detail": "form #2 vs market #6",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:23:26"
   },
   {
     "id": "Each-Way::276203::283940",
@@ -68273,9 +68457,10 @@
     "horse": "Prosperitas(IRE)",
     "detail": "place prob 60% \u00b7 top 3",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 3
+    "status": "miss",
+    "actual_position": 9,
+    "place_count": 3,
+    "verified_at": "2026-11-05T16:23:26"
   },
   {
     "id": "Projected Order::276203::283940",
@@ -68288,8 +68473,9 @@
     "horse": "Prosperitas(IRE)",
     "detail": "win prob 24%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 9,
+    "verified_at": "2026-11-05T16:23:26"
   },
   {
     "id": "Form-Adjusted Order::276203::283940",
@@ -68302,8 +68488,9 @@
     "horse": "Prosperitas(IRE)",
     "detail": "blended score 0.8172 \u00b7 win prob 24%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 9,
+    "verified_at": "2026-11-05T16:23:26"
   },
   {
     "id": "Market Favorite::276204::303313",
@@ -68316,8 +68503,9 @@
     "horse": "Eazy Breezy(IRE)",
     "detail": "win prob 43%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:23:27"
   },
   {
     "id": "Recent Form::276204::297629",
@@ -68330,8 +68518,9 @@
     "horse": "Cape Warrior",
     "detail": "form 22-2",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 5,
+    "verified_at": "2026-11-05T16:23:27"
   },
   {
     "id": "Form/Market Gap::276204::298065",
@@ -68344,8 +68533,9 @@
     "horse": "Royal March",
     "detail": "form #2 vs market #4",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 4,
+    "verified_at": "2026-11-05T16:23:27"
   },
   {
     "id": "Each-Way::276204::303313",
@@ -68358,9 +68548,10 @@
     "horse": "Eazy Breezy(IRE)",
     "detail": "place prob 72% \u00b7 top 2",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 2
+    "status": "hit",
+    "actual_position": 2,
+    "place_count": 2,
+    "verified_at": "2026-11-05T16:23:27"
   },
   {
     "id": "Projected Order::276204::303313",
@@ -68373,8 +68564,9 @@
     "horse": "Eazy Breezy(IRE)",
     "detail": "win prob 43%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:23:27"
   },
   {
     "id": "Form-Adjusted Order::276204::297629",
@@ -68387,8 +68579,9 @@
     "horse": "Cape Warrior",
     "detail": "blended score 1.0 \u00b7 win prob 22%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 5,
+    "verified_at": "2026-11-05T16:23:27"
   },
   {
     "id": "Market Favorite::276205::296462",
@@ -68401,8 +68594,9 @@
     "horse": "Malayalam(FR)",
     "detail": "win prob 31%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:23:29"
   },
   {
     "id": "Recent Form::276205::286285",
@@ -68415,8 +68609,9 @@
     "horse": "Society Soldier(IRE)",
     "detail": "form 5/313-",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": "ur",
+    "verified_at": "2026-11-05T16:23:29"
   },
   {
     "id": "Each-Way::276205::296462",
@@ -68429,9 +68624,10 @@
     "horse": "Malayalam(FR)",
     "detail": "place prob 57% \u00b7 top 2",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 2
+    "status": "miss",
+    "actual_position": 3,
+    "place_count": 2,
+    "verified_at": "2026-11-05T16:23:29"
   },
   {
     "id": "Projected Order::276205::296462",
@@ -68444,8 +68640,9 @@
     "horse": "Malayalam(FR)",
     "detail": "win prob 31%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:23:29"
   },
   {
     "id": "Form-Adjusted Order::276205::296462",
@@ -68458,8 +68655,9 @@
     "horse": "Malayalam(FR)",
     "detail": "blended score 0.7 \u00b7 win prob 31%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:23:29"
   },
   {
     "id": "Market Favorite::276206::286800",
@@ -68472,8 +68670,9 @@
     "horse": "Achille Des Rocs(FR)",
     "detail": "win prob 32%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:23:50"
   },
   {
     "id": "Recent Form::276206::277661",
@@ -68486,8 +68685,9 @@
     "horse": "Ballyfort(IRE)",
     "detail": "form 49/131622-",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 2,
+    "verified_at": "2026-11-05T16:23:50"
   },
   {
     "id": "Each-Way::276206::286800",
@@ -68500,9 +68700,10 @@
     "horse": "Achille Des Rocs(FR)",
     "detail": "place prob 59% \u00b7 top 2",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null,
-    "place_count": 2
+    "status": "miss",
+    "actual_position": 3,
+    "place_count": 2,
+    "verified_at": "2026-11-05T16:23:50"
   },
   {
     "id": "Projected Order::276206::286800",
@@ -68515,8 +68716,9 @@
     "horse": "Achille Des Rocs(FR)",
     "detail": "win prob 32%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:23:50"
   },
   {
     "id": "Form-Adjusted Order::276206::286800",
@@ -68529,8 +68731,9 @@
     "horse": "Achille Des Rocs(FR)",
     "detail": "blended score 0.8473 \u00b7 win prob 32%",
     "logged_at": "2026-10-24T12:34:09",
-    "status": "pending",
-    "actual_position": null
+    "status": "miss",
+    "actual_position": 3,
+    "verified_at": "2026-11-05T16:23:50"
   },
   {
     "id": "Market Favorite::276207::285946",
@@ -88779,6 +88982,941 @@
     "horse": "Hartford(IRE)",
     "detail": "blended score 1.0 \u00b7 win prob 57%",
     "logged_at": "2026-11-04T16:05:39",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Market Favorite::276662::283984",
+    "category": "Market Favorite",
+    "id_race": "276662",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 16:15:00",
+    "title": "AWC SEASON 14 HAS BEGUN HANDICAP (4)",
+    "id_horse": "283984",
+    "horse": "The Hare Rail(IRE)",
+    "detail": "win prob 27%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Recent Form::276662::265304",
+    "category": "Recent Form",
+    "id_race": "276662",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 16:15:00",
+    "title": "AWC SEASON 14 HAS BEGUN HANDICAP (4)",
+    "id_horse": "265304",
+    "horse": "Bajan Bandit",
+    "detail": "form 23201321",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Form/Market Gap::276662::265304",
+    "category": "Form/Market Gap",
+    "id_race": "276662",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 16:15:00",
+    "title": "AWC SEASON 14 HAS BEGUN HANDICAP (4)",
+    "id_horse": "265304",
+    "horse": "Bajan Bandit",
+    "detail": "form #1 vs market #3",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Each-Way::276662::283984",
+    "category": "Each-Way",
+    "id_race": "276662",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 16:15:00",
+    "title": "AWC SEASON 14 HAS BEGUN HANDICAP (4)",
+    "id_horse": "283984",
+    "horse": "The Hare Rail(IRE)",
+    "detail": "place prob 68% \u00b7 top 3",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null,
+    "place_count": 3
+  },
+  {
+    "id": "Projected Order::276662::283984",
+    "category": "Projected Order",
+    "id_race": "276662",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 16:15:00",
+    "title": "AWC SEASON 14 HAS BEGUN HANDICAP (4)",
+    "id_horse": "283984",
+    "horse": "The Hare Rail(IRE)",
+    "detail": "win prob 27%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Form-Adjusted Order::276662::283984",
+    "category": "Form-Adjusted Order",
+    "id_race": "276662",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 16:15:00",
+    "title": "AWC SEASON 14 HAS BEGUN HANDICAP (4)",
+    "id_horse": "283984",
+    "horse": "The Hare Rail(IRE)",
+    "detail": "blended score 0.9137 \u00b7 win prob 27%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Market Favorite::276663::302801",
+    "category": "Market Favorite",
+    "id_race": "276663",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 16:45:00",
+    "title": "JUDDMONTE EBF RESTRICTED NOVICE (2)",
+    "id_horse": "302801",
+    "horse": "Tough Decision",
+    "detail": "win prob 44%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Recent Form::276663::302801",
+    "category": "Recent Form",
+    "id_race": "276663",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 16:45:00",
+    "title": "JUDDMONTE EBF RESTRICTED NOVICE (2)",
+    "id_horse": "302801",
+    "horse": "Tough Decision",
+    "detail": "form 1",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Each-Way::276663::302801",
+    "category": "Each-Way",
+    "id_race": "276663",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 16:45:00",
+    "title": "JUDDMONTE EBF RESTRICTED NOVICE (2)",
+    "id_horse": "302801",
+    "horse": "Tough Decision",
+    "detail": "place prob 89% \u00b7 top 3",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null,
+    "place_count": 3
+  },
+  {
+    "id": "Projected Order::276663::302801",
+    "category": "Projected Order",
+    "id_race": "276663",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 16:45:00",
+    "title": "JUDDMONTE EBF RESTRICTED NOVICE (2)",
+    "id_horse": "302801",
+    "horse": "Tough Decision",
+    "detail": "win prob 44%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Form-Adjusted Order::276663::302801",
+    "category": "Form-Adjusted Order",
+    "id_race": "276663",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 16:45:00",
+    "title": "JUDDMONTE EBF RESTRICTED NOVICE (2)",
+    "id_horse": "302801",
+    "horse": "Tough Decision",
+    "detail": "blended score 1.0 \u00b7 win prob 44%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Market Favorite::276664::300778",
+    "category": "Market Favorite",
+    "id_race": "276664",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 17:15:00",
+    "title": "AWC FINALS DAY AT NEWCASTLE 26th MARCH NURSERY HANDICAP (5)",
+    "id_horse": "300778",
+    "horse": "National Pride(IRE)",
+    "detail": "win prob 31%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Recent Form::276664::301902",
+    "category": "Recent Form",
+    "id_race": "276664",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 17:15:00",
+    "title": "AWC FINALS DAY AT NEWCASTLE 26th MARCH NURSERY HANDICAP (5)",
+    "id_horse": "301902",
+    "horse": "Marhaba Ya Tayib(IRE)",
+    "detail": "form 41",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Form/Market Gap::276664::301902",
+    "category": "Form/Market Gap",
+    "id_race": "276664",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 17:15:00",
+    "title": "AWC FINALS DAY AT NEWCASTLE 26th MARCH NURSERY HANDICAP (5)",
+    "id_horse": "301902",
+    "horse": "Marhaba Ya Tayib(IRE)",
+    "detail": "form #1 vs market #6",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Form/Market Gap::276664::299777",
+    "category": "Form/Market Gap",
+    "id_race": "276664",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 17:15:00",
+    "title": "AWC FINALS DAY AT NEWCASTLE 26th MARCH NURSERY HANDICAP (5)",
+    "id_horse": "299777",
+    "horse": "Potters Margot",
+    "detail": "form #2 vs market #7",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Each-Way::276664::300778",
+    "category": "Each-Way",
+    "id_race": "276664",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 17:15:00",
+    "title": "AWC FINALS DAY AT NEWCASTLE 26th MARCH NURSERY HANDICAP (5)",
+    "id_horse": "300778",
+    "horse": "National Pride(IRE)",
+    "detail": "place prob 71% \u00b7 top 3",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null,
+    "place_count": 3
+  },
+  {
+    "id": "Projected Order::276664::300778",
+    "category": "Projected Order",
+    "id_race": "276664",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 17:15:00",
+    "title": "AWC FINALS DAY AT NEWCASTLE 26th MARCH NURSERY HANDICAP (5)",
+    "id_horse": "300778",
+    "horse": "National Pride(IRE)",
+    "detail": "win prob 31%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Form-Adjusted Order::276664::300778",
+    "category": "Form-Adjusted Order",
+    "id_race": "276664",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 17:15:00",
+    "title": "AWC FINALS DAY AT NEWCASTLE 26th MARCH NURSERY HANDICAP (5)",
+    "id_horse": "300778",
+    "horse": "National Pride(IRE)",
+    "detail": "blended score 0.7788 \u00b7 win prob 31%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Market Favorite::276665::293868",
+    "category": "Market Favorite",
+    "id_race": "276665",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 17:45:00",
+    "title": "AW TRIALS DAY - LINGFIELD 2nd JAN 2027 NOVICE STAKES (4)",
+    "id_horse": "293868",
+    "horse": "Baandee",
+    "detail": "win prob 45%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Recent Form::276665::293868",
+    "category": "Recent Form",
+    "id_race": "276665",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 17:45:00",
+    "title": "AW TRIALS DAY - LINGFIELD 2nd JAN 2027 NOVICE STAKES (4)",
+    "id_horse": "293868",
+    "horse": "Baandee",
+    "detail": "form 22-22",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Each-Way::276665::293868",
+    "category": "Each-Way",
+    "id_race": "276665",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 17:45:00",
+    "title": "AW TRIALS DAY - LINGFIELD 2nd JAN 2027 NOVICE STAKES (4)",
+    "id_horse": "293868",
+    "horse": "Baandee",
+    "detail": "place prob 82% \u00b7 top 2",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null,
+    "place_count": 2
+  },
+  {
+    "id": "Projected Order::276665::293868",
+    "category": "Projected Order",
+    "id_race": "276665",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 17:45:00",
+    "title": "AW TRIALS DAY - LINGFIELD 2nd JAN 2027 NOVICE STAKES (4)",
+    "id_horse": "293868",
+    "horse": "Baandee",
+    "detail": "win prob 45%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Form-Adjusted Order::276665::293868",
+    "category": "Form-Adjusted Order",
+    "id_race": "276665",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 17:45:00",
+    "title": "AW TRIALS DAY - LINGFIELD 2nd JAN 2027 NOVICE STAKES (4)",
+    "id_horse": "293868",
+    "horse": "Baandee",
+    "detail": "blended score 1.0 \u00b7 win prob 45%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Market Favorite::276666::262106",
+    "category": "Market Favorite",
+    "id_race": "276666",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 18:15:00",
+    "title": "MIDNITE IT S ACTUALLY PRETTY GOOD HANDICAP (6)",
+    "id_horse": "262106",
+    "horse": "Dark Side Thunder",
+    "detail": "win prob 16%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Recent Form::276666::291422",
+    "category": "Recent Form",
+    "id_race": "276666",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 18:15:00",
+    "title": "MIDNITE IT S ACTUALLY PRETTY GOOD HANDICAP (6)",
+    "id_horse": "291422",
+    "horse": "Far Too Fizzy",
+    "detail": "form 40235471",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Form/Market Gap::276666::292312",
+    "category": "Form/Market Gap",
+    "id_race": "276666",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 18:15:00",
+    "title": "MIDNITE IT S ACTUALLY PRETTY GOOD HANDICAP (6)",
+    "id_horse": "292312",
+    "horse": "Woolridge",
+    "detail": "form #2 vs market #9",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Each-Way::276666::262106",
+    "category": "Each-Way",
+    "id_race": "276666",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 18:15:00",
+    "title": "MIDNITE IT S ACTUALLY PRETTY GOOD HANDICAP (6)",
+    "id_horse": "262106",
+    "horse": "Dark Side Thunder",
+    "detail": "place prob 45% \u00b7 top 3",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null,
+    "place_count": 3
+  },
+  {
+    "id": "Projected Order::276666::262106",
+    "category": "Projected Order",
+    "id_race": "276666",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 18:15:00",
+    "title": "MIDNITE IT S ACTUALLY PRETTY GOOD HANDICAP (6)",
+    "id_horse": "262106",
+    "horse": "Dark Side Thunder",
+    "detail": "win prob 16%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Form-Adjusted Order::276666::291422",
+    "category": "Form-Adjusted Order",
+    "id_race": "276666",
+    "course": "Chelmsford City",
+    "race_time": "2026-11-05 18:15:00",
+    "title": "MIDNITE IT S ACTUALLY PRETTY GOOD HANDICAP (6)",
+    "id_horse": "291422",
+    "horse": "Far Too Fizzy",
+    "detail": "blended score 0.9593 \u00b7 win prob 15%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Market Favorite::276702::297502",
+    "category": "Market Favorite",
+    "id_race": "276702",
+    "course": "Clonmel",
+    "race_time": "2026-11-05 16:20:00",
+    "title": "racingtv.com/freetrial I.N.H. FLAT",
+    "id_horse": "297502",
+    "horse": "Red Seagull(IRE)",
+    "detail": "win prob 27%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Recent Form::276702::300575",
+    "category": "Recent Form",
+    "id_race": "276702",
+    "course": "Clonmel",
+    "race_time": "2026-11-05 16:20:00",
+    "title": "racingtv.com/freetrial I.N.H. FLAT",
+    "id_horse": "300575",
+    "horse": "River Cartwright(IRE)",
+    "detail": "form 72",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Form/Market Gap::276702::300575",
+    "category": "Form/Market Gap",
+    "id_race": "276702",
+    "course": "Clonmel",
+    "race_time": "2026-11-05 16:20:00",
+    "title": "racingtv.com/freetrial I.N.H. FLAT",
+    "id_horse": "300575",
+    "horse": "River Cartwright(IRE)",
+    "detail": "form #1 vs market #5",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Each-Way::276702::297502",
+    "category": "Each-Way",
+    "id_race": "276702",
+    "course": "Clonmel",
+    "race_time": "2026-11-05 16:20:00",
+    "title": "racingtv.com/freetrial I.N.H. FLAT",
+    "id_horse": "297502",
+    "horse": "Red Seagull(IRE)",
+    "detail": "place prob 68% \u00b7 top 3",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null,
+    "place_count": 3
+  },
+  {
+    "id": "Projected Order::276702::297502",
+    "category": "Projected Order",
+    "id_race": "276702",
+    "course": "Clonmel",
+    "race_time": "2026-11-05 16:20:00",
+    "title": "racingtv.com/freetrial I.N.H. FLAT",
+    "id_horse": "297502",
+    "horse": "Red Seagull(IRE)",
+    "detail": "win prob 27%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Form-Adjusted Order::276702::297502",
+    "category": "Form-Adjusted Order",
+    "id_race": "276702",
+    "course": "Clonmel",
+    "race_time": "2026-11-05 16:20:00",
+    "title": "racingtv.com/freetrial I.N.H. FLAT",
+    "id_horse": "297502",
+    "horse": "Red Seagull(IRE)",
+    "detail": "blended score 0.9654 \u00b7 win prob 27%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Market Favorite::276691::286863",
+    "category": "Market Favorite",
+    "id_race": "276691",
+    "course": "Southwell",
+    "race_time": "2026-11-05 16:30:00",
+    "title": "AW TRIALS DAY - LINGFIELD 2nd JAN 2027 FILLIES HANDICAP (5)",
+    "id_horse": "286863",
+    "horse": "Lady Mariko",
+    "detail": "win prob 22%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Recent Form::276691::290847",
+    "category": "Recent Form",
+    "id_race": "276691",
+    "course": "Southwell",
+    "race_time": "2026-11-05 16:30:00",
+    "title": "AW TRIALS DAY - LINGFIELD 2nd JAN 2027 FILLIES HANDICAP (5)",
+    "id_horse": "290847",
+    "horse": "Spirit Of Jenny(IRE)",
+    "detail": "form 78-212855",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Form/Market Gap::276691::290847",
+    "category": "Form/Market Gap",
+    "id_race": "276691",
+    "course": "Southwell",
+    "race_time": "2026-11-05 16:30:00",
+    "title": "AW TRIALS DAY - LINGFIELD 2nd JAN 2027 FILLIES HANDICAP (5)",
+    "id_horse": "290847",
+    "horse": "Spirit Of Jenny(IRE)",
+    "detail": "form #1 vs market #3",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Form/Market Gap::276691::71611",
+    "category": "Form/Market Gap",
+    "id_race": "276691",
+    "course": "Southwell",
+    "race_time": "2026-11-05 16:30:00",
+    "title": "AW TRIALS DAY - LINGFIELD 2nd JAN 2027 FILLIES HANDICAP (5)",
+    "id_horse": "71611",
+    "horse": "Fistral Beach(IRE)",
+    "detail": "form #2 vs market #10",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Each-Way::276691::286863",
+    "category": "Each-Way",
+    "id_race": "276691",
+    "course": "Southwell",
+    "race_time": "2026-11-05 16:30:00",
+    "title": "AW TRIALS DAY - LINGFIELD 2nd JAN 2027 FILLIES HANDICAP (5)",
+    "id_horse": "286863",
+    "horse": "Lady Mariko",
+    "detail": "place prob 58% \u00b7 top 3",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null,
+    "place_count": 3
+  },
+  {
+    "id": "Projected Order::276691::286863",
+    "category": "Projected Order",
+    "id_race": "276691",
+    "course": "Southwell",
+    "race_time": "2026-11-05 16:30:00",
+    "title": "AW TRIALS DAY - LINGFIELD 2nd JAN 2027 FILLIES HANDICAP (5)",
+    "id_horse": "286863",
+    "horse": "Lady Mariko",
+    "detail": "win prob 22%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Form-Adjusted Order::276691::286863",
+    "category": "Form-Adjusted Order",
+    "id_race": "276691",
+    "course": "Southwell",
+    "race_time": "2026-11-05 16:30:00",
+    "title": "AW TRIALS DAY - LINGFIELD 2nd JAN 2027 FILLIES HANDICAP (5)",
+    "id_horse": "286863",
+    "horse": "Lady Mariko",
+    "detail": "blended score 0.7544 \u00b7 win prob 22%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Market Favorite::276692::299073",
+    "category": "Market Favorite",
+    "id_race": "276692",
+    "course": "Southwell",
+    "race_time": "2026-11-05 17:00:00",
+    "title": "MIDNITE IT S ACTUALLY PRETTY GOOD NURSERY HANDICAP (6)",
+    "id_horse": "299073",
+    "horse": "North Star Kodi(IRE)",
+    "detail": "win prob 19%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Recent Form::276692::301867",
+    "category": "Recent Form",
+    "id_race": "276692",
+    "course": "Southwell",
+    "race_time": "2026-11-05 17:00:00",
+    "title": "MIDNITE IT S ACTUALLY PRETTY GOOD NURSERY HANDICAP (6)",
+    "id_horse": "301867",
+    "horse": "Thai Baht",
+    "detail": "form 285",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Form/Market Gap::276692::301867",
+    "category": "Form/Market Gap",
+    "id_race": "276692",
+    "course": "Southwell",
+    "race_time": "2026-11-05 17:00:00",
+    "title": "MIDNITE IT S ACTUALLY PRETTY GOOD NURSERY HANDICAP (6)",
+    "id_horse": "301867",
+    "horse": "Thai Baht",
+    "detail": "form #1 vs market #5",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Form/Market Gap::276692::301989",
+    "category": "Form/Market Gap",
+    "id_race": "276692",
+    "course": "Southwell",
+    "race_time": "2026-11-05 17:00:00",
+    "title": "MIDNITE IT S ACTUALLY PRETTY GOOD NURSERY HANDICAP (6)",
+    "id_horse": "301989",
+    "horse": "Get On That Baby(IRE)",
+    "detail": "form #2 vs market #10",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Each-Way::276692::299073",
+    "category": "Each-Way",
+    "id_race": "276692",
+    "course": "Southwell",
+    "race_time": "2026-11-05 17:00:00",
+    "title": "MIDNITE IT S ACTUALLY PRETTY GOOD NURSERY HANDICAP (6)",
+    "id_horse": "299073",
+    "horse": "North Star Kodi(IRE)",
+    "detail": "place prob 51% \u00b7 top 3",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null,
+    "place_count": 3
+  },
+  {
+    "id": "Projected Order::276692::299073",
+    "category": "Projected Order",
+    "id_race": "276692",
+    "course": "Southwell",
+    "race_time": "2026-11-05 17:00:00",
+    "title": "MIDNITE IT S ACTUALLY PRETTY GOOD NURSERY HANDICAP (6)",
+    "id_horse": "299073",
+    "horse": "North Star Kodi(IRE)",
+    "detail": "win prob 19%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Form-Adjusted Order::276692::299073",
+    "category": "Form-Adjusted Order",
+    "id_race": "276692",
+    "course": "Southwell",
+    "race_time": "2026-11-05 17:00:00",
+    "title": "MIDNITE IT S ACTUALLY PRETTY GOOD NURSERY HANDICAP (6)",
+    "id_horse": "299073",
+    "horse": "North Star Kodi(IRE)",
+    "detail": "blended score 0.8901 \u00b7 win prob 19%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Market Favorite::276693::299473",
+    "category": "Market Favorite",
+    "id_race": "276693",
+    "course": "Southwell",
+    "race_time": "2026-11-05 17:30:00",
+    "title": "MAKE THE MOVE TO MIDNITE RESTRICTED MAIDEN FILLIES STAKES (5)",
+    "id_horse": "299473",
+    "horse": "Celestial Fire(IRE)",
+    "detail": "win prob 27%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Recent Form::276693::299473",
+    "category": "Recent Form",
+    "id_race": "276693",
+    "course": "Southwell",
+    "race_time": "2026-11-05 17:30:00",
+    "title": "MAKE THE MOVE TO MIDNITE RESTRICTED MAIDEN FILLIES STAKES (5)",
+    "id_horse": "299473",
+    "horse": "Celestial Fire(IRE)",
+    "detail": "form 3",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Each-Way::276693::299473",
+    "category": "Each-Way",
+    "id_race": "276693",
+    "course": "Southwell",
+    "race_time": "2026-11-05 17:30:00",
+    "title": "MAKE THE MOVE TO MIDNITE RESTRICTED MAIDEN FILLIES STAKES (5)",
+    "id_horse": "299473",
+    "horse": "Celestial Fire(IRE)",
+    "detail": "place prob 70% \u00b7 top 3",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null,
+    "place_count": 3
+  },
+  {
+    "id": "Projected Order::276693::299473",
+    "category": "Projected Order",
+    "id_race": "276693",
+    "course": "Southwell",
+    "race_time": "2026-11-05 17:30:00",
+    "title": "MAKE THE MOVE TO MIDNITE RESTRICTED MAIDEN FILLIES STAKES (5)",
+    "id_horse": "299473",
+    "horse": "Celestial Fire(IRE)",
+    "detail": "win prob 27%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Form-Adjusted Order::276693::299473",
+    "category": "Form-Adjusted Order",
+    "id_race": "276693",
+    "course": "Southwell",
+    "race_time": "2026-11-05 17:30:00",
+    "title": "MAKE THE MOVE TO MIDNITE RESTRICTED MAIDEN FILLIES STAKES (5)",
+    "id_horse": "299473",
+    "horse": "Celestial Fire(IRE)",
+    "detail": "blended score 1.0 \u00b7 win prob 27%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Market Favorite::276694::295572",
+    "category": "Market Favorite",
+    "id_race": "276694",
+    "course": "Southwell",
+    "race_time": "2026-11-05 18:00:00",
+    "title": "MIDNITE: BUILT FOR 2026 NOT 2006 HANDICAP (5) (D.I)",
+    "id_horse": "295572",
+    "horse": "Thats Random",
+    "detail": "win prob 29%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Recent Form::276694::282643",
+    "category": "Recent Form",
+    "id_race": "276694",
+    "course": "Southwell",
+    "race_time": "2026-11-05 18:00:00",
+    "title": "MIDNITE: BUILT FOR 2026 NOT 2006 HANDICAP (5) (D.I)",
+    "id_horse": "282643",
+    "horse": "Style King(IRE)",
+    "detail": "form 31221010",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Form/Market Gap::276694::282643",
+    "category": "Form/Market Gap",
+    "id_race": "276694",
+    "course": "Southwell",
+    "race_time": "2026-11-05 18:00:00",
+    "title": "MIDNITE: BUILT FOR 2026 NOT 2006 HANDICAP (5) (D.I)",
+    "id_horse": "282643",
+    "horse": "Style King(IRE)",
+    "detail": "form #1 vs market #8",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Each-Way::276694::295572",
+    "category": "Each-Way",
+    "id_race": "276694",
+    "course": "Southwell",
+    "race_time": "2026-11-05 18:00:00",
+    "title": "MIDNITE: BUILT FOR 2026 NOT 2006 HANDICAP (5) (D.I)",
+    "id_horse": "295572",
+    "horse": "Thats Random",
+    "detail": "place prob 71% \u00b7 top 3",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null,
+    "place_count": 3
+  },
+  {
+    "id": "Projected Order::276694::295572",
+    "category": "Projected Order",
+    "id_race": "276694",
+    "course": "Southwell",
+    "race_time": "2026-11-05 18:00:00",
+    "title": "MIDNITE: BUILT FOR 2026 NOT 2006 HANDICAP (5) (D.I)",
+    "id_horse": "295572",
+    "horse": "Thats Random",
+    "detail": "win prob 29%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Form-Adjusted Order::276694::276584",
+    "category": "Form-Adjusted Order",
+    "id_race": "276694",
+    "course": "Southwell",
+    "race_time": "2026-11-05 18:00:00",
+    "title": "MIDNITE: BUILT FOR 2026 NOT 2006 HANDICAP (5) (D.I)",
+    "id_horse": "276584",
+    "horse": "Modern Times",
+    "detail": "blended score 0.8778 \u00b7 win prob 26%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Market Favorite::276695::265295",
+    "category": "Market Favorite",
+    "id_race": "276695",
+    "course": "Southwell",
+    "race_time": "2026-11-05 18:30:00",
+    "title": "MIDNITE: BUILT FOR 2026 NOT 2006 HANDICAP (5) (D.II)",
+    "id_horse": "265295",
+    "horse": "Prince Of Pillo(IRE)",
+    "detail": "win prob 22%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Recent Form::276695::289856",
+    "category": "Recent Form",
+    "id_race": "276695",
+    "course": "Southwell",
+    "race_time": "2026-11-05 18:30:00",
+    "title": "MIDNITE: BUILT FOR 2026 NOT 2006 HANDICAP (5) (D.II)",
+    "id_horse": "289856",
+    "horse": "Logi Bear(IRE)",
+    "detail": "form 66292179",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Form/Market Gap::276695::284177",
+    "category": "Form/Market Gap",
+    "id_race": "276695",
+    "course": "Southwell",
+    "race_time": "2026-11-05 18:30:00",
+    "title": "MIDNITE: BUILT FOR 2026 NOT 2006 HANDICAP (5) (D.II)",
+    "id_horse": "284177",
+    "horse": "Maldevious(IRE)",
+    "detail": "form #2 vs market #8",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Each-Way::276695::265295",
+    "category": "Each-Way",
+    "id_race": "276695",
+    "course": "Southwell",
+    "race_time": "2026-11-05 18:30:00",
+    "title": "MIDNITE: BUILT FOR 2026 NOT 2006 HANDICAP (5) (D.II)",
+    "id_horse": "265295",
+    "horse": "Prince Of Pillo(IRE)",
+    "detail": "place prob 57% \u00b7 top 3",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null,
+    "place_count": 3
+  },
+  {
+    "id": "Projected Order::276695::265295",
+    "category": "Projected Order",
+    "id_race": "276695",
+    "course": "Southwell",
+    "race_time": "2026-11-05 18:30:00",
+    "title": "MIDNITE: BUILT FOR 2026 NOT 2006 HANDICAP (5) (D.II)",
+    "id_horse": "265295",
+    "horse": "Prince Of Pillo(IRE)",
+    "detail": "win prob 22%",
+    "logged_at": "2026-11-05T16:19:16",
+    "status": "pending",
+    "actual_position": null
+  },
+  {
+    "id": "Form-Adjusted Order::276695::265295",
+    "category": "Form-Adjusted Order",
+    "id_race": "276695",
+    "course": "Southwell",
+    "race_time": "2026-11-05 18:30:00",
+    "title": "MIDNITE: BUILT FOR 2026 NOT 2006 HANDICAP (5) (D.II)",
+    "id_horse": "265295",
+    "horse": "Prince Of Pillo(IRE)",
+    "detail": "blended score 0.8263 \u00b7 win prob 22%",
+    "logged_at": "2026-11-05T16:19:16",
     "status": "pending",
     "actual_position": null
   }
