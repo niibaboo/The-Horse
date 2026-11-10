@@ -1,1 +1,210 @@
-[]
+[
+  {
+    "id_race": "276835",
+    "course": "Huntingdon",
+    "date": "2026-11-10 15:40:00",
+    "title": "PRICEDUP BET HANDICAP HURDLE (Qualifier) (4)",
+    "distance": "1m7f",
+    "going": "Good",
+    "prize": "\u00a35281",
+    "runners": [
+      {
+        "name": "Virtual Rock(IRE)",
+        "id_horse": "283468",
+        "jockey": "Jonathan Burke",
+        "trainer": "Des Donovan",
+        "number": "2",
+        "weight": "12-0",
+        "form_raw": "21/8112",
+        "form_score": 0.6993,
+        "market_prob": 0.3525,
+        "best_odds": 3.0,
+        "place_prob": 0.6437,
+        "place_odds": 1.5,
+        "place_count": 2,
+        "place_fraction": 0.25,
+        "form_rank": 1,
+        "market_rank": 1
+      },
+      {
+        "name": "Gallivanted(FR)",
+        "id_horse": "284947",
+        "jockey": "Paul OBrien",
+        "trainer": "Harry Derham",
+        "number": "6",
+        "weight": "11-5",
+        "form_raw": "4133-72",
+        "form_score": 0.4006,
+        "market_prob": 0.3021,
+        "best_odds": 3.5,
+        "place_prob": 0.5854,
+        "place_odds": 1.62,
+        "place_count": 2,
+        "place_fraction": 0.25,
+        "form_rank": 4,
+        "market_rank": 2
+      },
+      {
+        "name": "Cayman Dancer",
+        "id_horse": "289763",
+        "jockey": "Freddie Mitchell",
+        "trainer": "Jamie Moore &amp; Josh Moore",
+        "number": "4",
+        "weight": "11-137ex",
+        "form_raw": "251d6-41",
+        "form_score": 0.4933,
+        "market_prob": 0.1762,
+        "best_odds": 6.0,
+        "place_prob": 0.38,
+        "place_odds": 2.25,
+        "place_count": 2,
+        "place_fraction": 0.25,
+        "form_rank": 2,
+        "market_rank": 3
+      },
+      {
+        "name": "Mister Cessna(FR)",
+        "id_horse": "287702",
+        "jockey": "Fern OBrien",
+        "trainer": "Fergal OBrien",
+        "number": "5",
+        "weight": "11-9",
+        "form_raw": "01/1264-74",
+        "form_score": 0.2992,
+        "market_prob": 0.0705,
+        "best_odds": 15.0,
+        "place_prob": 0.1618,
+        "place_odds": 4.5,
+        "place_count": 2,
+        "place_fraction": 0.25,
+        "form_rank": 5,
+        "market_rank": 4
+      },
+      {
+        "name": "Lewisham Grove(IRE)",
+        "id_horse": "293807",
+        "jockey": "William Shanahan",
+        "trainer": "Jennie Candlish",
+        "number": "1",
+        "weight": "12-0",
+        "form_raw": "5622152-",
+        "form_score": 0.4928,
+        "market_prob": 0.0622,
+        "best_odds": 17.0,
+        "place_prob": 0.1433,
+        "place_odds": 5.0,
+        "place_count": 2,
+        "place_fraction": 0.25,
+        "form_rank": 3,
+        "market_rank": 5
+      },
+      {
+        "name": "Turn And Finish(IRE)",
+        "id_horse": "284616",
+        "jockey": "Charlie Hammond",
+        "trainer": "Steph Hollinshead",
+        "number": "7",
+        "weight": "11-1",
+        "form_raw": "02/0626-8P",
+        "form_score": 0.1478,
+        "market_prob": 0.0207,
+        "best_odds": 51.0,
+        "place_prob": 0.0486,
+        "place_odds": 13.5,
+        "place_count": 2,
+        "place_fraction": 0.25,
+        "form_rank": 7,
+        "market_rank": 6
+      },
+      {
+        "name": "Amalfina",
+        "id_horse": "286242",
+        "jockey": "Harry Atkins",
+        "trainer": "D. J. Jeffreys",
+        "number": "8",
+        "weight": "10-2",
+        "form_raw": "737",
+        "form_score": 0.2049,
+        "market_prob": 0.0158,
+        "best_odds": 67.0,
+        "place_prob": 0.0372,
+        "place_odds": 17.5,
+        "place_count": 2,
+        "place_fraction": 0.25,
+        "form_rank": 6,
+        "market_rank": 7
+      }
+    ],
+    "jumps": true,
+    "place_count": 2,
+    "place_fraction": 0.25,
+    "projected_order": [
+      {
+        "rank": 1,
+        "name": "Virtual Rock(IRE)",
+        "number": "2",
+        "id_horse": "283468",
+        "market_prob": 0.3525
+      },
+      {
+        "rank": 2,
+        "name": "Gallivanted(FR)",
+        "number": "6",
+        "id_horse": "284947",
+        "market_prob": 0.3021
+      },
+      {
+        "rank": 3,
+        "name": "Cayman Dancer",
+        "number": "4",
+        "id_horse": "289763",
+        "market_prob": 0.1762
+      },
+      {
+        "rank": 4,
+        "name": "Mister Cessna(FR)",
+        "number": "5",
+        "id_horse": "287702",
+        "market_prob": 0.0705
+      }
+    ],
+    "form_adjusted_order": [
+      {
+        "rank": 1,
+        "name": "Virtual Rock(IRE)",
+        "number": "2",
+        "id_horse": "283468",
+        "market_prob": 0.3525,
+        "form_score": 0.6993,
+        "blended_score": 1.0
+      },
+      {
+        "rank": 2,
+        "name": "Gallivanted(FR)",
+        "number": "6",
+        "id_horse": "284947",
+        "market_prob": 0.3021,
+        "form_score": 0.4006,
+        "blended_score": 0.7327
+      },
+      {
+        "rank": 3,
+        "name": "Cayman Dancer",
+        "number": "4",
+        "id_horse": "289763",
+        "market_prob": 0.1762,
+        "form_score": 0.4933,
+        "blended_score": 0.5214
+      },
+      {
+        "rank": 4,
+        "name": "Lewisham Grove(IRE)",
+        "number": "1",
+        "id_horse": "293807",
+        "market_prob": 0.0622,
+        "form_score": 0.4928,
+        "blended_score": 0.2841
+      }
+    ]
+  }
+]

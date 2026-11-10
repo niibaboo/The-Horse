@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>UK/Ireland Horse Racing</title></head>
 <body style="background:#0f0a08;color:#e8dcd0;font-family:Arial;padding:12px;max-width:600px;margin:auto">
 <h2 style="text-align:center;color:#7dd3a8">🐎 UK/Ireland Racing</h2>
-<p style="text-align:center;color:#998;font-size:11px">De-vigged market consensus + recency-weighted form · 09 Nov 18:32</p>
+<p style="text-align:center;color:#998;font-size:11px">De-vigged market consensus + recency-weighted form · 10 Nov 16:17</p>
 <p style="text-align:center;margin-bottom:16px"><a href="horse_racing_predictions.csv" download style="background:#2a201a;border:1px solid #443;color:white;padding:8px 14px;border-radius:8px;text-decoration:none;font-size:13px">⬇ Download CSV</a></p>
 <p style="text-align:center;margin-bottom:16px"><a href="results/index.html" style="color:#ff9a2e;text-decoration:none;font-size:12px">📊 Results Tracker</a></p>
 
@@ -28,10 +28,127 @@
 </div>
 
 
+<div style="background:#14261a;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #2a4a34">
+  <div style="font-size:14px;font-weight:bold;margin-bottom:10px">🎯 Market Favorites Builder</div>
+  <div style="font-size:11px;color:#8ba;margin-bottom:10px">
+    Each leg is the genuine de-vigged (margin-removed) market-consensus favorite for that race --
+    this is real, accurately-relayed market data, not an independent prediction. Odds move right up
+    to post time, so treat "best odds" as a snapshot, not guaranteed.
+  </div>
+  <div style="display:flex;gap:8px;align-items:center;margin-bottom:10px;flex-wrap:wrap">
+    <label style="font-size:12px;color:#8ba">Min probability:</label>
+    <input id="minProb" type="number" step="1" min="0" max="100" value="30"
+      style="width:60px;background:#0a1710;border:1px solid #2a4a34;color:white;border-radius:6px;padding:6px 8px;font-size:13px">
+    <button onclick="buildFavorites()"
+      style="background:#2a7d4a;border:none;color:white;padding:7px 14px;border-radius:6px;font-size:13px;cursor:pointer">
+      Build
+    </button>
+  </div>
+  <div id="builderResult" style="font-size:12px;color:#8ba"></div>
+</div>
+<script>
+const LEGS = [{"match": "Huntingdon 15:40", "subject": "Virtual Rock(IRE)", "market": "Virtual Rock(IRE) to Win", "prob": 35, "category": "Market Favorite", "detail": "PRICEDUP BET HANDICAP HURDLE (Qualifier) (4) \u00b7 jockey Jonathan Burke \u00b7 best odds 3.0", "history": null, "hit_rate": null}];
+function buildFavorites() {
+  const minProb = parseInt(document.getElementById('minProb').value) || 0;
+  const chosen = LEGS.filter(l => l.prob >= minProb).sort((a,b) => b.prob - a.prob);
+  const el = document.getElementById('builderResult');
+  if (!chosen.length) { el.innerHTML = 'No favorites clear that probability threshold today.'; return; }
+  const rows = chosen.map(l =>
+    `<div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #2a4a34">
+       <span>${l.match}<br><span style="color:#7ed3a8">${l.market}</span>
+       ${l.detail ? `<br><span style="color:#668;font-size:10px">${l.detail}</span>` : ''}</span>
+       <span style="color:#ffeb3b;font-weight:bold">${l.prob}%</span>
+     </div>`
+  ).join('');
+  el.innerHTML = `<div style="color:white;font-size:13px;margin-bottom:6px">${chosen.length} favorite(s)</div>${rows}`;
+}
+buildFavorites();
+</script>
 
+<div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
+  <div style="font-size:14px;font-weight:bold;margin-bottom:6px">🎯 Each-Way Picks</div>
+  <div style="font-size:11px;color:#998;margin-bottom:10px">
+    Ranked by PLACE probability (via Harville's formula, 1973 -- an established method that extends
+    win probabilities into place chances, not an invented one), not win probability -- this is
+    deliberately a different list from Market Favorites above. Place terms shown are the STANDARD UK
+    default for that field size; individual bookmakers sometimes run promotional extra-places offers
+    this can't see. Harville's formula is a genuine approximation with a known mild bias for long-shots
+    in big fields -- treat as a strong lead, not a certainty, especially with no backtested track
+    record yet for this project.
+  </div>
+  <div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Virtual Rock(IRE)</b><br><span style="color:#998">Huntingdon 15:40 · PRICEDUP BET HANDICAP HURDLE (Qualifier) (4)</span><br><span style="color:#998">Jonathan Burke · 7 runners · jumps</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 64%</span><br><span style="color:#998">win 35% · place odds 1.5 (1/4, top 2)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Gallivanted(FR)</b><br><span style="color:#998">Huntingdon 15:40 · PRICEDUP BET HANDICAP HURDLE (Qualifier) (4)</span><br><span style="color:#998">Paul OBrien · 7 runners · jumps</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 59%</span><br><span style="color:#998">win 30% · place odds 1.62 (1/4, top 2)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Cayman Dancer</b><br><span style="color:#998">Huntingdon 15:40 · PRICEDUP BET HANDICAP HURDLE (Qualifier) (4)</span><br><span style="color:#998">Freddie Mitchell · 7 runners · jumps</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 38%</span><br><span style="color:#998">win 18% · place odds 2.25 (1/4, top 2)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Mister Cessna(FR)</b><br><span style="color:#998">Huntingdon 15:40 · PRICEDUP BET HANDICAP HURDLE (Qualifier) (4)</span><br><span style="color:#998">Fern OBrien · 7 runners · jumps</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 16%</span><br><span style="color:#998">win 7% · place odds 4.5 (1/4, top 2)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Lewisham Grove(IRE)</b><br><span style="color:#998">Huntingdon 15:40 · PRICEDUP BET HANDICAP HURDLE (Qualifier) (4)</span><br><span style="color:#998">William Shanahan · 7 runners · jumps</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 14%</span><br><span style="color:#998">win 6% · place odds 5.0 (1/4, top 2)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Turn And Finish(IRE)</b><br><span style="color:#998">Huntingdon 15:40 · PRICEDUP BET HANDICAP HURDLE (Qualifier) (4)</span><br><span style="color:#998">Charlie Hammond · 7 runners · jumps</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 5%</span><br><span style="color:#998">win 2% · place odds 13.5 (1/4, top 2)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Amalfina</b><br><span style="color:#998">Huntingdon 15:40 · PRICEDUP BET HANDICAP HURDLE (Qualifier) (4)</span><br><span style="color:#998">Harry Atkins · 7 runners · jumps</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 4%</span><br><span style="color:#998">win 2% · place odds 17.5 (1/4, top 2)</span></div>
+</div>
+</div>
+<div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
+  <div style="font-size:14px;font-weight:bold;margin-bottom:6px">📊 Recent Form Leaders</div>
+  <div style="font-size:11px;color:#998;margin-bottom:10px">
+    Raw recency-weighted form screen -- ranks 1st or 2nd in their own field by recent finishing
+    positions. NOT a probability and NOT market-adjusted -- a horse can show up here and still be a
+    long shot if the market disagrees. Cross-check against the Market Favorites panel above.
+  </div>
+  <div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Virtual Rock(IRE)</b><br><span style="color:#998">Huntingdon 15:40 · PRICEDUP BET HANDICAP HURDLE (Qualifier) (4)</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 21/8112</span><br><span style="color:#998">rank 1/7</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Cayman Dancer</b><br><span style="color:#998">Huntingdon 15:40 · PRICEDUP BET HANDICAP HURDLE (Qualifier) (4)</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 251d6-41</span><br><span style="color:#998">rank 2/7</span></div>
+</div>
+</div>
 
-
-<p style="text-align:center;color:#998">No usable races today.</p>
+<div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
+  <div style="font-size:11px;color:#998;margin-bottom:4px">Huntingdon 15:40 · Good · 1m7f · E/W 4, top 2</div>
+  <div style="font-size:15px;font-weight:bold;margin-bottom:10px">PRICEDUP BET HANDICAP HURDLE (Qualifier) (4)</div>
+  <div style="background:#0f1a12;border:1px solid #2a4a34;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#7dd3a8;font-weight:bold">🏁 Projected order </span><span style="color:#998">(by win %, before the race)</span><br>
+  <b>1.</b> Virtual Rock(IRE) (35%) &nbsp;·&nbsp; <b>2.</b> Gallivanted(FR) (30%) &nbsp;·&nbsp; <b>3.</b> Cayman Dancer (18%) &nbsp;·&nbsp; <b>4.</b> Mister Cessna(FR) (7%)
+</div>
+  <div style="background:#1f180f;border:1px dashed #4a3a20;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#ff9a2e;font-weight:bold">🧪 Form-adjusted order </span><span style="color:#998">(experimental — 70% market / 30% form, unvalidated)</span><br>
+  <b>1.</b> Virtual Rock(IRE) &nbsp;·&nbsp; <b>2.</b> Gallivanted(FR) &nbsp;·&nbsp; <b>3.</b> Cayman Dancer &nbsp;·&nbsp; <b>4.</b> Lewisham Grove(IRE)
+</div>
+  <div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>1. <b>Lewisham Grove(IRE)</b><br><span style="color:#998">William Shanahan · Jennie Candlish</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 6%</span> <span style="color:#7dd3a8;font-weight:bold">place 14%</span><br><span style="color:#998">form 5622152- · odds 17.0/5.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>2. <b>Virtual Rock(IRE)</b><br><span style="color:#998">Jonathan Burke · Des Donovan</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 35%</span> <span style="color:#7dd3a8;font-weight:bold">place 64%</span><br><span style="color:#998">form 21/8112 · odds 3.0/1.5</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>4. <b>Cayman Dancer</b><br><span style="color:#998">Freddie Mitchell · Jamie Moore &amp; Josh Moore</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 18%</span> <span style="color:#7dd3a8;font-weight:bold">place 38%</span><br><span style="color:#998">form 251d6-41 · odds 6.0/2.25</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>5. <b>Mister Cessna(FR)</b><br><span style="color:#998">Fern OBrien · Fergal OBrien</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 7%</span> <span style="color:#7dd3a8;font-weight:bold">place 16%</span><br><span style="color:#998">form 01/1264-74 · odds 15.0/4.5</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>6. <b>Gallivanted(FR)</b><br><span style="color:#998">Paul OBrien · Harry Derham</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 30%</span> <span style="color:#7dd3a8;font-weight:bold">place 59%</span><br><span style="color:#998">form 4133-72 · odds 3.5/1.62</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>7. <b>Turn And Finish(IRE)</b><br><span style="color:#998">Charlie Hammond · Steph Hollinshead</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 2%</span> <span style="color:#7dd3a8;font-weight:bold">place 5%</span><br><span style="color:#998">form 02/0626-8P · odds 51.0/13.5</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>8. <b>Amalfina</b><br><span style="color:#998">Harry Atkins · D. J. Jeffreys</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 2%</span> <span style="color:#7dd3a8;font-weight:bold">place 4%</span><br><span style="color:#998">form 737 · odds 67.0/17.5</span></div>
+</div>
+</div>
 <div style="font-size:11px;color:#998;text-align:center;margin-top:20px;line-height:1.6">
   Official Rating, owner, sire, and dam weren't available for any race checked so far -- possibly a
   free-tier limit, possibly normal for early-season juvenile races. Market Consensus is real,
