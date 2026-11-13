@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>UK/Ireland Horse Racing</title></head>
 <body style="background:#0f0a08;color:#e8dcd0;font-family:Arial;padding:12px;max-width:600px;margin:auto">
 <h2 style="text-align:center;color:#7dd3a8">🐎 UK/Ireland Racing</h2>
-<p style="text-align:center;color:#998;font-size:11px">De-vigged market consensus + recency-weighted form · 12 Nov 16:41</p>
+<p style="text-align:center;color:#998;font-size:11px">De-vigged market consensus + recency-weighted form · 13 Nov 16:00</p>
 <p style="text-align:center;margin-bottom:16px"><a href="horse_racing_predictions.csv" download style="background:#2a201a;border:1px solid #443;color:white;padding:8px 14px;border-radius:8px;text-decoration:none;font-size:13px">⬇ Download CSV</a></p>
 <p style="text-align:center;margin-bottom:16px"><a href="results/index.html" style="color:#ff9a2e;text-decoration:none;font-size:12px">📊 Results Tracker</a></p>
 
@@ -28,10 +28,592 @@
 </div>
 
 
+<div style="background:#14261a;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #2a4a34">
+  <div style="font-size:14px;font-weight:bold;margin-bottom:10px">🎯 Market Favorites Builder</div>
+  <div style="font-size:11px;color:#8ba;margin-bottom:10px">
+    Each leg is the genuine de-vigged (margin-removed) market-consensus favorite for that race --
+    this is real, accurately-relayed market data, not an independent prediction. Odds move right up
+    to post time, so treat "best odds" as a snapshot, not guaranteed.
+  </div>
+  <div style="display:flex;gap:8px;align-items:center;margin-bottom:10px;flex-wrap:wrap">
+    <label style="font-size:12px;color:#8ba">Min probability:</label>
+    <input id="minProb" type="number" step="1" min="0" max="100" value="30"
+      style="width:60px;background:#0a1710;border:1px solid #2a4a34;color:white;border-radius:6px;padding:6px 8px;font-size:13px">
+    <button onclick="buildFavorites()"
+      style="background:#2a7d4a;border:none;color:white;padding:7px 14px;border-radius:6px;font-size:13px;cursor:pointer">
+      Build
+    </button>
+  </div>
+  <div id="builderResult" style="font-size:12px;color:#8ba"></div>
+</div>
+<script>
+const LEGS = [{"match": "Cheltenham 16:00", "subject": "Eben Zaabeel", "market": "Eben Zaabeel to Win", "prob": 19, "category": "Market Favorite", "detail": "VALDA ENERGY NOVICES HANDICAP HURDLE (3) \u00b7 jockey Daniel King \u00b7 best odds 4.0", "history": null, "hit_rate": null}, {"match": "Dundalk 17:30", "subject": "Crayons In The Sky", "market": "Crayons In The Sky to Win", "prob": 29, "category": "Market Favorite", "detail": "IRISH STALLION FARMS EBF \u00b7 jockey J. Kearney \u00b7 best odds 2.75", "history": null, "hit_rate": null}, {"match": "Dundalk 18:00", "subject": "Firewalker", "market": "Firewalker to Win", "prob": 20, "category": "Market Favorite", "detail": "CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP \u00b7 jockey W. M. Lordan \u00b7 best odds 4.0", "history": null, "hit_rate": null}, {"match": "Dundalk 18:30", "subject": "Shenata(IRE)", "market": "Shenata(IRE) to Win", "prob": 38, "category": "Market Favorite", "detail": "VIEW RESTAURANT AT DUNDALK STADIUM NURSERY HANDICAP \u00b7 jockey Ben Martin Coen \u00b7 best odds 2.375", "history": null, "hit_rate": null}, {"match": "Dundalk 19:00", "subject": "Chant Dor(IRE)", "market": "Chant Dor(IRE) to Win", "prob": 14, "category": "Market Favorite", "detail": "BOOK ONLINE AT dundalkstadium.com APPRENTICE HANDICAP \u00b7 jockey Conor Cusack \u00b7 best odds 5.5", "history": null, "hit_rate": null}, {"match": "Dundalk 19:30", "subject": "Sangreal(IRE)", "market": "Sangreal(IRE) to Win", "prob": 51, "category": "Market Favorite", "detail": "BAR 1 BETTING PROUD SUPPORTER OF IRISH RACING MAIDEN \u00b7 jockey Declan Mcdonogh \u00b7 best odds 1.62", "history": null, "hit_rate": null}, {"match": "Dundalk 20:00", "subject": "Serenity Blue", "market": "Serenity Blue to Win", "prob": 22, "category": "Market Favorite", "detail": "BAR 1 BETTING BEST ODDS GUARANTEED OVERNIGHT HANDICAP \u00b7 jockey Adam Caffrey \u00b7 best odds 3.75", "history": null, "hit_rate": null}, {"match": "Dundalk 20:30", "subject": "Chloes Boy(IRE)", "market": "Chloes Boy(IRE) to Win", "prob": 24, "category": "Market Favorite", "detail": "NOW RACING EVERY WEDNESDAY AT DUNDALK HANDICAP \u00b7 jockey Siobhan Rutledge \u00b7 best odds 3.25", "history": null, "hit_rate": null}, {"match": "Sedgefield 15:40", "subject": "Leave Her To Me", "market": "Leave Her To Me to Win", "prob": 40, "category": "Market Favorite", "detail": "CATERTECH NORTH EAST LTD MARES HANDICAP HURDLE (5) \u00b7 jockey Kielan Woods \u00b7 best odds 2.62", "history": null, "hit_rate": null}, {"match": "Southwell 15:50", "subject": "Keep On Cobbling", "market": "Keep On Cobbling to Win", "prob": 25, "category": "Market Favorite", "detail": "CELEBRATE WITH SPONSORSHIP AT SOUTHWELL RACECOURSE CONDITIONAL JOCKEYS HANDICAP HURDLE (5) \u00b7 jockey Will Featherstone \u00b7 best odds 3.75", "history": null, "hit_rate": null}];
+function buildFavorites() {
+  const minProb = parseInt(document.getElementById('minProb').value) || 0;
+  const chosen = LEGS.filter(l => l.prob >= minProb).sort((a,b) => b.prob - a.prob);
+  const el = document.getElementById('builderResult');
+  if (!chosen.length) { el.innerHTML = 'No favorites clear that probability threshold today.'; return; }
+  const rows = chosen.map(l =>
+    `<div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #2a4a34">
+       <span>${l.match}<br><span style="color:#7ed3a8">${l.market}</span>
+       ${l.detail ? `<br><span style="color:#668;font-size:10px">${l.detail}</span>` : ''}</span>
+       <span style="color:#ffeb3b;font-weight:bold">${l.prob}%</span>
+     </div>`
+  ).join('');
+  el.innerHTML = `<div style="color:white;font-size:13px;margin-bottom:6px">${chosen.length} favorite(s)</div>${rows}`;
+}
+buildFavorites();
+</script>
 
-
-
-<p style="text-align:center;color:#998">No usable races today.</p>
+<div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
+  <div style="font-size:14px;font-weight:bold;margin-bottom:6px">🎯 Each-Way Picks</div>
+  <div style="font-size:11px;color:#998;margin-bottom:10px">
+    Ranked by PLACE probability (via Harville's formula, 1973 -- an established method that extends
+    win probabilities into place chances, not an invented one), not win probability -- this is
+    deliberately a different list from Market Favorites above. Place terms shown are the STANDARD UK
+    default for that field size; individual bookmakers sometimes run promotional extra-places offers
+    this can't see. Harville's formula is a genuine approximation with a known mild bias for long-shots
+    in big fields -- treat as a strong lead, not a certainty, especially with no backtested track
+    record yet for this project.
+  </div>
+  <div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Sangreal(IRE)</b><br><span style="color:#998">Dundalk 19:30 · BAR 1 BETTING PROUD SUPPORTER OF IRISH RACING MAIDEN</span><br><span style="color:#998">Declan Mcdonogh · 9 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 93%</span><br><span style="color:#998">win 51% · place odds 1.16 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Crayons In The Sky</b><br><span style="color:#998">Dundalk 17:30 · IRISH STALLION FARMS EBF</span><br><span style="color:#998">J. Kearney · 11 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 71%</span><br><span style="color:#998">win 29% · place odds 1.44 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Shenata(IRE)</b><br><span style="color:#998">Dundalk 18:30 · VIEW RESTAURANT AT DUNDALK STADIUM NURSERY HANDICAP</span><br><span style="color:#998">Ben Martin Coen · 6 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 68%</span><br><span style="color:#998">win 38% · place odds 1.34 (1/4, top 2)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Kashala(IRE)</b><br><span style="color:#998">Dundalk 19:30 · BAR 1 BETTING PROUD SUPPORTER OF IRISH RACING MAIDEN</span><br><span style="color:#998">C. D. Hayes · 9 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 67%</span><br><span style="color:#998">win 19% · place odds 1.88 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Chloes Boy(IRE)</b><br><span style="color:#998">Dundalk 20:30 · NOW RACING EVERY WEDNESDAY AT DUNDALK HANDICAP</span><br><span style="color:#998">Siobhan Rutledge · 10 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 64%</span><br><span style="color:#998">win 24% · place odds 1.56 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Eben Zaabeel</b><br><span style="color:#998">Cheltenham 16:00 · VALDA ENERGY NOVICES HANDICAP HURDLE (3)</span><br><span style="color:#998">Daniel King · 16 runners · jumps</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 63%</span><br><span style="color:#998">win 19% · place odds 1.75 (1/4, top 4)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Love Orchid(IRE)</b><br><span style="color:#998">Dundalk 20:30 · NOW RACING EVERY WEDNESDAY AT DUNDALK HANDICAP</span><br><span style="color:#998">C. T. Keane · 10 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 60%</span><br><span style="color:#998">win 21% · place odds 1.69 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Glitter And Glory(IRE)</b><br><span style="color:#998">Dundalk 20:30 · NOW RACING EVERY WEDNESDAY AT DUNDALK HANDICAP</span><br><span style="color:#998">P. McGettigan · 10 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 58%</span><br><span style="color:#998">win 20% · place odds 1.75 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Closefield Beau(IRE)</b><br><span style="color:#998">Dundalk 18:30 · VIEW RESTAURANT AT DUNDALK STADIUM NURSERY HANDICAP</span><br><span style="color:#998">N. M. Crosse · 6 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 57%</span><br><span style="color:#998">win 29% · place odds 1.5 (1/4, top 2)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Serenity Blue</b><br><span style="color:#998">Dundalk 20:00 · BAR 1 BETTING BEST ODDS GUARANTEED OVERNIGHT HANDICAP</span><br><span style="color:#998">Adam Caffrey · 11 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 56%</span><br><span style="color:#998">win 22% · place odds 1.69 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Firewalker</b><br><span style="color:#998">Dundalk 18:00 · CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP</span><br><span style="color:#998">W. M. Lordan · 10 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 54%</span><br><span style="color:#998">win 20% · place odds 1.75 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Supreme Lord(IRE)</b><br><span style="color:#998">Dundalk 17:30 · IRISH STALLION FARMS EBF</span><br><span style="color:#998">D. W. OConnor · 11 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 51%</span><br><span style="color:#998">win 17% · place odds 2.0 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Lexington Wood(FR)</b><br><span style="color:#998">Cheltenham 16:00 · VALDA ENERGY NOVICES HANDICAP HURDLE (3)</span><br><span style="color:#998">Sean Bowen · 16 runners · jumps</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 51%</span><br><span style="color:#998">win 14% · place odds 2.12 (1/4, top 4)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Sir Les Patterson</b><br><span style="color:#998">Dundalk 18:00 · CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP</span><br><span style="color:#998">J. Kearney · 10 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 50%</span><br><span style="color:#998">win 18% · place odds 1.88 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Crooked Path(IRE)</b><br><span style="color:#998">Cheltenham 16:00 · VALDA ENERGY NOVICES HANDICAP HURDLE (3)</span><br><span style="color:#998">Jonathan Burke · 16 runners · jumps</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 50%</span><br><span style="color:#998">win 13% · place odds 2.12 (1/4, top 4)</span></div>
+</div>
+</div>
+<div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
+  <div style="font-size:14px;font-weight:bold;margin-bottom:6px">📊 Recent Form Leaders</div>
+  <div style="font-size:11px;color:#998;margin-bottom:10px">
+    Raw recency-weighted form screen -- ranks 1st or 2nd in their own field by recent finishing
+    positions. NOT a probability and NOT market-adjusted -- a horse can show up here and still be a
+    long shot if the market disagrees. Cross-check against the Market Favorites panel above.
+  </div>
+  <div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Caffu Zafeen(IRE)</b><br><span style="color:#998">Dundalk 18:00 · CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 09051111</span><br><span style="color:#998">rank 1/10</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Whermyrosemarygoes(IRE)</b><br><span style="color:#998">Cheltenham 16:00 · VALDA ENERGY NOVICES HANDICAP HURDLE (3)</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 12</span><br><span style="color:#998">rank 1/16</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Crafty Gael(IRE)</b><br><span style="color:#998">Southwell 15:50 · CELEBRATE WITH SPONSORSHIP AT SOUTHWELL RACECOURSE CONDITIONAL JOCKEYS HANDICAP HURDLE (5)</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 008-32112</span><br><span style="color:#998">rank 1/6</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Tuppence(FR)</b><br><span style="color:#998">Cheltenham 16:00 · VALDA ENERGY NOVICES HANDICAP HURDLE (3)</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 408/241-1</span><br><span style="color:#998">rank 2/16</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Luminaries(IRE)</b><br><span style="color:#998">Southwell 15:50 · CELEBRATE WITH SPONSORSHIP AT SOUTHWELL RACECOURSE CONDITIONAL JOCKEYS HANDICAP HURDLE (5)</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 07721122</span><br><span style="color:#998">rank 2/6</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Stellarmasterpiece(FR)</b><br><span style="color:#998">Sedgefield 15:40 · CATERTECH NORTH EAST LTD MARES HANDICAP HURDLE (5)</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 355-11124</span><br><span style="color:#998">rank 1/4</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Crayons In The Sky</b><br><span style="color:#998">Dundalk 17:30 · IRISH STALLION FARMS EBF</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 24241</span><br><span style="color:#998">rank 1/11</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Sonoran(IRE)</b><br><span style="color:#998">Dundalk 20:00 · BAR 1 BETTING BEST ODDS GUARANTEED OVERNIGHT HANDICAP</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 36995101</span><br><span style="color:#998">rank 1/11</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Xirivella(IRE)</b><br><span style="color:#998">Dundalk 20:00 · BAR 1 BETTING BEST ODDS GUARANTEED OVERNIGHT HANDICAP</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 633521</span><br><span style="color:#998">rank 2/11</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Deluca Chop(FR)</b><br><span style="color:#998">Dundalk 19:00 · BOOK ONLINE AT dundalkstadium.com APPRENTICE HANDICAP</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 33211532</span><br><span style="color:#998">rank 1/14</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Firewalker</b><br><span style="color:#998">Dundalk 18:00 · CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 2-94021</span><br><span style="color:#998">rank 2/10</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Closefield Beau(IRE)</b><br><span style="color:#998">Dundalk 18:30 · VIEW RESTAURANT AT DUNDALK STADIUM NURSERY HANDICAP</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 078441</span><br><span style="color:#998">rank 1/6</span></div>
+</div>
+</div>
+<div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
+  <div style="font-size:14px;font-weight:bold;margin-bottom:6px">🔎 Form/Market Gap</div>
+  <div style="font-size:11px;color:#998;margin-bottom:10px">
+    Horses whose recent-FORM rank sits notably ahead of where the MARKET currently prices them.
+    This is a discrepancy-spotter, not a validated edge -- there's no backtested track record yet
+    for whether this gap actually predicts anything. Treat as a lead worth a closer look, not a bet
+    on its own.
+  </div>
+  <div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Whermyrosemarygoes(IRE)</b><br><span style="color:#998">Cheltenham 16:00 · VALDA ENERGY NOVICES HANDICAP HURDLE (3)</span></div>
+  <div style="text-align:right"><span style="color:#ff9a2e;font-weight:bold">form #1 · market #8</span><br><span style="color:#998">best odds 23.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Caffu Zafeen(IRE)</b><br><span style="color:#998">Dundalk 18:00 · CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP</span></div>
+  <div style="text-align:right"><span style="color:#ff9a2e;font-weight:bold">form #1 · market #4</span><br><span style="color:#998">best odds 7.5</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Sonoran(IRE)</b><br><span style="color:#998">Dundalk 20:00 · BAR 1 BETTING BEST ODDS GUARANTEED OVERNIGHT HANDICAP</span></div>
+  <div style="text-align:right"><span style="color:#ff9a2e;font-weight:bold">form #1 · market #4</span><br><span style="color:#998">best odds 9.5</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Crafty Gael(IRE)</b><br><span style="color:#998">Southwell 15:50 · CELEBRATE WITH SPONSORSHIP AT SOUTHWELL RACECOURSE CONDITIONAL JOCKEYS HANDICAP HURDLE (5)</span></div>
+  <div style="text-align:right"><span style="color:#ff9a2e;font-weight:bold">form #1 · market #4</span><br><span style="color:#998">best odds 5.5</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Tuppence(FR)</b><br><span style="color:#998">Cheltenham 16:00 · VALDA ENERGY NOVICES HANDICAP HURDLE (3)</span></div>
+  <div style="text-align:right"><span style="color:#ff9a2e;font-weight:bold">form #2 · market #5</span><br><span style="color:#998">best odds 7.5</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Normanton(IRE)</b><br><span style="color:#998">Dundalk 17:30 · IRISH STALLION FARMS EBF</span></div>
+  <div style="text-align:right"><span style="color:#ff9a2e;font-weight:bold">form #2 · market #4</span><br><span style="color:#998">best odds 5.5</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Xirivella(IRE)</b><br><span style="color:#998">Dundalk 20:00 · BAR 1 BETTING BEST ODDS GUARANTEED OVERNIGHT HANDICAP</span></div>
+  <div style="text-align:right"><span style="color:#ff9a2e;font-weight:bold">form #2 · market #6</span><br><span style="color:#998">best odds 11.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Luminaries(IRE)</b><br><span style="color:#998">Southwell 15:50 · CELEBRATE WITH SPONSORSHIP AT SOUTHWELL RACECOURSE CONDITIONAL JOCKEYS HANDICAP HURDLE (5)</span></div>
+  <div style="text-align:right"><span style="color:#ff9a2e;font-weight:bold">form #2 · market #6</span><br><span style="color:#998">best odds 10.0</span></div>
+</div>
+</div>
+<div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
+  <div style="font-size:11px;color:#998;margin-bottom:4px">Cheltenham 16:00 · Good (Good to Soft in places) · 2m · E/W 4, top 4</div>
+  <div style="font-size:15px;font-weight:bold;margin-bottom:10px">VALDA ENERGY NOVICES HANDICAP HURDLE (3)</div>
+  <div style="background:#0f1a12;border:1px solid #2a4a34;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#7dd3a8;font-weight:bold">🏁 Projected order </span><span style="color:#998">(by win %, before the race)</span><br>
+  <b>1.</b> Eben Zaabeel (19%) &nbsp;·&nbsp; <b>2.</b> Lexington Wood(FR) (14%) &nbsp;·&nbsp; <b>3.</b> Crooked Path(IRE) (13%) &nbsp;·&nbsp; <b>4.</b> Way Of Stars(IRE) (13%)
+</div>
+  <div style="background:#1f180f;border:1px dashed #4a3a20;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#ff9a2e;font-weight:bold">🧪 Form-adjusted order </span><span style="color:#998">(experimental — 70% market / 30% form, unvalidated)</span><br>
+  <b>1.</b> Eben Zaabeel &nbsp;·&nbsp; <b>2.</b> Crooked Path(IRE) &nbsp;·&nbsp; <b>3.</b> Way Of Stars(IRE) &nbsp;·&nbsp; <b>4.</b> Tuppence(FR)
+</div>
+  <div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>1. <b>Kings Scholar(IRE)</b><br><span style="color:#998">Tom Hutsby · Olly Murphy</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 3%</span> <span style="color:#7dd3a8;font-weight:bold">place 13%</span><br><span style="color:#998">form 4-1124 · odds 26.0/7.25</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>10. <b>Tuppence(FR)</b><br><span style="color:#998">Mr Lucas Murphy · Lucinda Russell &amp; Michael Scudamore</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 10%</span> <span style="color:#7dd3a8;font-weight:bold">place 40%</span><br><span style="color:#998">form 408/241-1 · odds 7.5/2.62</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>12. <b>Baymount(IRE)</b><br><span style="color:#998">Donagh Meyler · Anthony Mullins, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 2%</span> <span style="color:#7dd3a8;font-weight:bold">place 11%</span><br><span style="color:#998">form 8P-P34214 · odds 34.0/9.25</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>13. <b>Final Surprise(IRE)</b><br><span style="color:#998">Ciaran Gethings · Alastair Ralph</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 3%</span> <span style="color:#7dd3a8;font-weight:bold">place 13%</span><br><span style="color:#998">form 755-134 · odds 26.0/7.25</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>14. <b>Likewhatyousee(USA)</b><br><span style="color:#998">Jonjo ONeill Jr. · Jonjo &amp; A.J. ONeill</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 2%</span> <span style="color:#7dd3a8;font-weight:bold">place 12%</span><br><span style="color:#998">form 2126F4 · odds 34.0/9.25</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>15. <b>Whermyrosemarygoes(IRE)</b><br><span style="color:#998">Harry Cobden · Faye Bramley</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 4%</span> <span style="color:#7dd3a8;font-weight:bold">place 17%</span><br><span style="color:#998">form 12 · odds 23.0/6.5</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>16. <b>Ocean Of Dreams(IRE)</b><br><span style="color:#998">Mr O. McGill · Gary McGill, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 4%</span> <span style="color:#7dd3a8;font-weight:bold">place 20%</span><br><span style="color:#998">form 90068-61 · odds 17.0/5.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>17. <b>Kilt(IRE)</b><br><span style="color:#998">Ross Sugrue · P. J. Rothwell, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 2%</span> <span style="color:#7dd3a8;font-weight:bold">place 8%</span><br><span style="color:#998">form 0-1454618 · odds 41.0/11.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>18. <b>Ade Boy(IRE)</b><br><span style="color:#998">Brian Hughes · Charlie Longsdon</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 6%</span> <span style="color:#7dd3a8;font-weight:bold">place 26%</span><br><span style="color:#998">form 1634-23 · odds 13.0/4.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>2. <b>First Ascent(IRE)</b><br><span style="color:#998">Josh Williamson · Gordon Elliott, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 1%</span> <span style="color:#7dd3a8;font-weight:bold">place 5%</span><br><span style="color:#998">form P-542310 · odds 81.0/21.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>3. <b>Crooked Path(IRE)</b><br><span style="color:#998">Jonathan Burke · James Owen</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 13%</span> <span style="color:#7dd3a8;font-weight:bold">place 50%</span><br><span style="color:#998">form 62331-313 · odds 5.5/2.12</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>5. <b>Eben Zaabeel</b><br><span style="color:#998">Daniel King · A. J. Martin, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 19%</span> <span style="color:#7dd3a8;font-weight:bold">place 63%</span><br><span style="color:#998">form 0-12 · odds 4.0/1.75</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>6. <b>Way Of Stars(IRE)</b><br><span style="color:#998">Jack Tudor · David Pipe</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 13%</span> <span style="color:#7dd3a8;font-weight:bold">place 50%</span><br><span style="color:#998">form 3210-2 · odds 5.5/2.12</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>7. <b>Lexington Wood(FR)</b><br><span style="color:#998">Sean Bowen · Olly Murphy</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 14%</span> <span style="color:#7dd3a8;font-weight:bold">place 51%</span><br><span style="color:#998">form 7428-24 · odds 5.5/2.12</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>8. <b>Mystic Rose(IRE)</b><br><span style="color:#998">D. J. OKeeffe · Patrick Magee, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 2%</span> <span style="color:#7dd3a8;font-weight:bold">place 9%</span><br><span style="color:#998">form 0-6412 · odds 41.0/11.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>9. <b>Babyken(FR)</b><br><span style="color:#998">Sam Twiston-davies · Paul Nicholls</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 2%</span> <span style="color:#7dd3a8;font-weight:bold">place 12%</span><br><span style="color:#998">form P234- · odds 34.0/9.25</span></div>
+</div>
+</div><div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
+  <div style="font-size:11px;color:#998;margin-bottom:4px">Dundalk 17:30 · Standard · 6f · E/W 4, top 3</div>
+  <div style="font-size:15px;font-weight:bold;margin-bottom:10px">IRISH STALLION FARMS EBF</div>
+  <div style="background:#0f1a12;border:1px solid #2a4a34;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#7dd3a8;font-weight:bold">🏁 Projected order </span><span style="color:#998">(by win %, before the race)</span><br>
+  <b>1.</b> Crayons In The Sky (29%) &nbsp;·&nbsp; <b>2.</b> Supreme Lord(IRE) (17%) &nbsp;·&nbsp; <b>3.</b> I Ready(IRE) (15%) &nbsp;·&nbsp; <b>4.</b> Normanton(IRE) (15%)
+</div>
+  <div style="background:#1f180f;border:1px dashed #4a3a20;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#ff9a2e;font-weight:bold">🧪 Form-adjusted order </span><span style="color:#998">(experimental — 70% market / 30% form, unvalidated)</span><br>
+  <b>1.</b> Crayons In The Sky &nbsp;·&nbsp; <b>2.</b> Supreme Lord(IRE) &nbsp;·&nbsp; <b>3.</b> Normanton(IRE) &nbsp;·&nbsp; <b>4.</b> I Ready(IRE)
+</div>
+  <div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>1. <b>I Ready(IRE)</b><br><span style="color:#998">C. T. Keane · Paul W. Flynn, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 15%</span> <span style="color:#7dd3a8;font-weight:bold">place 47%</span><br><span style="color:#998">form 65814203 · odds 5.5/2.12</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>10. <b>Waysong(IRE)</b><br><span style="color:#998">A. S. Grant · Diego Dias, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 2%</span> <span style="color:#7dd3a8;font-weight:bold">place 6%</span><br><span style="color:#998">form 5 · odds 51.0/13.5</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>11. <b>Cafe Oh Lait(IRE)</b><br><span style="color:#998">K. J. Leonard · Kevin Thomas Coleman, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 1%</span> <span style="color:#7dd3a8;font-weight:bold">place 4%</span><br><span style="color:#998">form 7 · odds 81.0/21.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>2. <b>Supreme Lord(IRE)</b><br><span style="color:#998">D. W. OConnor · Robson De Aguiar, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 17%</span> <span style="color:#7dd3a8;font-weight:bold">place 51%</span><br><span style="color:#998">form 355174 · odds 5.0/2.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>3. <b>Crayons In The Sky</b><br><span style="color:#998">J. Kearney · Stephen Thorne, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 29%</span> <span style="color:#7dd3a8;font-weight:bold">place 71%</span><br><span style="color:#998">form 24241 · odds 2.75/1.44</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>4. <b>Matriarchal(IRE)</b><br><span style="color:#998">C. D. Hayes · Josh Halley, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 2%</span> <span style="color:#7dd3a8;font-weight:bold">place 9%</span><br><span style="color:#998">form 431570 · odds 34.0/9.25</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>5. <b>Normanton(IRE)</b><br><span style="color:#998">R. C. Colgan · David Marnane, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 15%</span> <span style="color:#7dd3a8;font-weight:bold">place 47%</span><br><span style="color:#998">form 42 · odds 5.5/2.12</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>6. <b>Palo(IRE)</b><br><span style="color:#998">G. M. Ryan · Diego Dias, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 2%</span> <span style="color:#7dd3a8;font-weight:bold">place 6%</span><br><span style="color:#998">form 0 · odds 51.0/13.5</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>7. <b>Scolyer(USA)</b><br><span style="color:#998">Ben Martin Coen · Miss Natalia Lupini, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 8%</span> <span style="color:#7dd3a8;font-weight:bold">place 27%</span><br><span style="color:#998">form 62 · odds 10.0/3.25</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>8. <b>Sharpe Ratio(USA)</b><br><span style="color:#998">Declan Mcdonogh · Joseph Patrick OBrien, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 4%</span> <span style="color:#7dd3a8;font-weight:bold">place 16%</span><br><span style="color:#998">form - · odds 19.0/5.5</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>9. <b>Sonny Hayes(IRE)</b><br><span style="color:#998">W. M. Lordan · Robson De Aguiar, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 5%</span> <span style="color:#7dd3a8;font-weight:bold">place 17%</span><br><span style="color:#998">form 40 · odds 17.0/5.0</span></div>
+</div>
+</div><div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
+  <div style="font-size:11px;color:#998;margin-bottom:4px">Dundalk 18:00 · Standard · 6f · E/W 4, top 3</div>
+  <div style="font-size:15px;font-weight:bold;margin-bottom:10px">CHRISTMAS PARTY NIGHTS AT DUNDALK STADIUM HANDICAP</div>
+  <div style="background:#0f1a12;border:1px solid #2a4a34;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#7dd3a8;font-weight:bold">🏁 Projected order </span><span style="color:#998">(by win %, before the race)</span><br>
+  <b>1.</b> Firewalker (20%) &nbsp;·&nbsp; <b>2.</b> Sir Les Patterson (18%) &nbsp;·&nbsp; <b>3.</b> Chicago Pope(IRE) (12%) &nbsp;·&nbsp; <b>4.</b> Caffu Zafeen(IRE) (11%)
+</div>
+  <div style="background:#1f180f;border:1px dashed #4a3a20;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#ff9a2e;font-weight:bold">🧪 Form-adjusted order </span><span style="color:#998">(experimental — 70% market / 30% form, unvalidated)</span><br>
+  <b>1.</b> Firewalker &nbsp;·&nbsp; <b>2.</b> Sir Les Patterson &nbsp;·&nbsp; <b>3.</b> Caffu Zafeen(IRE) &nbsp;·&nbsp; <b>4.</b> Chicago Pope(IRE)
+</div>
+  <div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>1. <b>Sir Les Patterson</b><br><span style="color:#998">J. Kearney · Stephen Thorne, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 18%</span> <span style="color:#7dd3a8;font-weight:bold">place 50%</span><br><span style="color:#998">form 40603024 · odds 4.5/1.88</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>10. <b>Frescobaldi(IRE)</b><br><span style="color:#998">Jessica OGorman · Daniel James Murphy, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 3%</span> <span style="color:#7dd3a8;font-weight:bold">place 10%</span><br><span style="color:#998">form 53-506005 · odds 29.0/8.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>2. <b>Kerdos(IRE)</b><br><span style="color:#998">C. T. Keane · Stephen Thorne, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 7%</span> <span style="color:#7dd3a8;font-weight:bold">place 21%</span><br><span style="color:#998">form 68601919 · odds 13.0/4.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>3. <b>Daamberdiplomat(IRE)</b><br><span style="color:#998">Adam Caffrey · Adrian Mcguinness, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 3%</span> <span style="color:#7dd3a8;font-weight:bold">place 11%</span><br><span style="color:#998">form 80410761- · odds 26.0/7.25</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>4. <b>Chicago Pope(IRE)</b><br><span style="color:#998">Ben Martin Coen · John Patrick Murtagh, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 12%</span> <span style="color:#7dd3a8;font-weight:bold">place 37%</span><br><span style="color:#998">form 501-21400 · odds 7.0/2.5</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>5. <b>City House(IRE)</b><br><span style="color:#998">P. McGettigan · Adrian Mcguinness, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 10%</span> <span style="color:#7dd3a8;font-weight:bold">place 30%</span><br><span style="color:#998">form 40725861 · odds 8.5/2.88</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>6. <b>Caffu Zafeen(IRE)</b><br><span style="color:#998">Nina Doherty · Paul W. Flynn, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 11%</span> <span style="color:#7dd3a8;font-weight:bold">place 34%</span><br><span style="color:#998">form 09051111 · odds 7.5/2.62</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>7. <b>Firewalker</b><br><span style="color:#998">W. M. Lordan · Robson De Aguiar, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 20%</span> <span style="color:#7dd3a8;font-weight:bold">place 54%</span><br><span style="color:#998">form 2-94021 · odds 4.0/1.75</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>8. <b>All The Girls(IRE)</b><br><span style="color:#998">Nicola Burns · T. G. Mccourt, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 7%</span> <span style="color:#7dd3a8;font-weight:bold">place 22%</span><br><span style="color:#998">form 63825472 · odds 13.0/4.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>9. <b>Eddie G(IRE)</b><br><span style="color:#998">G. M. Ryan · Adrian Mcguinness, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 10%</span> <span style="color:#7dd3a8;font-weight:bold">place 30%</span><br><span style="color:#998">form 11853203 · odds 8.5/2.88</span></div>
+</div>
+</div><div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
+  <div style="font-size:11px;color:#998;margin-bottom:4px">Dundalk 18:30 · Standard · 1m · E/W 4, top 2</div>
+  <div style="font-size:15px;font-weight:bold;margin-bottom:10px">VIEW RESTAURANT AT DUNDALK STADIUM NURSERY HANDICAP</div>
+  <div style="background:#0f1a12;border:1px solid #2a4a34;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#7dd3a8;font-weight:bold">🏁 Projected order </span><span style="color:#998">(by win %, before the race)</span><br>
+  <b>1.</b> Shenata(IRE) (38%) &nbsp;·&nbsp; <b>2.</b> Closefield Beau(IRE) (29%) &nbsp;·&nbsp; <b>3.</b> Rock On Johnny(IRE) (15%) &nbsp;·&nbsp; <b>4.</b> Green Sparkle(IRE) (8%)
+</div>
+  <div style="background:#1f180f;border:1px dashed #4a3a20;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#ff9a2e;font-weight:bold">🧪 Form-adjusted order </span><span style="color:#998">(experimental — 70% market / 30% form, unvalidated)</span><br>
+  <b>1.</b> Shenata(IRE) &nbsp;·&nbsp; <b>2.</b> Closefield Beau(IRE) &nbsp;·&nbsp; <b>3.</b> Rock On Johnny(IRE) &nbsp;·&nbsp; <b>4.</b> Green Sparkle(IRE)
+</div>
+  <div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>1. <b>Angel Invincible(IRE)</b><br><span style="color:#998">William James Lee · Daniel McLoughlin, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 4%</span> <span style="color:#7dd3a8;font-weight:bold">place 10%</span><br><span style="color:#998">form 090 · odds 21.0/6.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>2. <b>Shenata(IRE)</b><br><span style="color:#998">Ben Martin Coen · John Patrick Murtagh, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 38%</span> <span style="color:#7dd3a8;font-weight:bold">place 68%</span><br><span style="color:#998">form 635 · odds 2.375/1.34</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>3. <b>Closefield Beau(IRE)</b><br><span style="color:#998">N. M. Crosse · Daniel McLoughlin, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 29%</span> <span style="color:#7dd3a8;font-weight:bold">place 57%</span><br><span style="color:#998">form 078441 · odds 3.0/1.5</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>4. <b>Green Sparkle(IRE)</b><br><span style="color:#998">Declan Mcdonogh · Joseph Patrick OBrien, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 8%</span> <span style="color:#7dd3a8;font-weight:bold">place 18%</span><br><span style="color:#998">form 9004 · odds 11.0/3.5</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>5. <b>Rock On Johnny(IRE)</b><br><span style="color:#998">Adam Caffrey · Adrian Mcguinness, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 15%</span> <span style="color:#7dd3a8;font-weight:bold">place 34%</span><br><span style="color:#998">form 850 · odds 6.0/2.25</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>6. <b>Scarlet Dream(IRE)</b><br><span style="color:#998">C. T. Keane · Adrian Mcguinness, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 6%</span> <span style="color:#7dd3a8;font-weight:bold">place 13%</span><br><span style="color:#998">form 794576 · odds 15.0/4.5</span></div>
+</div>
+</div><div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
+  <div style="font-size:11px;color:#998;margin-bottom:4px">Dundalk 19:00 · Standard · 1m4f · E/W 4, top 3</div>
+  <div style="font-size:15px;font-weight:bold;margin-bottom:10px">BOOK ONLINE AT dundalkstadium.com APPRENTICE HANDICAP</div>
+  <div style="background:#0f1a12;border:1px solid #2a4a34;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#7dd3a8;font-weight:bold">🏁 Projected order </span><span style="color:#998">(by win %, before the race)</span><br>
+  <b>1.</b> Chant Dor(IRE) (14%) &nbsp;·&nbsp; <b>2.</b> Deluca Chop(FR) (13%) &nbsp;·&nbsp; <b>3.</b> Storm Eric(IRE) (12%) &nbsp;·&nbsp; <b>4.</b> In The Minus(IRE) (11%)
+</div>
+  <div style="background:#1f180f;border:1px dashed #4a3a20;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#ff9a2e;font-weight:bold">🧪 Form-adjusted order </span><span style="color:#998">(experimental — 70% market / 30% form, unvalidated)</span><br>
+  <b>1.</b> Deluca Chop(FR) &nbsp;·&nbsp; <b>2.</b> Storm Eric(IRE) &nbsp;·&nbsp; <b>3.</b> Chant Dor(IRE) &nbsp;·&nbsp; <b>4.</b> In The Minus(IRE)
+</div>
+  <div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>1. <b>Storm Eric(IRE)</b><br><span style="color:#998">A. S. Grant · Jamie Flynn, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 12%</span> <span style="color:#7dd3a8;font-weight:bold">place 34%</span><br><span style="color:#998">form 32823103 · odds 6.5/2.38</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>10. <b>Jazz Forever(IRE)</b><br><span style="color:#998">Nina Doherty · Paul W. Flynn, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 5%</span> <span style="color:#7dd3a8;font-weight:bold">place 16%</span><br><span style="color:#998">form 83000020 · odds 15.0/4.5</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>11. <b>Keep It Together(IRE)</b><br><span style="color:#998">Jessica OGorman · D. Buckley, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 1%</span> <span style="color:#7dd3a8;font-weight:bold">place 4%</span><br><span style="color:#998">form 0-0668 · odds 67.0/17.5</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>12. <b>Roderick</b><br><span style="color:#998">Camillus Byrne · P. Sweeney, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 2%</span> <span style="color:#7dd3a8;font-weight:bold">place 7%</span><br><span style="color:#998">form 07-704276 · odds 34.0/9.25</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>13. <b>Chant Dor(IRE)</b><br><span style="color:#998">Conor Cusack · Daniel McLoughlin, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 14%</span> <span style="color:#7dd3a8;font-weight:bold">place 39%</span><br><span style="color:#998">form 000-705 · odds 5.5/2.12</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>14. <b>Duleek Street(IRE)</b><br><span style="color:#998">Nicola Burns · John Mcconnell, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 3%</span> <span style="color:#7dd3a8;font-weight:bold">place 11%</span><br><span style="color:#998">form 9/77-0 · odds 23.0/6.5</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>2. <b>Expound</b><br><span style="color:#998">M. T. Sheridan · Denis Hogan, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 5%</span> <span style="color:#7dd3a8;font-weight:bold">place 15%</span><br><span style="color:#998">form 40474807 · odds 15.0/4.5</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>3. <b>Young Churchill(IRE)</b><br><span style="color:#998">S. Coen · Richard John OBrien, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 7%</span> <span style="color:#7dd3a8;font-weight:bold">place 23%</span><br><span style="color:#998">form 70-703706 · odds 10.0/3.25</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>4. <b>Magna Gee Gee(IRE)</b><br><span style="color:#998">R. Donaghue-Leahy · Patrick J. Flynn, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 9%</span> <span style="color:#7dd3a8;font-weight:bold">place 27%</span><br><span style="color:#998">form 07086310 · odds 8.0/2.75</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>5. <b>Deluca Chop(FR)</b><br><span style="color:#998">J. S. Dalton · S. M. Duffy, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 13%</span> <span style="color:#7dd3a8;font-weight:bold">place 36%</span><br><span style="color:#998">form 33211532 · odds 6.0/2.25</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>6. <b>In The Minus(IRE)</b><br><span style="color:#998">Sadhbh Tormey · Brian Francis Cawley, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 11%</span> <span style="color:#7dd3a8;font-weight:bold">place 33%</span><br><span style="color:#998">form 961280-50 · odds 7.0/2.5</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>7. <b>Coilins Girl(IRE)</b><br><span style="color:#998">P. McGettigan · John Patrick Murtagh, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 4%</span> <span style="color:#7dd3a8;font-weight:bold">place 12%</span><br><span style="color:#998">form 9769 · odds 21.0/6.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>8. <b>Chopsticks(IRE)</b><br><span style="color:#998">R. P. Fagan · S. M. Duffy, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 5%</span> <span style="color:#7dd3a8;font-weight:bold">place 15%</span><br><span style="color:#998">form 0-3409088 · odds 17.0/5.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>9. <b>Doctor Grace(IRE)</b><br><span style="color:#998">C. N. Rowan · Adrian Mcguinness, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 9%</span> <span style="color:#7dd3a8;font-weight:bold">place 27%</span><br><span style="color:#998">form U0003904 · odds 8.0/2.75</span></div>
+</div>
+</div><div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
+  <div style="font-size:11px;color:#998;margin-bottom:4px">Dundalk 19:30 · Standard · 1m2f · E/W 4, top 3</div>
+  <div style="font-size:15px;font-weight:bold;margin-bottom:10px">BAR 1 BETTING PROUD SUPPORTER OF IRISH RACING MAIDEN</div>
+  <div style="background:#0f1a12;border:1px solid #2a4a34;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#7dd3a8;font-weight:bold">🏁 Projected order </span><span style="color:#998">(by win %, before the race)</span><br>
+  <b>1.</b> Sangreal(IRE) (51%) &nbsp;·&nbsp; <b>2.</b> Kashala(IRE) (19%) &nbsp;·&nbsp; <b>3.</b> Theorist(IRE) (9%) &nbsp;·&nbsp; <b>4.</b> Honouramongthieves (6%)
+</div>
+  <div style="background:#1f180f;border:1px dashed #4a3a20;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#ff9a2e;font-weight:bold">🧪 Form-adjusted order </span><span style="color:#998">(experimental — 70% market / 30% form, unvalidated)</span><br>
+  <b>1.</b> Sangreal(IRE) &nbsp;·&nbsp; <b>2.</b> Kashala(IRE) &nbsp;·&nbsp; <b>3.</b> Theorist(IRE) &nbsp;·&nbsp; <b>4.</b> Honouramongthieves
+</div>
+  <div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>1. <b>Honouramongthieves</b><br><span style="color:#998">R. P. Cleary · C. W. J. Farrell, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 6%</span> <span style="color:#7dd3a8;font-weight:bold">place 29%</span><br><span style="color:#998">form 62-566769 · odds 13.0/4.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>10. <b>Sangreal(IRE)</b><br><span style="color:#998">Declan Mcdonogh · Joseph Patrick OBrien, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 51%</span> <span style="color:#7dd3a8;font-weight:bold">place 93%</span><br><span style="color:#998">form 23342 · odds 1.62/1.16</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>2. <b>Jeffnjoe(IRE)</b><br><span style="color:#998">L. F. Roche · Patrick J. Flynn, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 3%</span> <span style="color:#7dd3a8;font-weight:bold">place 16%</span><br><span style="color:#998">form - · odds 26.0/7.25</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>3. <b>Michinaga(IRE)</b><br><span style="color:#998">Ben Martin Coen · Charles Weld, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 4%</span> <span style="color:#7dd3a8;font-weight:bold">place 18%</span><br><span style="color:#998">form 9690 · odds 21.0/6.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>4. <b>Nthea Spirit(IRE)</b><br><span style="color:#998">G. M. Ryan · Tracey Collins, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 1%</span> <span style="color:#7dd3a8;font-weight:bold">place 5%</span><br><span style="color:#998">form 00 · odds 81.0/21.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>5. <b>Theorist(IRE)</b><br><span style="color:#998">Ross Coakley · D. P. Coakley, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 9%</span> <span style="color:#7dd3a8;font-weight:bold">place 40%</span><br><span style="color:#998">form 53-900 · odds 9.0/3.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>6. <b>Winter Adventure(IRE)</b><br><span style="color:#998">C. T. Keane · Noel Meade, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 6%</span> <span style="color:#7dd3a8;font-weight:bold">place 29%</span><br><span style="color:#998">form 0 · odds 13.0/4.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>7. <b>Anaverna(IRE)</b><br><span style="color:#998">R. C. Colgan · M. M. Rice, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 1%</span> <span style="color:#7dd3a8;font-weight:bold">place 5%</span><br><span style="color:#998">form 000 · odds 101.0/26.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>9. <b>Kashala(IRE)</b><br><span style="color:#998">C. D. Hayes · D. K. Weld, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 19%</span> <span style="color:#7dd3a8;font-weight:bold">place 67%</span><br><span style="color:#998">form 45 · odds 4.5/1.88</span></div>
+</div>
+</div><div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
+  <div style="font-size:11px;color:#998;margin-bottom:4px">Dundalk 20:00 · Standard · 1m2f · E/W 4, top 3</div>
+  <div style="font-size:15px;font-weight:bold;margin-bottom:10px">BAR 1 BETTING BEST ODDS GUARANTEED OVERNIGHT HANDICAP</div>
+  <div style="background:#0f1a12;border:1px solid #2a4a34;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#7dd3a8;font-weight:bold">🏁 Projected order </span><span style="color:#998">(by win %, before the race)</span><br>
+  <b>1.</b> Serenity Blue (22%) &nbsp;·&nbsp; <b>2.</b> Star Harbour(IRE) (18%) &nbsp;·&nbsp; <b>3.</b> Unterberg(IRE) (9%) &nbsp;·&nbsp; <b>4.</b> Sonoran(IRE) (9%)
+</div>
+  <div style="background:#1f180f;border:1px dashed #4a3a20;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#ff9a2e;font-weight:bold">🧪 Form-adjusted order </span><span style="color:#998">(experimental — 70% market / 30% form, unvalidated)</span><br>
+  <b>1.</b> Serenity Blue &nbsp;·&nbsp; <b>2.</b> Star Harbour(IRE) &nbsp;·&nbsp; <b>3.</b> Sonoran(IRE) &nbsp;·&nbsp; <b>4.</b> Xirivella(IRE)
+</div>
+  <div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>1. <b>Spicy Margarita(IRE)</b><br><span style="color:#998">D. W. OConnor · Robson De Aguiar, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 5%</span> <span style="color:#7dd3a8;font-weight:bold">place 15%</span><br><span style="color:#998">form 84870974 · odds 17.0/5.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>10. <b>Anvika(IRE)</b><br><span style="color:#998">R. C. Colgan · Ms Sheila Lavery, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 6%</span> <span style="color:#7dd3a8;font-weight:bold">place 20%</span><br><span style="color:#998">form 0336501U · odds 13.0/4.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>11. <b>Brewing</b><br><span style="color:#998">W. M. Lordan · Kevin Thomas Coleman, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 4%</span> <span style="color:#7dd3a8;font-weight:bold">place 14%</span><br><span style="color:#998">form 52230940 · odds 21.0/6.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>2. <b>Star Harbour(IRE)</b><br><span style="color:#998">Declan Mcdonogh · Adrian Mcguinness, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 18%</span> <span style="color:#7dd3a8;font-weight:bold">place 49%</span><br><span style="color:#998">form 42552200 · odds 4.5/1.88</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>3. <b>Serenity Blue</b><br><span style="color:#998">Adam Caffrey · Adrian Mcguinness, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 22%</span> <span style="color:#7dd3a8;font-weight:bold">place 56%</span><br><span style="color:#998">form 9-3004414 · odds 3.75/1.69</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>4. <b>Unterberg(IRE)</b><br><span style="color:#998">Ben Martin Coen · Laura Hourigan, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 9%</span> <span style="color:#7dd3a8;font-weight:bold">place 28%</span><br><span style="color:#998">form 08809486 · odds 9.0/3.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>5. <b>Diamond Exchange(IRE)</b><br><span style="color:#998">Nina Doherty · Mrs J. Harrington, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 7%</span> <span style="color:#7dd3a8;font-weight:bold">place 24%</span><br><span style="color:#998">form 18751840 · odds 11.0/3.5</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>6. <b>El Galvino</b><br><span style="color:#998">William James Lee · Andrew Lee, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 6%</span> <span style="color:#7dd3a8;font-weight:bold">place 21%</span><br><span style="color:#998">form 6932-71 · odds 13.0/4.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>7. <b>Sonoran(IRE)</b><br><span style="color:#998">C. D. Hayes · Denis Hogan, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 9%</span> <span style="color:#7dd3a8;font-weight:bold">place 27%</span><br><span style="color:#998">form 36995101 · odds 9.5/3.12</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>8. <b>Letiza(IRE)</b><br><span style="color:#998">J. S. Dalton · A. Slattery, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 7%</span> <span style="color:#7dd3a8;font-weight:bold">place 22%</span><br><span style="color:#998">form 860-24416 · odds 12.0/3.75</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>9. <b>Xirivella(IRE)</b><br><span style="color:#998">C. T. Keane · Noel Meade, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 7%</span> <span style="color:#7dd3a8;font-weight:bold">place 24%</span><br><span style="color:#998">form 633521 · odds 11.0/3.5</span></div>
+</div>
+</div><div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
+  <div style="font-size:11px;color:#998;margin-bottom:4px">Dundalk 20:30 · Standard · 1m2f · E/W 4, top 3</div>
+  <div style="font-size:15px;font-weight:bold;margin-bottom:10px">NOW RACING EVERY WEDNESDAY AT DUNDALK HANDICAP</div>
+  <div style="background:#0f1a12;border:1px solid #2a4a34;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#7dd3a8;font-weight:bold">🏁 Projected order </span><span style="color:#998">(by win %, before the race)</span><br>
+  <b>1.</b> Chloes Boy(IRE) (24%) &nbsp;·&nbsp; <b>2.</b> Love Orchid(IRE) (21%) &nbsp;·&nbsp; <b>3.</b> Glitter And Glory(IRE) (20%) &nbsp;·&nbsp; <b>4.</b> Phlox(IRE) (13%)
+</div>
+  <div style="background:#1f180f;border:1px dashed #4a3a20;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#ff9a2e;font-weight:bold">🧪 Form-adjusted order </span><span style="color:#998">(experimental — 70% market / 30% form, unvalidated)</span><br>
+  <b>1.</b> Chloes Boy(IRE) &nbsp;·&nbsp; <b>2.</b> Love Orchid(IRE) &nbsp;·&nbsp; <b>3.</b> Glitter And Glory(IRE) &nbsp;·&nbsp; <b>4.</b> Phlox(IRE)
+</div>
+  <div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>10. <b>Glamazon(IRE)</b><br><span style="color:#998">L. T. McAteer · Paul W. Flynn, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 4%</span> <span style="color:#7dd3a8;font-weight:bold">place 13%</span><br><span style="color:#998">form 84930360 · odds 23.0/6.5</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>11. <b>Mothel Abbey(IRE)</b><br><span style="color:#998">R. Donaghue-Leahy · Patrick J. Flynn, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 4%</span> <span style="color:#7dd3a8;font-weight:bold">place 14%</span><br><span style="color:#998">form 8099 · odds 21.0/6.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>12. <b>Chloes Boy(IRE)</b><br><span style="color:#998">Siobhan Rutledge · Harry Rogers, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 24%</span> <span style="color:#7dd3a8;font-weight:bold">place 64%</span><br><span style="color:#998">form 00918503 · odds 3.25/1.56</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>13. <b>Quinchy Lady(IRE)</b><br><span style="color:#998">N. M. Crosse · John Mcconnell, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 2%</span> <span style="color:#7dd3a8;font-weight:bold">place 8%</span><br><span style="color:#998">form 00700 · odds 41.0/11.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>14. <b>Sarfarcat(IRE)</b><br><span style="color:#998">R. P. Cleary · Thomas Coyle, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 1%</span> <span style="color:#7dd3a8;font-weight:bold">place 3%</span><br><span style="color:#998">form 0-060080 · odds 101.0/26.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>2. <b>Cherry Hill Girl(IRE)</b><br><span style="color:#998">S. Coen · A. Slattery, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 10%</span> <span style="color:#7dd3a8;font-weight:bold">place 35%</span><br><span style="color:#998">form 3-7743700 · odds 8.0/2.75</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>3. <b>Glitter And Glory(IRE)</b><br><span style="color:#998">P. McGettigan · Mrs J. Harrington, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 20%</span> <span style="color:#7dd3a8;font-weight:bold">place 58%</span><br><span style="color:#998">form 52357793 · odds 4.0/1.75</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>4. <b>Phlox(IRE)</b><br><span style="color:#998">Ben Martin Coen · John Patrick Murtagh, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 13%</span> <span style="color:#7dd3a8;font-weight:bold">place 43%</span><br><span style="color:#998">form 564 · odds 6.5/2.38</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>6. <b>Love Orchid(IRE)</b><br><span style="color:#998">C. T. Keane · Noel Meade, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 21%</span> <span style="color:#7dd3a8;font-weight:bold">place 60%</span><br><span style="color:#998">form 64023629 · odds 3.75/1.69</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>8. <b>Montevetro(IRE)</b><br><span style="color:#998">L. F. Roche · Denis Hogan, Ireland</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 1%</span> <span style="color:#7dd3a8;font-weight:bold">place 3%</span><br><span style="color:#998">form 239080 · odds 101.0/26.0</span></div>
+</div>
+</div><div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
+  <div style="font-size:11px;color:#998;margin-bottom:4px">Sedgefield 15:40 · Good · 2m5f · win only (< 5 runners)</div>
+  <div style="font-size:15px;font-weight:bold;margin-bottom:10px">CATERTECH NORTH EAST LTD MARES HANDICAP HURDLE (5)</div>
+  <div style="background:#0f1a12;border:1px solid #2a4a34;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#7dd3a8;font-weight:bold">🏁 Projected order </span><span style="color:#998">(by win %, before the race)</span><br>
+  <b>1.</b> Leave Her To Me (40%) &nbsp;·&nbsp; <b>2.</b> Stellarmasterpiece(FR) (40%) &nbsp;·&nbsp; <b>3.</b> Eremenko (14%) &nbsp;·&nbsp; <b>4.</b> Strathcatcha (6%)
+</div>
+  <div style="background:#1f180f;border:1px dashed #4a3a20;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#ff9a2e;font-weight:bold">🧪 Form-adjusted order </span><span style="color:#998">(experimental — 70% market / 30% form, unvalidated)</span><br>
+  <b>1.</b> Stellarmasterpiece(FR) &nbsp;·&nbsp; <b>2.</b> Leave Her To Me &nbsp;·&nbsp; <b>3.</b> Eremenko &nbsp;·&nbsp; <b>4.</b> Strathcatcha
+</div>
+  <div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>1. <b>Eremenko</b><br><span style="color:#998">Theo Gillard · Donald Mccain</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 14%</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 9421P-4F5 · odds 7.0/-</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>2. <b>Leave Her To Me</b><br><span style="color:#998">Kielan Woods · David Killahena &amp; Graeme McPherson</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 40%</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 1/159P-627 · odds 2.62/-</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>3. <b>Stellarmasterpiece(FR)</b><br><span style="color:#998">Joshua Thompson · Micky Hammond &amp; Becky Smith</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 40%</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 355-11124 · odds 2.38/-</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>6. <b>Strathcatcha</b><br><span style="color:#998">Dominic Hislop · Gary Rutherford</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 6%</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 7777PP2- · odds 17.0/-</span></div>
+</div>
+</div><div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
+  <div style="font-size:11px;color:#998;margin-bottom:4px">Southwell 15:50 · Good (Good to Soft in places) · 3m · E/W 4, top 2</div>
+  <div style="font-size:15px;font-weight:bold;margin-bottom:10px">CELEBRATE WITH SPONSORSHIP AT SOUTHWELL RACECOURSE CONDITIONAL JOCKEYS HANDICAP HURDLE (5)</div>
+  <div style="background:#0f1a12;border:1px solid #2a4a34;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#7dd3a8;font-weight:bold">🏁 Projected order </span><span style="color:#998">(by win %, before the race)</span><br>
+  <b>1.</b> Keep On Cobbling (25%) &nbsp;·&nbsp; <b>2.</b> The Clonmel Kid(IRE) (19%) &nbsp;·&nbsp; <b>3.</b> Iamcelestialgift(FR) (18%) &nbsp;·&nbsp; <b>4.</b> Crafty Gael(IRE) (17%)
+</div>
+  <div style="background:#1f180f;border:1px dashed #4a3a20;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#ff9a2e;font-weight:bold">🧪 Form-adjusted order </span><span style="color:#998">(experimental — 70% market / 30% form, unvalidated)</span><br>
+  <b>1.</b> Keep On Cobbling &nbsp;·&nbsp; <b>2.</b> Crafty Gael(IRE) &nbsp;·&nbsp; <b>3.</b> The Clonmel Kid(IRE) &nbsp;·&nbsp; <b>4.</b> Iamcelestialgift(FR)
+</div>
+  <div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>1. <b>Muskerry Rock(IRE)</b><br><span style="color:#998">James Murray · Mickey Bowen</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 13%</span> <span style="color:#7dd3a8;font-weight:bold">place 26%</span><br><span style="color:#998">form 1221P354 · odds 7.5/2.62</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>2. <b>Keep On Cobbling</b><br><span style="color:#998">Will Featherstone · Henry Daly</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 25%</span> <span style="color:#7dd3a8;font-weight:bold">place 47%</span><br><span style="color:#998">form F21/1632-3 · odds 3.75/1.69</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>3. <b>Crafty Gael(IRE)</b><br><span style="color:#998">Alice Stevens · Lizzie Quinlan</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 17%</span> <span style="color:#7dd3a8;font-weight:bold">place 34%</span><br><span style="color:#998">form 008-32112 · odds 5.5/2.12</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>4. <b>The Clonmel Kid(IRE)</b><br><span style="color:#998">Beau Morgan · Philip Kirby</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 19%</span> <span style="color:#7dd3a8;font-weight:bold">place 38%</span><br><span style="color:#998">form 41-336742 · odds 5.0/2.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>5. <b>Luminaries(IRE)</b><br><span style="color:#998">Ellis Collier · Ewan Whillans</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 9%</span> <span style="color:#7dd3a8;font-weight:bold">place 19%</span><br><span style="color:#998">form 07721122 · odds 10.0/3.25</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>6. <b>Iamcelestialgift(FR)</b><br><span style="color:#998">Nick Slatter · David Killahena &amp; Graeme McPherson</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 18%</span> <span style="color:#7dd3a8;font-weight:bold">place 36%</span><br><span style="color:#998">form 1/40P-6969 · odds 5.5/2.12</span></div>
+</div>
+</div>
 <div style="font-size:11px;color:#998;text-align:center;margin-top:20px;line-height:1.6">
   Official Rating, owner, sire, and dam weren't available for any race checked so far -- possibly a
   free-tier limit, possibly normal for early-season juvenile races. Market Consensus is real,
