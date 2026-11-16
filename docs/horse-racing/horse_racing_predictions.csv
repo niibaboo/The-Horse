@@ -1,27 +1,58 @@
 Date,Course,Race,Horse,Number,Jockey,Trainer,Form,FormScore,FormRank,MarketProb,MarketRank,BestOdds,PlaceProb,PlaceOdds,PlaceCount,PlaceFraction
-2026-11-15 15:45:00,Cheltenham,THREE COUNTIES CHRISTMAS OPEN NATIONAL HUNT FLAT (William Kidd) (Listed) (1),New Grange(IRE),9,Harry Cobden,"Thomas Cooper, Ireland",1,1.0,1,0.338,1,2.5,0.7784,1.3,3,0.2
-2026-11-15 15:45:00,Cheltenham,THREE COUNTIES CHRISTMAS OPEN NATIONAL HUNT FLAT (William Kidd) (Listed) (1),Cameron De Fiacre(FR),2,Gavin Sheehan,Jamie Snowden,1,1.0,2,0.2086,2,4.0,0.6121,1.6,3,0.2
-2026-11-15 15:45:00,Cheltenham,THREE COUNTIES CHRISTMAS OPEN NATIONAL HUNT FLAT (William Kidd) (Listed) (1),Berkstar(IRE),1,Mr P. W. Mullins,"W. P. Mullins, Ireland",1,1.0,3,0.131,3,6.5,0.44,2.1,3,0.2
-2026-11-15 15:45:00,Cheltenham,THREE COUNTIES CHRISTMAS OPEN NATIONAL HUNT FLAT (William Kidd) (Listed) (1),Dundee Law,3,Harry Skelton,Dan Skelton,32-1,0.67,6,0.1192,4,7.0,0.4075,2.2,3,0.2
-2026-11-15 15:45:00,Cheltenham,THREE COUNTIES CHRISTMAS OPEN NATIONAL HUNT FLAT (William Kidd) (Listed) (1),Par Avion,10,Bryan Carver,Harry Fry,42-1,0.6491,7,0.0759,5,11.0,0.2753,3.0,3,0.2
-2026-11-15 15:45:00,Cheltenham,THREE COUNTIES CHRISTMAS OPEN NATIONAL HUNT FLAT (William Kidd) (Listed) (1),Lord Churchill(IRE),7,Ben Jones,Nick Scholfield,1-2,0.7174,5,0.0439,6,19.0,0.1655,4.6,3,0.2
-2026-11-15 15:45:00,Cheltenham,THREE COUNTIES CHRISTMAS OPEN NATIONAL HUNT FLAT (William Kidd) (Listed) (1),Groovy Train,4,Sean Bowen,Richard Spencer,,,,0.0296,7,29.0,0.1134,6.6,3,0.2
-2026-11-15 15:45:00,Cheltenham,THREE COUNTIES CHRISTMAS OPEN NATIONAL HUNT FLAT (William Kidd) (Listed) (1),Junior Minister(IRE),6,Jonathan England,Sam England,1,1.0,4,0.0264,8,34.0,0.1015,7.6,3,0.2
-2026-11-15 15:45:00,Cheltenham,THREE COUNTIES CHRISTMAS OPEN NATIONAL HUNT FLAT (William Kidd) (Listed) (1),Willow Tide(IRE),13,Kielan Woods,Fergal OBrien,6,0.1667,9,0.0204,9,51.0,0.0789,11.0,3,0.2
-2026-11-15 15:45:00,Cheltenham,THREE COUNTIES CHRISTMAS OPEN NATIONAL HUNT FLAT (William Kidd) (Listed) (1),Hoos The Jet,5,Jonathan Burke,Syd Hosie,4,0.25,8,0.007,10,126.0,0.0275,26.0,3,0.2
-2026-11-15 15:25:00,Fontwell Park,MARIA S AND AIDIE S 25th WEDDING ANNIVERSARY NOVICES LIMITED HANDICAP HURDLE (5),Asta La Vista,1,Joe Anderson,Tom Britten,44835-2,0.3094,3,0.3154,1,2.87,0.7709,1.37,3,0.2
-2026-11-15 15:25:00,Fontwell Park,MARIA S AND AIDIE S 25th WEDDING ANNIVERSARY NOVICES LIMITED HANDICAP HURDLE (5),County Champs(IRE),3,Freddie Gordon,Chris Gordon,2822-PF22,0.3476,1,0.2641,2,3.25,0.7128,1.45,3,0.2
-2026-11-15 15:25:00,Fontwell Park,MARIA S AND AIDIE S 25th WEDDING ANNIVERSARY NOVICES LIMITED HANDICAP HURDLE (5),Black Dakota(IRE),2,Robbie David,Daisy Hitchins,546435,0.2391,5,0.139,3,6.5,0.4739,2.1,3,0.2
-2026-11-15 15:25:00,Fontwell Park,MARIA S AND AIDIE S 25th WEDDING ANNIVERSARY NOVICES LIMITED HANDICAP HURDLE (5),Ami Bondhu(FR),4,Tabitha Worsley,Nick Gifford,8342/0333-,0.3129,2,0.1101,4,8.0,0.3917,2.4,3,0.2
-2026-11-15 15:25:00,Fontwell Park,MARIA S AND AIDIE S 25th WEDDING ANNIVERSARY NOVICES LIMITED HANDICAP HURDLE (5),Hawa Jumeirah,6,Paul OBrien,Helen Nelmes,5-5833643,0.2696,4,0.0728,5,12.0,0.272,3.2,3,0.2
-2026-11-15 15:25:00,Fontwell Park,MARIA S AND AIDIE S 25th WEDDING ANNIVERSARY NOVICES LIMITED HANDICAP HURDLE (5),Vendant(IRE),7,Tom Cannon,Richard Rowe,524P/2F-,0.2117,6,0.066,6,13.0,0.2487,3.4,3,0.2
-2026-11-15 15:25:00,Fontwell Park,MARIA S AND AIDIE S 25th WEDDING ANNIVERSARY NOVICES LIMITED HANDICAP HURDLE (5),Lily Grace,9,Ned Fox,Venetia Williams,0550-,0.1483,7,0.0235,7,41.0,0.0929,9.0,3,0.2
-2026-11-15 15:25:00,Fontwell Park,MARIA S AND AIDIE S 25th WEDDING ANNIVERSARY NOVICES LIMITED HANDICAP HURDLE (5),Always Force It(IRE),10,Ben Godfrey,Harriet Brown,7P967/,0.1222,8,0.0089,8,101.0,0.0357,21.0,3,0.2
-2026-11-15 15:35:00,Navan,COOLMORE N.H. SIRES HURRICANE LANE IRISH EBF MARES I.N.H. FLAT (Listed),Sarahs Lawn(IRE),1,Mr D. L. Queally,"Declan Queally, Ireland",11,1.0,1,0.3848,1,2.2,0.886,1.24,3,0.2
-2026-11-15 15:35:00,Navan,COOLMORE N.H. SIRES HURRICANE LANE IRISH EBF MARES I.N.H. FLAT (Listed),All Noise(IRE),2,Mr H. C. Swan,"Mrs J. Harrington, Ireland",1,1.0,2,0.2774,2,3.0,0.81,1.4,3,0.2
-2026-11-15 15:35:00,Navan,COOLMORE N.H. SIRES HURRICANE LANE IRISH EBF MARES I.N.H. FLAT (Listed),Brosna Shine,5,Mr P. A. King,"S. G. Carey, Ireland",315-,0.4941,3,0.2097,3,4.0,0.725,1.6,3,0.2
-2026-11-15 15:35:00,Navan,COOLMORE N.H. SIRES HURRICANE LANE IRISH EBF MARES I.N.H. FLAT (Listed),Shuil Solas(IRE),8,Mr J. L. Gleeson,"John E. &amp; Thomas Kiely, Ireland",5922,0.3698,4,0.0526,4,17.0,0.2331,4.2,3,0.2
-2026-11-15 15:35:00,Navan,COOLMORE N.H. SIRES HURRICANE LANE IRISH EBF MARES I.N.H. FLAT (Listed),Eillis(IRE),6,Mr N. Mcparlan,"Stuart Crawford, Ireland",4,0.25,5,0.0283,5,29.0,0.1288,6.6,3,0.2
-2026-11-15 15:35:00,Navan,COOLMORE N.H. SIRES HURRICANE LANE IRISH EBF MARES I.N.H. FLAT (Listed),Inner Bloom(IRE),7,Mr Finian Maguire,"M. P. Fogarty, Ireland",,,,0.0241,6,41.0,0.1101,9.0,3,0.2
-2026-11-15 15:35:00,Navan,COOLMORE N.H. SIRES HURRICANE LANE IRISH EBF MARES I.N.H. FLAT (Listed),The Lodge Lane(IRE),10,Mr J. Dunne,"Peter Lawlor, Ireland",30,0.2014,6,0.0123,7,67.0,0.0569,14.2,3,0.2
-2026-11-15 15:35:00,Navan,COOLMORE N.H. SIRES HURRICANE LANE IRISH EBF MARES I.N.H. FLAT (Listed),Silver Song,9,Mr B. M. Coonan,"Derek OConnor, Ireland",7,0.1429,7,0.0108,8,81.0,0.05,17.0,3,0.2
+2026-11-16 18:30:00,Wolverhampton,MIDNITE AIN T YOUR GRANDAD S BOOKIE HANDICAP (Rider Restricted) (3),Knebworth,2,Donagh Murphy,Richard Hughes,11200340,0.2051,11,0.1634,2,5.0,0.4621,2.0,3,0.25
+2026-11-16 18:30:00,Wolverhampton,MIDNITE AIN T YOUR GRANDAD S BOOKIE HANDICAP (Rider Restricted) (3),Tan Rapido,9,M. P. Sheehy,Charlie Fellowes,775-78812,0.4378,4,0.1703,1,5.0,0.4766,2.0,3,0.25
+2026-11-16 18:30:00,Wolverhampton,MIDNITE AIN T YOUR GRANDAD S BOOKIE HANDICAP (Rider Restricted) (3),Rhythm N Hooves,4,Barry Mchugh,Robert Cowell,03881821,0.5796,1,0.1606,3,5.5,0.4561,2.12,3,0.25
+2026-11-16 18:30:00,Wolverhampton,MIDNITE AIN T YOUR GRANDAD S BOOKIE HANDICAP (Rider Restricted) (3),Atomic Force(IRE),1,Ryan Sexton,Edward Bethell,3-7110320,0.392,5,0.1219,4,7.0,0.3659,2.5,3,0.25
+2026-11-16 18:30:00,Wolverhampton,MIDNITE AIN T YOUR GRANDAD S BOOKIE HANDICAP (Rider Restricted) (3),Almaty Star(IRE),10,Connor Planas,Robert Cowell,21083024,0.2667,8,0.0898,5,9.5,0.2812,3.12,3,0.25
+2026-11-16 18:30:00,Wolverhampton,MIDNITE AIN T YOUR GRANDAD S BOOKIE HANDICAP (Rider Restricted) (3),Law Of Average,3,Joey Haynes,Chelsea Banham,79-113143,0.5497,3,0.0851,6,10.0,0.2681,3.25,3,0.25
+2026-11-16 18:30:00,Wolverhampton,MIDNITE AIN T YOUR GRANDAD S BOOKIE HANDICAP (Rider Restricted) (3),El Bufalo,11,Zoe Lewis,Thomas Faulkner,1-1256293,0.2897,7,0.0577,7,15.0,0.1879,4.5,3,0.25
+2026-11-16 18:30:00,Wolverhampton,MIDNITE AIN T YOUR GRANDAD S BOOKIE HANDICAP (Rider Restricted) (3),Rosenpur(GER),8,Liam Wright,Jennie Candlish,61564916,0.3573,6,0.0493,8,17.0,0.1621,5.0,3,0.25
+2026-11-16 18:30:00,Wolverhampton,MIDNITE AIN T YOUR GRANDAD S BOOKIE HANDICAP (Rider Restricted) (3),Fiorella Princess(IRE),5,Jack Dace,Robert Cowell,32621451,0.5754,2,0.0449,9,19.0,0.1484,5.5,3,0.25
+2026-11-16 18:30:00,Wolverhampton,MIDNITE AIN T YOUR GRANDAD S BOOKIE HANDICAP (Rider Restricted) (3),Betsen,7,Myla Coppins,Tony Carroll,09185398,0.2363,9,0.033,10,26.0,0.1105,7.25,3,0.25
+2026-11-16 18:30:00,Wolverhampton,MIDNITE AIN T YOUR GRANDAD S BOOKIE HANDICAP (Rider Restricted) (3),Alligator Alley,6,William Pyle,Ruth Carr,1113-6980,0.2107,10,0.024,11,34.0,0.0811,9.25,3,0.25
+2026-11-16 19:00:00,Wolverhampton,AW TRIALS DAY - LINGFIELD 2nd JAN 2027 HANDICAP (Rider Restricted) (5),Newsreader(IRE),6,Myla Coppins,Tony Carroll,6-6064552,0.2827,5,0.2015,1,4.33,0.5569,1.83,3,0.25
+2026-11-16 19:00:00,Wolverhampton,AW TRIALS DAY - LINGFIELD 2nd JAN 2027 HANDICAP (Rider Restricted) (5),Intervention,4,M. P. Sheehy,Michael Appleby,87703012,0.4522,2,0.1952,2,4.33,0.5451,1.83,3,0.25
+2026-11-16 19:00:00,Wolverhampton,AW TRIALS DAY - LINGFIELD 2nd JAN 2027 HANDICAP (Rider Restricted) (5),Split Elevens,3,Kieren Fox,John Butler,12412222,0.5314,1,0.1673,3,5.0,0.4884,2.0,3,0.25
+2026-11-16 19:00:00,Wolverhampton,AW TRIALS DAY - LINGFIELD 2nd JAN 2027 HANDICAP (Rider Restricted) (5),Valentine Boy,5,Jack Dace,Luke Dace,31484653,0.236,7,0.139,4,6.0,0.4235,2.25,3,0.25
+2026-11-16 19:00:00,Wolverhampton,AW TRIALS DAY - LINGFIELD 2nd JAN 2027 HANDICAP (Rider Restricted) (5),Queue Dos,1,Alexandra Egan,J. S. Moore,1-4738555,0.1992,8,0.1226,5,7.0,0.3824,2.5,3,0.25
+2026-11-16 19:00:00,Wolverhampton,AW TRIALS DAY - LINGFIELD 2nd JAN 2027 HANDICAP (Rider Restricted) (5),Lessay(IRE),11,Rhys Clutterbuck,Patrick Morris,50726148,0.3488,3,0.0562,6,15.0,0.1908,4.5,3,0.25
+2026-11-16 19:00:00,Wolverhampton,AW TRIALS DAY - LINGFIELD 2nd JAN 2027 HANDICAP (Rider Restricted) (5),Mumayaz(IRE),2,Stevie Donohoe,Tony Carroll,43567510,0.339,4,0.039,7,21.0,0.135,6.0,3,0.25
+2026-11-16 19:00:00,Wolverhampton,AW TRIALS DAY - LINGFIELD 2nd JAN 2027 HANDICAP (Rider Restricted) (5),Giorgio M(IRE),9,Jonny Peate,Mark Loughnane,37647779,0.1464,11,0.037,8,23.0,0.1284,6.5,3,0.25
+2026-11-16 19:00:00,Wolverhampton,AW TRIALS DAY - LINGFIELD 2nd JAN 2027 HANDICAP (Rider Restricted) (5),Assessment,8,Liam Wright,Des Donovan,89700209/,0.1755,10,0.0161,9,51.0,0.0571,13.5,3,0.25
+2026-11-16 19:00:00,Wolverhampton,AW TRIALS DAY - LINGFIELD 2nd JAN 2027 HANDICAP (Rider Restricted) (5),Royal Jet,10,Molly Gunn,Tony Carroll,11261790,0.2673,6,0.0161,10,51.0,0.0571,13.5,3,0.25
+2026-11-16 19:00:00,Wolverhampton,AW TRIALS DAY - LINGFIELD 2nd JAN 2027 HANDICAP (Rider Restricted) (5),Receipt,7,Dougie Costello,Tom Ellis,83109800,0.1763,9,0.0101,11,81.0,0.0361,21.0,3,0.25
+2026-11-16 19:30:00,Wolverhampton,ARC ALL WEATHER BONUS IS BACK HANDICAP (Rider Restricted) (5),R P Mcmurphy,1,Jack Dace,Michael Appleby,80341281,0.5893,2,0.1647,1,5.0,0.4506,2.0,3,0.25
+2026-11-16 19:30:00,Wolverhampton,ARC ALL WEATHER BONUS IS BACK HANDICAP (Rider Restricted) (5),Captain Parma(IRE),4,Christian Howarth,James Owen,13900590,0.1206,12,0.1237,2,7.0,0.3587,2.5,3,0.25
+2026-11-16 19:30:00,Wolverhampton,ARC ALL WEATHER BONUS IS BACK HANDICAP (Rider Restricted) (5),Susie Sioux,3,Stevie Donohoe,John Mackie,527251-6,0.4269,4,0.1066,3,8.0,0.3163,2.75,3,0.25
+2026-11-16 19:30:00,Wolverhampton,ARC ALL WEATHER BONUS IS BACK HANDICAP (Rider Restricted) (5),Criminal Shore(IRE),7,Rhys Clutterbuck,David OMeara,60635703,0.2176,8,0.091,4,9.0,0.2754,3.0,3,0.25
+2026-11-16 19:30:00,Wolverhampton,ARC ALL WEATHER BONUS IS BACK HANDICAP (Rider Restricted) (5),West Byfleet,11,George Bass,Jack Channon,024560,0.1928,10,0.0832,5,10.0,0.2543,3.25,3,0.25
+2026-11-16 19:30:00,Wolverhampton,ARC ALL WEATHER BONUS IS BACK HANDICAP (Rider Restricted) (5),Yehudi(IRE),9,Hope Regan,Mark Loughnane,52546131,0.6012,1,0.0832,6,10.0,0.2543,3.25,3,0.25
+2026-11-16 19:30:00,Wolverhampton,ARC ALL WEATHER BONUS IS BACK HANDICAP (Rider Restricted) (5),Jojos Legacy(IRE),12,M. P. Sheehy,Adrian Keatley,634-8655,0.1999,9,0.0799,7,10.0,0.2452,3.25,3,0.25
+2026-11-16 19:30:00,Wolverhampton,ARC ALL WEATHER BONUS IS BACK HANDICAP (Rider Restricted) (5),Danehill Star(IRE),2,Charlie Tucker,Tony Carroll,32351132,0.5714,3,0.0605,9,13.0,0.19,4.0,3,0.25
+2026-11-16 19:30:00,Wolverhampton,ARC ALL WEATHER BONUS IS BACK HANDICAP (Rider Restricted) (5),Lahan Kingman(IRE),10,Donagh Murphy,Richard Hughes,3-224427,0.3199,6,0.0587,10,15.0,0.1848,4.5,3,0.25
+2026-11-16 19:30:00,Wolverhampton,ARC ALL WEATHER BONUS IS BACK HANDICAP (Rider Restricted) (5),Galba,8,Matthew Lloyd Slater,Kevin &amp; Lauren Frost,36323344,0.3074,7,0.0646,8,13.0,0.2019,4.0,3,0.25
+2026-11-16 19:30:00,Wolverhampton,ARC ALL WEATHER BONUS IS BACK HANDICAP (Rider Restricted) (5),Calyxoh(IRE),5,Oliver Carmichael,Patrick Morris,97304300,0.1784,11,0.0558,11,15.0,0.1762,4.5,3,0.25
+2026-11-16 19:30:00,Wolverhampton,ARC ALL WEATHER BONUS IS BACK HANDICAP (Rider Restricted) (5),Rating(IRE),6,Ben Ffrench Davis,Grace Harris,53518327,0.3451,5,0.0279,12,29.0,0.0909,8.0,3,0.25
+2026-11-16 20:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (Rider Restricted) (5),Ted Le Saux,4,Charlie Tucker,Andrew Balding,2-13653,0.3558,8,0.2755,1,2.87,0.6616,1.47,3,0.25
+2026-11-16 20:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (Rider Restricted) (5),Sea The Light(IRE),6,Kieren Fox,John Butler,9666-7071,0.3893,6,0.1489,2,5.5,0.4399,2.12,3,0.25
+2026-11-16 20:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (Rider Restricted) (5),Felix Gem,10,Oliver Carmichael,Eve Johnson Houghton,5-2140,0.3732,7,0.1209,3,7.0,0.3722,2.5,3,0.25
+2026-11-16 20:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (Rider Restricted) (5),Mr Nugget,13,Jack Dace,David Simcock,21295695,0.1888,11,0.0731,4,11.0,0.2397,3.5,3,0.25
+2026-11-16 20:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (Rider Restricted) (5),Paladin(IRE),5,Taylor Fisher,Kevin &amp; Lauren Frost,5-1029900,0.1442,12,0.0665,5,12.0,0.2199,3.75,3,0.25
+2026-11-16 20:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (Rider Restricted) (5),Cosmos Raj,3,M. P. Sheehy,David OMeara,44141822,0.5154,2,0.0602,6,13.0,0.2005,4.0,3,0.25
+2026-11-16 20:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (Rider Restricted) (5),The Sweet Escape,1,Laura Pearson,David Loughnane,46112105,0.4994,3,0.0493,7,17.0,0.1663,5.0,3,0.25
+2026-11-16 20:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (Rider Restricted) (5),Oman(IRE),11,Myla Coppins,Tony Carroll,14796512,0.4485,4,0.048,8,17.0,0.1622,5.0,3,0.25
+2026-11-16 20:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (Rider Restricted) (5),Livemore,8,Connor Planas,T. J. Kent,5160,0.3235,9,0.0438,9,19.0,0.1487,5.5,3,0.25
+2026-11-16 20:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (Rider Restricted) (5),Camino Del Ray,7,Ryan Sexton,Julie Camacho,65-614841,0.5167,1,0.0417,10,19.0,0.1419,5.5,3,0.25
+2026-11-16 20:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (Rider Restricted) (5),Farasi Lane(IRE),2,Aiden Brookes,Micky Hammond &amp; Becky Smith,55515386,0.278,10,0.0375,11,21.0,0.1282,6.0,3,0.25
+2026-11-16 20:00:00,Wolverhampton,MIDNITE A NEXT GENERATION BETTING APP HANDICAP (Rider Restricted) (5),Romance Spirit(IRE),9,Luke Catton,Marco Botti,242,0.4185,5,0.0346,12,26.0,0.1187,7.25,3,0.25
+2026-11-16 20:30:00,Wolverhampton,MAKE THE MOVE TO MIDNITE HANDICAP (Rider Restricted) (6),Saxophonic,8,Jack Dace,David Simcock,38644131,0.6096,1,0.4214,1,2.0,0.8399,1.25,3,0.25
+2026-11-16 20:30:00,Wolverhampton,MAKE THE MOVE TO MIDNITE HANDICAP (Rider Restricted) (6),Havachoc,11,Rhys Clutterbuck,Patrick Morris,62479653,0.2194,9,0.1084,2,8.0,0.3843,2.75,3,0.25
+2026-11-16 20:30:00,Wolverhampton,MAKE THE MOVE TO MIDNITE HANDICAP (Rider Restricted) (6),Its A Love Thing,6,Jonny Peate,Sam England,67808324,0.2787,6,0.0891,3,9.5,0.3253,3.12,3,0.25
+2026-11-16 20:30:00,Wolverhampton,MAKE THE MOVE TO MIDNITE HANDICAP (Rider Restricted) (6),Kathleen Mary,3,Laura Pearson,Gihan Arnolda,567-76652,0.2669,7,0.0828,4,10.0,0.3051,3.25,3,0.25
+2026-11-16 20:30:00,Wolverhampton,MAKE THE MOVE TO MIDNITE HANDICAP (Rider Restricted) (6),Man Of Desert,5,Jake Dickson,Chris Dwyer,42776743,0.2254,8,0.0662,5,13.0,0.2496,4.0,3,0.25
+2026-11-16 20:30:00,Wolverhampton,MAKE THE MOVE TO MIDNITE HANDICAP (Rider Restricted) (6),Heart Sign,9,Myla Coppins,Tony Carroll,94637615,0.3768,2,0.0662,6,13.0,0.2496,4.0,3,0.25
+2026-11-16 20:30:00,Wolverhampton,MAKE THE MOVE TO MIDNITE HANDICAP (Rider Restricted) (6),Sea Of Charm(FR),7,William Cox,Georgina Nicholls,67632247,0.297,4,0.0508,7,17.0,0.1954,5.0,3,0.25
+2026-11-16 20:30:00,Wolverhampton,MAKE THE MOVE TO MIDNITE HANDICAP (Rider Restricted) (6),The Bay Warrior(IRE),4,Rose Dawes,Mark Usher,60342720,0.2835,5,0.0432,9,19.0,0.1678,5.5,3,0.25
+2026-11-16 20:30:00,Wolverhampton,MAKE THE MOVE TO MIDNITE HANDICAP (Rider Restricted) (6),Tiger Beetle,10,Zoe Lewis,Thomas Faulkner,35783517,0.368,3,0.0441,8,19.0,0.1711,5.5,3,0.25
+2026-11-16 20:30:00,Wolverhampton,MAKE THE MOVE TO MIDNITE HANDICAP (Rider Restricted) (6),Rogue Sea,1,Taylor Fisher,John &amp; Rhys Flint,80/357-80,0.15,11,0.0176,10,51.0,0.0704,13.5,3,0.25
+2026-11-16 20:30:00,Wolverhampton,MAKE THE MOVE TO MIDNITE HANDICAP (Rider Restricted) (6),Hellion(IRE),2,Dougie Costello,Donald Mccain,33-040,0.1958,10,0.0101,11,81.0,0.0408,21.0,3,0.25
