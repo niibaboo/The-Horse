@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"><title>UK/Ireland Horse Racing</title></head>
 <body style="background:#0f0a08;color:#e8dcd0;font-family:Arial;padding:12px;max-width:600px;margin:auto">
 <h2 style="text-align:center;color:#7dd3a8">🐎 UK/Ireland Racing</h2>
-<p style="text-align:center;color:#998;font-size:11px">De-vigged market consensus + recency-weighted form · 22 Nov 16:04</p>
+<p style="text-align:center;color:#998;font-size:11px">De-vigged market consensus + recency-weighted form · 23 Nov 19:58</p>
 <p style="text-align:center;margin-bottom:16px"><a href="horse_racing_predictions.csv" download style="background:#2a201a;border:1px solid #443;color:white;padding:8px 14px;border-radius:8px;text-decoration:none;font-size:13px">⬇ Download CSV</a></p>
 <p style="text-align:center;margin-bottom:16px"><a href="results/index.html" style="color:#ff9a2e;text-decoration:none;font-size:12px">📊 Results Tracker</a></p>
 
@@ -28,7 +28,101 @@
 </div>
 
 
+<div style="background:#14261a;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #2a4a34">
+  <div style="font-size:14px;font-weight:bold;margin-bottom:10px">🎯 Market Favorites Builder</div>
+  <div style="font-size:11px;color:#8ba;margin-bottom:10px">
+    Each leg is the genuine de-vigged (margin-removed) market-consensus favorite for that race --
+    this is real, accurately-relayed market data, not an independent prediction. Odds move right up
+    to post time, so treat "best odds" as a snapshot, not guaranteed.
+  </div>
+  <div style="display:flex;gap:8px;align-items:center;margin-bottom:10px;flex-wrap:wrap">
+    <label style="font-size:12px;color:#8ba">Min probability:</label>
+    <input id="minProb" type="number" step="1" min="0" max="100" value="30"
+      style="width:60px;background:#0a1710;border:1px solid #2a4a34;color:white;border-radius:6px;padding:6px 8px;font-size:13px">
+    <button onclick="buildFavorites()"
+      style="background:#2a7d4a;border:none;color:white;padding:7px 14px;border-radius:6px;font-size:13px;cursor:pointer">
+      Build
+    </button>
+  </div>
+  <div id="builderResult" style="font-size:12px;color:#8ba"></div>
+</div>
+<script>
+const LEGS = [{"match": "Wolverhampton 20:00", "subject": "The Watcher(IRE)", "market": "The Watcher(IRE) to Win", "prob": 29, "category": "Market Favorite", "detail": "AWC TRIALS DAY - LINGFIELD 2nd JANUARY 2027 HANDICAP (4) \u00b7 jockey Clifford Lee \u00b7 best odds 3.0", "history": null, "hit_rate": null}, {"match": "Wolverhampton 20:30", "subject": "Hitched(IRE)", "market": "Hitched(IRE) to Win", "prob": 33, "category": "Market Favorite", "detail": "AWC SEASON 14 HANDICAP (5) \u00b7 jockey Luke Morris \u00b7 best odds 2.5", "history": null, "hit_rate": null}];
+function buildFavorites() {
+  const minProb = parseInt(document.getElementById('minProb').value) || 0;
+  const chosen = LEGS.filter(l => l.prob >= minProb).sort((a,b) => b.prob - a.prob);
+  const el = document.getElementById('builderResult');
+  if (!chosen.length) { el.innerHTML = 'No favorites clear that probability threshold today.'; return; }
+  const rows = chosen.map(l =>
+    `<div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #2a4a34">
+       <span>${l.match}<br><span style="color:#7ed3a8">${l.market}</span>
+       ${l.detail ? `<br><span style="color:#668;font-size:10px">${l.detail}</span>` : ''}</span>
+       <span style="color:#ffeb3b;font-weight:bold">${l.prob}%</span>
+     </div>`
+  ).join('');
+  el.innerHTML = `<div style="color:white;font-size:13px;margin-bottom:6px">${chosen.length} favorite(s)</div>${rows}`;
+}
+buildFavorites();
+</script>
 
+<div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
+  <div style="font-size:14px;font-weight:bold;margin-bottom:6px">🎯 Each-Way Picks</div>
+  <div style="font-size:11px;color:#998;margin-bottom:10px">
+    Ranked by PLACE probability (via Harville's formula, 1973 -- an established method that extends
+    win probabilities into place chances, not an invented one), not win probability -- this is
+    deliberately a different list from Market Favorites above. Place terms shown are the STANDARD UK
+    default for that field size; individual bookmakers sometimes run promotional extra-places offers
+    this can't see. Harville's formula is a genuine approximation with a known mild bias for long-shots
+    in big fields -- treat as a strong lead, not a certainty, especially with no backtested track
+    record yet for this project.
+  </div>
+  <div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Hitched(IRE)</b><br><span style="color:#998">Wolverhampton 20:30 · AWC SEASON 14 HANDICAP (5)</span><br><span style="color:#998">Luke Morris · 10 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 77%</span><br><span style="color:#998">win 33% · place odds 1.38 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>The Watcher(IRE)</b><br><span style="color:#998">Wolverhampton 20:00 · AWC TRIALS DAY - LINGFIELD 2nd JANUARY 2027 HANDICAP (4)</span><br><span style="color:#998">Clifford Lee · 10 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 71%</span><br><span style="color:#998">win 29% · place odds 1.5 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Sovereign Bay(FR)</b><br><span style="color:#998">Wolverhampton 20:30 · AWC SEASON 14 HANDICAP (5)</span><br><span style="color:#998">Jason Watson · 10 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 57%</span><br><span style="color:#998">win 19% · place odds 1.88 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Monarchs Gold</b><br><span style="color:#998">Wolverhampton 20:00 · AWC TRIALS DAY - LINGFIELD 2nd JANUARY 2027 HANDICAP (4)</span><br><span style="color:#998">Rowan Scott · 10 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 56%</span><br><span style="color:#998">win 19% · place odds 1.88 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Galba</b><br><span style="color:#998">Wolverhampton 20:30 · AWC SEASON 14 HANDICAP (5)</span><br><span style="color:#998">Matthew Lloyd Slater · 10 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 55%</span><br><span style="color:#998">win 18% · place odds 2.0 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Drifts Away</b><br><span style="color:#998">Wolverhampton 20:00 · AWC TRIALS DAY - LINGFIELD 2nd JANUARY 2027 HANDICAP (4)</span><br><span style="color:#998">Kieran Shoemark · 10 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 46%</span><br><span style="color:#998">win 14% · place odds 2.25 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Pietro(IRE)</b><br><span style="color:#998">Wolverhampton 20:00 · AWC TRIALS DAY - LINGFIELD 2nd JANUARY 2027 HANDICAP (4)</span><br><span style="color:#998">Daniel Muscutt · 10 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 45%</span><br><span style="color:#998">win 14% · place odds 2.25 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Reciprocated</b><br><span style="color:#998">Wolverhampton 20:00 · AWC TRIALS DAY - LINGFIELD 2nd JANUARY 2027 HANDICAP (4)</span><br><span style="color:#998">Hollie Doyle · 10 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 34%</span><br><span style="color:#998">win 10% · place odds 2.88 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Shadowmere(IRE)</b><br><span style="color:#998">Wolverhampton 20:30 · AWC SEASON 14 HANDICAP (5)</span><br><span style="color:#998">Callum Shepherd · 10 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 27%</span><br><span style="color:#998">win 8% · place odds 3.5 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Hes A Gentleman(IRE)</b><br><span style="color:#998">Wolverhampton 20:30 · AWC SEASON 14 HANDICAP (5)</span><br><span style="color:#998">David Egan · 10 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 25%</span><br><span style="color:#998">win 7% · place odds 4.0 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Ecclefechan</b><br><span style="color:#998">Wolverhampton 20:30 · AWC SEASON 14 HANDICAP (5)</span><br><span style="color:#998">Kieran ONeill · 10 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 17%</span><br><span style="color:#998">win 5% · place odds 5.5 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Pipily</b><br><span style="color:#998">Wolverhampton 20:30 · AWC SEASON 14 HANDICAP (5)</span><br><span style="color:#998">Clifford Lee · 10 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 17%</span><br><span style="color:#998">win 5% · place odds 5.5 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Treasure Time</b><br><span style="color:#998">Wolverhampton 20:00 · AWC TRIALS DAY - LINGFIELD 2nd JANUARY 2027 HANDICAP (4)</span><br><span style="color:#998">Marco Ghiani · 10 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 16%</span><br><span style="color:#998">win 4% · place odds 6.0 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Law Supreme(FR)</b><br><span style="color:#998">Wolverhampton 20:30 · AWC SEASON 14 HANDICAP (5)</span><br><span style="color:#998">Edward Greatrex · 10 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 11%</span><br><span style="color:#998">win 3% · place odds 8.0 (1/4, top 3)</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Shah(IRE)</b><br><span style="color:#998">Wolverhampton 20:00 · AWC TRIALS DAY - LINGFIELD 2nd JANUARY 2027 HANDICAP (4)</span><br><span style="color:#998">Charles Bishop · 10 runners</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">place 11%</span><br><span style="color:#998">win 3% · place odds 8.0 (1/4, top 3)</span></div>
+</div>
+</div>
 <div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
   <div style="font-size:14px;font-weight:bold;margin-bottom:6px">📊 Recent Form Leaders</div>
   <div style="font-size:11px;color:#998;margin-bottom:10px">
@@ -37,169 +131,118 @@
     long shot if the market disagrees. Cross-check against the Market Favorites panel above.
   </div>
   <div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Scotto(IRE)</b><br><span style="color:#998">Fakenham 13:43 · GET A FREE TRIAL OF RACING TV NOW MAIDEN HURDLE (4)</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 113</span><br><span style="color:#998">rank 1/7</span></div>
+  <div><b>The Watcher(IRE)</b><br><span style="color:#998">Wolverhampton 20:00 · AWC TRIALS DAY - LINGFIELD 2nd JANUARY 2027 HANDICAP (4)</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 1/19-</span><br><span style="color:#998">rank 1/10</span></div>
 </div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Gata Ban(IRE)</b><br><span style="color:#998">Fakenham 14:13 · JUMPS LOOKS BETTER ON RACING TV MARES HANDICAP CHASE (Qualifier) (5)</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 34-211431</span><br><span style="color:#998">rank 1/6</span></div>
+  <div><b>Galba</b><br><span style="color:#998">Wolverhampton 20:30 · AWC SEASON 14 HANDICAP (5)</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 63233441</span><br><span style="color:#998">rank 1/10</span></div>
 </div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Mr Mcwhinny(IRE)</b><br><span style="color:#998">Fakenham 15:13 · 31 DAYS FREE RACING TV AT racingtv.com/freetrial NOVICES HANDICAP CHASE (4)</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 4141112F</span><br><span style="color:#998">rank 1/5</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>At Mangan Bridge(IRE)</b><br><span style="color:#998">Fakenham 14:43 · GET A FREE TRIAL AT racingtv.com/freetrial HANDICAP HURDLE (4)</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 3511-0</span><br><span style="color:#998">rank 1/5</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Golden Falls(IRE)</b><br><span style="color:#998">Fakenham 12:43 · racingtv.com/freetrial - LAST DAY MARES HANDICAP HURDLE (4)</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 68/127741-</span><br><span style="color:#998">rank 1/5</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Mr Mackay(IRE)</b><br><span style="color:#998">Fakenham 14:43 · GET A FREE TRIAL AT racingtv.com/freetrial HANDICAP HURDLE (4)</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 342551/2</span><br><span style="color:#998">rank 2/5</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Belle Montrose(IRE)</b><br><span style="color:#998">Fakenham 13:13 · ROYAL BRITISH LEGION POPPY APPEAL 2026 HANDICAP CHASE (5)</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 4361223-2</span><br><span style="color:#998">rank 1/4</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Applejack Poet(IRE)</b><br><span style="color:#998">Fakenham 13:13 · ROYAL BRITISH LEGION POPPY APPEAL 2026 HANDICAP CHASE (5)</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 64P8F321</span><br><span style="color:#998">rank 2/4</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Our Peggy(IRE)</b><br><span style="color:#998">Fakenham 12:43 · racingtv.com/freetrial - LAST DAY MARES HANDICAP HURDLE (4)</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 642P-1</span><br><span style="color:#998">rank 2/5</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
-  <div><b>Hawaii Du Mestivel(FR)</b><br><span style="color:#998">Fakenham 15:13 · 31 DAYS FREE RACING TV AT racingtv.com/freetrial NOVICES HANDICAP CHASE (4)</span></div>
-  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 2111/PP2-</span><br><span style="color:#998">rank 2/5</span></div>
+  <div><b>Shah(IRE)</b><br><span style="color:#998">Wolverhampton 20:00 · AWC TRIALS DAY - LINGFIELD 2nd JANUARY 2027 HANDICAP (4)</span></div>
+  <div style="text-align:right"><span style="color:#7dd3a8;font-weight:bold">form 2221/0</span><br><span style="color:#998">rank 2/10</span></div>
 </div>
 </div>
-
 <div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
-  <div style="font-size:11px;color:#998;margin-bottom:4px">Fakenham 12:43 · Good · 2m · E/W 4, top 2</div>
-  <div style="font-size:15px;font-weight:bold;margin-bottom:10px">racingtv.com/freetrial - LAST DAY MARES HANDICAP HURDLE (4)</div>
-  
-  
+  <div style="font-size:14px;font-weight:bold;margin-bottom:6px">🔎 Form/Market Gap</div>
+  <div style="font-size:11px;color:#998;margin-bottom:10px">
+    Horses whose recent-FORM rank sits notably ahead of where the MARKET currently prices them.
+    This is a discrepancy-spotter, not a validated edge -- there's no backtested track record yet
+    for whether this gap actually predicts anything. Treat as a lead worth a closer look, not a bet
+    on its own.
+  </div>
+  <div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Galba</b><br><span style="color:#998">Wolverhampton 20:30 · AWC SEASON 14 HANDICAP (5)</span></div>
+  <div style="text-align:right"><span style="color:#ff9a2e;font-weight:bold">form #1 · market #3</span><br><span style="color:#998">best odds 5.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Shah(IRE)</b><br><span style="color:#998">Wolverhampton 20:00 · AWC TRIALS DAY - LINGFIELD 2nd JANUARY 2027 HANDICAP (4)</span></div>
+  <div style="text-align:right"><span style="color:#ff9a2e;font-weight:bold">form #2 · market #7</span><br><span style="color:#998">best odds 29.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:6px 0;border-top:1px solid #3a2a20">
+  <div><b>Law Supreme(FR)</b><br><span style="color:#998">Wolverhampton 20:30 · AWC SEASON 14 HANDICAP (5)</span></div>
+  <div style="text-align:right"><span style="color:#ff9a2e;font-weight:bold">form #2 · market #8</span><br><span style="color:#998">best odds 29.0</span></div>
+</div>
+</div>
+<div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
+  <div style="font-size:11px;color:#998;margin-bottom:4px">Wolverhampton 20:00 · Standard · 7f · E/W 4, top 3</div>
+  <div style="font-size:15px;font-weight:bold;margin-bottom:10px">AWC TRIALS DAY - LINGFIELD 2nd JANUARY 2027 HANDICAP (4)</div>
+  <div style="background:#0f1a12;border:1px solid #2a4a34;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#7dd3a8;font-weight:bold">🏁 Projected order </span><span style="color:#998">(by win %, before the race)</span><br>
+  <b>1.</b> The Watcher(IRE) (29%) &nbsp;·&nbsp; <b>2.</b> Monarchs Gold (19%) &nbsp;·&nbsp; <b>3.</b> Drifts Away (14%) &nbsp;·&nbsp; <b>4.</b> Pietro(IRE) (14%)
+</div>
+  <div style="background:#1f180f;border:1px dashed #4a3a20;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#ff9a2e;font-weight:bold">🧪 Form-adjusted order </span><span style="color:#998">(experimental — 70% market / 30% form, unvalidated)</span><br>
+  <b>1.</b> The Watcher(IRE) &nbsp;·&nbsp; <b>2.</b> Drifts Away &nbsp;·&nbsp; <b>3.</b> Monarchs Gold &nbsp;·&nbsp; <b>4.</b> Pietro(IRE)
+</div>
   <div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>1. <b>Golden Falls(IRE)</b><br><span style="color:#998">Tom Cannon · Lucy Wadham</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 68/127741- · odds -/-</span></div>
+  <div>1. <b>Shah(IRE)</b><br><span style="color:#998">Charles Bishop · Alan King</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 3%</span> <span style="color:#7dd3a8;font-weight:bold">place 11%</span><br><span style="color:#998">form 2221/0 · odds 29.0/8.0</span></div>
 </div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>2. <b>Hello Sweety</b><br><span style="color:#998">Charlie Hammond · Stuart Edmunds</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 15-1231P3 · odds -/-</span></div>
+  <div>11. <b>Follow Your Heart(IRE)</b><br><span style="color:#998">Luke Morris · Mark Loughnane</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 2%</span> <span style="color:#7dd3a8;font-weight:bold">place 6%</span><br><span style="color:#998">form 1-4640075 · odds 67.0/17.5</span></div>
 </div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>3. <b>Our Peggy(IRE)</b><br><span style="color:#998">Dylan Johnston · Joe Tizzard</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 642P-1 · odds -/-</span></div>
+  <div>2. <b>The Watcher(IRE)</b><br><span style="color:#998">Clifford Lee · K. R. Burke</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 29%</span> <span style="color:#7dd3a8;font-weight:bold">place 71%</span><br><span style="color:#998">form 1/19- · odds 3.0/1.5</span></div>
 </div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>4. <b>Dancing Dame(IRE)</b><br><span style="color:#998">Jonathan Burke · James Owen</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form U086-2514 · odds -/-</span></div>
+  <div>3. <b>Monarchs Gold</b><br><span style="color:#998">Rowan Scott · Kevin Philippart de Foy</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 19%</span> <span style="color:#7dd3a8;font-weight:bold">place 56%</span><br><span style="color:#998">form 20293565 · odds 4.5/1.88</span></div>
 </div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>5. <b>Mcflo</b><br><span style="color:#998">Jack Quinlan · Anthony Carson</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 964P5842 · odds -/-</span></div>
+  <div>4. <b>Treasure Time</b><br><span style="color:#998">Marco Ghiani · John &amp; Sean Quinn</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 4%</span> <span style="color:#7dd3a8;font-weight:bold">place 16%</span><br><span style="color:#998">form 14/5040-08 · odds 21.0/6.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>5. <b>Drifts Away</b><br><span style="color:#998">Kieran Shoemark · T. J. Kent</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 14%</span> <span style="color:#7dd3a8;font-weight:bold">place 46%</span><br><span style="color:#998">form 08-711926 · odds 6.0/2.25</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>6. <b>Pietro(IRE)</b><br><span style="color:#998">Daniel Muscutt · James Fanshawe</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 14%</span> <span style="color:#7dd3a8;font-weight:bold">place 45%</span><br><span style="color:#998">form 62-130733 · odds 6.0/2.25</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>7. <b>Jez Bomb</b><br><span style="color:#998">Jonny Peate · Sam England</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 3%</span> <span style="color:#7dd3a8;font-weight:bold">place 11%</span><br><span style="color:#998">form 12175685 · odds 29.0/8.0</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>8. <b>Reciprocated</b><br><span style="color:#998">Hollie Doyle · David Loughnane</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 10%</span> <span style="color:#7dd3a8;font-weight:bold">place 34%</span><br><span style="color:#998">form 30000652 · odds 8.5/2.88</span></div>
+</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
+  <div>9. <b>City Cyclone</b><br><span style="color:#998">William Carson · Tony Carroll</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 2%</span> <span style="color:#7dd3a8;font-weight:bold">place 6%</span><br><span style="color:#998">form 03-111850 · odds 51.0/13.5</span></div>
 </div>
 </div><div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
-  <div style="font-size:11px;color:#998;margin-bottom:4px">Fakenham 13:13 · Good · 2m · win only (< 5 runners)</div>
-  <div style="font-size:15px;font-weight:bold;margin-bottom:10px">ROYAL BRITISH LEGION POPPY APPEAL 2026 HANDICAP CHASE (5)</div>
-  
-  
-  <div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>1. <b>Belle Montrose(IRE)</b><br><span style="color:#998">K. Brogan · Samuel Drinkwater</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 4361223-2 · odds -/-</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>2. <b>Applejack Poet(IRE)</b><br><span style="color:#998">Rian Corcoran · Barry John Murphy</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 64P8F321 · odds -/-</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>3. <b>Gambie Tiep(FR)</b><br><span style="color:#998">Sean Bowen · Olly Murphy</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 3P/5 · odds -/-</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>4. <b>Getaway Jewel(IRE)</b><br><span style="color:#998">Alice Stevens · Micky Hammond &amp; Becky Smith</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 23221447 · odds -/-</span></div>
+  <div style="font-size:11px;color:#998;margin-bottom:4px">Wolverhampton 20:30 · Standard · 1m · E/W 4, top 3</div>
+  <div style="font-size:15px;font-weight:bold;margin-bottom:10px">AWC SEASON 14 HANDICAP (5)</div>
+  <div style="background:#0f1a12;border:1px solid #2a4a34;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#7dd3a8;font-weight:bold">🏁 Projected order </span><span style="color:#998">(by win %, before the race)</span><br>
+  <b>1.</b> Hitched(IRE) (33%) &nbsp;·&nbsp; <b>2.</b> Sovereign Bay(FR) (19%) &nbsp;·&nbsp; <b>3.</b> Galba (18%) &nbsp;·&nbsp; <b>4.</b> Shadowmere(IRE) (8%)
 </div>
-</div><div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
-  <div style="font-size:11px;color:#998;margin-bottom:4px">Fakenham 13:43 · Good · 2m4f · E/W 4, top 2</div>
-  <div style="font-size:15px;font-weight:bold;margin-bottom:10px">GET A FREE TRIAL OF RACING TV NOW MAIDEN HURDLE (4)</div>
-  
-  
-  <div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>1. <b>Claim The Throne(FR)</b><br><span style="color:#998">Dylan Johnston · Joe Tizzard</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 561/P- · odds -/-</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>2. <b>Eustace Grenier(FR)</b><br><span style="color:#998">Sean Bowen · Olly Murphy</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 4343-450 · odds -/-</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>3. <b>Scotto(IRE)</b><br><span style="color:#998">Jonathan Burke · James Owen</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 113 · odds -/-</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>4. <b>Tommy Tipa</b><br><span style="color:#998">Charlie Hammond · Sara Bradstock</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 55 · odds -/-</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>5. <b>Mister Realistic(IRE)</b><br><span style="color:#998">Tom Cannon · Lucy Wadham</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 8 · odds -/-</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>6. <b>Yanka Blue(IRE)</b><br><span style="color:#998">Robert Dunne · Barry John Murphy</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 27P44394 · odds -/-</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>7. <b>La Trinite</b><br><span style="color:#998">Jack Quinlan · Neil King</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 36 · odds -/-</span></div>
+  <div style="background:#1f180f;border:1px dashed #4a3a20;border-radius:8px;padding:8px 10px;margin-bottom:10px;font-size:12px">
+  <span style="color:#ff9a2e;font-weight:bold">🧪 Form-adjusted order </span><span style="color:#998">(experimental — 70% market / 30% form, unvalidated)</span><br>
+  <b>1.</b> Hitched(IRE) &nbsp;·&nbsp; <b>2.</b> Galba &nbsp;·&nbsp; <b>3.</b> Sovereign Bay(FR) &nbsp;·&nbsp; <b>4.</b> Shadowmere(IRE)
 </div>
-</div><div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
-  <div style="font-size:11px;color:#998;margin-bottom:4px">Fakenham 14:13 · Good · 2m5f · E/W 4, top 2</div>
-  <div style="font-size:15px;font-weight:bold;margin-bottom:10px">JUMPS LOOKS BETTER ON RACING TV MARES HANDICAP CHASE (Qualifier) (5)</div>
-  
-  
   <div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>1. <b>Miss Kassiopi</b><br><span style="color:#998">Ben Poste · Max Young</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 213-721P6 · odds -/-</span></div>
+  <div>1. <b>Galba</b><br><span style="color:#998">Matthew Lloyd Slater · Kevin &amp; Lauren Frost</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 18%</span> <span style="color:#7dd3a8;font-weight:bold">place 55%</span><br><span style="color:#998">form 63233441 · odds 5.0/2.0</span></div>
 </div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>2. <b>Gata Ban(IRE)</b><br><span style="color:#998">Dylan Johnston · Neil Mulholland</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 34-211431 · odds -/-</span></div>
+  <div>10. <b>Pipily</b><br><span style="color:#998">Clifford Lee · T. J. Kent</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 5%</span> <span style="color:#7dd3a8;font-weight:bold">place 17%</span><br><span style="color:#998">form 64-724356 · odds 19.0/5.5</span></div>
 </div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>3. <b>I Am The Moon</b><br><span style="color:#998">Toby McCain-Mitchell · Nigel &amp; Willy Twiston-Davies</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form U61P4-248 · odds -/-</span></div>
+  <div>2. <b>Hitched(IRE)</b><br><span style="color:#998">Luke Morris · David Simcock</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 33%</span> <span style="color:#7dd3a8;font-weight:bold">place 77%</span><br><span style="color:#998">form 44066884 · odds 2.5/1.38</span></div>
 </div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>4. <b>Eastern Shores</b><br><span style="color:#998">Kielan Woods · Fergal OBrien</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 33256-7P4 · odds -/-</span></div>
+  <div>3. <b>Hes A Gentleman(IRE)</b><br><span style="color:#998">David Egan · Hugo Palmer</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 7%</span> <span style="color:#7dd3a8;font-weight:bold">place 25%</span><br><span style="color:#998">form 9-7227758 · odds 13.0/4.0</span></div>
 </div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>5. <b>Chosen Hero(IRE)</b><br><span style="color:#998">Jonathan Burke · James Owen</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 768/9PPP-1 · odds -/-</span></div>
+  <div>4. <b>Law Supreme(FR)</b><br><span style="color:#998">Edward Greatrex · Ian Williams</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 3%</span> <span style="color:#7dd3a8;font-weight:bold">place 11%</span><br><span style="color:#998">form 11214837 · odds 29.0/8.0</span></div>
 </div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>6. <b>Sweet Nightingale</b><br><span style="color:#998">Tristan Durrell · Polly Gundry</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 3P3133-54 · odds -/-</span></div>
-</div>
-</div><div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
-  <div style="font-size:11px;color:#998;margin-bottom:4px">Fakenham 14:43 · Good · 2m7f · E/W 4, top 2</div>
-  <div style="font-size:15px;font-weight:bold;margin-bottom:10px">GET A FREE TRIAL AT racingtv.com/freetrial HANDICAP HURDLE (4)</div>
-  
-  
-  <div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>1. <b>Mr Mackay(IRE)</b><br><span style="color:#998">Toby McCain-Mitchell · Nigel &amp; Willy Twiston-Davies</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 342551/2 · odds -/-</span></div>
+  <div>5. <b>Ecclefechan</b><br><span style="color:#998">Kieran ONeill · Scott Dixon</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 5%</span> <span style="color:#7dd3a8;font-weight:bold">place 17%</span><br><span style="color:#998">form 53117905 · odds 19.0/5.5</span></div>
 </div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>2. <b>King Jon Oliver(FR)</b><br><span style="color:#998">Robert Dunne · Olly Murphy</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 3/021P4P-P · odds -/-</span></div>
+  <div>6. <b>Sovereign Bay(FR)</b><br><span style="color:#998">Jason Watson · James Owen</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 19%</span> <span style="color:#7dd3a8;font-weight:bold">place 57%</span><br><span style="color:#998">form 2344502 · odds 4.5/1.88</span></div>
 </div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>3. <b>Greatness Awaits(IRE)</b><br><span style="color:#998">Tom Cannon · Sarah Humphrey</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 11045740- · odds -/-</span></div>
+  <div>7. <b>Shadowmere(IRE)</b><br><span style="color:#998">Callum Shepherd · George Baker</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 8%</span> <span style="color:#7dd3a8;font-weight:bold">place 27%</span><br><span style="color:#998">form 835-20 · odds 11.0/3.5</span></div>
 </div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>4. <b>Everyonesgame(IRE)</b><br><span style="color:#998">Chad Bament · Andy Irvine</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 241765-22 · odds -/-</span></div>
+  <div>8. <b>Galileo Island(IRE)</b><br><span style="color:#998">Sean Levey · Tom Ward</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 2%</span> <span style="color:#7dd3a8;font-weight:bold">place 9%</span><br><span style="color:#998">form 32-483900 · odds 41.0/11.0</span></div>
 </div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>5. <b>At Mangan Bridge(IRE)</b><br><span style="color:#998">Charlie Hammond · Stuart Edmunds</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 3511-0 · odds -/-</span></div>
-</div>
-</div><div style="background:#1a1310;border-radius:12px;padding:16px;margin:12px 0;border:1px solid #3a2a20">
-  <div style="font-size:11px;color:#998;margin-bottom:4px">Fakenham 15:13 · Good · 3m · E/W 4, top 2</div>
-  <div style="font-size:15px;font-weight:bold;margin-bottom:10px">31 DAYS FREE RACING TV AT racingtv.com/freetrial NOVICES HANDICAP CHASE (4)</div>
-  
-  
-  <div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>1. <b>Mr Mcwhinny(IRE)</b><br><span style="color:#998">Finn Lambert · Tom Ellis</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 4141112F · odds -/-</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>2. <b>Hawaii Du Mestivel(FR)</b><br><span style="color:#998">Conor OFarrell · Neil Mulholland</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 2111/PP2- · odds -/-</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>3. <b>Painted Wolf(IRE)</b><br><span style="color:#998">Jonathan Burke · Ben Case</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 9P5P21-4 · odds -/-</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>4. <b>Breezethroughlife(IRE)</b><br><span style="color:#998">Jack Quinlan · Neil King</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 2P53-8344 · odds -/-</span></div>
-</div><div style="display:flex;justify-content:space-between;font-size:12px;padding:5px 0;border-top:1px solid #3a2a20">
-  <div>5. <b>Bahtiyar(FR)</b><br><span style="color:#998">Ben Poste · Max Young</span></div>
-  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win -</span> <span style="color:#7dd3a8;font-weight:bold">place -</span><br><span style="color:#998">form 25634523 · odds -/-</span></div>
+  <div>9. <b>Clatford(IRE)</b><br><span style="color:#998">Christian Howarth · Scott Dixon</span></div>
+  <div style="text-align:right"><span style="color:#ffeb3b;font-weight:bold">win 1%</span> <span style="color:#7dd3a8;font-weight:bold">place 4%</span><br><span style="color:#998">form 4200 · odds 101.0/26.0</span></div>
 </div>
 </div>
 <div style="font-size:11px;color:#998;text-align:center;margin-top:20px;line-height:1.6">
